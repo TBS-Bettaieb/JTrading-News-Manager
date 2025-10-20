@@ -1,0 +1,36 @@
+{
+  "scraping": {
+    "days_back": 90,
+    "days_forward": 90,
+    "base_url": "https://www.forexfactory.com/calendar",
+    "timeout": 30,
+    "retry_attempts": 3
+  },
+  "scheduler": {
+    "run_time": "06:00",
+    "timezone": "local"
+  },
+  "output": {
+    "csv_path": "output/economic_events.csv"
+  },
+  "symbol_mapping": {
+    "auto_mapping": {
+      "USD": ["EURUSD", "GBPUSD", "USDJPY", "USDCHF", "AUDUSD", "NZDUSD", "USDCAD"],
+      "EUR": ["EURUSD", "EURGBP", "EURJPY", "EURCHF", "EURAUD"],
+      "GBP": ["GBPUSD", "EURGBP", "GBPJPY", "GBPCHF", "GBPAUD"],
+      "JPY": ["USDJPY", "EURJPY", "GBPJPY", "AUDJPY", "NZDJPY"],
+      "CHF": ["USDCHF", "EURCHF", "GBPCHF", "CHFJPY"],
+      "AUD": ["AUDUSD", "EURAUD", "GBPAUD", "AUDJPY", "AUDNZD"],
+      "NZD": ["NZDUSD", "NZDJPY", "AUDNZD"],
+      "CAD": ["USDCAD", "CADJPY"]
+    },
+    "custom_overrides": {
+      "CNY": ["USDCNH", "EURCNH"]
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/app.log",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  }
+}

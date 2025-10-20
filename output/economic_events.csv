@@ -1,0 +1,12 @@
+DateTime,Event,Country,Impact,Currency,Actual,Forecast,Previous,AffectedPairs
+2025-10-13 01:00:00,JN Bank Holiday,Unknown,Low,JPY,N/A,N/A,N/A,"USDJPY, EURJPY, GBPJPY, AUDJPY, NZDJPY"
+2025-10-13 04:56:00,CH Trade Balance,Switzerland,Low,CNY,N/A,N/A,N/A,"USDCNH, EURCNH"
+2025-10-13 04:59:00,CH USD-Denominated Trade Balance,Switzerland,Low,CNY,N/A,N/A,N/A,"USDCNH, EURCNH"
+2025-10-13 08:00:00,GE WPI m/m,Unknown,Low,EUR,N/A,N/A,N/A,"EURUSD, EURGBP, EURJPY, EURCHF, EURAUD"
+2025-10-13 13:05:00,UK MPC Member Greene Speaks,United Kingdom,Low,GBP,N/A,N/A,N/A,"GBPUSD, EURGBP, GBPJPY, GBPCHF, GBPAUD"
+2025-10-13 14:00:00,CA Bank Holiday,Canada,Low,CAD,N/A,N/A,N/A,"USDCAD, CADJPY"
+2025-10-13 14:00:00,US Bank Holiday,United States,Low,USD,N/A,N/A,N/A,"EURUSD, GBPUSD, USDJPY, USDCHF, AUDUSD, NZDUSD, USDCAD"
+2025-10-13 15:30:00,UK CB Leading Index m/m,United Kingdom,Low,GBP,N/A,N/A,N/A,"GBPUSD, EURGBP, GBPJPY, GBPCHF, GBPAUD"
+2025-10-13 16:15:00,IMF Meetings,Unknown,Low,All,N/A,N/A,N/A,N/A
+2025-10-13 18:55:00,US FOMC Member Paulson Speaks,United States,Low,USD,N/A,N/A,N/A,"EURUSD, GBPUSD, USDJPY, USDCHF, AUDUSD, NZDUSD, USDCAD"
+2025-10-13 21:10:00,UK MPC Member Mann Speaks,United Kingdom,Low,GBP,N/A,N/A,N/A,"GBPUSD, EURGBP, GBPJPY, GBPCHF, GBPAUD"

@@ -1,0 +1,977 @@
+2025-10-20 14:36:18,996 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 14:36:18,996 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 14:36:18,996 - __main__ - INFO - Scraping events from 2025-07-22 to 2026-01-18
+2025-10-20 14:36:18,996 - __main__ - INFO - Starting data scraping...
+2025-10-20 14:36:19,339 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-22
+2025-10-20 14:36:20,597 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-22
+2025-10-20 14:36:22,862 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-22
+2025-10-20 14:36:22,862 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-07-22
+2025-10-20 14:36:24,139 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-23
+2025-10-20 14:36:25,399 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-23
+2025-10-20 14:36:27,670 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-23
+2025-10-20 14:36:27,670 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-07-23
+2025-10-20 14:36:28,938 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-24
+2025-10-20 14:36:30,202 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-24
+2025-10-20 14:36:32,492 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-24
+2025-10-20 14:36:32,492 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-07-24
+2025-10-20 14:36:33,752 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-25
+2025-10-20 14:36:35,053 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-25
+2025-10-20 14:36:37,311 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-25
+2025-10-20 14:36:37,311 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-07-25
+2025-10-20 14:36:38,582 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-26
+2025-10-20 14:36:39,841 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-26
+2025-10-20 14:36:42,137 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-26
+2025-10-20 14:36:42,137 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-07-26
+2025-10-20 14:36:43,433 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-27
+2025-10-20 14:36:44,759 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-27
+2025-10-20 14:36:47,059 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-27
+2025-10-20 14:36:47,059 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-07-27
+2025-10-20 14:36:48,407 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-28
+2025-10-20 14:36:49,712 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-28
+2025-10-20 14:36:51,996 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-28
+2025-10-20 14:36:51,996 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-07-28
+2025-10-20 14:36:53,269 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-29
+2025-10-20 14:36:54,548 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-29
+2025-10-20 14:36:56,822 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-29
+2025-10-20 14:36:56,822 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-07-29
+2025-10-20 14:36:58,075 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-30
+2025-10-20 14:36:59,356 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-30
+2025-10-20 14:37:01,648 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-30
+2025-10-20 14:37:01,648 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-07-30
+2025-10-20 14:37:02,902 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-31
+2025-10-20 14:37:04,168 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-31
+2025-10-20 14:37:06,450 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-07-31
+2025-10-20 14:37:06,450 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-07-31
+2025-10-20 14:37:07,751 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-08-01
+2025-10-20 14:37:09,033 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-08-01
+2025-10-20 14:37:11,362 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-08-01
+2025-10-20 14:37:11,363 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-08-01
+2025-10-20 14:37:12,722 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-08-02
+2025-10-20 14:37:14,008 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-08-02
+2025-10-20 14:37:16,307 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-08-02
+2025-10-20 14:37:16,307 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-08-02
+2025-10-20 14:37:17,566 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-08-03
+2025-10-20 14:37:18,834 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-08-03
+2025-10-20 14:37:21,104 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-08-03
+2025-10-20 14:37:21,104 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=2025-08-03
+2025-10-20 14:37:22,393 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=2025-08-04
+2025-10-20 14:39:18,776 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 14:39:18,776 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 14:39:18,776 - __main__ - INFO - Scraping events from 2025-07-22 to 2026-01-18
+2025-10-20 14:39:18,776 - __main__ - INFO - Starting data scraping...
+2025-10-20 14:39:19,129 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul22.2025
+2025-10-20 14:39:20,429 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul22.2025
+2025-10-20 14:39:22,700 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul22.2025
+2025-10-20 14:39:22,700 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul22.2025
+2025-10-20 14:39:23,999 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul23.2025
+2025-10-20 14:39:25,267 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul23.2025
+2025-10-20 14:39:27,589 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul23.2025
+2025-10-20 14:39:27,591 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul23.2025
+2025-10-20 14:39:29,079 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul24.2025
+2025-10-20 14:39:30,388 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul24.2025
+2025-10-20 14:39:32,669 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul24.2025
+2025-10-20 14:39:32,669 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul24.2025
+2025-10-20 14:39:33,964 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul25.2025
+2025-10-20 14:39:35,245 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul25.2025
+2025-10-20 14:39:37,566 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul25.2025
+2025-10-20 14:39:37,566 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul25.2025
+2025-10-20 14:39:38,864 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul26.2025
+2025-10-20 14:39:40,174 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul26.2025
+2025-10-20 14:39:42,466 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul26.2025
+2025-10-20 14:39:42,466 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul26.2025
+2025-10-20 14:39:50,652 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 14:39:50,652 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 14:39:50,652 - __main__ - INFO - Scraping events from 2025-07-22 to 2026-01-18
+2025-10-20 14:39:50,652 - __main__ - INFO - Starting data scraping...
+2025-10-20 14:39:50,977 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul22.2025
+2025-10-20 14:39:52,279 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul22.2025
+2025-10-20 14:43:01,487 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 14:43:01,487 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 14:43:01,487 - __main__ - INFO - Scraping events from 2025-07-22 to 2026-01-18
+2025-10-20 14:43:01,487 - __main__ - INFO - Starting data scraping...
+2025-10-20 14:43:01,886 - scraper - WARNING - Could not establish session: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar
+2025-10-20 14:43:02,191 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul22.2025 - Status: No response
+2025-10-20 14:43:04,500 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul22.2025 - Status: No response
+2025-10-20 14:43:07,847 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul22.2025 - Status: No response
+2025-10-20 14:43:07,847 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul22.2025
+2025-10-20 14:43:10,149 - scraper - WARNING - Request attempt 1 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul23.2025 - Status: No response
+2025-10-20 14:43:12,437 - scraper - WARNING - Request attempt 2 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul23.2025 - Status: No response
+2025-10-20 14:43:15,721 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul23.2025 - Status: No response
+2025-10-20 14:43:15,721 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul23.2025
+2025-10-20 14:45:33,281 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 14:45:33,281 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 14:45:33,281 - __main__ - INFO - Scraping events from 2025-07-22 to 2026-01-18
+2025-10-20 14:45:33,281 - __main__ - INFO - Starting data scraping...
+2025-10-20 14:45:35,465 - scraper - WARNING - Main page returned status 403
+2025-10-20 14:45:39,104 - scraper - WARNING - Main page returned status 403
+2025-10-20 14:45:43,429 - scraper - WARNING - Main page returned status 403
+2025-10-20 14:45:43,429 - scraper - WARNING - Failed to establish session after 3 attempts
+2025-10-20 14:45:43,726 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:45:52,515 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 14:45:59,746 - scraper - WARNING - Got 403 on attempt 3, trying different approach...
+2025-10-20 14:45:59,746 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul22.2025 - Status: No response
+2025-10-20 14:45:59,746 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul22.2025
+2025-10-20 14:46:06,918 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:46:15,387 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 14:46:22,305 - scraper - WARNING - Got 403 on attempt 3, trying different approach...
+2025-10-20 14:46:22,305 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul23.2025 - Status: No response
+2025-10-20 14:46:22,305 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul23.2025
+2025-10-20 14:46:28,350 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:46:35,157 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 14:46:41,913 - scraper - WARNING - Got 403 on attempt 3, trying different approach...
+2025-10-20 14:46:41,913 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul24.2025 - Status: No response
+2025-10-20 14:46:41,913 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul24.2025
+2025-10-20 14:46:46,875 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:46:55,119 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 14:47:01,351 - scraper - WARNING - Got 403 on attempt 3, trying different approach...
+2025-10-20 14:47:01,351 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul25.2025 - Status: No response
+2025-10-20 14:47:01,351 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul25.2025
+2025-10-20 14:47:08,379 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:47:14,840 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 14:47:22,308 - scraper - WARNING - Got 403 on attempt 3, trying different approach...
+2025-10-20 14:47:22,308 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul26.2025 - Status: No response
+2025-10-20 14:47:22,308 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul26.2025
+2025-10-20 14:47:32,446 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:47:39,515 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 14:47:48,871 - scraper - WARNING - Got 403 on attempt 3, trying different approach...
+2025-10-20 14:47:48,871 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul27.2025 - Status: No response
+2025-10-20 14:47:48,871 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul27.2025
+2025-10-20 14:47:56,670 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:48:05,824 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 14:48:12,192 - scraper - WARNING - Got 403 on attempt 3, trying different approach...
+2025-10-20 14:48:12,192 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul28.2025 - Status: No response
+2025-10-20 14:48:12,192 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul28.2025
+2025-10-20 14:48:21,561 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:48:30,599 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 14:48:37,824 - scraper - WARNING - Got 403 on attempt 3, trying different approach...
+2025-10-20 14:48:37,824 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul29.2025 - Status: No response
+2025-10-20 14:48:37,824 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul29.2025
+2025-10-20 14:48:43,965 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:48:51,544 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 14:49:00,405 - scraper - WARNING - Got 403 on attempt 3, trying different approach...
+2025-10-20 14:49:00,410 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul30.2025 - Status: No response
+2025-10-20 14:49:00,410 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul30.2025
+2025-10-20 14:49:06,720 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:49:13,636 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 14:49:22,534 - scraper - WARNING - Got 403 on attempt 3, trying different approach...
+2025-10-20 14:49:22,534 - scraper - WARNING - Request attempt 3 failed: 403 Client Error: Forbidden for url: https://www.forexfactory.com/calendar?day=jul31.2025 - Status: No response
+2025-10-20 14:49:22,534 - scraper - ERROR - All 3 attempts failed for https://www.forexfactory.com/calendar?day=jul31.2025
+2025-10-20 14:49:31,987 - scraper - WARNING - Got 403 on attempt 1, trying different approach...
+2025-10-20 14:49:39,544 - scraper - WARNING - Got 403 on attempt 2, trying different approach...
+2025-10-20 15:10:45,785 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-20 15:10:45,785 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 15:10:45,785 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 15:10:45,785 - __main__ - INFO - Scraping events from 2025-10-13 to 2025-10-27
+2025-10-20 15:10:45,785 - __main__ - INFO - Starting data scraping...
+2025-10-20 15:10:45,785 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-20 15:10:45,785 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-20 15:10:45,785 - WDM - INFO - ====== WebDriver manager ======
+2025-10-20 15:10:46,702 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 15:10:46,996 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 15:10:47,246 - WDM - INFO - There is no [win64] chromedriver "141.0.7390.78" for browser google-chrome "141.0.7390" in cache
+2025-10-20 15:10:47,246 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 15:10:47,920 - WDM - INFO - WebDriver version 141.0.7390.78 selected
+2025-10-20 15:10:47,920 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.78/win32/chromedriver-win32.zip
+2025-10-20 15:10:47,920 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.78/win32/chromedriver-win32.zip
+2025-10-20 15:10:48,197 - WDM - INFO - Driver downloading response is 200
+2025-10-20 15:10:48,290 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 15:10:49,403 - WDM - INFO - Driver has been saved in cache [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78]
+2025-10-20 15:10:49,403 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-20 15:10:52,498 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-20 15:10:59,239 - scraper - INFO - Scraped 11 events for oct13.2025
+2025-10-20 15:11:37,418 - scraper - WARNING - No calendar table found for oct14.2025
+2025-10-20 15:12:15,486 - scraper - WARNING - No calendar table found for oct15.2025
+2025-10-20 15:12:53,155 - scraper - WARNING - No calendar table found for oct16.2025
+2025-10-20 15:13:33,841 - scraper - WARNING - No calendar table found for oct17.2025
+2025-10-20 15:14:13,367 - scraper - WARNING - No calendar table found for oct18.2025
+2025-10-20 15:14:16,813 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a d˚ Ítre fermÈe par líhÙte distant', None, 10054, None)': /session/b86581a21cf971a85fbb45375fce4e1f
+2025-10-20 15:14:25,808 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 15:14:25,809 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 15:14:25,809 - __main__ - INFO - Scraping events from 2025-07-22 to 2026-01-18
+2025-10-20 15:14:25,809 - __main__ - INFO - Starting data scraping...
+2025-10-20 15:14:25,809 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-20 15:14:25,810 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-20 15:14:25,810 - WDM - INFO - ====== WebDriver manager ======
+2025-10-20 15:14:26,986 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 15:14:27,339 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 15:14:27,633 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-20 15:14:27,634 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-20 15:14:28,889 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-20 15:14:35,344 - scraper - INFO - Scraped 7 events for jul22.2025
+2025-10-20 15:15:09,388 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a d˚ Ítre fermÈe par líhÙte distant', None, 10054, None)': /session/b7eb8f2e8464dfbf54201a1890c9d17b
+2025-10-20 15:15:13,460 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020C1C4A4510>: Failed to establish a new connection: [WinError 10061] Aucune connexion nía pu Ítre Ètablie car líordinateur cible lía expressÈment refusÈe')': /session/b7eb8f2e8464dfbf54201a1890c9d17b
+2025-10-20 15:15:17,539 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020C1C4A48D0>: Failed to establish a new connection: [WinError 10061] Aucune connexion nía pu Ítre Ètablie car líordinateur cible lía expressÈment refusÈe')': /session/b7eb8f2e8464dfbf54201a1890c9d17b
+2025-10-20 15:17:50,978 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-20 15:17:50,978 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 15:17:50,978 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 15:17:50,978 - __main__ - INFO - Scraping events from 2025-10-13 to 2025-10-27
+2025-10-20 15:17:50,978 - __main__ - INFO - Starting data scraping...
+2025-10-20 15:17:50,978 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-20 15:17:50,978 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-20 15:17:50,978 - WDM - INFO - ====== WebDriver manager ======
+2025-10-20 15:17:52,012 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 15:17:52,313 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 15:17:52,622 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-20 15:17:52,622 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-20 15:17:53,781 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-20 15:17:53,781 - scraper - INFO - Starting scrape from 2025-10-13 to 2025-10-27
+2025-10-20 15:17:53,781 - scraper - INFO - Total days in range: 15, estimated weekend days to skip: ~4
+2025-10-20 15:18:00,588 - scraper - INFO - Scraped 11 events for oct13.2025
+2025-10-20 15:18:39,310 - scraper - WARNING - No calendar table found for oct14.2025
+2025-10-20 15:19:17,627 - scraper - WARNING - No calendar table found for oct15.2025
+2025-10-20 15:19:54,361 - scraper - WARNING - No calendar table found for oct16.2025
+2025-10-20 15:20:32,450 - scraper - WARNING - No calendar table found for oct17.2025
+2025-10-20 15:21:08,973 - scraper - WARNING - No calendar table found for oct20.2025
+2025-10-20 15:21:45,624 - scraper - WARNING - No calendar table found for oct21.2025
+2025-10-20 15:22:14,754 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a d˚ Ítre fermÈe par líhÙte distant', None, 10054, None)': /session/909d8bcf233492c276b42546ed2f67d5
+2025-10-20 15:22:35,378 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-20 15:22:35,378 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 15:22:35,378 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 15:22:35,378 - __main__ - INFO - Scraping events from 2025-10-13 to 2025-10-27
+2025-10-20 15:22:35,378 - __main__ - INFO - Starting data scraping...
+2025-10-20 15:22:35,378 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-20 15:22:35,378 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-20 15:22:35,378 - WDM - INFO - ====== WebDriver manager ======
+2025-10-20 15:22:36,796 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 15:22:37,195 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 15:22:37,572 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-20 15:22:37,574 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-20 15:22:39,002 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-20 15:22:39,010 - scraper - INFO - Starting scrape from 2025-10-13 to 2025-10-27
+2025-10-20 15:22:39,012 - scraper - INFO - Total days in range: 15, estimated weekend days to skip: ~4
+2025-10-20 15:22:46,461 - scraper - INFO - Scraped 11 events for oct13.2025
+2025-10-20 15:23:23,879 - scraper - WARNING - No calendar table found for oct14.2025
+2025-10-20 15:24:03,162 - scraper - WARNING - No calendar table found for oct15.2025
+2025-10-20 15:24:43,386 - scraper - WARNING - No calendar table found for oct16.2025
+2025-10-20 15:25:21,913 - scraper - WARNING - No calendar table found for oct17.2025
+2025-10-20 15:26:00,162 - scraper - WARNING - No calendar table found for oct20.2025
+2025-10-20 15:26:35,690 - scraper - WARNING - No calendar table found for oct21.2025
+2025-10-20 15:27:11,609 - scraper - WARNING - No calendar table found for oct22.2025
+2025-10-20 15:27:47,446 - scraper - WARNING - No calendar table found for oct23.2025
+2025-10-20 15:28:25,052 - scraper - WARNING - No calendar table found for oct24.2025
+2025-10-20 15:29:03,685 - scraper - WARNING - No calendar table found for oct27.2025
+2025-10-20 15:29:07,447 - scraper - INFO - ============================================================
+2025-10-20 15:29:07,447 - scraper - INFO - SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-20 15:29:07,447 - scraper - INFO - ============================================================
+2025-10-20 15:29:07,486 - scraper - INFO - ============================================================
+2025-10-20 15:29:09,707 - __main__ - INFO - Scraped 11 events
+2025-10-20 15:29:09,707 - __main__ - INFO - Mapping events to trading pairs...
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: All Day
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 15:29:09,707 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 15:29:09,707 - symbol_mapper - INFO - Mapped 11 events with trading pairs
+2025-10-20 15:29:09,707 - __main__ - INFO - Mapped 11 events with trading pairs
+2025-10-20 15:29:09,707 - __main__ - INFO - Exporting events to CSV...
+2025-10-20 15:29:09,742 - csv_exporter - INFO - ==================================================
+2025-10-20 15:29:09,742 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-20 15:29:09,742 - csv_exporter - INFO - ==================================================
+2025-10-20 15:29:09,769 - csv_exporter - INFO - Impact Distribution:
+2025-10-20 15:29:09,769 - csv_exporter - INFO -   Low: 11 (100.0%)
+2025-10-20 15:29:09,769 - csv_exporter - INFO - Top Currencies:
+2025-10-20 15:29:09,770 - csv_exporter - INFO -   : 10
+2025-10-20 15:29:09,772 - csv_exporter - INFO -   All Day: 1
+2025-10-20 15:29:09,772 - csv_exporter - INFO - ==================================================
+2025-10-20 15:29:09,778 - csv_exporter - INFO - Exported 11 events to output/economic_events.csv
+2025-10-20 15:29:09,779 - __main__ - INFO - Pipeline completed successfully
+2025-10-20 15:29:09,779 - __main__ - INFO - Exported 11 events to CSV
+2025-10-20 15:29:09,780 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-20 16:01:40,397 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-20 16:01:40,397 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 16:01:40,397 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 16:01:40,399 - __main__ - INFO - Scraping events from 2025-10-13 to 2025-10-27
+2025-10-20 16:01:40,399 - __main__ - INFO - Starting data scraping...
+2025-10-20 16:01:40,399 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-20 16:01:40,399 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-20 16:01:40,399 - WDM - INFO - ====== WebDriver manager ======
+2025-10-20 16:01:41,797 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 16:01:42,232 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 16:01:42,763 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-20 16:01:42,763 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-20 16:01:45,793 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-20 16:01:45,793 - scraper - INFO - Starting scrape from 2025-10-13 to 2025-10-27
+2025-10-20 16:01:45,793 - scraper - INFO - Total days in range: 15, estimated weekend days to skip: ~4
+2025-10-20 16:01:52,911 - scraper - INFO - Scraped 11 events for oct13.2025
+2025-10-20 16:02:28,396 - scraper - WARNING - No calendar table found for oct14.2025
+2025-10-20 16:03:06,404 - scraper - WARNING - No calendar table found for oct15.2025
+2025-10-20 16:03:43,269 - scraper - WARNING - No calendar table found for oct16.2025
+2025-10-20 16:04:18,306 - scraper - WARNING - No calendar table found for oct17.2025
+2025-10-20 16:04:56,985 - scraper - WARNING - No calendar table found for oct20.2025
+2025-10-20 16:05:33,613 - scraper - WARNING - No calendar table found for oct21.2025
+2025-10-20 16:06:10,196 - scraper - WARNING - No calendar table found for oct22.2025
+2025-10-20 16:06:47,320 - scraper - WARNING - No calendar table found for oct23.2025
+2025-10-20 16:07:24,096 - scraper - WARNING - No calendar table found for oct24.2025
+2025-10-20 16:08:00,786 - scraper - WARNING - No calendar table found for oct27.2025
+2025-10-20 16:08:05,101 - scraper - INFO - ============================================================
+2025-10-20 16:08:05,101 - scraper - INFO - SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-20 16:08:05,101 - scraper - INFO - ============================================================
+2025-10-20 16:08:05,101 - scraper - INFO - [TOTAL] Total events found: 11
+2025-10-20 16:08:05,101 - scraper - INFO - [RANGE] Date range: 2025-10-13 to 2025-10-27
+2025-10-20 16:08:05,101 - scraper - INFO - [DAYS] Total days in range: 15
+2025-10-20 16:08:05,101 - scraper - INFO - [SKIPPED] Weekend days skipped: 4/15 (26.7%)
+2025-10-20 16:08:05,101 - scraper - INFO - [SUCCESS] Successful weekdays: 11/11 (100.0%)
+2025-10-20 16:08:05,101 - scraper - INFO - [FAILED] Failed days: 0
+2025-10-20 16:08:05,101 - scraper - INFO - [OPTIMIZATION] Efficiency gain: 26.7% fewer requests (weekend optimization)
+2025-10-20 16:08:05,101 - scraper - INFO - ============================================================
+2025-10-20 16:08:07,283 - __main__ - INFO - Scraped 11 events
+2025-10-20 16:08:07,284 - __main__ - INFO - Mapping events to trading pairs...
+2025-10-20 16:08:07,284 - symbol_mapper - WARNING - No mapping found for currency: All Day
+2025-10-20 16:08:07,286 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 16:08:07,286 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 16:08:07,286 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 16:08:07,288 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 16:08:07,288 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 16:08:07,289 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 16:08:07,289 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 16:08:07,289 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 16:08:07,290 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 16:08:07,290 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-20 16:08:07,290 - symbol_mapper - INFO - Mapped 11 events with trading pairs
+2025-10-20 16:08:07,291 - __main__ - INFO - Mapped 11 events with trading pairs
+2025-10-20 16:08:07,291 - __main__ - INFO - Exporting events to CSV...
+2025-10-20 16:08:07,318 - csv_exporter - INFO - ==================================================
+2025-10-20 16:08:07,318 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-20 16:08:07,318 - csv_exporter - INFO - ==================================================
+2025-10-20 16:08:07,318 - csv_exporter - INFO - [STATS] Total events: 11
+2025-10-20 16:08:07,319 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-20 16:08:07,319 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-20 16:08:07,319 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-20 16:08:07,319 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 10 (90.9%)
+2025-10-20 16:08:07,319 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 1 (9.1%)
+2025-10-20 16:08:07,320 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 4 (36.4%)
+2025-10-20 16:08:07,320 - csv_exporter - INFO - Impact Distribution:
+2025-10-20 16:08:07,320 - csv_exporter - INFO -   Low: 11 (100.0%)
+2025-10-20 16:08:07,320 - csv_exporter - INFO - Top Currencies:
+2025-10-20 16:08:07,320 - csv_exporter - INFO -   : 10
+2025-10-20 16:08:07,321 - csv_exporter - INFO -   All Day: 1
+2025-10-20 16:08:07,321 - csv_exporter - INFO - ==================================================
+2025-10-20 16:08:07,326 - csv_exporter - INFO - Exported 11 events to output/economic_events.csv
+2025-10-20 16:08:07,326 - __main__ - INFO - Pipeline completed successfully
+2025-10-20 16:08:07,326 - __main__ - INFO - Exported 11 events to CSV
+2025-10-20 16:08:07,326 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-20 16:23:04,148 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-20 16:23:04,148 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 16:23:04,148 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 16:23:04,148 - __main__ - INFO - Scraping events from 2025-10-13 to 2025-10-27
+2025-10-20 16:23:04,148 - __main__ - INFO - Starting data scraping...
+2025-10-20 16:23:04,148 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-20 16:23:04,159 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-20 16:23:04,159 - WDM - INFO - ====== WebDriver manager ======
+2025-10-20 16:23:05,211 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 16:23:05,533 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 16:23:05,818 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-20 16:23:05,818 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-20 16:23:06,913 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-20 16:23:06,913 - scraper - INFO - Starting scrape from 2025-10-13 to 2025-10-27
+2025-10-20 16:23:06,913 - scraper - INFO - Total days in range: 15, estimated weekend days to skip: ~4
+2025-10-20 16:23:14,595 - scraper - INFO - Scraped 11 events for oct13.2025 using JS data
+2025-10-20 16:23:24,917 - scraper - WARNING - No calendar data found in JavaScript for oct14.2025, falling back to HTML parsing
+2025-10-20 16:23:55,170 - scraper - ERROR - Error in HTML fallback parsing for oct14.2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfdc48]
+	(No symbol) [0x0x148704]
+	(No symbol) [0x0x148aab]
+	(No symbol) [0x0x18f482]
+	(No symbol) [0x0x16b214]
+	(No symbol) [0x0x18cba7]
+	(No symbol) [0x0x16afc6]
+	(No symbol) [0x0x13c2ca]
+	(No symbol) [0x0x13d154]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	GetHandleVerifier [0x0x318198+100072]
+	GetHandleVerifier [0x0x318330+100480]
+	GetHandleVerifier [0x0x3025ea+11066]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:23:55,175 - scraper - INFO - HTML Fallback: Scraped 0 events for oct14.2025
+2025-10-20 16:24:05,063 - scraper - WARNING - No calendar data found in JavaScript for oct15.2025, falling back to HTML parsing
+2025-10-20 16:24:35,256 - scraper - ERROR - Error in HTML fallback parsing for oct15.2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfdc48]
+	(No symbol) [0x0x148704]
+	(No symbol) [0x0x148aab]
+	(No symbol) [0x0x18f482]
+	(No symbol) [0x0x16b214]
+	(No symbol) [0x0x18cba7]
+	(No symbol) [0x0x16afc6]
+	(No symbol) [0x0x13c2ca]
+	(No symbol) [0x0x13d154]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	GetHandleVerifier [0x0x318198+100072]
+	GetHandleVerifier [0x0x318330+100480]
+	GetHandleVerifier [0x0x3025ea+11066]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:24:35,257 - scraper - INFO - HTML Fallback: Scraped 0 events for oct15.2025
+2025-10-20 16:24:45,729 - scraper - WARNING - No calendar data found in JavaScript for oct16.2025, falling back to HTML parsing
+2025-10-20 16:25:15,825 - scraper - ERROR - Error in HTML fallback parsing for oct16.2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfdc48]
+	(No symbol) [0x0x148704]
+	(No symbol) [0x0x148aab]
+	(No symbol) [0x0x18f482]
+	(No symbol) [0x0x16b214]
+	(No symbol) [0x0x18cba7]
+	(No symbol) [0x0x16afc6]
+	(No symbol) [0x0x13c2ca]
+	(No symbol) [0x0x13d154]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	GetHandleVerifier [0x0x318198+100072]
+	GetHandleVerifier [0x0x318330+100480]
+	GetHandleVerifier [0x0x3025ea+11066]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:25:15,825 - scraper - INFO - HTML Fallback: Scraped 0 events for oct16.2025
+2025-10-20 16:25:27,720 - scraper - WARNING - No calendar data found in JavaScript for oct17.2025, falling back to HTML parsing
+2025-10-20 16:25:57,967 - scraper - ERROR - Error in HTML fallback parsing for oct17.2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfdc48]
+	(No symbol) [0x0x148704]
+	(No symbol) [0x0x148aab]
+	(No symbol) [0x0x18f482]
+	(No symbol) [0x0x16b214]
+	(No symbol) [0x0x18cba7]
+	(No symbol) [0x0x16afc6]
+	(No symbol) [0x0x13c2ca]
+	(No symbol) [0x0x13d154]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	GetHandleVerifier [0x0x318198+100072]
+	GetHandleVerifier [0x0x318330+100480]
+	GetHandleVerifier [0x0x3025ea+11066]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:25:57,967 - scraper - INFO - HTML Fallback: Scraped 0 events for oct17.2025
+2025-10-20 16:26:07,398 - scraper - WARNING - No calendar data found in JavaScript for oct20.2025, falling back to HTML parsing
+2025-10-20 16:26:37,596 - scraper - ERROR - Error in HTML fallback parsing for oct20.2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfdc48]
+	(No symbol) [0x0x148704]
+	(No symbol) [0x0x148aab]
+	(No symbol) [0x0x18f482]
+	(No symbol) [0x0x16b214]
+	(No symbol) [0x0x18cba7]
+	(No symbol) [0x0x16afc6]
+	(No symbol) [0x0x13c2ca]
+	(No symbol) [0x0x13d154]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	GetHandleVerifier [0x0x318198+100072]
+	GetHandleVerifier [0x0x318330+100480]
+	GetHandleVerifier [0x0x3025ea+11066]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:26:37,596 - scraper - INFO - HTML Fallback: Scraped 0 events for oct20.2025
+2025-10-20 16:26:47,959 - scraper - WARNING - No calendar data found in JavaScript for oct21.2025, falling back to HTML parsing
+2025-10-20 16:27:18,130 - scraper - ERROR - Error in HTML fallback parsing for oct21.2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfdc48]
+	(No symbol) [0x0x148704]
+	(No symbol) [0x0x148aab]
+	(No symbol) [0x0x18f482]
+	(No symbol) [0x0x16b214]
+	(No symbol) [0x0x18cba7]
+	(No symbol) [0x0x16afc6]
+	(No symbol) [0x0x13c2ca]
+	(No symbol) [0x0x13d154]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	GetHandleVerifier [0x0x318198+100072]
+	GetHandleVerifier [0x0x318330+100480]
+	GetHandleVerifier [0x0x3025ea+11066]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:27:18,132 - scraper - INFO - HTML Fallback: Scraped 0 events for oct21.2025
+2025-10-20 16:27:26,558 - scraper - WARNING - No calendar data found in JavaScript for oct22.2025, falling back to HTML parsing
+2025-10-20 16:27:56,704 - scraper - ERROR - Error in HTML fallback parsing for oct22.2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfdc48]
+	(No symbol) [0x0x148704]
+	(No symbol) [0x0x148aab]
+	(No symbol) [0x0x18f482]
+	(No symbol) [0x0x16b214]
+	(No symbol) [0x0x18cba7]
+	(No symbol) [0x0x16afc6]
+	(No symbol) [0x0x13c2ca]
+	(No symbol) [0x0x13d154]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	GetHandleVerifier [0x0x318198+100072]
+	GetHandleVerifier [0x0x318330+100480]
+	GetHandleVerifier [0x0x3025ea+11066]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:27:56,704 - scraper - INFO - HTML Fallback: Scraped 0 events for oct22.2025
+2025-10-20 16:28:07,000 - scraper - WARNING - No calendar data found in JavaScript for oct23.2025, falling back to HTML parsing
+2025-10-20 16:28:37,277 - scraper - ERROR - Error in HTML fallback parsing for oct23.2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfdc48]
+	(No symbol) [0x0x148704]
+	(No symbol) [0x0x148aab]
+	(No symbol) [0x0x18f482]
+	(No symbol) [0x0x16b214]
+	(No symbol) [0x0x18cba7]
+	(No symbol) [0x0x16afc6]
+	(No symbol) [0x0x13c2ca]
+	(No symbol) [0x0x13d154]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	GetHandleVerifier [0x0x318198+100072]
+	GetHandleVerifier [0x0x318330+100480]
+	GetHandleVerifier [0x0x3025ea+11066]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:28:37,277 - scraper - INFO - HTML Fallback: Scraped 0 events for oct23.2025
+2025-10-20 16:28:47,273 - scraper - WARNING - No calendar data found in JavaScript for oct24.2025, falling back to HTML parsing
+2025-10-20 16:29:17,554 - scraper - ERROR - Error in HTML fallback parsing for oct24.2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfdc48]
+	(No symbol) [0x0x148704]
+	(No symbol) [0x0x148aab]
+	(No symbol) [0x0x18f482]
+	(No symbol) [0x0x16b214]
+	(No symbol) [0x0x18cba7]
+	(No symbol) [0x0x16afc6]
+	(No symbol) [0x0x13c2ca]
+	(No symbol) [0x0x13d154]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	GetHandleVerifier [0x0x318198+100072]
+	GetHandleVerifier [0x0x318330+100480]
+	GetHandleVerifier [0x0x3025ea+11066]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:29:17,554 - scraper - INFO - HTML Fallback: Scraped 0 events for oct24.2025
+2025-10-20 16:29:28,162 - scraper - WARNING - No calendar data found in JavaScript for oct27.2025, falling back to HTML parsing
+2025-10-20 16:29:58,457 - scraper - ERROR - Error in HTML fallback parsing for oct27.2025: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfdc48]
+	(No symbol) [0x0x148704]
+	(No symbol) [0x0x148aab]
+	(No symbol) [0x0x18f482]
+	(No symbol) [0x0x16b214]
+	(No symbol) [0x0x18cba7]
+	(No symbol) [0x0x16afc6]
+	(No symbol) [0x0x13c2ca]
+	(No symbol) [0x0x13d154]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	GetHandleVerifier [0x0x318198+100072]
+	GetHandleVerifier [0x0x318330+100480]
+	GetHandleVerifier [0x0x3025ea+11066]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:29:58,458 - scraper - INFO - HTML Fallback: Scraped 0 events for oct27.2025
+2025-10-20 16:30:03,431 - scraper - INFO - ============================================================
+2025-10-20 16:30:03,431 - scraper - INFO - SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-20 16:30:03,431 - scraper - INFO - ============================================================
+2025-10-20 16:30:03,431 - scraper - INFO - [TOTAL] Total events found: 11
+2025-10-20 16:30:03,431 - scraper - INFO - [RANGE] Date range: 2025-10-13 to 2025-10-27
+2025-10-20 16:30:03,431 - scraper - INFO - [DAYS] Total days in range: 15
+2025-10-20 16:30:03,433 - scraper - INFO - [SKIPPED] Weekend days skipped: 4/15 (26.7%)
+2025-10-20 16:30:03,433 - scraper - INFO - [SUCCESS] Successful weekdays: 11/11 (100.0%)
+2025-10-20 16:30:03,433 - scraper - INFO - [FAILED] Failed days: 0
+2025-10-20 16:30:03,433 - scraper - INFO - [OPTIMIZATION] Efficiency gain: 26.7% fewer requests (weekend optimization)
+2025-10-20 16:30:03,433 - scraper - INFO - ============================================================
+2025-10-20 16:30:05,647 - __main__ - INFO - Scraped 11 events
+2025-10-20 16:30:05,648 - __main__ - INFO - Mapping events to trading pairs...
+2025-10-20 16:30:05,648 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-20 16:30:05,649 - symbol_mapper - INFO - Mapped 11 events with trading pairs
+2025-10-20 16:30:05,649 - __main__ - INFO - Mapped 11 events with trading pairs
+2025-10-20 16:30:05,649 - __main__ - INFO - Exporting events to CSV...
+2025-10-20 16:30:05,669 - csv_exporter - INFO - ==================================================
+2025-10-20 16:30:05,670 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-20 16:30:05,670 - csv_exporter - INFO - ==================================================
+2025-10-20 16:30:05,670 - csv_exporter - INFO - [STATS] Total events: 11
+2025-10-20 16:30:05,671 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-20 16:30:05,671 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-20 16:30:05,671 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-20 16:30:05,672 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-20 16:30:05,672 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-20 16:30:05,672 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-20 16:30:05,673 - csv_exporter - INFO - Impact Distribution:
+2025-10-20 16:30:05,673 - csv_exporter - INFO -   Low: 11 (100.0%)
+2025-10-20 16:30:05,673 - csv_exporter - INFO - Top Currencies:
+2025-10-20 16:30:05,673 - csv_exporter - INFO -   GBP: 3
+2025-10-20 16:30:05,674 - csv_exporter - INFO -   USD: 2
+2025-10-20 16:30:05,674 - csv_exporter - INFO -   CNY: 2
+2025-10-20 16:30:05,674 - csv_exporter - INFO -   EUR: 1
+2025-10-20 16:30:05,675 - csv_exporter - INFO -   JPY: 1
+2025-10-20 16:30:05,675 - csv_exporter - INFO -   CAD: 1
+2025-10-20 16:30:05,675 - csv_exporter - INFO -   All: 1
+2025-10-20 16:30:05,676 - csv_exporter - INFO - ==================================================
+2025-10-20 16:30:05,681 - csv_exporter - INFO - Exported 11 events to output/economic_events.csv
+2025-10-20 16:30:05,681 - __main__ - INFO - Pipeline completed successfully
+2025-10-20 16:30:05,682 - __main__ - INFO - Exported 11 events to CSV
+2025-10-20 16:30:05,682 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-20 16:49:42,319 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-20 16:49:42,320 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 16:49:42,320 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 16:49:42,320 - __main__ - INFO - Scraping events from 2025-10-13 to 2025-10-27
+2025-10-20 16:49:42,320 - __main__ - INFO - Starting data scraping...
+2025-10-20 16:49:42,320 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-20 16:49:42,320 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-20 16:49:42,320 - WDM - INFO - ====== WebDriver manager ======
+2025-10-20 16:49:43,233 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 16:49:43,604 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 16:49:43,867 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-20 16:49:43,867 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-20 16:49:45,639 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-20 16:49:45,639 - scraper - INFO - Starting scrape from 2025-10-13 to 2025-10-27
+2025-10-20 16:49:45,639 - scraper - INFO - Total days in range: 15, estimated weekend days to skip: ~4
+2025-10-20 16:49:52,757 - scraper - INFO - Scraped 11 events for oct13.2025 using JS data
+2025-10-20 16:50:12,348 - scraper - WARNING - Final JS debug info: {'allGlobalVars': [], 'calendarComponentStatesDefined': False, 'calendarComponentStatesValue': None, 'windowDefined': True}
+2025-10-20 16:50:12,348 - scraper - WARNING - calendarComponentStates not found in JavaScript after all attempts
+2025-10-20 16:50:12,348 - scraper - WARNING - No calendar data found in JavaScript for oct14.2025, falling back to HTML parsing
+2025-10-20 16:50:42,813 - scraper - WARNING - Calendar table not found within timeout for oct14.2025
+2025-10-20 16:51:01,214 - scraper - WARNING - Final JS debug info: {'allGlobalVars': [], 'calendarComponentStatesDefined': False, 'calendarComponentStatesValue': None, 'windowDefined': True}
+2025-10-20 16:51:01,214 - scraper - WARNING - calendarComponentStates not found in JavaScript after all attempts
+2025-10-20 16:51:01,214 - scraper - WARNING - No calendar data found in JavaScript for oct15.2025, falling back to HTML parsing
+2025-10-20 16:51:31,283 - scraper - WARNING - Calendar table not found within timeout for oct15.2025
+2025-10-20 16:51:50,846 - scraper - WARNING - Final JS debug info: {'allGlobalVars': [], 'calendarComponentStatesDefined': False, 'calendarComponentStatesValue': None, 'windowDefined': True}
+2025-10-20 16:51:50,846 - scraper - WARNING - calendarComponentStates not found in JavaScript after all attempts
+2025-10-20 16:51:50,846 - scraper - WARNING - No calendar data found in JavaScript for oct16.2025, falling back to HTML parsing
+2025-10-20 16:52:21,324 - scraper - WARNING - Calendar table not found within timeout for oct16.2025
+2025-10-20 16:52:40,403 - scraper - WARNING - Final JS debug info: {'allGlobalVars': [], 'calendarComponentStatesDefined': False, 'calendarComponentStatesValue': None, 'windowDefined': True}
+2025-10-20 16:52:40,403 - scraper - WARNING - calendarComponentStates not found in JavaScript after all attempts
+2025-10-20 16:52:40,403 - scraper - WARNING - No calendar data found in JavaScript for oct17.2025, falling back to HTML parsing
+2025-10-20 16:53:10,842 - scraper - WARNING - Calendar table not found within timeout for oct17.2025
+2025-10-20 16:53:29,830 - scraper - WARNING - Final JS debug info: {'allGlobalVars': [], 'calendarComponentStatesDefined': False, 'calendarComponentStatesValue': None, 'windowDefined': True}
+2025-10-20 16:53:29,830 - scraper - WARNING - calendarComponentStates not found in JavaScript after all attempts
+2025-10-20 16:53:29,830 - scraper - WARNING - No calendar data found in JavaScript for oct20.2025, falling back to HTML parsing
+2025-10-20 16:54:00,220 - scraper - WARNING - Calendar table not found within timeout for oct20.2025
+2025-10-20 16:54:21,781 - scraper - WARNING - Final JS debug info: {'allGlobalVars': [], 'calendarComponentStatesDefined': False, 'calendarComponentStatesValue': None, 'windowDefined': True}
+2025-10-20 16:54:21,781 - scraper - WARNING - calendarComponentStates not found in JavaScript after all attempts
+2025-10-20 16:54:21,781 - scraper - WARNING - No calendar data found in JavaScript for oct21.2025, falling back to HTML parsing
+2025-10-20 16:54:51,873 - scraper - WARNING - Calendar table not found within timeout for oct21.2025
+2025-10-20 16:55:11,296 - scraper - WARNING - Final JS debug info: {'allGlobalVars': [], 'calendarComponentStatesDefined': False, 'calendarComponentStatesValue': None, 'windowDefined': True}
+2025-10-20 16:55:11,296 - scraper - WARNING - calendarComponentStates not found in JavaScript after all attempts
+2025-10-20 16:55:11,296 - scraper - WARNING - No calendar data found in JavaScript for oct22.2025, falling back to HTML parsing
+2025-10-20 16:55:41,346 - scraper - WARNING - Calendar table not found within timeout for oct22.2025
+2025-10-20 16:56:02,834 - scraper - WARNING - Final JS debug info: {'allGlobalVars': [], 'calendarComponentStatesDefined': False, 'calendarComponentStatesValue': None, 'windowDefined': True}
+2025-10-20 16:56:02,835 - scraper - WARNING - calendarComponentStates not found in JavaScript after all attempts
+2025-10-20 16:56:02,835 - scraper - WARNING - No calendar data found in JavaScript for oct23.2025, falling back to HTML parsing
+2025-10-20 16:56:33,162 - scraper - WARNING - Calendar table not found within timeout for oct23.2025
+2025-10-20 16:56:51,645 - scraper - WARNING - Final JS debug info: {'allGlobalVars': [], 'calendarComponentStatesDefined': False, 'calendarComponentStatesValue': None, 'windowDefined': True}
+2025-10-20 16:56:51,645 - scraper - WARNING - calendarComponentStates not found in JavaScript after all attempts
+2025-10-20 16:56:51,645 - scraper - WARNING - No calendar data found in JavaScript for oct24.2025, falling back to HTML parsing
+2025-10-20 16:57:21,981 - scraper - WARNING - Calendar table not found within timeout for oct24.2025
+2025-10-20 16:57:39,475 - scraper - WARNING - Final JS debug info: {'allGlobalVars': [], 'calendarComponentStatesDefined': False, 'calendarComponentStatesValue': None, 'windowDefined': True}
+2025-10-20 16:57:39,475 - scraper - WARNING - calendarComponentStates not found in JavaScript after all attempts
+2025-10-20 16:57:39,475 - scraper - WARNING - No calendar data found in JavaScript for oct27.2025, falling back to HTML parsing
+2025-10-20 16:58:09,860 - scraper - WARNING - Calendar table not found within timeout for oct27.2025
+2025-10-20 16:58:13,037 - scraper - INFO - ============================================================
+2025-10-20 16:58:13,037 - scraper - INFO - SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-20 16:58:13,037 - scraper - INFO - ============================================================
+2025-10-20 16:58:13,037 - scraper - INFO - [TOTAL] Total events found: 11
+2025-10-20 16:58:13,037 - scraper - INFO - [RANGE] Date range: 2025-10-13 to 2025-10-27
+2025-10-20 16:58:13,037 - scraper - INFO - [DAYS] Total days in range: 15
+2025-10-20 16:58:13,037 - scraper - INFO - [SKIPPED] Weekend days skipped: 4/15 (26.7%)
+2025-10-20 16:58:13,037 - scraper - INFO - [SUCCESS] Successful weekdays: 11/11 (100.0%)
+2025-10-20 16:58:13,037 - scraper - INFO - [FAILED] Failed days: 0
+2025-10-20 16:58:13,037 - scraper - INFO - [OPTIMIZATION] Efficiency gain: 26.7% fewer requests (weekend optimization)
+2025-10-20 16:58:13,037 - scraper - INFO - ============================================================
+2025-10-20 16:58:15,264 - __main__ - INFO - Scraped 11 events
+2025-10-20 16:58:15,264 - __main__ - INFO - Mapping events to trading pairs...
+2025-10-20 16:58:15,264 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-20 16:58:15,264 - symbol_mapper - INFO - Mapped 11 events with trading pairs
+2025-10-20 16:58:15,264 - __main__ - INFO - Mapped 11 events with trading pairs
+2025-10-20 16:58:15,264 - __main__ - INFO - Exporting events to CSV...
+2025-10-20 16:58:15,291 - csv_exporter - INFO - ==================================================
+2025-10-20 16:58:15,291 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-20 16:58:15,291 - csv_exporter - INFO - ==================================================
+2025-10-20 16:58:15,291 - csv_exporter - INFO - [STATS] Total events: 11
+2025-10-20 16:58:15,291 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-20 16:58:15,291 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-20 16:58:15,291 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-20 16:58:15,291 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-20 16:58:15,291 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-20 16:58:15,291 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-20 16:58:15,291 - csv_exporter - INFO - Impact Distribution:
+2025-10-20 16:58:15,291 - csv_exporter - INFO -   Low: 11 (100.0%)
+2025-10-20 16:58:15,295 - csv_exporter - INFO - Top Currencies:
+2025-10-20 16:58:15,295 - csv_exporter - INFO -   GBP: 3
+2025-10-20 16:58:15,295 - csv_exporter - INFO -   USD: 2
+2025-10-20 16:58:15,295 - csv_exporter - INFO -   CNY: 2
+2025-10-20 16:58:15,295 - csv_exporter - INFO -   EUR: 1
+2025-10-20 16:58:15,295 - csv_exporter - INFO -   JPY: 1
+2025-10-20 16:58:15,295 - csv_exporter - INFO -   CAD: 1
+2025-10-20 16:58:15,296 - csv_exporter - INFO -   All: 1
+2025-10-20 16:58:15,296 - csv_exporter - INFO - ==================================================
+2025-10-20 16:58:15,300 - csv_exporter - INFO - Exported 11 events to output/economic_events.csv
+2025-10-20 16:58:15,302 - __main__ - INFO - Pipeline completed successfully
+2025-10-20 16:58:15,302 - __main__ - INFO - Exported 11 events to CSV
+2025-10-20 16:58:15,302 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-20 16:58:31,078 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-20 16:58:31,078 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 16:58:31,078 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 16:58:31,078 - __main__ - INFO - Scraping events from 2025-10-13 to 2025-10-27
+2025-10-20 16:58:31,078 - __main__ - INFO - Starting data scraping...
+2025-10-20 16:58:31,091 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-20 16:58:31,091 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-20 16:58:31,091 - WDM - INFO - ====== WebDriver manager ======
+2025-10-20 16:58:32,036 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 16:58:32,316 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 16:58:32,595 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-20 16:58:32,595 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-20 16:58:33,782 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-20 16:58:33,783 - scraper - INFO - Starting scrape from 2025-10-13 to 2025-10-27
+2025-10-20 16:58:33,783 - scraper - INFO - Total days in range: 15, estimated weekend days to skip: ~4
+2025-10-20 16:58:43,040 - scraper - INFO - Scraped 11 events for oct13.2025 using JS data
+2025-10-20 16:58:51,869 - scraper - WARNING - Hit human verification page for https://www.forexfactory.com/calendar?day=oct14.2025. Waiting for automatic resolution...
+2025-10-20 16:59:22,066 - scraper - INFO - Human verification completed automatically after 25s
+2025-10-20 16:59:25,414 - scraper - WARNING - WebDriver error loading https://www.forexfactory.com/calendar?day=oct14.2025: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x30fe83+66515]
+	GetHandleVerifier [0x0x30fec4+66580]
+	(No symbol) [0x0xfda6b]
+	(No symbol) [0x0x13b5ab]
+	(No symbol) [0x0x16b086]
+	(No symbol) [0x0x16667c]
+	(No symbol) [0x0x165bf3]
+	(No symbol) [0x0xce72d]
+	(No symbol) [0x0xcecae]
+	(No symbol) [0x0xcf14d]
+	GetHandleVerifier [0x0x5673b3+2521347]
+	GetHandleVerifier [0x0x562333+2500739]
+	GetHandleVerifier [0x0x337cd4+229924]
+	GetHandleVerifier [0x0x328238+165768]
+	GetHandleVerifier [0x0x32eced+193085]
+	(No symbol) [0x0xce3e3]
+	(No symbol) [0x0xcdb60]
+	GetHandleVerifier [0x0x6ac26f+3852223]
+	BaseThreadInitThunk [0x0x76435d49+25]
+	RtlInitializeExceptionChain [0x0x7782d6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x7782d661+561]
+	(No symbol) [0x0]
+
+2025-10-20 16:59:25,891 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a d√ª √™tre ferm√©e par l‚Äôh√¥te distant', None, 10054, None)': /session/d0b672531eb4508e767f0e8e8b8f6023
+2025-10-20 17:01:55,296 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-20 17:01:55,297 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 17:01:55,297 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 17:01:55,297 - __main__ - INFO - Scraping events from 2025-10-13 to 2025-10-27
+2025-10-20 17:01:55,297 - __main__ - INFO - Starting data scraping...
+2025-10-20 17:01:55,298 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-20 17:01:55,298 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-20 17:01:55,298 - WDM - INFO - ====== WebDriver manager ======
+2025-10-20 17:01:56,594 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 17:01:57,099 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 17:01:57,683 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-20 17:01:57,684 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-20 17:01:59,066 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-20 17:01:59,067 - scraper - INFO - Starting scrape from 2025-10-13 to 2025-10-27
+2025-10-20 17:01:59,067 - scraper - INFO - Total days in range: 15, estimated weekend days to skip: ~4
+2025-10-20 17:02:10,060 - scraper - INFO - Scraped 11 events for oct13.2025 using JS data
+2025-10-20 17:02:18,380 - scraper - WARNING - Hit human verification page for https://www.forexfactory.com/calendar?day=oct14.2025. Waiting for automatic resolution...
+2025-10-20 17:03:18,664 - scraper - WARNING - Verification page did not resolve after 60s. Retrying...
+2025-10-20 17:03:37,371 - scraper - WARNING - Hit human verification page for https://www.forexfactory.com/calendar?day=oct14.2025. Waiting for automatic resolution...
+2025-10-20 17:04:17,244 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a d√ª √™tre ferm√©e par l‚Äôh√¥te distant', None, 10054, None)': /session/0dc308c78362502c1b55fdf0f332856f
+2025-10-20 17:05:00,504 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-20 17:05:00,504 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-20 17:05:00,505 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-20 17:05:00,505 - __main__ - INFO - Scraping events from 2025-10-13 to 2025-10-27
+2025-10-20 17:05:00,505 - __main__ - INFO - Starting data scraping...
+2025-10-20 17:05:00,505 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-20 17:05:00,505 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-20 17:05:00,506 - WDM - INFO - ====== WebDriver manager ======
+2025-10-20 17:05:01,422 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 17:05:01,733 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-20 17:05:02,021 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-20 17:05:02,022 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-20 17:05:03,196 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-20 17:05:03,196 - scraper - INFO - Starting scrape from 2025-10-13 to 2025-10-27
+2025-10-20 17:05:03,197 - scraper - INFO - Total days in range: 15, estimated weekend days to skip: ~4
+2025-10-20 17:05:54,476 - scraper - INFO - Scraped 11 events for oct13.2025 using JS data
+2025-10-20 17:06:10,621 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a d√ª √™tre ferm√©e par l‚Äôh√¥te distant', None, 10054, None)': /session/dd765fabc94383a0e36e0a8c84765905
+2025-10-21 11:53:39,754 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-21 11:53:39,755 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-21 11:53:39,755 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-21 11:53:39,756 - __main__ - INFO - Scraping events from 2025-10-14 to 2025-10-28
+2025-10-21 11:53:39,756 - __main__ - INFO - Starting data scraping...
+2025-10-21 11:53:39,756 - scraper - INFO - Setting up Chrome WebDriver with stealth mode...
+2025-10-21 11:53:39,756 - scraper - INFO - Using User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-10-21 11:53:39,756 - scraper - INFO - Initializing ChromeDriver...
+2025-10-21 11:53:39,756 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 11:53:40,929 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 11:53:41,422 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 11:53:41,878 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 11:53:43,391 - scraper - INFO - Applying stealth mode...
+2025-10-21 11:53:43,532 - scraper - INFO - ‚úÖ Chrome WebDriver with stealth mode initialized successfully
+2025-10-21 11:53:43,533 - scraper - INFO - Starting scrape from 2025-10-14 to 2025-10-28
+2025-10-21 11:53:43,533 - scraper - INFO - Total days in range: 14, estimated weekend days to skip: ~4
+2025-10-21 11:53:43,534 - scraper - INFO - üìÑ Page request #1: https://www.forexfactory.com/calendar?day=oct14.2025
+2025-10-21 11:54:39,872 - scraper - INFO - Scraped 22 events for oct14.2025 using JS data
+2025-10-21 11:54:53,330 - scraper - INFO - ‚è∞ [Anti-detection] Waiting 16.6s before next page request...
+2025-10-21 11:55:09,916 - scraper - INFO - üìÑ Page request #2: https://www.forexfactory.com/calendar?day=oct15.2025
+2025-10-21 11:55:57,558 - scraper - WARNING - Hit human verification page for https://www.forexfactory.com/calendar?day=oct15.2025. Waiting for automatic resolution...
+2025-10-21 11:55:57,558 - scraper - INFO - Starting verification wait: up to 300s with 15s intervals...
+2025-10-21 11:56:43,739 - scraper - INFO - Human verification completed automatically after 30s
+2025-10-21 11:56:58,751 - scraper - WARNING - WebDriver session became invalid: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x36fe83+66515]
+	GetHandleVerifier [0x0x36fec4+66580]
+	(No symbol) [0x0x15da6b]
+	(No symbol) [0x0x19b5ab]
+	(No symbol) [0x0x1cb086]
+	(No symbol) [0x0x1c667c]
+	(No symbol) [0x0x1c5bf3]
+	(No symbol) [0x0x12e72d]
+	(No symbol) [0x0x12ecae]
+	(No symbol) [0x0x12f14d]
+	GetHandleVerifier [0x0x5c73b3+2521347]
+	GetHandleVerifier [0x0x5c2333+2500739]
+	GetHandleVerifier [0x0x397cd4+229924]
+	GetHandleVerifier [0x0x388238+165768]
+	GetHandleVerifier [0x0x38eced+193085]
+	(No symbol) [0x0x12e3e3]
+	(No symbol) [0x0x12db60]
+	GetHandleVerifier [0x0x70c26f+3852223]
+	BaseThreadInitThunk [0x0x77865d49+25]
+	RtlInitializeExceptionChain [0x0x77dcd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x77dcd661+561]
+	(No symbol) [0x0]
+
+2025-10-21 11:56:58,754 - scraper - WARNING - Driver session became invalid after verification. Need to reinitialize.
+2025-10-21 11:56:58,756 - scraper - WARNING - Detected invalid WebDriver session. Attempting to reinitialize...
+2025-10-21 11:57:05,606 - scraper - INFO - Setting up Chrome WebDriver with stealth mode...
+2025-10-21 11:57:05,608 - scraper - INFO - Using User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-10-21 11:57:05,609 - scraper - INFO - Initializing ChromeDriver...
+2025-10-21 11:57:05,610 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 11:57:08,154 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 11:57:09,115 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 11:57:09,728 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 11:57:11,275 - scraper - INFO - Applying stealth mode...
+2025-10-21 12:07:38,668 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-21 12:07:38,668 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-21 12:07:38,668 - symbol_mapper - ERROR - Config file not found: config/config.json
+2025-10-21 12:07:38,669 - symbol_mapper - WARNING - Using default mappings due to config error
+2025-10-21 12:07:38,669 - __main__ - INFO - Scraping events from 2025-10-14 to 2025-10-28
+2025-10-21 12:07:38,669 - __main__ - INFO - Starting data scraping...
+2025-10-21 12:07:38,669 - scraper - INFO - Starting scrape from 2025-10-14 to 2025-10-28
+2025-10-21 12:07:38,670 - scraper - INFO - Total days in range: 14, estimated weekend days to skip: ~4
+2025-10-21 12:07:38,670 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 12:07:38,670 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 12:07:38,670 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 12:07:39,827 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 12:07:40,288 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 12:07:40,631 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 12:07:40,632 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 12:07:41,998 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 12:08:37,818 - scraper - INFO - Scraped 22 events for oct14.2025 using JS data
+2025-10-21 12:08:44,059 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 12:08:44,060 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 12:08:44,061 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 12:08:47,097 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 12:08:47,951 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 12:08:48,437 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 12:08:48,438 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 12:08:50,190 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 12:09:40,034 - scraper - INFO - Scraped 26 events for oct15.2025 using JS data
+2025-10-21 12:09:47,122 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 12:09:47,123 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 12:09:47,123 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 12:09:48,532 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 12:09:48,930 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 12:09:49,326 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 12:09:49,327 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 12:09:50,564 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 12:10:45,599 - scraper - INFO - Scraped 33 events for oct16.2025 using JS data
+2025-10-21 12:10:52,225 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 12:10:52,225 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 12:10:52,225 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 12:10:53,648 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 12:10:53,990 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 12:10:54,311 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 12:10:54,311 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 12:10:55,508 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 12:11:50,265 - scraper - INFO - Scraped 10 events for oct17.2025 using JS data
