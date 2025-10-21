@@ -117,12 +117,17 @@ def run_pipeline(config: Dict, scrape_only: bool = False) -> bool:
             retry_attempts=scraping_config.get('retry_attempts', 3),
             csv_exporter=csv_exporter,
             symbol_mapper=symbol_mapper,
-            headless=scraping_config.get('headless', True)  # Default to headless mode
+            headless=scraping_config.get('headless', True),  # Default to headless mode
+            max_range_months=scraping_config.get('max_range_months', 2)
         )
         
-        # Calculate date range
-        days_back = scraping_config.get('days_back', 90)
-        days_forward = scraping_config.get('days_forward', 90)
+        # Calculate date range using months instead of days
+        months_back = scraping_config.get('months_back', 3)
+        months_forward = scraping_config.get('months_forward', 3)
+        
+        # Convert months to approximate days for calculation (using 30 days per month)
+        days_back = months_back * 30
+        days_forward = months_forward * 30
         
         end_date = datetime.now() + timedelta(days=days_forward)
         start_date = datetime.now() - timedelta(days=days_back)
@@ -210,9 +215,10 @@ def main():
     
     # Test mode adjustment
     if args.test:
-        config['scraping']['days_back'] = 7
-        config['scraping']['days_forward'] = 7
-        logger.info("Test mode enabled: fetching 7 days back and forward")
+        # Use approximately 1 month for test mode instead of 7 days
+        config['scraping']['months_back'] = 1
+        config['scraping']['months_forward'] = 1
+        logger.info("Test mode enabled: fetching 1 month back and forward")
     
     # Headless mode adjustment
     if args.no_headless:

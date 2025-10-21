@@ -1101,3 +1101,490 @@ Stacktrace:
 2025-10-21 13:44:30,825 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
 2025-10-21 13:44:30,826 - scraper - INFO - Starting Chrome WebDriver...
 2025-10-21 13:44:32,024 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 13:45:20,715 - scraper - INFO - Scraped 22 events for oct14.2025 using JS data
+2025-10-21 13:45:20,814 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-21 13:45:20,814 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-21 13:45:20,819 - csv_exporter - INFO - ==================================================
+2025-10-21 13:45:20,819 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-21 13:45:20,819 - csv_exporter - INFO - ==================================================
+2025-10-21 13:45:20,820 - csv_exporter - INFO - [STATS] Total events: 22
+2025-10-21 13:45:20,820 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-21 13:45:20,821 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-21 13:45:20,821 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-21 13:45:20,821 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-21 13:45:20,822 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-21 13:45:20,822 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-21 13:45:20,822 - csv_exporter - INFO - Impact Distribution:
+2025-10-21 13:45:20,822 - csv_exporter - INFO -   Low: 22 (100.0%)
+2025-10-21 13:45:20,822 - csv_exporter - INFO - Top Currencies:
+2025-10-21 13:45:20,823 - csv_exporter - INFO -   GBP: 6
+2025-10-21 13:45:20,823 - csv_exporter - INFO -   USD: 5
+2025-10-21 13:45:20,823 - csv_exporter - INFO -   EUR: 3
+2025-10-21 13:45:20,823 - csv_exporter - INFO -   AUD: 3
+2025-10-21 13:45:20,823 - csv_exporter - INFO -   CAD: 2
+2025-10-21 13:45:20,824 - csv_exporter - INFO -   JPY: 1
+2025-10-21 13:45:20,824 - csv_exporter - INFO -   CHF: 1
+2025-10-21 13:45:20,824 - csv_exporter - INFO -   All: 1
+2025-10-21 13:45:20,824 - csv_exporter - INFO - ==================================================
+2025-10-21 13:45:20,831 - csv_exporter - INFO - Exported 22 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-21 13:45:20,831 - scraper - INFO - Saved 22 events from 2025-10-14 to CSV
+2025-10-21 13:45:26,494 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 13:45:26,494 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-21 13:45:26,494 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 13:45:26,495 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 13:45:27,672 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:45:27,987 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:45:28,323 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 13:45:28,324 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 13:45:29,566 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 13:46:23,453 - scraper - INFO - Scraped 26 events for oct15.2025 using JS data
+2025-10-21 13:46:23,559 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-21 13:46:23,559 - symbol_mapper - INFO - Mapped 26 events with trading pairs
+2025-10-21 13:46:23,563 - csv_exporter - INFO - ==================================================
+2025-10-21 13:46:23,564 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-21 13:46:23,564 - csv_exporter - INFO - ==================================================
+2025-10-21 13:46:23,564 - csv_exporter - INFO - [STATS] Total events: 26
+2025-10-21 13:46:23,564 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-21 13:46:23,565 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-21 13:46:23,565 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-21 13:46:23,565 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-21 13:46:23,565 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-21 13:46:23,565 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-21 13:46:23,566 - csv_exporter - INFO - Impact Distribution:
+2025-10-21 13:46:23,566 - csv_exporter - INFO -   Low: 26 (100.0%)
+2025-10-21 13:46:23,566 - csv_exporter - INFO - Top Currencies:
+2025-10-21 13:46:23,566 - csv_exporter - INFO -   USD: 7
+2025-10-21 13:46:23,567 - csv_exporter - INFO -   AUD: 4
+2025-10-21 13:46:23,567 - csv_exporter - INFO -   CNY: 4
+2025-10-21 13:46:23,567 - csv_exporter - INFO -   GBP: 3
+2025-10-21 13:46:23,567 - csv_exporter - INFO -   EUR: 3
+2025-10-21 13:46:23,567 - csv_exporter - INFO -   CAD: 2
+2025-10-21 13:46:23,568 - csv_exporter - INFO -   JPY: 1
+2025-10-21 13:46:23,568 - csv_exporter - INFO -   All: 1
+2025-10-21 13:46:23,568 - csv_exporter - INFO -   NZD: 1
+2025-10-21 13:46:23,568 - csv_exporter - INFO - ==================================================
+2025-10-21 13:46:23,575 - csv_exporter - INFO - Exported 48 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-21 13:46:23,576 - scraper - INFO - Saved 26 events from 2025-10-15 to CSV
+2025-10-21 13:46:29,873 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 13:46:29,873 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-21 13:46:29,873 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 13:46:29,873 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 13:46:30,849 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:46:31,178 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:46:31,482 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 13:46:31,483 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 13:46:32,819 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 13:47:26,013 - scraper - INFO - Scraped 33 events for oct16.2025 using JS data
+2025-10-21 13:47:26,128 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-21 13:47:26,128 - symbol_mapper - INFO - Mapped 33 events with trading pairs
+2025-10-21 13:47:26,132 - csv_exporter - INFO - ==================================================
+2025-10-21 13:47:26,132 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-21 13:47:26,132 - csv_exporter - INFO - ==================================================
+2025-10-21 13:47:26,133 - csv_exporter - INFO - [STATS] Total events: 33
+2025-10-21 13:47:26,133 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-21 13:47:26,133 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-21 13:47:26,133 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-21 13:47:26,134 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-21 13:47:26,134 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-21 13:47:26,134 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-21 13:47:26,134 - csv_exporter - INFO - Impact Distribution:
+2025-10-21 13:47:26,134 - csv_exporter - INFO -   Low: 33 (100.0%)
+2025-10-21 13:47:26,135 - csv_exporter - INFO - Top Currencies:
+2025-10-21 13:47:26,135 - csv_exporter - INFO -   GBP: 10
+2025-10-21 13:47:26,135 - csv_exporter - INFO -   USD: 10
+2025-10-21 13:47:26,135 - csv_exporter - INFO -   EUR: 5
+2025-10-21 13:47:26,135 - csv_exporter - INFO -   JPY: 2
+2025-10-21 13:47:26,136 - csv_exporter - INFO -   CAD: 2
+2025-10-21 13:47:26,136 - csv_exporter - INFO -   AUD: 2
+2025-10-21 13:47:26,136 - csv_exporter - INFO -   CHF: 1
+2025-10-21 13:47:26,136 - csv_exporter - INFO -   All: 1
+2025-10-21 13:47:26,136 - csv_exporter - INFO - ==================================================
+2025-10-21 13:47:26,141 - csv_exporter - INFO - Exported 81 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-21 13:47:26,142 - scraper - INFO - Saved 33 events from 2025-10-16 to CSV
+2025-10-21 13:47:30,857 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 13:47:30,858 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-21 13:47:30,858 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 13:47:30,858 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 13:47:31,816 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:47:32,250 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:47:32,571 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 13:47:32,572 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 13:47:33,741 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 13:48:20,696 - scraper - INFO - Scraped 10 events for oct17.2025 using JS data
+2025-10-21 13:48:20,756 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-21 13:48:20,757 - symbol_mapper - INFO - Mapped 10 events with trading pairs
+2025-10-21 13:48:20,760 - csv_exporter - INFO - ==================================================
+2025-10-21 13:48:20,760 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-21 13:48:20,760 - csv_exporter - INFO - ==================================================
+2025-10-21 13:48:20,761 - csv_exporter - INFO - [STATS] Total events: 10
+2025-10-21 13:48:20,761 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-21 13:48:20,761 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-21 13:48:20,761 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-21 13:48:20,761 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-21 13:48:20,761 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-21 13:48:20,762 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-21 13:48:20,762 - csv_exporter - INFO - Impact Distribution:
+2025-10-21 13:48:20,762 - csv_exporter - INFO -   Low: 10 (100.0%)
+2025-10-21 13:48:20,762 - csv_exporter - INFO - Top Currencies:
+2025-10-21 13:48:20,763 - csv_exporter - INFO -   EUR: 3
+2025-10-21 13:48:20,763 - csv_exporter - INFO -   GBP: 3
+2025-10-21 13:48:20,763 - csv_exporter - INFO -   USD: 2
+2025-10-21 13:48:20,763 - csv_exporter - INFO -   CAD: 1
+2025-10-21 13:48:20,763 - csv_exporter - INFO -   All: 1
+2025-10-21 13:48:20,764 - csv_exporter - INFO - ==================================================
+2025-10-21 13:48:20,768 - csv_exporter - INFO - Exported 91 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-21 13:48:20,769 - scraper - INFO - Saved 10 events from 2025-10-17 to CSV
+2025-10-21 13:48:27,267 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 13:48:27,267 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-21 13:48:27,268 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 13:48:27,268 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 13:48:28,162 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:48:28,478 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:48:28,774 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 13:48:28,774 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 13:48:29,909 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 13:49:00,213 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=oct20.2025
+2025-10-21 13:49:38,028 - scraper - WARNING - Hit human verification page for https://www.forexfactory.com/calendar?day=oct20.2025. Waiting for automatic resolution...
+2025-10-21 13:49:38,028 - scraper - INFO - Starting verification wait: up to 180s with 10s intervals...
+2025-10-21 13:52:31,137 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/c3fd564918a289a008999c8904d83f61
+2025-10-21 14:22:17,623 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-21 14:22:17,624 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-21 14:22:17,624 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-21 14:22:17,624 - __main__ - INFO - Scraping events from 2025-09-21 to 2025-11-20
+2025-10-21 14:22:17,624 - __main__ - INFO - Initializing CSV file with headers for incremental saving...
+2025-10-21 14:22:17,632 - __main__ - INFO - CSV file initialized for incremental saving
+2025-10-21 14:22:17,632 - __main__ - INFO - Starting data scraping...
+2025-10-21 14:22:17,632 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-21 to 2025-11-20
+2025-10-21 14:22:17,632 - scraper - INFO - Total days in range: 60
+2025-10-21 14:22:17,632 - scraper - INFO - Split date range into 1 chunks of max 2 months each
+2025-10-21 14:22:17,633 - scraper - INFO - Processing 1 date range chunks
+2025-10-21 14:22:17,633 - scraper - INFO - Processing range 1/1: 2025-09-21 to 2025-11-19
+2025-10-21 14:22:17,633 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 14:22:17,633 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-21 14:22:17,633 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 14:22:17,634 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 14:22:18,783 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:22:19,213 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:22:19,519 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 14:22:19,521 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 14:22:21,106 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 14:23:13,568 - scraper - ERROR - Error using date range picker: Message: element click intercepted: Element <li class="calendar__options left">...</li> is not clickable at point (547, 11). Other element would receive the click: <span class="product-nav__tab-background">...</span>
+  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x40fe83+66515]
+	GetHandleVerifier [0x0x40fec4+66580]
+	(No symbol) [0x0x1fdc48]
+	(No symbol) [0x0x24ec10]
+	(No symbol) [0x0x24cf73]
+	(No symbol) [0x0x24aa17]
+	(No symbol) [0x0x249c8d]
+	(No symbol) [0x0x23e115]
+	(No symbol) [0x0x26b1cc]
+	(No symbol) [0x0x23db74]
+	(No symbol) [0x0x26b384]
+	(No symbol) [0x0x28cba7]
+	(No symbol) [0x0x26afc6]
+	(No symbol) [0x0x23c2ca]
+	(No symbol) [0x0x23d154]
+	GetHandleVerifier [0x0x6673b3+2521347]
+	GetHandleVerifier [0x0x662333+2500739]
+	GetHandleVerifier [0x0x437cd4+229924]
+	GetHandleVerifier [0x0x428238+165768]
+	GetHandleVerifier [0x0x42eced+193085]
+	GetHandleVerifier [0x0x418198+100072]
+	GetHandleVerifier [0x0x418330+100480]
+	GetHandleVerifier [0x0x4025ea+11066]
+	BaseThreadInitThunk [0x0x77865d49+25]
+	RtlInitializeExceptionChain [0x0x77dcd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x77dcd661+561]
+
+2025-10-21 14:23:15,746 - scraper - INFO - ============================================================
+2025-10-21 14:23:15,746 - scraper - INFO - RANGE-BASED SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-21 14:23:15,746 - scraper - INFO - ============================================================
+2025-10-21 14:23:15,746 - scraper - INFO - [TOTAL] Total events found: 0
+2025-10-21 14:23:15,747 - scraper - INFO - [RANGE] Date range: 2025-09-21 to 2025-11-20
+2025-10-21 14:23:15,747 - scraper - INFO - [RANGES] Total ranges processed: 1
+2025-10-21 14:23:15,747 - scraper - INFO - [SUCCESS] Successful ranges: 1/1 (100.0%)
+2025-10-21 14:23:15,748 - scraper - INFO - [FAILED] Failed ranges: 0
+2025-10-21 14:23:15,748 - scraper - INFO - [OPTIMIZATION] Massive efficiency gain: ~60 requests reduced to 1 requests
+2025-10-21 14:23:15,748 - scraper - INFO - ============================================================
+2025-10-21 14:23:15,748 - __main__ - INFO - Scraped 0 events
+2025-10-21 14:23:15,749 - __main__ - WARNING - No events scraped - this may indicate an issue with the scraper or no events in the date range
+2025-10-21 14:23:15,749 - __main__ - INFO - Data has been saved incrementally during scraping
+2025-10-21 14:23:15,749 - __main__ - INFO - Final CSV file: D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv (size: 79 bytes)
+2025-10-21 14:23:15,766 - __main__ - INFO - Pipeline completed successfully. Final CSV contains 0 events
+2025-10-21 14:23:15,766 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-21 14:24:42,262 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-21 14:24:42,263 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-21 14:24:42,263 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-21 14:24:42,263 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-21 14:24:42,263 - __main__ - INFO - Scraping events from 2025-09-21 to 2025-11-20
+2025-10-21 14:24:42,264 - __main__ - INFO - Initializing CSV file with headers for incremental saving...
+2025-10-21 14:24:42,276 - __main__ - INFO - CSV file initialized for incremental saving
+2025-10-21 14:24:42,276 - __main__ - INFO - Starting data scraping...
+2025-10-21 14:24:42,276 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-21 to 2025-11-20
+2025-10-21 14:24:42,276 - scraper - INFO - Total days in range: 60
+2025-10-21 14:24:42,276 - scraper - INFO - Split date range into 1 chunks of max 2 months each
+2025-10-21 14:24:42,276 - scraper - INFO - Processing 1 date range chunks
+2025-10-21 14:24:42,277 - scraper - INFO - Processing range 1/1: 2025-09-21 to 2025-11-19
+2025-10-21 14:24:42,277 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 14:24:42,277 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-21 14:24:42,277 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 14:24:42,277 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 14:24:43,617 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:24:44,241 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:24:44,672 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 14:24:44,673 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 14:24:46,023 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 14:25:37,368 - scraper - ERROR - Error using date range picker: Message: To submit an element, it must be nested inside a form element
+
+2025-10-21 14:25:39,637 - scraper - INFO - ============================================================
+2025-10-21 14:25:39,637 - scraper - INFO - RANGE-BASED SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-21 14:25:39,637 - scraper - INFO - ============================================================
+2025-10-21 14:25:39,637 - scraper - INFO - [TOTAL] Total events found: 0
+2025-10-21 14:25:39,638 - scraper - INFO - [RANGE] Date range: 2025-09-21 to 2025-11-20
+2025-10-21 14:25:39,638 - scraper - INFO - [RANGES] Total ranges processed: 1
+2025-10-21 14:25:39,638 - scraper - INFO - [SUCCESS] Successful ranges: 1/1 (100.0%)
+2025-10-21 14:25:39,638 - scraper - INFO - [FAILED] Failed ranges: 0
+2025-10-21 14:25:39,638 - scraper - INFO - [OPTIMIZATION] Massive efficiency gain: ~60 requests reduced to 1 requests
+2025-10-21 14:25:39,638 - scraper - INFO - ============================================================
+2025-10-21 14:25:39,638 - __main__ - INFO - Scraped 0 events
+2025-10-21 14:25:39,638 - __main__ - WARNING - No events scraped - this may indicate an issue with the scraper or no events in the date range
+2025-10-21 14:25:39,638 - __main__ - INFO - Data has been saved incrementally during scraping
+2025-10-21 14:25:39,638 - __main__ - INFO - Final CSV file: D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv (size: 79 bytes)
+2025-10-21 14:25:39,658 - __main__ - INFO - Pipeline completed successfully. Final CSV contains 0 events
+2025-10-21 14:25:39,658 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-21 14:26:18,577 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-21 14:26:18,577 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-21 14:26:18,577 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-21 14:26:18,578 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-21 14:26:18,578 - __main__ - INFO - Scraping events from 2025-09-21 to 2025-11-20
+2025-10-21 14:26:18,578 - __main__ - INFO - Initializing CSV file with headers for incremental saving...
+2025-10-21 14:26:18,585 - __main__ - INFO - CSV file initialized for incremental saving
+2025-10-21 14:26:18,585 - __main__ - INFO - Starting data scraping...
+2025-10-21 14:26:18,585 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-21 to 2025-11-20
+2025-10-21 14:26:18,585 - scraper - INFO - Total days in range: 60
+2025-10-21 14:26:18,585 - scraper - INFO - Split date range into 1 chunks of max 2 months each
+2025-10-21 14:26:18,585 - scraper - INFO - Processing 1 date range chunks
+2025-10-21 14:26:18,586 - scraper - INFO - Processing range 1/1: 2025-09-21 to 2025-11-19
+2025-10-21 14:26:18,586 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 14:26:18,586 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-21 14:26:18,586 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 14:26:18,586 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 14:26:20,881 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:26:21,478 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:26:22,051 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 14:26:22,051 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 14:26:23,436 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 14:27:16,336 - scraper - ERROR - Error using date range picker: Message: element click intercepted: Element <li class="calendar__options left">...</li> is not clickable at point (410, 11). Other element would receive the click: <span class="product-nav__tab-background">...</span>
+  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x40fe83+66515]
+	GetHandleVerifier [0x0x40fec4+66580]
+	(No symbol) [0x0x1fdc48]
+	(No symbol) [0x0x24ec10]
+	(No symbol) [0x0x24cf73]
+	(No symbol) [0x0x24aa17]
+	(No symbol) [0x0x249c8d]
+	(No symbol) [0x0x23e115]
+	(No symbol) [0x0x26b1cc]
+	(No symbol) [0x0x23db74]
+	(No symbol) [0x0x26b384]
+	(No symbol) [0x0x28cba7]
+	(No symbol) [0x0x26afc6]
+	(No symbol) [0x0x23c2ca]
+	(No symbol) [0x0x23d154]
+	GetHandleVerifier [0x0x6673b3+2521347]
+	GetHandleVerifier [0x0x662333+2500739]
+	GetHandleVerifier [0x0x437cd4+229924]
+	GetHandleVerifier [0x0x428238+165768]
+	GetHandleVerifier [0x0x42eced+193085]
+	GetHandleVerifier [0x0x418198+100072]
+	GetHandleVerifier [0x0x418330+100480]
+	GetHandleVerifier [0x0x4025ea+11066]
+	BaseThreadInitThunk [0x0x77865d49+25]
+	RtlInitializeExceptionChain [0x0x77dcd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x77dcd661+561]
+
+2025-10-21 14:27:18,518 - scraper - INFO - ============================================================
+2025-10-21 14:27:18,519 - scraper - INFO - RANGE-BASED SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-21 14:27:18,519 - scraper - INFO - ============================================================
+2025-10-21 14:27:18,519 - scraper - INFO - [TOTAL] Total events found: 0
+2025-10-21 14:27:18,519 - scraper - INFO - [RANGE] Date range: 2025-09-21 to 2025-11-20
+2025-10-21 14:27:18,519 - scraper - INFO - [RANGES] Total ranges processed: 1
+2025-10-21 14:27:18,519 - scraper - INFO - [SUCCESS] Successful ranges: 1/1 (100.0%)
+2025-10-21 14:27:18,519 - scraper - INFO - [FAILED] Failed ranges: 0
+2025-10-21 14:27:18,519 - scraper - INFO - [OPTIMIZATION] Massive efficiency gain: ~60 requests reduced to 1 requests
+2025-10-21 14:27:18,520 - scraper - INFO - ============================================================
+2025-10-21 14:27:18,520 - __main__ - INFO - Scraped 0 events
+2025-10-21 14:27:18,520 - __main__ - WARNING - No events scraped - this may indicate an issue with the scraper or no events in the date range
+2025-10-21 14:27:18,520 - __main__ - INFO - Data has been saved incrementally during scraping
+2025-10-21 14:27:18,520 - __main__ - INFO - Final CSV file: D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv (size: 79 bytes)
+2025-10-21 14:27:18,529 - __main__ - INFO - Pipeline completed successfully. Final CSV contains 0 events
+2025-10-21 14:27:18,530 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-21 14:28:20,929 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-21 14:28:20,929 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-21 14:28:20,930 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-21 14:28:20,930 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-21 14:28:20,930 - __main__ - INFO - Scraping events from 2025-09-21 to 2025-11-20
+2025-10-21 14:28:20,930 - __main__ - INFO - Initializing CSV file with headers for incremental saving...
+2025-10-21 14:28:20,939 - __main__ - INFO - CSV file initialized for incremental saving
+2025-10-21 14:28:20,939 - __main__ - INFO - Starting data scraping...
+2025-10-21 14:28:20,939 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-21 to 2025-11-20
+2025-10-21 14:28:20,939 - scraper - INFO - Total days in range: 60
+2025-10-21 14:28:20,939 - scraper - INFO - Split date range into 1 chunks of max 2 months each
+2025-10-21 14:28:20,939 - scraper - INFO - Processing 1 date range chunks
+2025-10-21 14:28:20,940 - scraper - INFO - Processing range 1/1: 2025-09-21 to 2025-11-19
+2025-10-21 14:28:20,940 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 14:28:20,940 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-21 14:28:20,940 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 14:28:20,941 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 14:28:22,740 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:28:23,269 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:28:23,697 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 14:28:23,697 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 14:28:24,887 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 14:28:55,875 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=sep21.2025
+2025-10-21 14:29:32,802 - scraper - WARNING - Hit human verification page for https://www.forexfactory.com/calendar?day=sep21.2025. Waiting for automatic resolution...
+2025-10-21 14:29:32,802 - scraper - INFO - Starting verification wait: up to 180s with 10s intervals...
+2025-10-21 14:29:52,826 - scraper - INFO - Human verification completed automatically after 10s
+2025-10-21 14:30:07,827 - scraper - WARNING - WebDriver session became invalid: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x40fe83+66515]
+	GetHandleVerifier [0x0x40fec4+66580]
+	(No symbol) [0x0x1fda6b]
+	(No symbol) [0x0x23b5ab]
+	(No symbol) [0x0x26b086]
+	(No symbol) [0x0x26667c]
+	(No symbol) [0x0x265bf3]
+	(No symbol) [0x0x1ce72d]
+	(No symbol) [0x0x1cecae]
+	(No symbol) [0x0x1cf14d]
+	GetHandleVerifier [0x0x6673b3+2521347]
+	GetHandleVerifier [0x0x662333+2500739]
+	GetHandleVerifier [0x0x437cd4+229924]
+	GetHandleVerifier [0x0x428238+165768]
+	GetHandleVerifier [0x0x42eced+193085]
+	(No symbol) [0x0x1ce3e3]
+	(No symbol) [0x0x1cdb60]
+	GetHandleVerifier [0x0x7ac26f+3852223]
+	BaseThreadInitThunk [0x0x77865d49+25]
+	RtlInitializeExceptionChain [0x0x77dcd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x77dcd661+561]
+
+2025-10-21 14:30:07,828 - scraper - WARNING - Driver session became invalid after verification. Need to reinitialize.
+2025-10-21 14:30:07,828 - scraper - WARNING - Detected invalid WebDriver session. Attempting to reinitialize...
+2025-10-21 14:30:11,972 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 14:30:11,973 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-21 14:30:11,973 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 14:30:11,973 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 14:30:13,124 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:30:13,491 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:30:13,829 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 14:30:13,830 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 14:30:14,999 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 14:30:14,999 - scraper - INFO - WebDriver successfully reinitialized after invalid session
+2025-10-21 14:30:15,000 - scraper - INFO - Driver reinitialized. Continuing with navigation retry.
+2025-10-21 14:31:41,134 - scraper - ERROR - Timeout waiting for calendar options or date range input: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x40fe83+66515]
+	GetHandleVerifier [0x0x40fec4+66580]
+	(No symbol) [0x0x1fdc48]
+	(No symbol) [0x0x248704]
+	(No symbol) [0x0x248aab]
+	(No symbol) [0x0x28f482]
+	(No symbol) [0x0x26b214]
+	(No symbol) [0x0x28cba7]
+	(No symbol) [0x0x26afc6]
+	(No symbol) [0x0x23c2ca]
+	(No symbol) [0x0x23d154]
+	GetHandleVerifier [0x0x6673b3+2521347]
+	GetHandleVerifier [0x0x662333+2500739]
+	GetHandleVerifier [0x0x437cd4+229924]
+	GetHandleVerifier [0x0x428238+165768]
+	GetHandleVerifier [0x0x42eced+193085]
+	GetHandleVerifier [0x0x418198+100072]
+	GetHandleVerifier [0x0x418330+100480]
+	GetHandleVerifier [0x0x4025ea+11066]
+	BaseThreadInitThunk [0x0x77865d49+25]
+	RtlInitializeExceptionChain [0x0x77dcd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x77dcd661+561]
+
+2025-10-21 14:31:43,351 - scraper - INFO - ============================================================
+2025-10-21 14:31:43,351 - scraper - INFO - RANGE-BASED SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-21 14:31:43,351 - scraper - INFO - ============================================================
+2025-10-21 14:31:43,351 - scraper - INFO - [TOTAL] Total events found: 0
+2025-10-21 14:31:43,351 - scraper - INFO - [RANGE] Date range: 2025-09-21 to 2025-11-20
+2025-10-21 14:31:43,352 - scraper - INFO - [RANGES] Total ranges processed: 1
+2025-10-21 14:31:43,352 - scraper - INFO - [SUCCESS] Successful ranges: 1/1 (100.0%)
+2025-10-21 14:31:43,352 - scraper - INFO - [FAILED] Failed ranges: 0
+2025-10-21 14:31:43,352 - scraper - INFO - [OPTIMIZATION] Massive efficiency gain: ~60 requests reduced to 1 requests
+2025-10-21 14:31:43,352 - scraper - INFO - ============================================================
+2025-10-21 14:31:43,352 - __main__ - INFO - Scraped 0 events
+2025-10-21 14:31:43,352 - __main__ - WARNING - No events scraped - this may indicate an issue with the scraper or no events in the date range
+2025-10-21 14:31:43,352 - __main__ - INFO - Data has been saved incrementally during scraping
+2025-10-21 14:31:43,352 - __main__ - INFO - Final CSV file: D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv (size: 79 bytes)
+2025-10-21 14:31:43,355 - __main__ - INFO - Pipeline completed successfully. Final CSV contains 0 events
+2025-10-21 14:31:43,355 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-21 14:39:01,191 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-21 14:39:01,191 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-21 14:39:01,192 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-21 14:39:01,192 - __main__ - INFO - Scraping events from 2025-09-21 to 2025-11-20
+2025-10-21 14:39:01,192 - __main__ - INFO - Initializing CSV file with headers for incremental saving...
+2025-10-21 14:39:01,196 - __main__ - INFO - CSV file initialized for incremental saving
+2025-10-21 14:39:01,196 - __main__ - INFO - Starting data scraping...
+2025-10-21 14:39:01,196 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-21 to 2025-11-20
+2025-10-21 14:39:01,196 - scraper - INFO - Total days in range: 60
+2025-10-21 14:39:01,196 - scraper - INFO - Split date range into 1 chunks of max 2 months each
+2025-10-21 14:39:01,196 - scraper - INFO - Processing 1 date range chunks
+2025-10-21 14:39:01,196 - scraper - INFO - Processing range 1/1: 2025-09-21 to 2025-11-19
+2025-10-21 14:39:01,196 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 14:39:01,197 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-21 14:39:01,197 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 14:39:01,197 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 14:39:02,174 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:39:02,532 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 14:39:02,835 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 14:39:02,836 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 14:39:04,075 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 14:40:28,075 - scraper - ERROR - Timeout waiting for calendar options or date range input: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x40fe83+66515]
+	GetHandleVerifier [0x0x40fec4+66580]
+	(No symbol) [0x0x1fdc48]
+	(No symbol) [0x0x248704]
+	(No symbol) [0x0x248aab]
+	(No symbol) [0x0x28f482]
+	(No symbol) [0x0x26b214]
+	(No symbol) [0x0x28cba7]
+	(No symbol) [0x0x26afc6]
+	(No symbol) [0x0x23c2ca]
+	(No symbol) [0x0x23d154]
+	GetHandleVerifier [0x0x6673b3+2521347]
+	GetHandleVerifier [0x0x662333+2500739]
+	GetHandleVerifier [0x0x437cd4+229924]
+	GetHandleVerifier [0x0x428238+165768]
+	GetHandleVerifier [0x0x42eced+193085]
+	GetHandleVerifier [0x0x418198+100072]
+	GetHandleVerifier [0x0x418330+100480]
+	GetHandleVerifier [0x0x4025ea+11066]
+	BaseThreadInitThunk [0x0x77865d49+25]
+	RtlInitializeExceptionChain [0x0x77dcd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x77dcd661+561]
+
+2025-10-21 14:40:30,254 - scraper - INFO - ============================================================
+2025-10-21 14:40:30,254 - scraper - INFO - RANGE-BASED SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-21 14:40:30,255 - scraper - INFO - ============================================================
+2025-10-21 14:40:30,255 - scraper - INFO - [TOTAL] Total events found: 0
+2025-10-21 14:40:30,255 - scraper - INFO - [RANGE] Date range: 2025-09-21 to 2025-11-20
+2025-10-21 14:40:30,255 - scraper - INFO - [RANGES] Total ranges processed: 1
+2025-10-21 14:40:30,256 - scraper - INFO - [SUCCESS] Successful ranges: 1/1 (100.0%)
+2025-10-21 14:40:30,256 - scraper - INFO - [FAILED] Failed ranges: 0
+2025-10-21 14:40:30,256 - scraper - INFO - [OPTIMIZATION] Massive efficiency gain: ~60 requests reduced to 1 requests
+2025-10-21 14:40:30,256 - scraper - INFO - ============================================================
+2025-10-21 14:40:30,256 - __main__ - INFO - Scraped 0 events
+2025-10-21 14:40:30,256 - __main__ - WARNING - No events scraped - this may indicate an issue with the scraper or no events in the date range
+2025-10-21 14:40:30,257 - __main__ - INFO - Data has been saved incrementally during scraping
+2025-10-21 14:40:30,257 - __main__ - INFO - Final CSV file: D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv (size: 79 bytes)
+2025-10-21 14:40:30,261 - __main__ - INFO - Pipeline completed successfully. Final CSV contains 0 events
+2025-10-21 14:40:30,261 - __main__ - INFO - Economic News Manager completed successfully

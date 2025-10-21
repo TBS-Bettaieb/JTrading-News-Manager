@@ -17,6 +17,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import TimeoutException, NoSuchElementException, WebDriverException
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
@@ -32,11 +33,12 @@ class ForexFactoryScraper:
     """Scraper for ForexFactory economic calendar using Selenium"""
     
     def __init__(self, base_url: str = "https://www.forexfactory.com/calendar", 
-                 timeout: int = 15, retry_attempts: int = 3, csv_exporter=None, symbol_mapper=None, headless: bool = True):
+                 timeout: int = 15, retry_attempts: int = 3, csv_exporter=None, symbol_mapper=None, headless: bool = True, max_range_months: int = 2):
         self.base_url = base_url
         self.timeout = timeout
         self.retry_attempts = retry_attempts
         self.headless = headless
+        self.max_range_months = max_range_months
         self.driver = None
         self.wait = None
         self._driver_session_lost = False
@@ -369,85 +371,411 @@ class ForexFactoryScraper:
         """Determine if a date should be skipped (weekends typically have no economic events)"""
         return self._is_weekend(date)
     
-    def scrape_date_range(self, start_date: datetime, end_date: datetime) -> List[Dict]:
-        """Scrape economic events for a date range, skipping weekends"""
+    def _split_into_ranges(self, start_date: datetime, end_date: datetime, max_months: int = 2) -> List[tuple]:
+        """Split date range into chunks of maximum months"""
+        ranges = []
+        current_start = start_date
+        
+        while current_start <= end_date:
+            # Calculate end date by adding max_months using timedelta approximation
+            # Using approximately 30 days per month for simplicity
+            current_end = current_start + timedelta(days=(max_months * 30) - 1)
+            
+            # Don't go beyond the original end_date
+            if current_end > end_date:
+                current_end = end_date
+            
+            ranges.append((current_start, current_end))
+            
+            # Move to next range (start from the day after current_end)
+            current_start = current_end + timedelta(days=1)
+            
+            # Safety check to avoid infinite loop
+            if current_start > end_date:
+                break
+                
+        logger.info(f"Split date range into {len(ranges)} chunks of max {max_months} months each")
+        for i, (range_start, range_end) in enumerate(ranges, 1):
+            logger.debug(f"Range {i}: {range_start.date()} to {range_end.date()}")
+        return ranges
+    
+    def _scrape_date_range_with_picker(self, range_start: datetime, range_end: datetime) -> List[Dict]:
+        """Scrape events for a date range using ForexFactory's date range picker"""
         events = []
         
         try:
-            # Calculate total days and estimate weekends in range
-            total_days = (end_date - start_date).days + 1
-            estimated_weekends = total_days // 7 * 2  # Rough estimate
+            # Initialize driver if not present
+            if not self.driver:
+                logger.debug(f"Driver not initialized for range {range_start.date()} to {range_end.date()}, setting up fresh driver")
+                self._setup_driver()
             
-            logger.info(f"Starting scrape from {start_date.date()} to {end_date.date()}")
-            logger.info(f"Total days in range: {total_days}, estimated weekend days to skip: ~{estimated_weekends}")
+            # Format dates for the range picker input (format: "Oct 4, 2025 – Dec 1, 2025")
+            start_formatted = range_start.strftime("%b %d, %Y")
+            end_formatted = range_end.strftime("%b %d, %Y")
+            date_range_str = f"{start_formatted} – {end_formatted}"
             
-            current_date = start_date
-            is_first_request = True
-            weekends_skipped = 0
-            failed_days = 0
-            successful_days = 0
+            # Open URL to the first day of the range
+            month_abbr = range_start.strftime("%b").lower()
+            day = range_start.day
+            year = range_start.year
+            date_str = f"{month_abbr}{day}.{year}"
+            url = f"{self.base_url}?day={date_str}"
             
-            while current_date <= end_date:
-                # Skip weekends (no economic events typically on weekends)
-                if self._should_skip_date(current_date):
-                    logger.debug(f"Skipping {current_date.strftime('%A, %Y-%m-%d')} (weekend)")
-                    weekends_skipped += 1
-                    current_date += timedelta(days=1)
+            logger.debug(f"Opening range picker for {range_start.date()} to {range_end.date()} - URL: {url}")
+            
+            # Navigate to the page
+            if not self._navigate_to_page(url):
+                logger.error(f"Failed to navigate to {url}")
+                return []
+            
+            # Wait for page to load
+            time.sleep(random.uniform(2.0, 4.0))
+            
+            try:
+                # Click on the calendar options element with class "calendar__options left"
+                logger.debug("Looking for calendar options element...")
+                
+                # Try multiple selectors for the calendar options element
+                options_selectors = [
+                    ".calendar__options.left",
+                    ".calendar__options",
+                    "[class*='calendar__options'][class*='left']",
+                    ".calendar-options.left"
+                ]
+                
+                options_element = None
+                for selector in options_selectors:
+                    try:
+                        options_element = self.wait.until(
+                            EC.presence_of_element_located((By.CSS_SELECTOR, selector))
+                        )
+                        logger.debug(f"Found calendar options element with selector: {selector}")
+                        break
+                    except TimeoutException:
+                        continue
+                
+                if not options_element:
+                    raise NoSuchElementException("Could not find calendar options element with any selector")
+                
+                # Try to click using JavaScript if regular click fails
+                try:
+                    options_element.click()
+                    logger.debug("Clicked on calendar options element using regular click")
+                except Exception as click_error:
+                    logger.debug(f"Regular click failed, trying JavaScript click: {click_error}")
+                    # Use JavaScript click as fallback
+                    self.driver.execute_script("arguments[0].click();", options_element)
+                    logger.debug("Clicked on calendar options element using JavaScript")
+                
+                # Wait a moment for the date range input to appear
+                time.sleep(1.0)
+                
+                # Find and fill the date range input
+                logger.debug(f"Filling date range input with: {date_range_str}")
+                date_range_input = self.wait.until(
+                    EC.presence_of_element_located((By.ID, "calendar-date-range-1"))
+                )
+                
+                # Clear and fill the input
+                date_range_input.clear()
+                date_range_input.send_keys(date_range_str)
+                logger.debug("Filled date range input")
+                
+                # Submit the form using Enter key instead of .submit() method
+                # This works better when the element is not inside a form
+                date_range_input.send_keys(Keys.RETURN)
+                logger.debug("Submitted date range form using Enter key")
+                
+                # Wait 7 seconds as specified
+                logger.debug("Waiting 7 seconds for date range to load...")
+                time.sleep(7.0)
+                
+                # Now scrape the entire table for the range
+                logger.debug("Scraping calendar table for the date range...")
+                events = self._scrape_calendar_table_for_range(range_start, range_end)
+                
+            except TimeoutException as e:
+                logger.error(f"Timeout waiting for calendar options or date range input: {e}")
+                return []
+            except NoSuchElementException as e:
+                logger.error(f"Could not find calendar options or date range elements: {e}")
+                return []
+            except Exception as e:
+                logger.error(f"Error using date range picker: {e}")
+                return []
+                
+        except Exception as e:
+            logger.error(f"Error in _scrape_date_range_with_picker: {e}")
+            return []
+        
+        logger.info(f"Scraped {len(events)} events for range {range_start.date()} to {range_end.date()}")
+        return events
+    
+    def _scrape_calendar_table_for_range(self, range_start: datetime, range_end: datetime) -> List[Dict]:
+        """Scrape events from the calendar table for the entire date range"""
+        events = []
+        
+        try:
+            # Check if driver is still responsive
+            if not self._is_driver_responsive():
+                logger.error(f"WebDriver not responsive for range scraping {range_start.date()} to {range_end.date()}")
+                return events
+            
+            # Wait for calendar table to load
+            try:
+                self.wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'calendar__table')))
+                logger.debug("Calendar table found for range scraping")
+            except TimeoutException:
+                logger.warning(f"Calendar table not found within timeout for range {range_start.date()} to {range_end.date()}")
+                return events
+            
+            # Wait a bit more for dynamic content
+            time.sleep(random.uniform(1.0, 2.0))
+            
+            # Get page source and parse with BeautifulSoup
+            page_source = self.driver.page_source
+            if not page_source or len(page_source.strip()) == 0:
+                logger.warning(f"Empty page source for range {range_start.date()} to {range_end.date()}")
+                return events
+                
+            soup = BeautifulSoup(page_source, 'html.parser')
+            
+            # Find the calendar table
+            calendar_table = soup.find('table', class_='calendar__table')
+            if not calendar_table:
+                logger.warning(f"No calendar table found for range {range_start.date()} to {range_end.date()}")
+                return events
+            
+            # Find event rows
+            tbody = calendar_table.find('tbody')
+            if not tbody:
+                logger.warning(f"No tbody found for range {range_start.date()} to {range_end.date()}")
+                return events
+            
+            # Find all event rows and date headers
+            rows = tbody.find_all(['tr'])
+            logger.debug(f"Found {len(rows)} rows for range {range_start.date()} to {range_end.date()}")
+            
+            current_date = None
+            for row in rows:
+                row_classes = row.attrs.get('class', [])
+                row_classes_str = ' '.join(row_classes)
+                
+                # Check if this is a date header row (try multiple possible class patterns)
+                is_date_header = any(pattern in row_classes_str for pattern in [
+                    'calendar__table-additional-row',
+                    'calendar__date-header',
+                    'calendar__header',
+                    'additional-row'
+                ])
+                
+                if is_date_header:
+                    # This is a date header, try to extract the date from various cell patterns
+                    date_cell = (row.find('td', class_='calendar__table-additional-row-cell') or
+                               row.find('td', class_=lambda x: x and 'date' in x.lower() if x else False) or
+                               row.find('td'))
+                    
+                    if date_cell:
+                        date_text = date_cell.get_text(strip=True)
+                        parsed_date = self._parse_date_header(date_text)
+                        if parsed_date:
+                            current_date = parsed_date
+                            logger.debug(f"Found date header: {current_date.date()}")
+                        else:
+                            logger.debug(f"Could not parse date header text: '{date_text}'")
                     continue
                 
-                # Scrape the day if it's a weekday with retry logic
-                day_events = self._scrape_day_with_retry(current_date, is_first_request)
-                if day_events is not None:  # None means complete failure after retries
-                    events.extend(day_events)
-                    successful_days += 1
-                    
-                    # Save data to CSV immediately after each page is scraped
-                    if self.csv_exporter and day_events and len(day_events) > 0:
+                # Check if this is an event row (try multiple possible class patterns)
+                is_event_row = any(pattern in row_classes_str for pattern in [
+                    'calendar__row',
+                    'calendar-row',
+                    'event-row'
+                ])
+                
+                if is_event_row:
+                    # Only parse events if we have a valid current_date and it's within our range
+                    if current_date and range_start <= current_date <= range_end:
                         try:
-                            # Map events to trading pairs before saving
-                            mapped_day_events = self.symbol_mapper.map_events_to_pairs(day_events)
-                            # Save to CSV in append mode
-                            success = self.csv_exporter.append_events(mapped_day_events)
-                            if success:
-                                logger.info(f"Saved {len(mapped_day_events)} events from {current_date.date()} to CSV")
-                            else:
-                                logger.warning(f"Failed to save events from {current_date.date()} to CSV")
-                        except Exception as save_error:
-                            logger.error(f"Error saving events from {current_date.date()} to CSV: {save_error}")
+                            event = self._parse_event_row(row, current_date)
+                            if event:
+                                events.append(event)
+                        except Exception as e:
+                            logger.error(f"Error parsing event row: {e}")
+                            continue
+                    else:
+                        # If no current_date or outside range, try to get date from row itself or skip
+                        logger.debug(f"Skipping event row - current_date: {current_date}, in_range: {current_date and range_start <= current_date <= range_end if current_date else False}")
+                        continue
                     
-                    # Close driver after each successful scrape to avoid Cloudflare detection
-                    logger.debug("Closing driver after successful scrape to start fresh session for next page")
-                    self._close_driver()
-                else:
-                    failed_days += 1
-                is_first_request = False
-                
-                current_date += timedelta(days=1)
-                
-                # Random delay between days (shorter since we skip weekends)
-                delay = random.uniform(2.0, 5.0)
-                logger.debug(f"Waiting {delay:.1f} seconds before next day...")
-                time.sleep(delay)
+        except Exception as e:
+            logger.error(f"Error scraping calendar table for range: {e}")
+        
+        logger.info(f"Scraped {len(events)} events from calendar table for range {range_start.date()} to {range_end.date()}")
+        return events
+    
+    def _parse_date_header(self, date_text: str) -> Optional[datetime]:
+        """Parse date header text to extract datetime"""
+        try:
+            # Handle different date formats that might appear in headers
+            date_text = date_text.strip()
             
-            # Calculate efficiency metrics
-            total_weekdays = total_days - weekends_skipped
-            efficiency_percent = (weekends_skipped / total_days * 100) if total_days > 0 else 0
-            success_rate = (successful_days / total_weekdays * 100) if total_weekdays > 0 else 0
+            if not date_text:
+                return None
+            
+            # Try common ForexFactory date header formats
+            formats = [
+                "%a %b %d",      # "Sat Oct 4"
+                "%a %B %d",      # "Sat October 4"
+                "%a %b %d %Y",   # "Sat Oct 4 2025"
+                "%a %B %d %Y",   # "Sat October 4 2025"
+                "%A, %B %d",     # "Sunday, October 5"
+                "%A, %b %d",     # "Sunday, Oct 5"
+                "%A, %B %d %Y",  # "Sunday, October 5 2025"
+                "%A, %b %d %Y",  # "Sunday, Oct 5 2025"
+                "%B %d",         # "October 5"
+                "%b %d",         # "Oct 5"
+                "%B %d %Y",      # "October 5 2025"
+                "%b %d %Y",      # "Oct 5 2025"
+                "%d %b %Y",      # "5 Oct 2025"
+                "%d %B %Y",      # "5 October 2025"
+            ]
+            
+            current_year = datetime.now().year
+            
+            for fmt in formats:
+                try:
+                    parsed_date = datetime.strptime(date_text, fmt)
+                    
+                    # If year was not specified in the format, use current year
+                    # but be smart about it - if we're in January and parsing December,
+                    # it might be from the previous year, and vice versa
+                    if parsed_date.year == 1900:  # Default year when not specified
+                        parsed_date = parsed_date.replace(year=current_year)
+                        
+                        # Smart year adjustment for edge cases
+                        current_month = datetime.now().month
+                        if current_month == 1 and parsed_date.month == 12:
+                            # If we're in January and parsing December, it's likely last year
+                            parsed_date = parsed_date.replace(year=current_year - 1)
+                        elif current_month == 12 and parsed_date.month == 1:
+                            # If we're in December and parsing January, it might be next year
+                            parsed_date = parsed_date.replace(year=current_year + 1)
+                    
+                    return parsed_date
+                    
+                except ValueError:
+                    continue
+            
+            # If all formats failed, try some more flexible parsing
+            try:
+                # Try to extract date patterns with regex as fallback
+                import re
+                
+                # Look for patterns like "Oct 4", "October 5", "4 Oct", etc.
+                date_patterns = [
+                    r'(\w+)\s+(\d+)',  # "Oct 4" or "4 Oct"
+                    r'(\d+)\s+(\w+)',  # "4 Oct" (different order)
+                ]
+                
+                for pattern in date_patterns:
+                    match = re.search(pattern, date_text)
+                    if match:
+                        # This would need more sophisticated parsing
+                        # For now, just log and return None
+                        logger.debug(f"Found potential date pattern '{match.groups()}' in '{date_text}' but cannot parse reliably")
+                        break
+                        
+            except Exception:
+                pass
+            
+            logger.debug(f"Could not parse date header: '{date_text}'")
+            return None
+            
+        except Exception as e:
+            logger.debug(f"Error parsing date header '{date_text}': {e}")
+            return None
+    
+    def scrape_date_range(self, start_date: datetime, end_date: datetime) -> List[Dict]:
+        """Scrape economic events for a date range using range-based approach"""
+        events = []
+        
+        try:
+            # Calculate total days for reporting
+            total_days = (end_date - start_date).days + 1
+            
+            logger.info(f"Starting RANGE-BASED scrape from {start_date.date()} to {end_date.date()}")
+            logger.info(f"Total days in range: {total_days}")
+            
+            # Split the date range into chunks of maximum months as configured
+            ranges = self._split_into_ranges(start_date, end_date, max_months=self.max_range_months)
+            
+            total_ranges = len(ranges)
+            successful_ranges = 0
+            failed_ranges = 0
+            
+            logger.info(f"Processing {total_ranges} date range chunks")
+            
+            for i, (range_start, range_end) in enumerate(ranges, 1):
+                logger.info(f"Processing range {i}/{total_ranges}: {range_start.date()} to {range_end.date()}")
+                
+                try:
+                    # Scrape the entire range using the date range picker
+                    range_events = self._scrape_date_range_with_picker(range_start, range_end)
+                    
+                    if range_events is not None:
+                        events.extend(range_events)
+                        successful_ranges += 1
+                        
+                        # Save data to CSV immediately after each range is scraped
+                        if self.csv_exporter and range_events and len(range_events) > 0:
+                            try:
+                                # Map events to trading pairs before saving
+                                mapped_range_events = self.symbol_mapper.map_events_to_pairs(range_events)
+                                # Save to CSV in append mode
+                                success = self.csv_exporter.append_events(mapped_range_events)
+                                if success:
+                                    logger.info(f"Saved {len(mapped_range_events)} events from range {range_start.date()} to {range_end.date()}")
+                                else:
+                                    logger.warning(f"Failed to save events from range {range_start.date()} to {range_end.date()}")
+                            except Exception as save_error:
+                                logger.error(f"Error saving events from range {range_start.date()} to {range_end.date()}: {save_error}")
+                        else:
+                            logger.debug(f"No events found for range {range_start.date()} to {range_end.date()}")
+                    else:
+                        failed_ranges += 1
+                        logger.warning(f"Failed to scrape range {range_start.date()} to {range_end.date()}")
+                    
+                    # Close driver after each range to start fresh session for next range
+                    logger.debug("Closing driver after successful range scrape to start fresh session")
+                    self._close_driver()
+                    
+                except Exception as range_error:
+                    logger.error(f"Error processing range {range_start.date()} to {range_end.date()}: {range_error}")
+                    failed_ranges += 1
+                    continue
+                
+                # Random delay between ranges to avoid detection
+                if i < total_ranges:  # Don't wait after the last range
+                    delay = random.uniform(3.0, 8.0)
+                    logger.debug(f"Waiting {delay:.1f} seconds before next range...")
+                    time.sleep(delay)
+            
+            # Calculate efficiency metrics for range-based approach
+            success_rate = (successful_ranges / total_ranges * 100) if total_ranges > 0 else 0
             
             logger.info("=" * 60)
-            logger.info("SCRAPING COMPLETED - SUMMARY REPORT")
+            logger.info("RANGE-BASED SCRAPING COMPLETED - SUMMARY REPORT")
             logger.info("=" * 60)
             logger.info(f"[TOTAL] Total events found: {len(events)}")
             logger.info(f"[RANGE] Date range: {start_date.date()} to {end_date.date()}")
-            logger.info(f"[DAYS] Total days in range: {total_days}")
-            logger.info(f"[SKIPPED] Weekend days skipped: {weekends_skipped}/{total_days} ({efficiency_percent:.1f}%)")
-            logger.info(f"[SUCCESS] Successful weekdays: {successful_days}/{total_weekdays} ({success_rate:.1f}%)")
-            logger.info(f"[FAILED] Failed days: {failed_days}")
-            logger.info(f"[OPTIMIZATION] Efficiency gain: {efficiency_percent:.1f}% fewer requests (weekend optimization)")
+            logger.info(f"[RANGES] Total ranges processed: {total_ranges}")
+            logger.info(f"[SUCCESS] Successful ranges: {successful_ranges}/{total_ranges} ({success_rate:.1f}%)")
+            logger.info(f"[FAILED] Failed ranges: {failed_ranges}")
+            logger.info(f"[OPTIMIZATION] Massive efficiency gain: ~{total_days} requests reduced to {total_ranges} requests")
             logger.info("=" * 60)
             
         except Exception as e:
-            logger.error(f"Error during scraping: {e}")
+            logger.error(f"Error during range-based scraping: {e}")
         finally:
             self._close_driver()
         
