@@ -21,6 +21,10 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException,
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 
+# Import CSV exporter and symbol mapper for immediate saving
+from csv_exporter import CSVExporter
+from symbol_mapper import SymbolMapper
+
 logger = logging.getLogger(__name__)
 
 
@@ -28,13 +32,15 @@ class ForexFactoryScraper:
     """Scraper for ForexFactory economic calendar using Selenium"""
     
     def __init__(self, base_url: str = "https://www.forexfactory.com/calendar", 
-                 timeout: int = 30, retry_attempts: int = 3):
+                 timeout: int = 30, retry_attempts: int = 3, csv_exporter=None, symbol_mapper=None):
         self.base_url = base_url
         self.timeout = timeout
         self.retry_attempts = retry_attempts
         self.driver = None
         self.wait = None
         self._driver_session_lost = False
+        self.csv_exporter = csv_exporter
+        self.symbol_mapper = symbol_mapper or SymbolMapper()
         
     def _setup_driver(self):
         """Setup Chrome WebDriver with stealth options"""
@@ -386,6 +392,21 @@ class ForexFactoryScraper:
                 if day_events is not None:  # None means complete failure after retries
                     events.extend(day_events)
                     successful_days += 1
+                    
+                    # Save data to CSV immediately after each page is scraped
+                    if self.csv_exporter and day_events and len(day_events) > 0:
+                        try:
+                            # Map events to trading pairs before saving
+                            mapped_day_events = self.symbol_mapper.map_events_to_pairs(day_events)
+                            # Save to CSV in append mode
+                            success = self.csv_exporter.append_events(mapped_day_events)
+                            if success:
+                                logger.info(f"Saved {len(mapped_day_events)} events from {current_date.date()} to CSV")
+                            else:
+                                logger.warning(f"Failed to save events from {current_date.date()} to CSV")
+                        except Exception as save_error:
+                            logger.error(f"Error saving events from {current_date.date()} to CSV: {save_error}")
+                    
                     # Close driver after each successful scrape to avoid Cloudflare detection
                     logger.debug("Closing driver after successful scrape to start fresh session for next page")
                     self._close_driver()

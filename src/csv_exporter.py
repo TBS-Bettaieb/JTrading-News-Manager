@@ -66,16 +66,22 @@ class CSVExporter:
             # Validate data quality
             self._validate_data_quality(df)
             
-            # Handle existing file for append mode
-            if mode == 'a' and os.path.exists(self.output_path):
-                existing_df = pd.read_csv(self.output_path)
-                df = pd.concat([existing_df, df], ignore_index=True)
-                # Remove duplicates based on DateTime, Event, and Currency
-                df = self._remove_duplicates(df)
-                mode = 'w'  # Now we need to overwrite the complete file
-            
-            # Write to CSV
-            df.to_csv(self.output_path, index=False, mode=mode)
+            # Handle append mode
+            if mode == 'a':
+                if os.path.exists(self.output_path):
+                    # File exists, read it and append
+                    existing_df = pd.read_csv(self.output_path)
+                    df = pd.concat([existing_df, df], ignore_index=True)
+                    # Remove duplicates based on DateTime, Event, and Currency
+                    df = self._remove_duplicates(df)
+                    # Write the complete updated file
+                    df.to_csv(self.output_path, index=False, mode='w')
+                else:
+                    # File doesn't exist yet, create it with headers
+                    df.to_csv(self.output_path, index=False, mode='w')
+            else:
+                # Write mode (overwrite)
+                df.to_csv(self.output_path, index=False, mode=mode)
             
             logger.info(f"Exported {len(df)} events to {self.output_path}")
             return True

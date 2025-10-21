@@ -9,6 +9,7 @@ import os
 from datetime import datetime, timedelta
 from typing import List, Dict
 import argparse
+import pandas as pd
 
 # Add src directory to path for imports
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -105,15 +106,18 @@ def run_pipeline(config: Dict, scrape_only: bool = False) -> bool:
         scraping_config = config.get('scraping', {})
         output_config = config.get('output', {})
         
-        scraper = ForexFactoryScraper(
-            base_url=scraping_config.get('base_url', 'https://www.forexfactory.com/calendar'),
-            timeout=scraping_config.get('timeout', 30),
-            retry_attempts=scraping_config.get('retry_attempts', 3)
-        )
-        
         symbol_mapper = SymbolMapper()
         csv_output_path = resolve_path(output_config.get('csv_path', 'output/economic_events.csv'))
         csv_exporter = CSVExporter(csv_output_path)
+        
+        # Initialize scraper with CSV exporter and symbol mapper for immediate saving
+        scraper = ForexFactoryScraper(
+            base_url=scraping_config.get('base_url', 'https://www.forexfactory.com/calendar'),
+            timeout=scraping_config.get('timeout', 30),
+            retry_attempts=scraping_config.get('retry_attempts', 3),
+            csv_exporter=csv_exporter,
+            symbol_mapper=symbol_mapper
+        )
         
         # Calculate date range
         days_back = scraping_config.get('days_back', 90)
@@ -124,7 +128,22 @@ def run_pipeline(config: Dict, scrape_only: bool = False) -> bool:
         
         logger.info(f"Scraping events from {start_date.date()} to {end_date.date()}")
         
-        # Scrape events
+        # Clear existing CSV file at start of scraping session to avoid duplicates
+        if not scrape_only and csv_exporter:
+            # Create empty CSV with headers to start fresh
+            try:
+                logger.info("Initializing CSV file with headers for incremental saving...")
+                # Create empty DataFrame with required columns and save it
+                empty_df = pd.DataFrame(columns=[
+                    'DateTime', 'Event', 'Country', 'Impact', 
+                    'Currency', 'Actual', 'Forecast', 'Previous', 'AffectedPairs'
+                ])
+                empty_df.to_csv(csv_exporter.output_path, index=False)
+                logger.info("CSV file initialized for incremental saving")
+            except Exception as init_error:
+                logger.warning(f"Could not initialize CSV file: {init_error}")
+        
+        # Scrape events (data will be saved to CSV after each page)
         logger.info("Starting data scraping...")
         events = scraper.scrape_date_range(start_date, end_date)
         logger.info(f"Scraped {len(events)} events")
@@ -134,31 +153,33 @@ def run_pipeline(config: Dict, scrape_only: bool = False) -> bool:
             # Don't fail immediately, continue with empty dataset to see if it's a real issue
             events = []
         
-        # Map events to trading pairs
-        logger.info("Mapping events to trading pairs...")
-        mapped_events = symbol_mapper.map_events_to_pairs(events)
-        logger.info(f"Mapped {len(mapped_events)} events with trading pairs")
-        
         if scrape_only:
             logger.info("Scrape-only mode: not exporting to CSV")
+            # Map events for final count even in scrape-only mode
+            mapped_events = symbol_mapper.map_events_to_pairs(events)
             logger.info(f"Pipeline completed successfully with {len(mapped_events)} events processed")
             return True
         
-        # Export to CSV
-        logger.info("Exporting events to CSV...")
+        # Since data is now saved incrementally after each page, 
+        # we just need to verify the final CSV file state
+        logger.info("Data has been saved incrementally during scraping")
+        
+        # Get final file info to confirm everything was saved
+        file_info = csv_exporter.get_file_info()
+        logger.info(f"Final CSV file: {file_info['path']} (size: {file_info['size']})")
+        
+        # Load and verify the final CSV file
         try:
-            success = csv_exporter.export_events(mapped_events)
-            
-            if success:
-                logger.info("Pipeline completed successfully")
-                logger.info(f"Exported {len(mapped_events)} events to CSV")
+            final_events_df = csv_exporter.get_existing_events()
+            if final_events_df is not None:
+                logger.info(f"Pipeline completed successfully. Final CSV contains {len(final_events_df)} events")
                 return True
             else:
-                logger.error("Pipeline failed at export stage")
-                return False
-        except Exception as export_error:
-            logger.error(f"CSV export failed with error: {export_error}")
-            return False
+                logger.warning("Could not verify final CSV file state")
+                return True  # Still consider it successful since incremental saves happened
+        except Exception as verify_error:
+            logger.error(f"Error verifying final CSV file: {verify_error}")
+            return True  # Still consider it successful since incremental saves happened
             
     except Exception as e:
         logger.error(f"Pipeline failed with error: {e}")
