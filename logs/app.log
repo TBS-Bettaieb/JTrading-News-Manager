@@ -975,3 +975,129 @@ Stacktrace:
 2025-10-21 12:10:54,311 - scraper - INFO - Starting Chrome WebDriver...
 2025-10-21 12:10:55,508 - scraper - INFO - Chrome WebDriver initialized successfully
 2025-10-21 12:11:50,265 - scraper - INFO - Scraped 10 events for oct17.2025 using JS data
+2025-10-21 13:38:17,671 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-21 13:38:17,671 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-21 13:38:17,672 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-21 13:38:17,672 - __main__ - INFO - Scraping events from 2025-10-14 to 2025-10-28
+2025-10-21 13:38:17,672 - __main__ - INFO - Initializing CSV file with headers for incremental saving...
+2025-10-21 13:38:17,679 - __main__ - INFO - CSV file initialized for incremental saving
+2025-10-21 13:38:17,680 - __main__ - INFO - Starting data scraping...
+2025-10-21 13:38:17,680 - scraper - INFO - Starting scrape from 2025-10-14 to 2025-10-28
+2025-10-21 13:38:17,680 - scraper - INFO - Total days in range: 14, estimated weekend days to skip: ~4
+2025-10-21 13:38:17,680 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 13:38:17,680 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 13:38:17,680 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 13:38:18,616 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:38:18,952 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:38:19,316 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 13:38:19,316 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 13:38:20,506 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 13:39:15,324 - scraper - INFO - Scraped 22 events for oct14.2025 using JS data
+2025-10-21 13:39:15,395 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-21 13:39:15,396 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-21 13:39:15,439 - csv_exporter - INFO - ==================================================
+2025-10-21 13:39:15,439 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-21 13:39:15,439 - csv_exporter - INFO - ==================================================
+2025-10-21 13:39:15,440 - csv_exporter - INFO - [STATS] Total events: 22
+2025-10-21 13:39:15,440 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-21 13:39:15,440 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-21 13:39:15,440 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-21 13:39:15,440 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-21 13:39:15,441 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-21 13:39:15,441 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-21 13:39:15,441 - csv_exporter - INFO - Impact Distribution:
+2025-10-21 13:39:15,441 - csv_exporter - INFO -   Low: 22 (100.0%)
+2025-10-21 13:39:15,441 - csv_exporter - INFO - Top Currencies:
+2025-10-21 13:39:15,441 - csv_exporter - INFO -   GBP: 6
+2025-10-21 13:39:15,442 - csv_exporter - INFO -   USD: 5
+2025-10-21 13:39:15,442 - csv_exporter - INFO -   EUR: 3
+2025-10-21 13:39:15,442 - csv_exporter - INFO -   AUD: 3
+2025-10-21 13:39:15,442 - csv_exporter - INFO -   CAD: 2
+2025-10-21 13:39:15,442 - csv_exporter - INFO -   JPY: 1
+2025-10-21 13:39:15,442 - csv_exporter - INFO -   CHF: 1
+2025-10-21 13:39:15,442 - csv_exporter - INFO -   All: 1
+2025-10-21 13:39:15,442 - csv_exporter - INFO - ==================================================
+2025-10-21 13:39:15,454 - csv_exporter - INFO - Exported 22 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-21 13:39:15,455 - scraper - INFO - Saved 22 events from 2025-10-14 to CSV
+2025-10-21 13:39:19,941 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 13:39:19,942 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 13:39:19,942 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 13:39:20,925 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:39:21,229 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:39:21,538 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 13:39:21,539 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 13:39:22,730 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 13:40:17,712 - scraper - INFO - Scraped 26 events for oct15.2025 using JS data
+2025-10-21 13:40:17,794 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-21 13:40:17,794 - symbol_mapper - INFO - Mapped 26 events with trading pairs
+2025-10-21 13:40:17,804 - csv_exporter - INFO - ==================================================
+2025-10-21 13:40:17,805 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-21 13:40:17,805 - csv_exporter - INFO - ==================================================
+2025-10-21 13:40:17,805 - csv_exporter - INFO - [STATS] Total events: 26
+2025-10-21 13:40:17,805 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-21 13:40:17,806 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-21 13:40:17,806 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-21 13:40:17,806 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-21 13:40:17,806 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-21 13:40:17,806 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-21 13:40:17,807 - csv_exporter - INFO - Impact Distribution:
+2025-10-21 13:40:17,807 - csv_exporter - INFO -   Low: 26 (100.0%)
+2025-10-21 13:40:17,807 - csv_exporter - INFO - Top Currencies:
+2025-10-21 13:40:17,807 - csv_exporter - INFO -   USD: 7
+2025-10-21 13:40:17,807 - csv_exporter - INFO -   AUD: 4
+2025-10-21 13:40:17,807 - csv_exporter - INFO -   CNY: 4
+2025-10-21 13:40:17,808 - csv_exporter - INFO -   GBP: 3
+2025-10-21 13:40:17,808 - csv_exporter - INFO -   EUR: 3
+2025-10-21 13:40:17,808 - csv_exporter - INFO -   CAD: 2
+2025-10-21 13:40:17,808 - csv_exporter - INFO -   JPY: 1
+2025-10-21 13:40:17,808 - csv_exporter - INFO -   All: 1
+2025-10-21 13:40:17,808 - csv_exporter - INFO -   NZD: 1
+2025-10-21 13:40:17,809 - csv_exporter - INFO - ==================================================
+2025-10-21 13:40:17,817 - csv_exporter - INFO - Exported 48 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-21 13:40:17,817 - scraper - INFO - Saved 26 events from 2025-10-15 to CSV
+2025-10-21 13:40:23,073 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 13:40:23,073 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 13:40:23,073 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 13:40:24,047 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:40:24,388 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:40:24,684 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 13:40:24,685 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 13:40:25,833 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 13:40:44,230 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/427fdc828dfe9ae7997026c235a68771
+2025-10-21 13:44:00,766 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-21 13:44:00,766 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-21 13:44:00,767 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-21 13:44:00,767 - __main__ - INFO - Scraping events from 2025-10-14 to 2025-10-28
+2025-10-21 13:44:00,767 - __main__ - INFO - Initializing CSV file with headers for incremental saving...
+2025-10-21 13:44:00,772 - __main__ - INFO - CSV file initialized for incremental saving
+2025-10-21 13:44:00,772 - __main__ - INFO - Starting data scraping...
+2025-10-21 13:44:00,773 - scraper - INFO - Starting scrape from 2025-10-14 to 2025-10-28
+2025-10-21 13:44:00,773 - scraper - INFO - Total days in range: 14, estimated weekend days to skip: ~4
+2025-10-21 13:44:00,774 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 13:44:00,774 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-21 13:44:00,774 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 13:44:00,775 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 13:44:02,464 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:44:02,976 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:44:03,450 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 13:44:03,451 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 13:44:04,723 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-21 13:44:21,367 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/34889cbafdcb1de503d067b12752f4e1
+2025-10-21 13:44:28,003 - __main__ - INFO - Test mode enabled: fetching 7 days back and forward
+2025-10-21 13:44:28,003 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-21 13:44:28,004 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-21 13:44:28,004 - __main__ - INFO - Scraping events from 2025-10-14 to 2025-10-28
+2025-10-21 13:44:28,004 - __main__ - INFO - Initializing CSV file with headers for incremental saving...
+2025-10-21 13:44:28,009 - __main__ - INFO - CSV file initialized for incremental saving
+2025-10-21 13:44:28,010 - __main__ - INFO - Starting data scraping...
+2025-10-21 13:44:28,010 - scraper - INFO - Starting scrape from 2025-10-14 to 2025-10-28
+2025-10-21 13:44:28,010 - scraper - INFO - Total days in range: 14, estimated weekend days to skip: ~4
+2025-10-21 13:44:28,010 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-21 13:44:28,011 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-21 13:44:28,011 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-21 13:44:28,011 - WDM - INFO - ====== WebDriver manager ======
+2025-10-21 13:44:30,013 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:44:30,428 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-21 13:44:30,825 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 13:44:30,826 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-21 13:44:32,024 - scraper - INFO - Chrome WebDriver initialized successfully

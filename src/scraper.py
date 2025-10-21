@@ -32,10 +32,11 @@ class ForexFactoryScraper:
     """Scraper for ForexFactory economic calendar using Selenium"""
     
     def __init__(self, base_url: str = "https://www.forexfactory.com/calendar", 
-                 timeout: int = 30, retry_attempts: int = 3, csv_exporter=None, symbol_mapper=None):
+                 timeout: int = 15, retry_attempts: int = 3, csv_exporter=None, symbol_mapper=None, headless: bool = True):
         self.base_url = base_url
         self.timeout = timeout
         self.retry_attempts = retry_attempts
+        self.headless = headless
         self.driver = None
         self.wait = None
         self._driver_session_lost = False
@@ -87,8 +88,15 @@ class ForexFactoryScraper:
             chrome_options.add_argument('--disable-extensions')
             chrome_options.add_argument('--disable-plugins')
             chrome_options.add_argument('--disable-images')
-            # Temporarily disable headless mode for better JavaScript execution
-            # chrome_options.add_argument('--headless')  # Run in headless mode for better performance
+            
+            # Enable headless mode if requested
+            if self.headless:
+                chrome_options.add_argument('--headless')  # Run in headless mode for background operation
+                chrome_options.add_argument('--no-sandbox')
+                chrome_options.add_argument('--disable-dev-shm-usage')
+                chrome_options.add_argument('--disable-gpu')
+                
+            logger.info(f"Chrome WebDriver configured with headless mode: {self.headless}")
             
             logger.info("Downloading/updating ChromeDriver...")
             # Setup service and driver
@@ -727,23 +735,42 @@ class ForexFactoryScraper:
     
     def _extract_impact_from_js_data(self, event_data: Dict) -> str:
         """Try to extract impact level from JavaScript data"""
-        # This is a placeholder - the impact level might be in the HTML or other JS variables
-        # For now, return default, but we could enhance this based on ForexFactory's structure
-        
-        # Check if there are any clues in the event data
-        if 'impact' in event_data:
-            return str(event_data['impact']).title()
-        
-        # Check for other possible impact indicators
-        event_id = event_data.get('id', 0)
-        ebase_id = event_data.get('ebaseId', 0)
-        
-        # As a fallback, try to determine from the page HTML
         try:
-            # This could be enhanced to look up impact from HTML based on event ID
-            pass
-        except:
-            pass
+            # Check if there are any direct impact indicators in the event data
+            if 'impact' in event_data:
+                impact_value = str(event_data['impact']).title()
+                logger.debug(f"Found direct impact in JS data: {impact_value}")
+                return impact_value
+            
+            # Check for other possible impact field names
+            impact_fields = ['impactLevel', 'impact_level', 'importance', 'priority', 'significance']
+            for field in impact_fields:
+                if field in event_data:
+                    impact_value = str(event_data[field]).title()
+                    logger.debug(f"Found impact in field '{field}': {impact_value}")
+                    return impact_value
+            
+            # Check numeric indicators that might represent impact levels
+            # ForexFactory might use 1=Low, 2=Medium, 3=High or similar
+            numeric_impact_indicators = ['impactNum', 'impact_num', 'level', 'strength']
+            for field in numeric_impact_indicators:
+                if field in event_data:
+                    try:
+                        impact_num = int(event_data[field])
+                        if impact_num >= 3:
+                            return 'High'
+                        elif impact_num >= 2:
+                            return 'Medium'
+                        else:
+                            return 'Low'
+                    except (ValueError, TypeError):
+                        continue
+            
+            # Log the available fields for debugging
+            logger.debug(f"Available JS event fields for impact: {list(event_data.keys())}")
+            
+        except Exception as e:
+            logger.debug(f"Error extracting impact from JS data: {e}")
             
         return 'Low'  # Default impact level
     
@@ -1024,14 +1051,79 @@ class ForexFactoryScraper:
         if not impact_cell:
             return 'Low'
         
-        # Look for impact indicators in class names or text
-        cell_html = str(impact_cell)
-        if 'high' in cell_html.lower():
+        # Get the HTML content of the cell
+        cell_html = str(impact_cell).lower()
+        
+        # Debug logging to understand the structure
+        logger.debug(f"Parsing impact cell HTML: {cell_html[:200]}...")
+        
+        # Look for common ForexFactory impact indicators
+        # Check for classes that typically indicate impact levels
+        high_indicators = [
+            'impact-high', 'high-impact', 'cal_high', 'icon-high',
+            'red', 'color-red', 'bg-red', 'impact_high', 'ff-impact-high',
+            'impactlevel-high', 'impact_level_high', 'priority-high'
+        ]
+        medium_indicators = [
+            'impact-medium', 'medium-impact', 'cal_medium', 'icon-medium',
+            'orange', 'color-orange', 'bg-orange', 'impact_medium', 'yellow',
+            'ff-impact-medium', 'impactlevel-medium', 'impact_level_medium',
+            'priority-medium', 'amber'
+        ]
+        
+        if any(indicator in cell_html for indicator in high_indicators):
+            logger.debug("Found HIGH impact indicator")
             return 'High'
-        elif 'medium' in cell_html.lower():
+        elif any(indicator in cell_html for indicator in medium_indicators):
+            logger.debug("Found MEDIUM impact indicator")
             return 'Medium'
-        else:
-            return 'Low'
+        
+        # Check for text content directly
+        cell_text = impact_cell.get_text(strip=True).lower()
+        if any(text in cell_text for text in ['high', 'red']):
+            return 'High'
+        elif any(text in cell_text for text in ['medium', 'orange', 'yellow']):
+            return 'Medium'
+        
+        # Look for specific div or span classes that might contain impact info
+        try:
+            # Check for elements with class attributes that might indicate impact
+            for element in impact_cell.find_all(['div', 'span', 'img']):
+                element_classes = element.get('class', [])
+                element_classes_str = ' '.join(element_classes).lower()
+                
+                if any(clazz in element_classes_str for clazz in [
+                    'high', 'medium', 'red', 'orange', 'yellow'
+                ]):
+                    if 'high' in element_classes_str or 'red' in element_classes_str:
+                        return 'High'
+                    elif 'medium' in element_classes_str or 'orange' in element_classes_str:
+                        return 'Medium'
+            
+            # Check for style attributes that might indicate color coding
+            style_attr = impact_cell.get('style', '').lower()
+            if 'red' in style_attr or 'background-color: red' in style_attr:
+                return 'High'
+            elif 'orange' in style_attr or 'yellow' in style_attr or 'background-color: orange' in style_attr:
+                return 'Medium'
+            
+            # Check for data attributes that might contain impact information
+            for attr_name, attr_value in impact_cell.attrs.items():
+                if 'data-' in attr_name.lower() and isinstance(attr_value, str):
+                    attr_value_lower = attr_value.lower()
+                    if any(indicator in attr_value_lower for indicator in high_indicators):
+                        return 'High'
+                    elif any(indicator in attr_value_lower for indicator in medium_indicators):
+                        return 'Medium'
+                
+        except Exception as e:
+            logger.debug(f"Error parsing impact cell classes: {e}")
+        
+        # Debug: log what was found before defaulting to Low
+        logger.debug(f"No impact indicators found in cell, defaulting to Low. Cell text: '{cell_text}', HTML: {cell_html[:100]}")
+        
+        # Default to Low if no other indicators found
+        return 'Low'
     
     def _parse_time_string(self, time_str: str, target_date: datetime) -> datetime:
         """Parse time string and combine with target date"""

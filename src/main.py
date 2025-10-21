@@ -116,7 +116,8 @@ def run_pipeline(config: Dict, scrape_only: bool = False) -> bool:
             timeout=scraping_config.get('timeout', 30),
             retry_attempts=scraping_config.get('retry_attempts', 3),
             csv_exporter=csv_exporter,
-            symbol_mapper=symbol_mapper
+            symbol_mapper=symbol_mapper,
+            headless=scraping_config.get('headless', True)  # Default to headless mode
         )
         
         # Calculate date range
@@ -195,6 +196,8 @@ def main():
                        help='Only scrape data without exporting to CSV')
     parser.add_argument('--test', action='store_true',
                        help='Test mode: scrape only last 7 days')
+    parser.add_argument('--no-headless', action='store_true',
+                       help='Disable headless mode (show browser window)')
     
     args = parser.parse_args()
     
@@ -210,6 +213,11 @@ def main():
         config['scraping']['days_back'] = 7
         config['scraping']['days_forward'] = 7
         logger.info("Test mode enabled: fetching 7 days back and forward")
+    
+    # Headless mode adjustment
+    if args.no_headless:
+        config['scraping']['headless'] = False
+        logger.info("Headless mode disabled: browser window will be visible")
     
     logger.info("Starting Economic News Manager Pipeline")
     
