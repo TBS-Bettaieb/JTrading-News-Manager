@@ -1588,3 +1588,2226 @@ Stacktrace:
 2025-10-21 14:40:30,257 - __main__ - INFO - Final CSV file: D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv (size: 79 bytes)
 2025-10-21 14:40:30,261 - __main__ - INFO - Pipeline completed successfully. Final CSV contains 0 events
 2025-10-21 14:40:30,261 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-23 11:38:15,357 - __main__ - INFO - Daily mode: targeting date 2025-01-15
+2025-10-23 11:38:15,357 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-23 11:38:15,357 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 11:38:15,358 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 11:38:15,358 - __main__ - INFO - Daily mode: scraping events for 2025-01-15
+2025-10-23 11:38:15,358 - scraper - INFO - Starting DAILY scrape for 2025-01-15
+2025-10-23 11:38:15,359 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 11:38:15,359 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 11:38:15,359 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 11:38:15,359 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 11:38:19,292 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:38:19,781 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:38:20,152 - WDM - INFO - There is no [win64] chromedriver "141.0.7390.122" for browser google-chrome "141.0.7390" in cache
+2025-10-23 11:38:20,152 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:38:21,103 - WDM - INFO - WebDriver version 141.0.7390.122 selected
+2025-10-23 11:38:21,108 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/win32/chromedriver-win32.zip
+2025-10-23 11:38:21,108 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/141.0.7390.122/win32/chromedriver-win32.zip
+2025-10-23 11:38:21,466 - WDM - INFO - Driver downloading response is 200
+2025-10-23 11:38:21,567 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:38:32,442 - WDM - INFO - Driver has been saved in cache [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122]
+2025-10-23 11:38:32,445 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 11:38:35,824 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 11:39:25,995 - scraper - INFO - Scraped 27 events for jan15.2025 using JS data
+2025-10-23 11:39:26,096 - scraper - INFO - Daily scrape completed: 27 events found for 2025-01-15
+2025-10-23 11:39:28,378 - __main__ - INFO - Daily scrape completed: 27 events found
+2025-10-23 11:39:28,379 - __main__ - INFO - Scrape-only mode: not exporting to CSV
+2025-10-23 11:39:28,380 - symbol_mapper - INFO - Mapped 27 events with trading pairs
+2025-10-23 11:39:28,380 - __main__ - INFO - Pipeline completed successfully with 27 events processed
+2025-10-23 11:39:28,380 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-23 11:39:37,430 - __main__ - INFO - Range mode: using config date range
+2025-10-23 11:39:37,430 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-23 11:39:37,430 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-23 11:39:37,431 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 11:39:37,431 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 11:39:37,432 - __main__ - INFO - Range mode: scraping events from 2025-09-23 to 2025-11-22
+2025-10-23 11:39:37,432 - __main__ - INFO - Starting range data scraping...
+2025-10-23 11:39:37,432 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-23 to 2025-11-22
+2025-10-23 11:39:37,432 - scraper - INFO - Total days in range: 60
+2025-10-23 11:39:37,433 - scraper - INFO - Split date range into 2 chunks of max 1 months each
+2025-10-23 11:39:37,433 - scraper - INFO - Processing 2 date range chunks
+2025-10-23 11:39:37,433 - scraper - INFO - Processing range 1/2: 2025-09-23 to 2025-10-22
+2025-10-23 11:39:37,433 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 11:39:37,434 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 11:39:37,434 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 11:39:37,434 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 11:39:41,925 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:39:42,402 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:39:42,804 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 11:39:42,805 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 11:39:44,001 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 11:41:05,251 - scraper - ERROR - Timeout waiting for calendar options or date range input: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x101fe43+66515]
+	GetHandleVerifier [0x0x101fe84+66580]
+	(No symbol) [0x0xe0dc48]
+	(No symbol) [0x0xe58704]
+	(No symbol) [0x0xe58aab]
+	(No symbol) [0x0xe9f482]
+	(No symbol) [0x0xe7b214]
+	(No symbol) [0x0xe9cba7]
+	(No symbol) [0x0xe7afc6]
+	(No symbol) [0x0xe4c2ca]
+	(No symbol) [0x0xe4d154]
+	GetHandleVerifier [0x0x1277353+2521315]
+	GetHandleVerifier [0x0x12722d3+2500707]
+	GetHandleVerifier [0x0x1047c94+229924]
+	GetHandleVerifier [0x0x10381f8+165768]
+	GetHandleVerifier [0x0x103ecad+193085]
+	GetHandleVerifier [0x0x1028158+100072]
+	GetHandleVerifier [0x0x10282f0+100480]
+	GetHandleVerifier [0x0x10125aa+11066]
+	BaseThreadInitThunk [0x0x76a75d49+25]
+	RtlInitializeExceptionChain [0x0x773cd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x773cd661+561]
+
+2025-10-23 11:41:12,315 - scraper - INFO - Processing range 2/2: 2025-10-23 to 2025-11-21
+2025-10-23 11:41:12,315 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 11:41:12,315 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 11:41:12,316 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 11:41:12,316 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 11:41:15,805 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:41:16,279 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:41:16,707 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 11:41:16,708 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 11:41:17,933 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 11:42:25,923 - scraper - INFO - Scraped 0 events from calendar table for range 2025-10-23 to 2025-11-21
+2025-10-23 11:42:25,924 - scraper - INFO - Scraped 0 events for range 2025-10-23 to 2025-11-21
+2025-10-23 11:42:28,067 - scraper - INFO - ============================================================
+2025-10-23 11:42:28,068 - scraper - INFO - RANGE-BASED SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-23 11:42:28,068 - scraper - INFO - ============================================================
+2025-10-23 11:42:28,068 - scraper - INFO - [TOTAL] Total events found: 0
+2025-10-23 11:42:28,069 - scraper - INFO - [RANGE] Date range: 2025-09-23 to 2025-11-22
+2025-10-23 11:42:28,070 - scraper - INFO - [RANGES] Total ranges processed: 2
+2025-10-23 11:42:28,070 - scraper - INFO - [SUCCESS] Successful ranges: 2/2 (100.0%)
+2025-10-23 11:42:28,070 - scraper - INFO - [FAILED] Failed ranges: 0
+2025-10-23 11:42:28,071 - scraper - INFO - [OPTIMIZATION] Massive efficiency gain: ~60 requests reduced to 2 requests
+2025-10-23 11:42:28,071 - scraper - INFO - ============================================================
+2025-10-23 11:42:28,071 - __main__ - INFO - Range scrape completed: 0 events found
+2025-10-23 11:42:28,072 - __main__ - WARNING - No events scraped - this may indicate an issue with the scraper or no events in the date range
+2025-10-23 11:42:28,072 - __main__ - INFO - Scrape-only mode: not exporting to CSV
+2025-10-23 11:42:28,073 - symbol_mapper - INFO - Mapped 0 events with trading pairs
+2025-10-23 11:42:28,073 - __main__ - INFO - Pipeline completed successfully with 0 events processed
+2025-10-23 11:42:28,073 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-23 11:43:05,772 - __main__ - INFO - Range mode: using config date range
+2025-10-23 11:43:05,772 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 11:43:05,772 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 11:43:05,773 - __main__ - INFO - Range mode: scraping events from 2025-07-25 to 2026-01-21
+2025-10-23 11:43:05,773 - __main__ - INFO - Initializing CSV file with headers for range mode...
+2025-10-23 11:43:05,810 - __main__ - INFO - CSV file initialized for range mode
+2025-10-23 11:43:05,810 - __main__ - INFO - Starting range data scraping...
+2025-10-23 11:43:05,810 - scraper - INFO - Starting RANGE-BASED scrape from 2025-07-25 to 2026-01-21
+2025-10-23 11:43:05,810 - scraper - INFO - Total days in range: 180
+2025-10-23 11:43:05,810 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-23 11:43:05,810 - scraper - INFO - Processing 6 date range chunks
+2025-10-23 11:43:05,811 - scraper - INFO - Processing range 1/6: 2025-07-25 to 2025-08-23
+2025-10-23 11:43:05,811 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 11:43:05,811 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 11:43:05,811 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 11:43:05,811 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 11:43:09,354 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:43:09,803 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:43:10,249 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 11:43:10,249 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 11:43:11,365 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 11:44:31,180 - scraper - ERROR - Timeout waiting for calendar options or date range input: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x101fe43+66515]
+	GetHandleVerifier [0x0x101fe84+66580]
+	(No symbol) [0x0xe0dc48]
+	(No symbol) [0x0xe58704]
+	(No symbol) [0x0xe58aab]
+	(No symbol) [0x0xe9f482]
+	(No symbol) [0x0xe7b214]
+	(No symbol) [0x0xe9cba7]
+	(No symbol) [0x0xe7afc6]
+	(No symbol) [0x0xe4c2ca]
+	(No symbol) [0x0xe4d154]
+	GetHandleVerifier [0x0x1277353+2521315]
+	GetHandleVerifier [0x0x12722d3+2500707]
+	GetHandleVerifier [0x0x1047c94+229924]
+	GetHandleVerifier [0x0x10381f8+165768]
+	GetHandleVerifier [0x0x103ecad+193085]
+	GetHandleVerifier [0x0x1028158+100072]
+	GetHandleVerifier [0x0x10282f0+100480]
+	GetHandleVerifier [0x0x10125aa+11066]
+	BaseThreadInitThunk [0x0x76a75d49+25]
+	RtlInitializeExceptionChain [0x0x773cd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x773cd661+561]
+
+2025-10-23 11:44:39,141 - scraper - INFO - Processing range 2/6: 2025-08-24 to 2025-09-22
+2025-10-23 11:44:39,142 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 11:44:39,143 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 11:44:39,144 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 11:44:39,145 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 11:44:41,885 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:44:42,292 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:44:42,729 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 11:44:42,730 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 11:44:43,836 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 11:44:44,310 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/d1c70f39ef2a385f987e85e7f312bba3
+2025-10-23 11:44:53,698 - __main__ - INFO - Range mode: using config date range
+2025-10-23 11:44:53,698 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-23 11:44:53,698 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 11:44:53,699 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 11:44:53,699 - __main__ - INFO - Range mode: scraping events from 2025-07-25 to 2026-01-21
+2025-10-23 11:44:53,700 - __main__ - INFO - Initializing CSV file with headers for range mode...
+2025-10-23 11:44:53,710 - __main__ - INFO - CSV file initialized for range mode
+2025-10-23 11:44:53,710 - __main__ - INFO - Starting range data scraping...
+2025-10-23 11:44:53,710 - scraper - INFO - Starting RANGE-BASED scrape from 2025-07-25 to 2026-01-21
+2025-10-23 11:44:53,710 - scraper - INFO - Total days in range: 180
+2025-10-23 11:44:53,711 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-23 11:44:53,711 - scraper - INFO - Processing 6 date range chunks
+2025-10-23 11:44:53,711 - scraper - INFO - Processing range 1/6: 2025-07-25 to 2025-08-23
+2025-10-23 11:44:53,712 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 11:44:53,712 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 11:44:53,712 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 11:44:53,713 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 11:44:57,253 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:44:57,713 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:44:58,270 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 11:44:58,272 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 11:44:59,443 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 11:45:15,523 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/c6b21d15ec41ef04a500b87840b47569
+2025-10-23 11:47:40,483 - __main__ - INFO - Range mode: using config date range
+2025-10-23 11:47:40,483 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-23 11:47:40,483 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 11:47:40,484 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 11:47:40,484 - __main__ - INFO - Range mode: scraping events from 2025-09-23 to 2025-11-22
+2025-10-23 11:47:40,484 - __main__ - INFO - Starting range data scraping...
+2025-10-23 11:47:40,485 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-23 to 2025-11-22
+2025-10-23 11:47:40,485 - scraper - INFO - Total days in range: 60
+2025-10-23 11:47:40,485 - scraper - INFO - Split date range into 2 chunks of max 1 months each
+2025-10-23 11:47:40,485 - scraper - INFO - Processing 2 date range chunks
+2025-10-23 11:47:40,485 - scraper - INFO - Processing range 1/2: 2025-09-23 to 2025-10-22
+2025-10-23 11:47:40,486 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 11:47:40,486 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 11:47:40,486 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 11:47:40,486 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 11:47:44,016 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:47:44,427 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:47:44,815 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 11:47:44,816 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 11:47:45,937 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 11:49:07,895 - scraper - ERROR - Timeout waiting for calendar options or date range input: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x101fe43+66515]
+	GetHandleVerifier [0x0x101fe84+66580]
+	(No symbol) [0x0xe0dc48]
+	(No symbol) [0x0xe58704]
+	(No symbol) [0x0xe58aab]
+	(No symbol) [0x0xe9f482]
+	(No symbol) [0x0xe7b214]
+	(No symbol) [0x0xe9cba7]
+	(No symbol) [0x0xe7afc6]
+	(No symbol) [0x0xe4c2ca]
+	(No symbol) [0x0xe4d154]
+	GetHandleVerifier [0x0x1277353+2521315]
+	GetHandleVerifier [0x0x12722d3+2500707]
+	GetHandleVerifier [0x0x1047c94+229924]
+	GetHandleVerifier [0x0x10381f8+165768]
+	GetHandleVerifier [0x0x103ecad+193085]
+	GetHandleVerifier [0x0x1028158+100072]
+	GetHandleVerifier [0x0x10282f0+100480]
+	GetHandleVerifier [0x0x10125aa+11066]
+	BaseThreadInitThunk [0x0x76a75d49+25]
+	RtlInitializeExceptionChain [0x0x773cd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x773cd661+561]
+
+2025-10-23 11:49:14,215 - scraper - INFO - Processing range 2/2: 2025-10-23 to 2025-11-21
+2025-10-23 11:49:14,216 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 11:49:14,217 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 11:49:14,218 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 11:49:14,219 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 11:49:16,831 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:49:17,187 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 11:49:17,528 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 11:49:17,528 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 11:49:18,622 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 11:50:42,166 - scraper - ERROR - Timeout waiting for calendar options or date range input: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x101fe43+66515]
+	GetHandleVerifier [0x0x101fe84+66580]
+	(No symbol) [0x0xe0dc48]
+	(No symbol) [0x0xe58704]
+	(No symbol) [0x0xe58aab]
+	(No symbol) [0x0xe9f482]
+	(No symbol) [0x0xe7b214]
+	(No symbol) [0x0xe9cba7]
+	(No symbol) [0x0xe7afc6]
+	(No symbol) [0x0xe4c2ca]
+	(No symbol) [0x0xe4d154]
+	GetHandleVerifier [0x0x1277353+2521315]
+	GetHandleVerifier [0x0x12722d3+2500707]
+	GetHandleVerifier [0x0x1047c94+229924]
+	GetHandleVerifier [0x0x10381f8+165768]
+	GetHandleVerifier [0x0x103ecad+193085]
+	GetHandleVerifier [0x0x1028158+100072]
+	GetHandleVerifier [0x0x10282f0+100480]
+	GetHandleVerifier [0x0x10125aa+11066]
+	BaseThreadInitThunk [0x0x76a75d49+25]
+	RtlInitializeExceptionChain [0x0x773cd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x773cd661+561]
+
+2025-10-23 11:50:44,310 - scraper - INFO - ============================================================
+2025-10-23 11:50:44,311 - scraper - INFO - RANGE-BASED SCRAPING COMPLETED - SUMMARY REPORT
+2025-10-23 11:50:44,311 - scraper - INFO - ============================================================
+2025-10-23 11:50:44,312 - scraper - INFO - [TOTAL] Total events found: 0
+2025-10-23 11:50:44,313 - scraper - INFO - [RANGE] Date range: 2025-09-23 to 2025-11-22
+2025-10-23 11:50:44,313 - scraper - INFO - [RANGES] Total ranges processed: 2
+2025-10-23 11:50:44,314 - scraper - INFO - [SUCCESS] Successful ranges: 2/2 (100.0%)
+2025-10-23 11:50:44,314 - scraper - INFO - [FAILED] Failed ranges: 0
+2025-10-23 11:50:44,315 - scraper - INFO - [OPTIMIZATION] Massive efficiency gain: ~60 requests reduced to 2 requests
+2025-10-23 11:50:44,316 - scraper - INFO - ============================================================
+2025-10-23 11:50:44,316 - __main__ - INFO - Range scrape completed: 0 events found
+2025-10-23 11:50:44,317 - __main__ - WARNING - No events scraped - this may indicate an issue with the scraper or no events in the date range
+2025-10-23 11:50:44,317 - __main__ - INFO - Scrape-only mode: not exporting to CSV
+2025-10-23 11:50:44,318 - symbol_mapper - INFO - Mapped 0 events with trading pairs
+2025-10-23 11:50:44,318 - __main__ - INFO - Pipeline completed successfully with 0 events processed
+2025-10-23 11:50:44,319 - __main__ - INFO - Economic News Manager completed successfully
+2025-10-23 12:37:01,413 - __main__ - INFO - Range mode: using config date range
+2025-10-23 12:37:01,414 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-23 12:37:01,414 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-23 12:37:01,414 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 12:37:01,415 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 12:37:01,415 - __main__ - INFO - Range mode: scraping events from 2025-09-23 to 2025-11-22
+2025-10-23 12:37:01,415 - __main__ - INFO - Starting range data scraping...
+2025-10-23 12:37:01,415 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-23 to 2025-11-22
+2025-10-23 12:37:01,416 - scraper - INFO - Total days in range: 60
+2025-10-23 12:37:01,416 - scraper - INFO - Split date range into 2 chunks of max 1 months each
+2025-10-23 12:37:01,416 - scraper - INFO - Processing 2 date range chunks
+2025-10-23 12:37:01,416 - scraper - INFO - Processing range 1/2: 2025-09-23 to 2025-10-22
+2025-10-23 12:37:01,417 - scraper - INFO - Scraping range 2025-09-23 to 2025-10-22 day by day
+2025-10-23 12:37:01,417 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:37:01,417 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 12:37:01,417 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:37:01,418 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:37:04,047 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:37:04,381 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:37:04,695 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:37:04,696 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:37:05,803 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:37:56,157 - scraper - INFO - Scraped 27 events for sep23.2025 using JS data
+2025-10-23 12:38:46,994 - scraper - INFO - Scraped 11 events for sep24.2025 using JS data
+2025-10-23 12:39:35,776 - scraper - INFO - Scraped 28 events for sep25.2025 using JS data
+2025-10-23 12:40:27,534 - scraper - WARNING - WebDriver error loading https://www.forexfactory.com/calendar?day=sep26.2025: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x101fe43+66515]
+	GetHandleVerifier [0x0x101fe84+66580]
+	(No symbol) [0x0xe0da6b]
+	(No symbol) [0x0xe4b5ab]
+	(No symbol) [0x0xe7b086]
+	(No symbol) [0x0xe7667c]
+	(No symbol) [0x0xe75bf3]
+	(No symbol) [0x0xdde72d]
+	(No symbol) [0x0xddecae]
+	(No symbol) [0x0xddf14d]
+	GetHandleVerifier [0x0x1277353+2521315]
+	GetHandleVerifier [0x0x12722d3+2500707]
+	GetHandleVerifier [0x0x1047c94+229924]
+	GetHandleVerifier [0x0x10381f8+165768]
+	GetHandleVerifier [0x0x103ecad+193085]
+	(No symbol) [0x0xdde3e3]
+	(No symbol) [0x0xdddb60]
+	GetHandleVerifier [0x0x13bc20f+3852191]
+	BaseThreadInitThunk [0x0x76a75d49+25]
+	RtlInitializeExceptionChain [0x0x773cd6db+107]
+	RtlGetAppContainerNamedObjectPath [0x0x773cd661+561]
+
+2025-10-23 12:40:27,534 - scraper - WARNING - Detected invalid session during navigation. Attempting to reinitialize driver...
+2025-10-23 12:40:27,534 - scraper - WARNING - Detected invalid WebDriver session. Attempting to reinitialize...
+2025-10-23 12:40:44,156 - __main__ - INFO - Range mode: using config date range
+2025-10-23 12:40:44,156 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-23 12:40:44,156 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-23 12:40:44,156 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 12:40:44,157 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 12:40:44,157 - __main__ - INFO - Range mode: scraping events from 2025-09-23 to 2025-11-22
+2025-10-23 12:40:44,157 - __main__ - INFO - Starting range data scraping...
+2025-10-23 12:40:44,157 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-23 to 2025-11-22
+2025-10-23 12:40:44,157 - scraper - INFO - Total days in range: 60
+2025-10-23 12:40:44,157 - scraper - INFO - Split date range into 2 chunks of max 1 months each
+2025-10-23 12:40:44,158 - scraper - INFO - Processing 2 date range chunks
+2025-10-23 12:40:44,158 - scraper - INFO - Processing range 1/2: 2025-09-23 to 2025-10-22
+2025-10-23 12:40:44,158 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:40:44,158 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 12:40:44,158 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:40:44,158 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:40:46,542 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:40:46,876 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:40:47,190 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:40:47,191 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:40:48,291 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:40:48,291 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:41:05,932 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/5bcd98064e9e22905d78d83687b761cc
+2025-10-23 12:41:19,758 - __main__ - INFO - Range mode: using config date range
+2025-10-23 12:41:19,758 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-23 12:41:19,759 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-23 12:41:19,759 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 12:41:19,759 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 12:41:19,759 - __main__ - INFO - Range mode: scraping events from 2025-09-23 to 2025-11-22
+2025-10-23 12:41:19,760 - __main__ - INFO - Initializing CSV file with headers for range mode...
+2025-10-23 12:41:19,766 - __main__ - INFO - CSV file initialized for range mode
+2025-10-23 12:41:19,766 - __main__ - INFO - Starting range data scraping...
+2025-10-23 12:41:19,766 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-23 to 2025-11-22
+2025-10-23 12:41:19,766 - scraper - INFO - Total days in range: 60
+2025-10-23 12:41:19,767 - scraper - INFO - Split date range into 2 chunks of max 1 months each
+2025-10-23 12:41:19,767 - scraper - INFO - Processing 2 date range chunks
+2025-10-23 12:41:19,767 - scraper - INFO - Processing range 1/2: 2025-09-23 to 2025-10-22
+2025-10-23 12:41:19,767 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:41:19,767 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 12:41:19,768 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:41:19,768 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:41:22,170 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:41:22,502 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:41:22,941 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:41:22,943 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:41:24,064 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:41:24,065 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:41:52,677 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:42:33,069 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:43:13,556 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:43:13,556 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025 after 3 attempts
+2025-10-23 12:43:13,556 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:43:21,292 - scraper - INFO - Processing range 2/2: 2025-10-23 to 2025-11-21
+2025-10-23 12:43:21,292 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:43:21,293 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 12:43:21,294 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:43:21,294 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:43:23,615 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:43:23,936 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:43:24,342 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:43:24,343 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:43:25,475 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:43:25,476 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=oct23.2025-nov21.2025
+2025-10-23 12:43:55,739 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=oct23.2025-nov21.2025
+2025-10-23 12:44:15,608 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/f549a051b580fe314d1e1246e4054525
+2025-10-23 12:44:19,688 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017CA800A990>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/f549a051b580fe314d1e1246e4054525
+2025-10-23 12:44:23,758 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017CA8015BA0>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/f549a051b580fe314d1e1246e4054525
+2025-10-23 12:45:40,163 - __main__ - INFO - Range mode: using config date range
+2025-10-23 12:45:40,163 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-23 12:45:40,164 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-23 12:45:40,164 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 12:45:40,164 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 12:45:40,165 - __main__ - INFO - Range mode: scraping events from 2025-09-23 to 2025-11-22
+2025-10-23 12:45:40,165 - __main__ - INFO - Starting range data scraping...
+2025-10-23 12:45:40,165 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-23 to 2025-11-22
+2025-10-23 12:45:40,165 - scraper - INFO - Total days in range: 60
+2025-10-23 12:45:40,165 - scraper - INFO - Split date range into 2 chunks of max 1 months each
+2025-10-23 12:45:40,165 - scraper - INFO - Processing 2 date range chunks
+2025-10-23 12:45:40,166 - scraper - INFO - Processing range 1/2: 2025-09-23 to 2025-10-22
+2025-10-23 12:45:40,166 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:45:40,166 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 12:45:40,166 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:45:40,167 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:45:42,889 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:45:43,244 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:45:43,580 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:45:43,580 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:45:44,727 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:45:44,728 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:46:16,479 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:46:49,209 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:47:28,840 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:47:28,841 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025 after 3 attempts
+2025-10-23 12:47:28,841 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:47:34,375 - scraper - INFO - Processing range 2/2: 2025-10-23 to 2025-11-21
+2025-10-23 12:47:34,375 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:47:34,376 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 12:47:34,376 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:47:34,376 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:47:37,721 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:47:38,350 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:47:38,815 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:47:38,816 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:47:40,081 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:47:40,082 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=oct23.2025-nov21.2025
+2025-10-23 12:48:07,215 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=oct23.2025-nov21.2025
+2025-10-23 12:48:16,489 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/e34e3ce40e7962cd6fa4d96bb3e0493f
+2025-10-23 12:48:20,526 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BEE2A52850>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/e34e3ce40e7962cd6fa4d96bb3e0493f
+2025-10-23 12:48:24,605 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BEE27D3820>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/e34e3ce40e7962cd6fa4d96bb3e0493f
+2025-10-23 12:48:46,282 - __main__ - INFO - Range mode: using config date range
+2025-10-23 12:48:46,282 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-23 12:48:46,282 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 12:48:46,283 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 12:48:46,283 - __main__ - INFO - Range mode: scraping events from 2025-07-25 to 2026-01-21
+2025-10-23 12:48:46,283 - __main__ - INFO - Starting range data scraping...
+2025-10-23 12:48:46,283 - scraper - INFO - Starting RANGE-BASED scrape from 2025-07-25 to 2026-01-21
+2025-10-23 12:48:46,283 - scraper - INFO - Total days in range: 180
+2025-10-23 12:48:46,284 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-23 12:48:46,284 - scraper - INFO - Processing 6 date range chunks
+2025-10-23 12:48:46,284 - scraper - INFO - Processing range 1/6: 2025-07-25 to 2025-08-23
+2025-10-23 12:48:46,284 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:48:46,285 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 12:48:46,285 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:48:46,285 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:48:49,582 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:48:50,000 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:48:50,417 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:48:50,417 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:48:51,576 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:48:51,576 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=jul25.2025-aug23.2025
+2025-10-23 12:49:18,579 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jul25.2025-aug23.2025
+2025-10-23 12:49:52,905 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jul25.2025-aug23.2025
+2025-10-23 12:50:22,003 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jul25.2025-aug23.2025
+2025-10-23 12:50:22,003 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=jul25.2025-aug23.2025 after 3 attempts
+2025-10-23 12:50:22,003 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=jul25.2025-aug23.2025
+2025-10-23 12:50:30,033 - scraper - INFO - Processing range 2/6: 2025-08-24 to 2025-09-22
+2025-10-23 12:50:30,034 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:50:30,034 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 12:50:30,034 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:50:30,035 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:50:33,069 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:50:33,453 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:50:33,822 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:50:33,823 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:50:35,006 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:50:35,006 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=aug24.2025-sep22.2025
+2025-10-23 12:51:03,969 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=aug24.2025-sep22.2025
+2025-10-23 12:51:45,291 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=aug24.2025-sep22.2025
+2025-10-23 12:52:27,157 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=aug24.2025-sep22.2025
+2025-10-23 12:52:27,158 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=aug24.2025-sep22.2025 after 3 attempts
+2025-10-23 12:52:27,158 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=aug24.2025-sep22.2025
+2025-10-23 12:52:35,950 - scraper - INFO - Processing range 3/6: 2025-09-23 to 2025-10-22
+2025-10-23 12:52:35,950 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:52:35,950 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 12:52:35,951 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:52:35,951 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:52:38,703 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:52:39,050 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:52:39,370 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:52:39,371 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:52:40,576 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:52:40,576 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:53:07,700 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:53:35,719 - __main__ - INFO - Range mode: using config date range
+2025-10-23 12:53:35,719 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 12:53:35,719 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 12:53:35,719 - __main__ - INFO - Range mode: scraping events from 2025-07-25 to 2026-01-21
+2025-10-23 12:53:35,719 - __main__ - INFO - Initializing CSV file with headers for range mode...
+2025-10-23 12:53:35,729 - __main__ - INFO - CSV file initialized for range mode
+2025-10-23 12:53:35,729 - __main__ - INFO - Starting range data scraping...
+2025-10-23 12:53:35,729 - scraper - INFO - Starting RANGE-BASED scrape from 2025-07-25 to 2026-01-21
+2025-10-23 12:53:35,729 - scraper - INFO - Total days in range: 180
+2025-10-23 12:53:35,729 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-23 12:53:35,729 - scraper - INFO - Processing 6 date range chunks
+2025-10-23 12:53:35,729 - scraper - INFO - Processing range 1/6: 2025-07-25 to 2025-08-23
+2025-10-23 12:53:35,729 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:53:35,730 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 12:53:35,730 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:53:35,730 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:53:38,359 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:53:38,581 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/ed8b89076ad4bdf54d374365deb84e88
+2025-10-23 12:53:38,699 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:53:39,027 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:53:39,027 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:53:40,126 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:53:40,126 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=jul25.2025-aug23.2025
+2025-10-23 12:53:54,451 - __main__ - INFO - Range mode: using config date range
+2025-10-23 12:53:54,451 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-23 12:53:54,451 - __main__ - INFO - Headless mode disabled: browser window will be visible
+2025-10-23 12:53:54,452 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 12:53:54,452 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 12:53:54,452 - __main__ - INFO - Range mode: scraping events from 2025-09-23 to 2025-11-22
+2025-10-23 12:53:54,453 - __main__ - INFO - Starting range data scraping...
+2025-10-23 12:53:54,453 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-23 to 2025-11-22
+2025-10-23 12:53:54,453 - scraper - INFO - Total days in range: 60
+2025-10-23 12:53:54,453 - scraper - INFO - Split date range into 2 chunks of max 1 months each
+2025-10-23 12:53:54,453 - scraper - INFO - Processing 2 date range chunks
+2025-10-23 12:53:54,453 - scraper - INFO - Processing range 1/2: 2025-09-23 to 2025-10-22
+2025-10-23 12:53:54,453 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:53:54,454 - scraper - INFO - Chrome WebDriver configured with headless mode: False
+2025-10-23 12:53:54,454 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:53:54,454 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:53:57,676 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:53:58,093 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:53:58,483 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:53:58,484 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:54:10,659 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jul25.2025-aug23.2025
+2025-10-23 12:54:18,185 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/c0f5c5c2d10b03db72c828f17f37728e
+2025-10-23 12:54:35,056 - __main__ - INFO - Range mode: using config date range
+2025-10-23 12:54:35,056 - __main__ - INFO - Test mode enabled: fetching 1 month back and forward
+2025-10-23 12:54:35,056 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 12:54:35,057 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 12:54:35,057 - __main__ - INFO - Range mode: scraping events from 2025-09-23 to 2025-11-22
+2025-10-23 12:54:35,057 - __main__ - INFO - Starting range data scraping...
+2025-10-23 12:54:35,058 - scraper - INFO - Starting RANGE-BASED scrape from 2025-09-23 to 2025-11-22
+2025-10-23 12:54:35,058 - scraper - INFO - Total days in range: 60
+2025-10-23 12:54:35,058 - scraper - INFO - Split date range into 2 chunks of max 1 months each
+2025-10-23 12:54:35,058 - scraper - INFO - Processing 2 date range chunks
+2025-10-23 12:54:35,058 - scraper - INFO - Processing range 1/2: 2025-09-23 to 2025-10-22
+2025-10-23 12:54:35,058 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 12:54:35,059 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 12:54:35,059 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 12:54:35,059 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 12:54:37,821 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:54:38,260 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 12:54:38,716 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 12:54:38,717 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 12:54:39,812 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 12:54:39,813 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:55:05,236 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:55:42,567 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:56:24,752 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:56:24,753 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025 after 3 attempts
+2025-10-23 12:56:24,753 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=sep23.2025-oct22.2025
+2025-10-23 12:56:24,753 - scraper - INFO - Falling back to daily scraping approach
+2025-10-23 12:56:24,754 - scraper - INFO - Fallback: scraping range 2025-09-23 to 2025-10-22 day by day
+2025-10-23 12:57:17,394 - scraper - INFO - Scraped 27 events for sep23.2025 using JS data
+2025-10-23 12:58:08,014 - scraper - INFO - Scraped 11 events for sep24.2025 using JS data
+2025-10-23 12:59:05,650 - scraper - INFO - Scraped 28 events for sep25.2025 using JS data
+2025-10-23 13:00:00,870 - scraper - INFO - Scraped 10 events for sep26.2025 using JS data
+2025-10-23 13:00:54,916 - scraper - INFO - Scraped 12 events for sep29.2025 using JS data
+2025-10-23 13:01:42,894 - scraper - INFO - Scraped 45 events for sep30.2025 using JS data
+2025-10-23 13:02:35,775 - scraper - INFO - Scraped 33 events for oct1.2025 using JS data
+2025-10-23 13:03:24,839 - scraper - INFO - Scraped 18 events for oct2.2025 using JS data
+2025-10-23 13:04:17,732 - scraper - INFO - Scraped 23 events for oct3.2025 using JS data
+2025-10-23 13:05:10,406 - scraper - INFO - Scraped 12 events for oct6.2025 using JS data
+2025-10-23 13:06:02,052 - scraper - INFO - Scraped 23 events for oct7.2025 using JS data
+2025-10-23 13:06:56,181 - scraper - INFO - Scraped 20 events for oct8.2025 using JS data
+2025-10-23 13:07:48,295 - scraper - INFO - Scraped 15 events for oct9.2025 using JS data
+2025-10-23 13:08:42,560 - scraper - INFO - Scraped 13 events for oct10.2025 using JS data
+2025-10-23 13:09:34,381 - scraper - INFO - Scraped 11 events for oct13.2025 using JS data
+2025-10-23 13:10:28,622 - scraper - INFO - Scraped 22 events for oct14.2025 using JS data
+2025-10-23 13:11:18,262 - scraper - INFO - Scraped 26 events for oct15.2025 using JS data
+2025-10-23 13:12:14,537 - scraper - INFO - Scraped 33 events for oct16.2025 using JS data
+2025-10-23 13:13:08,607 - scraper - INFO - Scraped 10 events for oct17.2025 using JS data
+2025-10-23 13:13:57,513 - scraper - INFO - Scraped 17 events for oct20.2025 using JS data
+2025-10-23 13:14:48,924 - scraper - INFO - Scraped 15 events for oct21.2025 using JS data
+2025-10-23 13:15:43,174 - scraper - INFO - Scraped 25 events for oct22.2025 using JS data
+2025-10-23 13:15:45,863 - scraper - INFO - Fallback completed: 449 total events from 2025-09-23 to 2025-10-22
+2025-10-23 13:15:45,864 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 13:15:45,864 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 13:15:45,865 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 13:15:45,865 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 13:15:45,865 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 13:15:45,865 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 13:15:45,866 - symbol_mapper - INFO - Mapped 449 events with trading pairs
+2025-10-23 13:15:45,918 - csv_exporter - INFO - ==================================================
+2025-10-23 13:15:45,918 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 13:15:45,918 - csv_exporter - INFO - ==================================================
+2025-10-23 13:15:45,919 - csv_exporter - INFO - [STATS] Total events: 449
+2025-10-23 13:15:45,919 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-23 13:15:45,919 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-23 13:15:45,919 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 13:15:45,919 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-23 13:15:45,919 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-23 13:15:45,919 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-23 13:15:45,920 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 13:15:45,920 - csv_exporter - INFO -   Low: 449 (100.0%)
+2025-10-23 13:15:45,920 - csv_exporter - INFO - Top Currencies:
+2025-10-23 13:15:45,920 - csv_exporter - INFO -   USD: 138
+2025-10-23 13:15:45,920 - csv_exporter - INFO -   EUR: 83
+2025-10-23 13:15:45,920 - csv_exporter - INFO -   GBP: 80
+2025-10-23 13:15:45,920 - csv_exporter - INFO -   JPY: 33
+2025-10-23 13:15:45,921 - csv_exporter - INFO -   CAD: 29
+2025-10-23 13:15:45,921 - csv_exporter - INFO -   AUD: 27
+2025-10-23 13:15:45,921 - csv_exporter - INFO -   CNY: 26
+2025-10-23 13:15:45,921 - csv_exporter - INFO -   CHF: 15
+2025-10-23 13:15:45,921 - csv_exporter - INFO -   NZD: 12
+2025-10-23 13:15:45,921 - csv_exporter - INFO -   All: 6
+2025-10-23 13:15:45,921 - csv_exporter - INFO - ==================================================
+2025-10-23 13:15:45,938 - csv_exporter - INFO - Exported 449 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 13:15:45,938 - scraper - INFO - Saved 449 events from range 2025-09-23 to 2025-10-22
+2025-10-23 13:15:55,981 - scraper - INFO - Processing range 2/2: 2025-10-23 to 2025-11-21
+2025-10-23 13:15:55,981 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 13:15:55,982 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 13:15:55,982 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 13:15:55,982 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 13:15:58,768 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 13:15:59,132 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 13:15:59,525 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 13:15:59,526 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 13:16:00,763 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 13:16:00,763 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=oct23.2025-nov21.2025
+2025-10-23 13:16:36,792 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=oct23.2025-nov21.2025
+2025-10-23 13:17:20,792 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=oct23.2025-nov21.2025
+2025-10-23 13:17:23,839 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/8e6b1cf0dafee794f7404bfc7c88bd2c
+2025-10-23 13:17:27,901 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F8DC202850>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/8e6b1cf0dafee794f7404bfc7c88bd2c
+2025-10-23 13:17:31,937 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F8DAEA3820>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/8e6b1cf0dafee794f7404bfc7c88bd2c
+2025-10-23 13:25:25,014 - __main__ - INFO - Range mode: using config date range
+2025-10-23 13:25:25,014 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 13:25:25,014 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 13:25:25,015 - __main__ - INFO - Range mode: scraping events from 2025-04-26 to 2025-10-23
+2025-10-23 13:25:25,015 - __main__ - INFO - Initializing CSV file with headers for range mode...
+2025-10-23 13:25:25,027 - __main__ - INFO - CSV file initialized for range mode
+2025-10-23 13:25:25,028 - __main__ - INFO - Starting range data scraping...
+2025-10-23 13:25:25,028 - scraper - INFO - Starting RANGE-BASED scrape from 2025-04-26 to 2025-10-23
+2025-10-23 13:25:25,028 - scraper - INFO - Total days in range: 180
+2025-10-23 13:25:25,028 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-23 13:25:25,029 - scraper - INFO - Processing 6 date range chunks
+2025-10-23 13:25:25,029 - scraper - INFO - Processing range 1/6: 2025-04-26 to 2025-05-25
+2025-10-23 13:25:25,029 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 13:25:25,030 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 13:25:25,030 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 13:25:25,030 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 13:25:28,925 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 13:25:29,500 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 13:25:29,930 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 13:25:29,934 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 13:25:31,367 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 13:25:31,367 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 13:25:55,496 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 13:26:28,351 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 13:27:09,773 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 13:27:09,774 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025 after 3 attempts
+2025-10-23 13:27:09,774 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 13:27:09,774 - scraper - INFO - Falling back to daily scraping approach
+2025-10-23 13:27:09,774 - scraper - INFO - Fallback: scraping range 2025-04-26 to 2025-05-25 day by day
+2025-10-23 13:27:57,605 - scraper - INFO - Scraped 3 events for apr28.2025 using JS data
+2025-10-23 13:28:51,326 - scraper - INFO - Scraped 18 events for apr29.2025 using JS data
+2025-10-23 13:29:46,257 - scraper - INFO - Scraped 38 events for apr30.2025 using JS data
+2025-10-23 13:30:38,596 - scraper - INFO - Scraped 29 events for may1.2025 using JS data
+2025-10-23 13:31:29,047 - scraper - INFO - Scraped 22 events for may2.2025 using JS data
+2025-10-23 13:32:14,685 - scraper - INFO - Scraped 8 events for may5.2025 using JS data
+2025-10-23 13:32:45,358 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-23 13:33:20,225 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-23 13:33:58,045 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-23 13:33:58,045 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may6.2025 after 3 attempts
+2025-10-23 13:34:47,812 - scraper - INFO - Scraped 18 events for may7.2025 using JS data
+2025-10-23 13:35:34,869 - scraper - INFO - Scraped 21 events for may8.2025 using JS data
+2025-10-23 13:36:00,154 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-23 13:36:40,810 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-23 13:37:20,513 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-23 13:37:20,513 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may9.2025 after 3 attempts
+2025-10-23 13:37:49,087 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may12.2025
+2025-10-23 13:38:47,598 - scraper - INFO - Scraped 13 events for may12.2025 using JS data
+2025-10-23 13:39:41,988 - scraper - INFO - Scraped 22 events for may13.2025 using JS data
+2025-10-23 13:40:33,557 - scraper - INFO - Scraped 16 events for may14.2025 using JS data
+2025-10-23 13:41:22,444 - scraper - INFO - Scraped 37 events for may15.2025 using JS data
+2025-10-23 13:42:15,342 - scraper - INFO - Scraped 16 events for may16.2025 using JS data
+2025-10-23 13:42:41,212 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may19.2025
+2025-10-23 13:43:34,363 - scraper - INFO - Scraped 23 events for may19.2025 using JS data
+2025-10-23 13:44:20,880 - scraper - INFO - Scraped 23 events for may20.2025 using JS data
+2025-10-23 13:44:54,132 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may21.2025
+2025-10-23 13:45:49,199 - scraper - INFO - Scraped 17 events for may21.2025 using JS data
+2025-10-23 13:46:45,780 - scraper - INFO - Scraped 36 events for may22.2025 using JS data
+2025-10-23 13:47:40,195 - scraper - INFO - Scraped 14 events for may23.2025 using JS data
+2025-10-23 13:47:41,869 - scraper - INFO - Fallback completed: 374 total events from 2025-04-26 to 2025-05-25
+2025-10-23 13:47:41,870 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 13:47:41,871 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 13:47:41,871 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 13:47:41,871 - symbol_mapper - INFO - Mapped 374 events with trading pairs
+2025-10-23 13:47:41,919 - csv_exporter - INFO - ==================================================
+2025-10-23 13:47:41,919 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 13:47:41,919 - csv_exporter - INFO - ==================================================
+2025-10-23 13:47:41,919 - csv_exporter - INFO - [STATS] Total events: 374
+2025-10-23 13:47:41,920 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-23 13:47:41,920 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-23 13:47:41,920 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 13:47:41,920 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-23 13:47:41,920 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-23 13:47:41,920 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-23 13:47:41,920 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 13:47:41,921 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 250 (66.8%)
+2025-10-23 13:47:41,921 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 73 (19.5%)
+2025-10-23 13:47:41,921 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 40 (10.7%)
+2025-10-23 13:47:41,921 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.9%)
+2025-10-23 13:47:41,921 - csv_exporter - INFO - Top Currencies:
+2025-10-23 13:47:41,922 - csv_exporter - INFO -   USD: 109
+2025-10-23 13:47:41,922 - csv_exporter - INFO -   EUR: 76
+2025-10-23 13:47:41,922 - csv_exporter - INFO -   GBP: 56
+2025-10-23 13:47:41,922 - csv_exporter - INFO -   JPY: 31
+2025-10-23 13:47:41,922 - csv_exporter - INFO -   AUD: 27
+2025-10-23 13:47:41,922 - csv_exporter - INFO -   CAD: 25
+2025-10-23 13:47:41,922 - csv_exporter - INFO -   NZD: 19
+2025-10-23 13:47:41,922 - csv_exporter - INFO -   CNY: 16
+2025-10-23 13:47:41,922 - csv_exporter - INFO -   CHF: 12
+2025-10-23 13:47:41,923 - csv_exporter - INFO -   All: 3
+2025-10-23 13:47:41,923 - csv_exporter - INFO - ==================================================
+2025-10-23 13:47:41,936 - csv_exporter - INFO - Exported 374 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 13:47:41,936 - scraper - INFO - Saved 374 events from range 2025-04-26 to 2025-05-25
+2025-10-23 13:47:47,420 - scraper - INFO - Processing range 2/6: 2025-05-26 to 2025-06-24
+2025-10-23 13:47:47,421 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 13:47:47,421 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 13:47:47,422 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 13:47:47,422 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 13:47:51,008 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 13:47:51,492 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 13:47:51,947 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 13:47:51,948 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 13:47:53,343 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 13:47:53,344 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=may26.2025-jun24.2025
+2025-10-23 13:48:46,452 - scraper - INFO - Parsing range page using HTML table extraction
+2025-10-23 13:48:50,237 - scraper - INFO - Scraped 4 events from calendar table for range 2025-05-26 to 2025-06-24
+2025-10-23 13:48:50,238 - scraper - INFO - Completed range scraping: 4 total events from 2025-05-26 to 2025-06-24
+2025-10-23 13:48:50,238 - symbol_mapper - WARNING - No mapping found for currency: All Day
+2025-10-23 13:48:50,238 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-23 13:48:50,238 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-23 13:48:50,238 - symbol_mapper - WARNING - No mapping found for currency: 
+2025-10-23 13:48:50,238 - symbol_mapper - INFO - Mapped 4 events with trading pairs
+2025-10-23 13:48:50,242 - csv_exporter - INFO - ==================================================
+2025-10-23 13:48:50,242 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 13:48:50,242 - csv_exporter - INFO - ==================================================
+2025-10-23 13:48:50,243 - csv_exporter - INFO - [STATS] Total events: 4
+2025-10-23 13:48:50,243 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-23 13:48:50,243 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-23 13:48:50,243 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 13:48:50,243 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 3 (75.0%)
+2025-10-23 13:48:50,244 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 1 (25.0%)
+2025-10-23 13:48:50,244 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-23 13:48:50,244 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 13:48:50,244 - csv_exporter - INFO -   Low: 4 (100.0%)
+2025-10-23 13:48:50,244 - csv_exporter - INFO - Top Currencies:
+2025-10-23 13:48:50,245 - csv_exporter - INFO -   : 3
+2025-10-23 13:48:50,245 - csv_exporter - INFO -   All Day: 1
+2025-10-23 13:48:50,245 - csv_exporter - INFO - ==================================================
+2025-10-23 13:48:50,255 - csv_exporter - INFO - Exported 377 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 13:48:50,255 - scraper - INFO - Saved 4 events from range 2025-05-26 to 2025-06-24
+2025-10-23 13:48:58,558 - scraper - INFO - Processing range 3/6: 2025-06-25 to 2025-07-24
+2025-10-23 13:48:58,558 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 13:48:58,558 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 13:48:58,559 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 13:48:58,559 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 13:49:02,089 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 13:49:02,512 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 13:49:02,917 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 13:49:02,918 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 13:49:04,065 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 13:49:04,066 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=jun25.2025-jul24.2025
+2025-10-23 13:49:32,098 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jun25.2025-jul24.2025
+2025-10-23 13:49:42,173 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/aa1a1df8684c5481ae3297a027e1a5a4
+2025-10-23 13:49:46,251 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000291A14C3BB0>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/aa1a1df8684c5481ae3297a027e1a5a4
+2025-10-23 13:49:50,322 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000291A14C3CE0>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/aa1a1df8684c5481ae3297a027e1a5a4
+2025-10-23 13:58:26,228 - __main__ - INFO - Range mode: using config date range
+2025-10-23 13:58:26,229 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 13:58:26,229 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 13:58:26,230 - __main__ - INFO - Range mode: scraping events from 2025-04-26 to 2025-10-23
+2025-10-23 13:58:26,230 - __main__ - INFO - Starting range data scraping...
+2025-10-23 13:58:26,230 - scraper - INFO - Starting RANGE-BASED scrape from 2025-04-26 to 2025-10-23
+2025-10-23 13:58:26,230 - scraper - INFO - Total days in range: 180
+2025-10-23 13:58:26,230 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-23 13:58:26,231 - scraper - INFO - Processing 6 date range chunks
+2025-10-23 13:58:26,231 - scraper - INFO - Processing range 1/6: 2025-04-26 to 2025-05-25
+2025-10-23 13:58:26,231 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 13:58:26,231 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 13:58:26,232 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 13:58:26,232 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 13:58:30,128 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 13:58:30,560 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 13:58:30,949 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 13:58:30,950 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 13:58:32,223 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 13:58:32,224 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 13:58:56,058 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 13:59:28,859 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 14:00:07,189 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 14:00:07,190 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025 after 3 attempts
+2025-10-23 14:00:07,190 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 14:00:07,190 - scraper - INFO - Falling back to daily scraping approach
+2025-10-23 14:00:07,190 - scraper - INFO - Fallback: scraping range 2025-04-26 to 2025-05-25 day by day
+2025-10-23 14:00:58,281 - scraper - INFO - Scraped 3 events for apr28.2025 using JS data
+2025-10-23 14:00:58,314 - symbol_mapper - INFO - Mapped 3 events with trading pairs
+2025-10-23 14:00:58,338 - csv_exporter - INFO - Loaded 377 existing events from CSV
+2025-10-23 14:00:58,494 - csv_exporter - INFO - ==================================================
+2025-10-23 14:00:58,495 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:00:58,495 - csv_exporter - INFO - ==================================================
+2025-10-23 14:00:58,495 - csv_exporter - INFO - [STATS] Total events: 380
+2025-10-23 14:00:58,495 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:00:58,495 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:00:58,495 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:00:58,495 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (99.2%)
+2025-10-23 14:00:58,496 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (99.2%)
+2025-10-23 14:00:58,496 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (99.2%)
+2025-10-23 14:00:58,496 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:00:58,496 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 252 (66.3%)
+2025-10-23 14:00:58,496 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 74 (19.5%)
+2025-10-23 14:00:58,497 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 40 (10.5%)
+2025-10-23 14:00:58,497 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.9%)
+2025-10-23 14:00:58,497 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:00:58,497 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:00:58,497 - csv_exporter - INFO -   USD: 109
+2025-10-23 14:00:58,497 - csv_exporter - INFO -   EUR: 77
+2025-10-23 14:00:58,497 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:00:58,498 - csv_exporter - INFO -   JPY: 31
+2025-10-23 14:00:58,498 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:00:58,498 - csv_exporter - INFO -   CAD: 26
+2025-10-23 14:00:58,498 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:00:58,498 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:00:58,499 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:00:58,499 - csv_exporter - INFO -   All: 3
+2025-10-23 14:00:58,499 - csv_exporter - INFO - ==================================================
+2025-10-23 14:00:58,505 - csv_exporter - INFO - Exported 380 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:00:58,505 - csv_exporter - INFO - Deduplication complete: 3 new events added, 0 events updated
+2025-10-23 14:00:58,505 - csv_exporter - INFO - Total events in CSV: 380
+2025-10-23 14:00:58,505 - scraper - INFO - Saved 3 events for apr28.2025 to CSV
+2025-10-23 14:01:54,993 - scraper - INFO - Scraped 18 events for apr29.2025 using JS data
+2025-10-23 14:01:55,059 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-23 14:01:55,064 - csv_exporter - INFO - Loaded 380 existing events from CSV
+2025-10-23 14:01:55,217 - csv_exporter - INFO - ==================================================
+2025-10-23 14:01:55,217 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:01:55,217 - csv_exporter - INFO - ==================================================
+2025-10-23 14:01:55,217 - csv_exporter - INFO - [STATS] Total events: 395
+2025-10-23 14:01:55,218 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:01:55,218 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:01:55,218 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:01:55,218 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (95.4%)
+2025-10-23 14:01:55,218 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (95.4%)
+2025-10-23 14:01:55,218 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (95.4%)
+2025-10-23 14:01:55,219 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:01:55,219 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 263 (66.6%)
+2025-10-23 14:01:55,219 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 74 (18.7%)
+2025-10-23 14:01:55,219 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 43 (10.9%)
+2025-10-23 14:01:55,219 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 12 (3.0%)
+2025-10-23 14:01:55,219 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:01:55,219 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:01:55,220 - csv_exporter - INFO -   USD: 116
+2025-10-23 14:01:55,220 - csv_exporter - INFO -   EUR: 82
+2025-10-23 14:01:55,220 - csv_exporter - INFO -   GBP: 58
+2025-10-23 14:01:55,220 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:01:55,220 - csv_exporter - INFO -   AUD: 28
+2025-10-23 14:01:55,221 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:01:55,221 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:01:55,221 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:01:55,221 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:01:55,221 - csv_exporter - INFO -   All: 3
+2025-10-23 14:01:55,221 - csv_exporter - INFO - ==================================================
+2025-10-23 14:01:55,225 - csv_exporter - INFO - Exported 395 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:01:55,226 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-23 14:01:55,226 - csv_exporter - INFO - Total events in CSV: 395
+2025-10-23 14:01:55,226 - scraper - INFO - Saved 18 events for apr29.2025 to CSV
+2025-10-23 14:02:44,450 - scraper - INFO - Scraped 38 events for apr30.2025 using JS data
+2025-10-23 14:02:44,564 - symbol_mapper - INFO - Mapped 38 events with trading pairs
+2025-10-23 14:02:44,572 - csv_exporter - INFO - Loaded 395 existing events from CSV
+2025-10-23 14:02:44,713 - csv_exporter - INFO - ==================================================
+2025-10-23 14:02:44,714 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:02:44,714 - csv_exporter - INFO - ==================================================
+2025-10-23 14:02:44,714 - csv_exporter - INFO - [STATS] Total events: 415
+2025-10-23 14:02:44,714 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:02:44,714 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:02:44,715 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:02:44,715 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (90.8%)
+2025-10-23 14:02:44,715 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (90.8%)
+2025-10-23 14:02:44,715 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (90.8%)
+2025-10-23 14:02:44,715 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:02:44,716 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 274 (66.0%)
+2025-10-23 14:02:44,716 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 83 (20.0%)
+2025-10-23 14:02:44,716 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 44 (10.6%)
+2025-10-23 14:02:44,716 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.7%)
+2025-10-23 14:02:44,716 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 14:02:44,716 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:02:44,717 - csv_exporter - INFO -   USD: 120
+2025-10-23 14:02:44,717 - csv_exporter - INFO -   EUR: 87
+2025-10-23 14:02:44,717 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:02:44,717 - csv_exporter - INFO -   JPY: 34
+2025-10-23 14:02:44,717 - csv_exporter - INFO -   AUD: 31
+2025-10-23 14:02:44,717 - csv_exporter - INFO -   CAD: 27
+2025-10-23 14:02:44,718 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:02:44,718 - csv_exporter - INFO -   CNY: 19
+2025-10-23 14:02:44,718 - csv_exporter - INFO -   CHF: 14
+2025-10-23 14:02:44,718 - csv_exporter - INFO -   All: 3
+2025-10-23 14:02:44,718 - csv_exporter - INFO - ==================================================
+2025-10-23 14:02:44,721 - csv_exporter - INFO - Exported 415 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:02:44,721 - csv_exporter - INFO - Deduplication complete: 38 new events added, 0 events updated
+2025-10-23 14:02:44,721 - csv_exporter - INFO - Total events in CSV: 415
+2025-10-23 14:02:44,722 - scraper - INFO - Saved 38 events for apr30.2025 to CSV
+2025-10-23 14:03:39,250 - scraper - INFO - Scraped 29 events for may1.2025 using JS data
+2025-10-23 14:03:39,326 - symbol_mapper - INFO - Mapped 29 events with trading pairs
+2025-10-23 14:03:39,331 - csv_exporter - INFO - Loaded 415 existing events from CSV
+2025-10-23 14:03:39,484 - csv_exporter - INFO - ==================================================
+2025-10-23 14:03:39,484 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:03:39,484 - csv_exporter - INFO - ==================================================
+2025-10-23 14:03:39,485 - csv_exporter - INFO - [STATS] Total events: 406
+2025-10-23 14:03:39,485 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:03:39,485 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:03:39,485 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:03:39,485 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (92.9%)
+2025-10-23 14:03:39,485 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (92.9%)
+2025-10-23 14:03:39,485 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (92.9%)
+2025-10-23 14:03:39,486 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:03:39,486 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 266 (65.5%)
+2025-10-23 14:03:39,486 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 79 (19.5%)
+2025-10-23 14:03:39,486 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 42 (10.3%)
+2025-10-23 14:03:39,486 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 16 (3.9%)
+2025-10-23 14:03:39,486 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 14:03:39,486 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:03:39,486 - csv_exporter - INFO -   USD: 118
+2025-10-23 14:03:39,486 - csv_exporter - INFO -   EUR: 79
+2025-10-23 14:03:39,487 - csv_exporter - INFO -   GBP: 60
+2025-10-23 14:03:39,487 - csv_exporter - INFO -   JPY: 37
+2025-10-23 14:03:39,487 - csv_exporter - INFO -   AUD: 30
+2025-10-23 14:03:39,487 - csv_exporter - INFO -   CAD: 26
+2025-10-23 14:03:39,487 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:03:39,487 - csv_exporter - INFO -   CNY: 17
+2025-10-23 14:03:39,488 - csv_exporter - INFO -   CHF: 14
+2025-10-23 14:03:39,488 - csv_exporter - INFO -   All: 3
+2025-10-23 14:03:39,488 - csv_exporter - INFO - ==================================================
+2025-10-23 14:03:39,490 - csv_exporter - INFO - Exported 406 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:03:39,490 - csv_exporter - INFO - Deduplication complete: 29 new events added, 0 events updated
+2025-10-23 14:03:39,491 - csv_exporter - INFO - Total events in CSV: 406
+2025-10-23 14:03:39,491 - scraper - INFO - Saved 29 events for may1.2025 to CSV
+2025-10-23 14:04:30,937 - scraper - INFO - Scraped 22 events for may2.2025 using JS data
+2025-10-23 14:04:31,002 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-23 14:04:31,006 - csv_exporter - INFO - Loaded 406 existing events from CSV
+2025-10-23 14:04:31,147 - csv_exporter - INFO - ==================================================
+2025-10-23 14:04:31,147 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:04:31,147 - csv_exporter - INFO - ==================================================
+2025-10-23 14:04:31,147 - csv_exporter - INFO - [STATS] Total events: 399
+2025-10-23 14:04:31,148 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:04:31,148 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:04:31,148 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:04:31,148 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (94.5%)
+2025-10-23 14:04:31,148 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (94.5%)
+2025-10-23 14:04:31,148 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (94.5%)
+2025-10-23 14:04:31,149 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:04:31,149 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 265 (66.4%)
+2025-10-23 14:04:31,149 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 76 (19.0%)
+2025-10-23 14:04:31,149 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 43 (10.8%)
+2025-10-23 14:04:31,149 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 12 (3.0%)
+2025-10-23 14:04:31,150 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:04:31,150 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:04:31,150 - csv_exporter - INFO -   USD: 113
+2025-10-23 14:04:31,150 - csv_exporter - INFO -   EUR: 87
+2025-10-23 14:04:31,150 - csv_exporter - INFO -   GBP: 56
+2025-10-23 14:04:31,150 - csv_exporter - INFO -   JPY: 33
+2025-10-23 14:04:31,151 - csv_exporter - INFO -   AUD: 29
+2025-10-23 14:04:31,151 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:04:31,151 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:04:31,151 - csv_exporter - INFO -   CNY: 17
+2025-10-23 14:04:31,151 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:04:31,152 - csv_exporter - INFO -   All: 3
+2025-10-23 14:04:31,152 - csv_exporter - INFO - ==================================================
+2025-10-23 14:04:31,154 - csv_exporter - INFO - Exported 399 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:04:31,154 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-23 14:04:31,155 - csv_exporter - INFO - Total events in CSV: 399
+2025-10-23 14:04:31,155 - scraper - INFO - Saved 22 events for may2.2025 to CSV
+2025-10-23 14:05:21,470 - scraper - INFO - Scraped 8 events for may5.2025 using JS data
+2025-10-23 14:05:21,509 - symbol_mapper - INFO - Mapped 8 events with trading pairs
+2025-10-23 14:05:21,514 - csv_exporter - INFO - Loaded 399 existing events from CSV
+2025-10-23 14:05:21,658 - csv_exporter - INFO - ==================================================
+2025-10-23 14:05:21,659 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:05:21,659 - csv_exporter - INFO - ==================================================
+2025-10-23 14:05:21,659 - csv_exporter - INFO - [STATS] Total events: 385
+2025-10-23 14:05:21,659 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:05:21,659 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:05:21,659 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:05:21,660 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (97.9%)
+2025-10-23 14:05:21,660 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (97.9%)
+2025-10-23 14:05:21,660 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (97.9%)
+2025-10-23 14:05:21,660 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:05:21,660 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 254 (66.0%)
+2025-10-23 14:05:21,660 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 75 (19.5%)
+2025-10-23 14:05:21,661 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 40 (10.4%)
+2025-10-23 14:05:21,661 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 13 (3.4%)
+2025-10-23 14:05:21,661 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:05:21,661 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:05:21,661 - csv_exporter - INFO -   USD: 111
+2025-10-23 14:05:21,661 - csv_exporter - INFO -   EUR: 77
+2025-10-23 14:05:21,662 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:05:21,662 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:05:21,662 - csv_exporter - INFO -   AUD: 29
+2025-10-23 14:05:21,662 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:05:21,662 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:05:21,662 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:05:21,663 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:05:21,663 - csv_exporter - INFO -   All: 3
+2025-10-23 14:05:21,663 - csv_exporter - INFO - ==================================================
+2025-10-23 14:05:21,665 - csv_exporter - INFO - Exported 385 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:05:21,665 - csv_exporter - INFO - Deduplication complete: 8 new events added, 0 events updated
+2025-10-23 14:05:21,666 - csv_exporter - INFO - Total events in CSV: 385
+2025-10-23 14:05:21,666 - scraper - INFO - Saved 8 events for may5.2025 to CSV
+2025-10-23 14:05:47,023 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-23 14:06:21,186 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-23 14:07:01,293 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-23 14:07:01,293 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may6.2025 after 3 attempts
+2025-10-23 14:07:49,687 - scraper - INFO - Scraped 18 events for may7.2025 using JS data
+2025-10-23 14:07:49,745 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-23 14:07:49,749 - csv_exporter - INFO - Loaded 385 existing events from CSV
+2025-10-23 14:07:49,950 - csv_exporter - INFO - ==================================================
+2025-10-23 14:07:49,950 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:07:49,950 - csv_exporter - INFO - ==================================================
+2025-10-23 14:07:49,951 - csv_exporter - INFO - [STATS] Total events: 395
+2025-10-23 14:07:49,951 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:07:49,951 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:07:49,951 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:07:49,951 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (95.4%)
+2025-10-23 14:07:49,951 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (95.4%)
+2025-10-23 14:07:49,952 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (95.4%)
+2025-10-23 14:07:49,952 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:07:49,952 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 261 (66.1%)
+2025-10-23 14:07:49,952 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 78 (19.7%)
+2025-10-23 14:07:49,952 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 42 (10.6%)
+2025-10-23 14:07:49,952 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:07:49,953 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:07:49,953 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:07:49,953 - csv_exporter - INFO -   USD: 114
+2025-10-23 14:07:49,953 - csv_exporter - INFO -   EUR: 82
+2025-10-23 14:07:49,953 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:07:49,953 - csv_exporter - INFO -   JPY: 31
+2025-10-23 14:07:49,954 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:07:49,954 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:07:49,954 - csv_exporter - INFO -   NZD: 23
+2025-10-23 14:07:49,954 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:07:49,954 - csv_exporter - INFO -   CHF: 14
+2025-10-23 14:07:49,955 - csv_exporter - INFO -   All: 3
+2025-10-23 14:07:49,955 - csv_exporter - INFO - ==================================================
+2025-10-23 14:07:49,957 - csv_exporter - INFO - Exported 395 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:07:49,957 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-23 14:07:49,957 - csv_exporter - INFO - Total events in CSV: 395
+2025-10-23 14:07:49,958 - scraper - INFO - Saved 18 events for may7.2025 to CSV
+2025-10-23 14:08:40,800 - scraper - INFO - Scraped 21 events for may8.2025 using JS data
+2025-10-23 14:08:40,875 - symbol_mapper - INFO - Mapped 21 events with trading pairs
+2025-10-23 14:08:40,883 - csv_exporter - INFO - Loaded 395 existing events from CSV
+2025-10-23 14:08:41,057 - csv_exporter - INFO - ==================================================
+2025-10-23 14:08:41,057 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:08:41,057 - csv_exporter - INFO - ==================================================
+2025-10-23 14:08:41,058 - csv_exporter - INFO - [STATS] Total events: 398
+2025-10-23 14:08:41,058 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:08:41,058 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:08:41,058 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:08:41,058 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (94.7%)
+2025-10-23 14:08:41,059 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (94.7%)
+2025-10-23 14:08:41,059 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (94.7%)
+2025-10-23 14:08:41,059 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:08:41,059 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 262 (65.8%)
+2025-10-23 14:08:41,059 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 81 (20.4%)
+2025-10-23 14:08:41,059 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 40 (10.1%)
+2025-10-23 14:08:41,060 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 12 (3.0%)
+2025-10-23 14:08:41,060 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:08:41,060 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:08:41,060 - csv_exporter - INFO -   USD: 116
+2025-10-23 14:08:41,060 - csv_exporter - INFO -   EUR: 79
+2025-10-23 14:08:41,060 - csv_exporter - INFO -   GBP: 63
+2025-10-23 14:08:41,060 - csv_exporter - INFO -   JPY: 33
+2025-10-23 14:08:41,061 - csv_exporter - INFO -   CAD: 27
+2025-10-23 14:08:41,061 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:08:41,061 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:08:41,061 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:08:41,061 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:08:41,061 - csv_exporter - INFO -   All: 3
+2025-10-23 14:08:41,062 - csv_exporter - INFO - ==================================================
+2025-10-23 14:08:41,065 - csv_exporter - INFO - Exported 398 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:08:41,065 - csv_exporter - INFO - Deduplication complete: 21 new events added, 0 events updated
+2025-10-23 14:08:41,066 - csv_exporter - INFO - Total events in CSV: 398
+2025-10-23 14:08:41,066 - scraper - INFO - Saved 21 events for may8.2025 to CSV
+2025-10-23 14:09:07,269 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-23 14:09:37,026 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-23 14:10:18,933 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-23 14:10:18,933 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may9.2025 after 3 attempts
+2025-10-23 14:11:05,272 - scraper - INFO - Scraped 13 events for may12.2025 using JS data
+2025-10-23 14:11:05,342 - symbol_mapper - INFO - Mapped 13 events with trading pairs
+2025-10-23 14:11:05,349 - csv_exporter - INFO - Loaded 398 existing events from CSV
+2025-10-23 14:11:05,563 - csv_exporter - INFO - ==================================================
+2025-10-23 14:11:05,563 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:11:05,563 - csv_exporter - INFO - ==================================================
+2025-10-23 14:11:05,564 - csv_exporter - INFO - [STATS] Total events: 390
+2025-10-23 14:11:05,564 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:11:05,564 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:11:05,564 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:11:05,564 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (96.7%)
+2025-10-23 14:11:05,565 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (96.7%)
+2025-10-23 14:11:05,565 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (96.7%)
+2025-10-23 14:11:05,565 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:11:05,565 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 262 (67.2%)
+2025-10-23 14:11:05,566 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 73 (18.7%)
+2025-10-23 14:11:05,566 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 41 (10.5%)
+2025-10-23 14:11:05,566 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:11:05,566 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:11:05,566 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:11:05,567 - csv_exporter - INFO -   USD: 114
+2025-10-23 14:11:05,567 - csv_exporter - INFO -   EUR: 77
+2025-10-23 14:11:05,567 - csv_exporter - INFO -   GBP: 60
+2025-10-23 14:11:05,567 - csv_exporter - INFO -   JPY: 34
+2025-10-23 14:11:05,567 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:11:05,567 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:11:05,568 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:11:05,568 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:11:05,568 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:11:05,568 - csv_exporter - INFO -   All: 3
+2025-10-23 14:11:05,568 - csv_exporter - INFO - ==================================================
+2025-10-23 14:11:05,572 - csv_exporter - INFO - Exported 390 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:11:05,572 - csv_exporter - INFO - Deduplication complete: 13 new events added, 0 events updated
+2025-10-23 14:11:05,572 - csv_exporter - INFO - Total events in CSV: 390
+2025-10-23 14:11:05,573 - scraper - INFO - Saved 13 events for may12.2025 to CSV
+2025-10-23 14:11:51,475 - scraper - INFO - Scraped 22 events for may13.2025 using JS data
+2025-10-23 14:11:51,557 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-23 14:11:51,562 - csv_exporter - INFO - Loaded 390 existing events from CSV
+2025-10-23 14:11:51,720 - csv_exporter - INFO - ==================================================
+2025-10-23 14:11:51,720 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:11:51,721 - csv_exporter - INFO - ==================================================
+2025-10-23 14:11:51,721 - csv_exporter - INFO - [STATS] Total events: 399
+2025-10-23 14:11:51,721 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:11:51,721 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:11:51,722 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:11:51,722 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (94.5%)
+2025-10-23 14:11:51,722 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (94.5%)
+2025-10-23 14:11:51,722 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (94.5%)
+2025-10-23 14:11:51,722 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:11:51,722 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 264 (66.2%)
+2025-10-23 14:11:51,723 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 78 (19.5%)
+2025-10-23 14:11:51,723 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 43 (10.8%)
+2025-10-23 14:11:51,723 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:11:51,723 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:11:51,723 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:11:51,723 - csv_exporter - INFO -   USD: 116
+2025-10-23 14:11:51,724 - csv_exporter - INFO -   EUR: 79
+2025-10-23 14:11:51,724 - csv_exporter - INFO -   GBP: 63
+2025-10-23 14:11:51,724 - csv_exporter - INFO -   JPY: 34
+2025-10-23 14:11:51,724 - csv_exporter - INFO -   AUD: 29
+2025-10-23 14:11:51,724 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:11:51,724 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:11:51,725 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:11:51,725 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:11:51,725 - csv_exporter - INFO -   All: 3
+2025-10-23 14:11:51,725 - csv_exporter - INFO - ==================================================
+2025-10-23 14:11:51,728 - csv_exporter - INFO - Exported 399 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:11:51,729 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-23 14:11:51,729 - csv_exporter - INFO - Total events in CSV: 399
+2025-10-23 14:11:51,729 - scraper - INFO - Saved 22 events for may13.2025 to CSV
+2025-10-23 14:12:36,583 - scraper - INFO - Scraped 16 events for may14.2025 using JS data
+2025-10-23 14:12:36,647 - symbol_mapper - INFO - Mapped 16 events with trading pairs
+2025-10-23 14:12:36,653 - csv_exporter - INFO - Loaded 399 existing events from CSV
+2025-10-23 14:12:36,819 - csv_exporter - INFO - ==================================================
+2025-10-23 14:12:36,819 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:12:36,819 - csv_exporter - INFO - ==================================================
+2025-10-23 14:12:36,819 - csv_exporter - INFO - [STATS] Total events: 393
+2025-10-23 14:12:36,819 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:12:36,820 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:12:36,820 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:12:36,820 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (95.9%)
+2025-10-23 14:12:36,820 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (95.9%)
+2025-10-23 14:12:36,820 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (95.9%)
+2025-10-23 14:12:36,821 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:12:36,821 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 264 (67.2%)
+2025-10-23 14:12:36,821 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 74 (18.8%)
+2025-10-23 14:12:36,821 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 41 (10.4%)
+2025-10-23 14:12:36,822 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:12:36,822 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:12:36,822 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:12:36,822 - csv_exporter - INFO -   USD: 113
+2025-10-23 14:12:36,822 - csv_exporter - INFO -   EUR: 79
+2025-10-23 14:12:36,823 - csv_exporter - INFO -   GBP: 58
+2025-10-23 14:12:36,823 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:12:36,823 - csv_exporter - INFO -   AUD: 29
+2025-10-23 14:12:36,823 - csv_exporter - INFO -   CAD: 26
+2025-10-23 14:12:36,823 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:12:36,823 - csv_exporter - INFO -   CNY: 18
+2025-10-23 14:12:36,823 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:12:36,823 - csv_exporter - INFO -   All: 3
+2025-10-23 14:12:36,824 - csv_exporter - INFO - ==================================================
+2025-10-23 14:12:36,827 - csv_exporter - INFO - Exported 393 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:12:36,827 - csv_exporter - INFO - Deduplication complete: 16 new events added, 0 events updated
+2025-10-23 14:12:36,828 - csv_exporter - INFO - Total events in CSV: 393
+2025-10-23 14:12:36,828 - scraper - INFO - Saved 16 events for may14.2025 to CSV
+2025-10-23 14:13:26,190 - scraper - INFO - Scraped 37 events for may15.2025 using JS data
+2025-10-23 14:13:26,355 - symbol_mapper - INFO - Mapped 37 events with trading pairs
+2025-10-23 14:13:26,360 - csv_exporter - INFO - Loaded 393 existing events from CSV
+2025-10-23 14:13:26,523 - csv_exporter - INFO - ==================================================
+2025-10-23 14:13:26,523 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:13:26,523 - csv_exporter - INFO - ==================================================
+2025-10-23 14:13:26,523 - csv_exporter - INFO - [STATS] Total events: 414
+2025-10-23 14:13:26,523 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:13:26,524 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:13:26,524 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:13:26,524 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (91.1%)
+2025-10-23 14:13:26,524 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (91.1%)
+2025-10-23 14:13:26,524 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (91.1%)
+2025-10-23 14:13:26,525 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:13:26,525 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 275 (66.4%)
+2025-10-23 14:13:26,525 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 82 (19.8%)
+2025-10-23 14:13:26,525 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 43 (10.4%)
+2025-10-23 14:13:26,525 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.7%)
+2025-10-23 14:13:26,525 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 14:13:26,526 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:13:26,526 - csv_exporter - INFO -   USD: 123
+2025-10-23 14:13:26,526 - csv_exporter - INFO -   EUR: 81
+2025-10-23 14:13:26,526 - csv_exporter - INFO -   GBP: 65
+2025-10-23 14:13:26,526 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:13:26,526 - csv_exporter - INFO -   AUD: 30
+2025-10-23 14:13:26,527 - csv_exporter - INFO -   CAD: 28
+2025-10-23 14:13:26,527 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:13:26,527 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:13:26,527 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:13:26,527 - csv_exporter - INFO -   All: 3
+2025-10-23 14:13:26,527 - csv_exporter - INFO - ==================================================
+2025-10-23 14:13:26,532 - csv_exporter - INFO - Exported 414 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:13:26,532 - csv_exporter - INFO - Deduplication complete: 37 new events added, 0 events updated
+2025-10-23 14:13:26,532 - csv_exporter - INFO - Total events in CSV: 414
+2025-10-23 14:13:26,533 - scraper - INFO - Saved 37 events for may15.2025 to CSV
+2025-10-23 14:14:19,842 - scraper - INFO - Scraped 16 events for may16.2025 using JS data
+2025-10-23 14:14:19,896 - symbol_mapper - INFO - Mapped 16 events with trading pairs
+2025-10-23 14:14:19,901 - csv_exporter - INFO - Loaded 414 existing events from CSV
+2025-10-23 14:14:20,052 - csv_exporter - INFO - ==================================================
+2025-10-23 14:14:20,052 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:14:20,053 - csv_exporter - INFO - ==================================================
+2025-10-23 14:14:20,053 - csv_exporter - INFO - [STATS] Total events: 393
+2025-10-23 14:14:20,053 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:14:20,053 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:14:20,054 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:14:20,054 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (95.9%)
+2025-10-23 14:14:20,054 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (95.9%)
+2025-10-23 14:14:20,054 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (95.9%)
+2025-10-23 14:14:20,054 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:14:20,054 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 262 (66.7%)
+2025-10-23 14:14:20,055 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 75 (19.1%)
+2025-10-23 14:14:20,055 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 42 (10.7%)
+2025-10-23 14:14:20,055 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:14:20,055 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:14:20,055 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:14:20,055 - csv_exporter - INFO -   USD: 115
+2025-10-23 14:14:20,055 - csv_exporter - INFO -   EUR: 78
+2025-10-23 14:14:20,056 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:14:20,056 - csv_exporter - INFO -   JPY: 34
+2025-10-23 14:14:20,056 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:14:20,056 - csv_exporter - INFO -   CAD: 26
+2025-10-23 14:14:20,056 - csv_exporter - INFO -   NZD: 21
+2025-10-23 14:14:20,056 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:14:20,056 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:14:20,057 - csv_exporter - INFO -   All: 3
+2025-10-23 14:14:20,057 - csv_exporter - INFO - ==================================================
+2025-10-23 14:14:20,059 - csv_exporter - INFO - Exported 393 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:14:20,060 - csv_exporter - INFO - Deduplication complete: 16 new events added, 0 events updated
+2025-10-23 14:14:20,060 - csv_exporter - INFO - Total events in CSV: 393
+2025-10-23 14:14:20,060 - scraper - INFO - Saved 16 events for may16.2025 to CSV
+2025-10-23 14:15:10,927 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/6e6e2256c07c666b8d66e8726786b880
+2025-10-23 14:15:14,974 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001183EA03110>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/6e6e2256c07c666b8d66e8726786b880
+2025-10-23 14:15:19,024 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001183EA02D50>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/6e6e2256c07c666b8d66e8726786b880
+2025-10-23 14:19:40,891 - __main__ - INFO - Range mode: using config date range
+2025-10-23 14:19:40,892 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 14:19:40,892 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 14:19:40,893 - __main__ - INFO - Range mode: scraping events from 2025-04-26 to 2025-10-23
+2025-10-23 14:19:40,893 - __main__ - INFO - Starting range data scraping...
+2025-10-23 14:19:40,893 - scraper - INFO - Starting RANGE-BASED scrape from 2025-04-26 to 2025-10-23
+2025-10-23 14:19:40,893 - scraper - INFO - Total days in range: 180
+2025-10-23 14:19:40,893 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-23 14:19:40,894 - scraper - INFO - Processing 6 date range chunks
+2025-10-23 14:19:40,894 - scraper - INFO - Processing range 1/6: 2025-04-26 to 2025-05-25
+2025-10-23 14:19:40,894 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 14:19:40,894 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 14:19:40,895 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 14:19:40,895 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 14:19:45,316 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 14:19:46,089 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 14:19:46,615 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 14:19:46,617 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 14:19:48,082 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 14:19:48,082 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 14:20:23,010 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 14:21:09,674 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 14:21:52,342 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 14:21:52,343 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025 after 3 attempts
+2025-10-23 14:21:52,343 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 14:21:52,343 - scraper - INFO - Falling back to daily scraping approach
+2025-10-23 14:21:52,344 - scraper - INFO - Fallback: scraping range 2025-04-26 to 2025-05-25 day by day
+2025-10-23 14:22:46,962 - scraper - INFO - Scraped 3 events for apr28.2025 using JS data
+2025-10-23 14:22:47,015 - symbol_mapper - INFO - Mapped 3 events with trading pairs
+2025-10-23 14:22:47,049 - csv_exporter - INFO - Loaded 393 existing events from CSV
+2025-10-23 14:22:47,246 - csv_exporter - INFO - ==================================================
+2025-10-23 14:22:47,247 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:22:47,247 - csv_exporter - INFO - ==================================================
+2025-10-23 14:22:47,248 - csv_exporter - INFO - [STATS] Total events: 380
+2025-10-23 14:22:47,248 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:22:47,248 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:22:47,248 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:22:47,248 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (99.2%)
+2025-10-23 14:22:47,248 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (99.2%)
+2025-10-23 14:22:47,249 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (99.2%)
+2025-10-23 14:22:47,249 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:22:47,249 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 252 (66.3%)
+2025-10-23 14:22:47,249 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 74 (19.5%)
+2025-10-23 14:22:47,249 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 40 (10.5%)
+2025-10-23 14:22:47,249 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.9%)
+2025-10-23 14:22:47,249 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:22:47,250 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:22:47,250 - csv_exporter - INFO -   USD: 109
+2025-10-23 14:22:47,250 - csv_exporter - INFO -   EUR: 77
+2025-10-23 14:22:47,250 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:22:47,250 - csv_exporter - INFO -   JPY: 31
+2025-10-23 14:22:47,250 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:22:47,250 - csv_exporter - INFO -   CAD: 26
+2025-10-23 14:22:47,250 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:22:47,251 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:22:47,251 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:22:47,251 - csv_exporter - INFO -   All: 3
+2025-10-23 14:22:47,251 - csv_exporter - INFO - ==================================================
+2025-10-23 14:22:47,257 - csv_exporter - INFO - Exported 380 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:22:47,257 - csv_exporter - INFO - Deduplication complete: 3 new events added, 0 events updated
+2025-10-23 14:22:47,257 - csv_exporter - INFO - Total events in CSV: 380
+2025-10-23 14:22:47,257 - scraper - INFO - Saved 3 events for apr28.2025 to CSV
+2025-10-23 14:23:42,889 - scraper - INFO - Scraped 18 events for apr29.2025 using JS data
+2025-10-23 14:23:42,950 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-23 14:23:42,956 - csv_exporter - INFO - Loaded 380 existing events from CSV
+2025-10-23 14:23:43,123 - csv_exporter - INFO - ==================================================
+2025-10-23 14:23:43,123 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:23:43,123 - csv_exporter - INFO - ==================================================
+2025-10-23 14:23:43,124 - csv_exporter - INFO - [STATS] Total events: 395
+2025-10-23 14:23:43,124 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:23:43,124 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:23:43,124 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:23:43,125 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (95.4%)
+2025-10-23 14:23:43,125 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (95.4%)
+2025-10-23 14:23:43,125 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (95.4%)
+2025-10-23 14:23:43,125 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:23:43,126 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 263 (66.6%)
+2025-10-23 14:23:43,126 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 74 (18.7%)
+2025-10-23 14:23:43,126 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 43 (10.9%)
+2025-10-23 14:23:43,126 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 12 (3.0%)
+2025-10-23 14:23:43,126 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:23:43,126 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:23:43,127 - csv_exporter - INFO -   USD: 116
+2025-10-23 14:23:43,127 - csv_exporter - INFO -   EUR: 82
+2025-10-23 14:23:43,127 - csv_exporter - INFO -   GBP: 58
+2025-10-23 14:23:43,127 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:23:43,127 - csv_exporter - INFO -   AUD: 28
+2025-10-23 14:23:43,128 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:23:43,128 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:23:43,128 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:23:43,128 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:23:43,129 - csv_exporter - INFO -   All: 3
+2025-10-23 14:23:43,129 - csv_exporter - INFO - ==================================================
+2025-10-23 14:23:43,133 - csv_exporter - INFO - Exported 395 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:23:43,133 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-23 14:23:43,134 - csv_exporter - INFO - Total events in CSV: 395
+2025-10-23 14:23:43,134 - scraper - INFO - Saved 18 events for apr29.2025 to CSV
+2025-10-23 14:24:39,231 - scraper - INFO - Scraped 38 events for apr30.2025 using JS data
+2025-10-23 14:24:39,373 - symbol_mapper - INFO - Mapped 38 events with trading pairs
+2025-10-23 14:24:39,381 - csv_exporter - INFO - Loaded 395 existing events from CSV
+2025-10-23 14:24:39,596 - csv_exporter - INFO - ==================================================
+2025-10-23 14:24:39,596 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:24:39,597 - csv_exporter - INFO - ==================================================
+2025-10-23 14:24:39,597 - csv_exporter - INFO - [STATS] Total events: 415
+2025-10-23 14:24:39,597 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:24:39,597 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:24:39,598 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:24:39,598 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (90.8%)
+2025-10-23 14:24:39,598 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (90.8%)
+2025-10-23 14:24:39,598 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (90.8%)
+2025-10-23 14:24:39,599 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:24:39,599 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 274 (66.0%)
+2025-10-23 14:24:39,599 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 83 (20.0%)
+2025-10-23 14:24:39,599 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 44 (10.6%)
+2025-10-23 14:24:39,599 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.7%)
+2025-10-23 14:24:39,599 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 14:24:39,600 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:24:39,600 - csv_exporter - INFO -   USD: 120
+2025-10-23 14:24:39,600 - csv_exporter - INFO -   EUR: 87
+2025-10-23 14:24:39,600 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:24:39,600 - csv_exporter - INFO -   JPY: 34
+2025-10-23 14:24:39,601 - csv_exporter - INFO -   AUD: 31
+2025-10-23 14:24:39,601 - csv_exporter - INFO -   CAD: 27
+2025-10-23 14:24:39,601 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:24:39,601 - csv_exporter - INFO -   CNY: 19
+2025-10-23 14:24:39,601 - csv_exporter - INFO -   CHF: 14
+2025-10-23 14:24:39,601 - csv_exporter - INFO -   All: 3
+2025-10-23 14:24:39,602 - csv_exporter - INFO - ==================================================
+2025-10-23 14:24:39,607 - csv_exporter - INFO - Exported 415 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:24:39,608 - csv_exporter - INFO - Deduplication complete: 38 new events added, 0 events updated
+2025-10-23 14:24:39,608 - csv_exporter - INFO - Total events in CSV: 415
+2025-10-23 14:24:39,609 - scraper - INFO - Saved 38 events for apr30.2025 to CSV
+2025-10-23 14:25:28,922 - scraper - INFO - Scraped 29 events for may1.2025 using JS data
+2025-10-23 14:25:29,028 - symbol_mapper - INFO - Mapped 29 events with trading pairs
+2025-10-23 14:25:29,034 - csv_exporter - INFO - Loaded 415 existing events from CSV
+2025-10-23 14:25:29,219 - csv_exporter - INFO - ==================================================
+2025-10-23 14:25:29,220 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:25:29,220 - csv_exporter - INFO - ==================================================
+2025-10-23 14:25:29,220 - csv_exporter - INFO - [STATS] Total events: 406
+2025-10-23 14:25:29,220 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:25:29,220 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:25:29,220 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:25:29,221 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (92.9%)
+2025-10-23 14:25:29,221 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (92.9%)
+2025-10-23 14:25:29,221 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (92.9%)
+2025-10-23 14:25:29,221 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:25:29,221 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 266 (65.5%)
+2025-10-23 14:25:29,222 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 79 (19.5%)
+2025-10-23 14:25:29,222 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 42 (10.3%)
+2025-10-23 14:25:29,222 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 16 (3.9%)
+2025-10-23 14:25:29,222 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 14:25:29,222 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:25:29,223 - csv_exporter - INFO -   USD: 118
+2025-10-23 14:25:29,223 - csv_exporter - INFO -   EUR: 79
+2025-10-23 14:25:29,223 - csv_exporter - INFO -   GBP: 60
+2025-10-23 14:25:29,223 - csv_exporter - INFO -   JPY: 37
+2025-10-23 14:25:29,223 - csv_exporter - INFO -   AUD: 30
+2025-10-23 14:25:29,224 - csv_exporter - INFO -   CAD: 26
+2025-10-23 14:25:29,224 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:25:29,224 - csv_exporter - INFO -   CNY: 17
+2025-10-23 14:25:29,224 - csv_exporter - INFO -   CHF: 14
+2025-10-23 14:25:29,224 - csv_exporter - INFO -   All: 3
+2025-10-23 14:25:29,225 - csv_exporter - INFO - ==================================================
+2025-10-23 14:25:29,228 - csv_exporter - INFO - Exported 406 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:25:29,228 - csv_exporter - INFO - Deduplication complete: 29 new events added, 0 events updated
+2025-10-23 14:25:29,229 - csv_exporter - INFO - Total events in CSV: 406
+2025-10-23 14:25:29,229 - scraper - INFO - Saved 29 events for may1.2025 to CSV
+2025-10-23 14:26:28,906 - scraper - INFO - Scraped 22 events for may2.2025 using JS data
+2025-10-23 14:26:29,008 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-23 14:26:29,016 - csv_exporter - INFO - Loaded 406 existing events from CSV
+2025-10-23 14:26:29,241 - csv_exporter - INFO - ==================================================
+2025-10-23 14:26:29,242 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:26:29,242 - csv_exporter - INFO - ==================================================
+2025-10-23 14:26:29,242 - csv_exporter - INFO - [STATS] Total events: 399
+2025-10-23 14:26:29,242 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:26:29,242 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:26:29,243 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:26:29,243 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (94.5%)
+2025-10-23 14:26:29,243 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (94.5%)
+2025-10-23 14:26:29,243 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (94.5%)
+2025-10-23 14:26:29,244 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:26:29,244 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 265 (66.4%)
+2025-10-23 14:26:29,244 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 76 (19.0%)
+2025-10-23 14:26:29,244 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 43 (10.8%)
+2025-10-23 14:26:29,245 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 12 (3.0%)
+2025-10-23 14:26:29,245 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:26:29,245 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:26:29,245 - csv_exporter - INFO -   USD: 113
+2025-10-23 14:26:29,245 - csv_exporter - INFO -   EUR: 87
+2025-10-23 14:26:29,246 - csv_exporter - INFO -   GBP: 56
+2025-10-23 14:26:29,246 - csv_exporter - INFO -   JPY: 33
+2025-10-23 14:26:29,246 - csv_exporter - INFO -   AUD: 29
+2025-10-23 14:26:29,246 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:26:29,247 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:26:29,247 - csv_exporter - INFO -   CNY: 17
+2025-10-23 14:26:29,247 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:26:29,247 - csv_exporter - INFO -   All: 3
+2025-10-23 14:26:29,247 - csv_exporter - INFO - ==================================================
+2025-10-23 14:26:29,252 - csv_exporter - INFO - Exported 399 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:26:29,252 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-23 14:26:29,252 - csv_exporter - INFO - Total events in CSV: 399
+2025-10-23 14:26:29,253 - scraper - INFO - Saved 22 events for may2.2025 to CSV
+2025-10-23 14:27:17,515 - scraper - INFO - Scraped 8 events for may5.2025 using JS data
+2025-10-23 14:27:17,562 - symbol_mapper - INFO - Mapped 8 events with trading pairs
+2025-10-23 14:27:17,567 - csv_exporter - INFO - Loaded 399 existing events from CSV
+2025-10-23 14:27:17,728 - csv_exporter - INFO - ==================================================
+2025-10-23 14:27:17,729 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:27:17,729 - csv_exporter - INFO - ==================================================
+2025-10-23 14:27:17,729 - csv_exporter - INFO - [STATS] Total events: 385
+2025-10-23 14:27:17,729 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:27:17,729 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:27:17,730 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:27:17,730 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (97.9%)
+2025-10-23 14:27:17,730 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (97.9%)
+2025-10-23 14:27:17,730 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (97.9%)
+2025-10-23 14:27:17,730 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:27:17,731 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 254 (66.0%)
+2025-10-23 14:27:17,731 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 75 (19.5%)
+2025-10-23 14:27:17,731 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 40 (10.4%)
+2025-10-23 14:27:17,731 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 13 (3.4%)
+2025-10-23 14:27:17,731 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:27:17,732 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:27:17,732 - csv_exporter - INFO -   USD: 111
+2025-10-23 14:27:17,732 - csv_exporter - INFO -   EUR: 77
+2025-10-23 14:27:17,732 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:27:17,733 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:27:17,733 - csv_exporter - INFO -   AUD: 29
+2025-10-23 14:27:17,733 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:27:17,733 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:27:17,733 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:27:17,734 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:27:17,734 - csv_exporter - INFO -   All: 3
+2025-10-23 14:27:17,734 - csv_exporter - INFO - ==================================================
+2025-10-23 14:27:17,737 - csv_exporter - INFO - Exported 385 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:27:17,738 - csv_exporter - INFO - Deduplication complete: 8 new events added, 0 events updated
+2025-10-23 14:27:17,738 - csv_exporter - INFO - Total events in CSV: 385
+2025-10-23 14:27:17,738 - scraper - INFO - Saved 8 events for may5.2025 to CSV
+2025-10-23 14:27:42,625 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-23 14:28:20,211 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-23 14:28:59,423 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-23 14:28:59,423 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may6.2025 after 3 attempts
+2025-10-23 14:29:49,192 - scraper - INFO - Scraped 18 events for may7.2025 using JS data
+2025-10-23 14:29:49,269 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-23 14:29:49,274 - csv_exporter - INFO - Loaded 385 existing events from CSV
+2025-10-23 14:29:49,466 - csv_exporter - INFO - ==================================================
+2025-10-23 14:29:49,466 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:29:49,466 - csv_exporter - INFO - ==================================================
+2025-10-23 14:29:49,467 - csv_exporter - INFO - [STATS] Total events: 395
+2025-10-23 14:29:49,467 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:29:49,467 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:29:49,467 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:29:49,468 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (95.4%)
+2025-10-23 14:29:49,468 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (95.4%)
+2025-10-23 14:29:49,468 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (95.4%)
+2025-10-23 14:29:49,468 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:29:49,468 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 261 (66.1%)
+2025-10-23 14:29:49,469 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 78 (19.7%)
+2025-10-23 14:29:49,469 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 42 (10.6%)
+2025-10-23 14:29:49,469 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:29:49,469 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:29:49,469 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:29:49,470 - csv_exporter - INFO -   USD: 114
+2025-10-23 14:29:49,470 - csv_exporter - INFO -   EUR: 82
+2025-10-23 14:29:49,470 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:29:49,470 - csv_exporter - INFO -   JPY: 31
+2025-10-23 14:29:49,470 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:29:49,471 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:29:49,471 - csv_exporter - INFO -   NZD: 23
+2025-10-23 14:29:49,471 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:29:49,471 - csv_exporter - INFO -   CHF: 14
+2025-10-23 14:29:49,471 - csv_exporter - INFO -   All: 3
+2025-10-23 14:29:49,472 - csv_exporter - INFO - ==================================================
+2025-10-23 14:29:49,475 - csv_exporter - INFO - Exported 395 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:29:49,475 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-23 14:29:49,475 - csv_exporter - INFO - Total events in CSV: 395
+2025-10-23 14:29:49,476 - scraper - INFO - Saved 18 events for may7.2025 to CSV
+2025-10-23 14:30:40,489 - scraper - INFO - Scraped 21 events for may8.2025 using JS data
+2025-10-23 14:30:40,658 - symbol_mapper - INFO - Mapped 21 events with trading pairs
+2025-10-23 14:30:40,676 - csv_exporter - INFO - Loaded 395 existing events from CSV
+2025-10-23 14:30:41,168 - csv_exporter - INFO - ==================================================
+2025-10-23 14:30:41,168 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:30:41,169 - csv_exporter - INFO - ==================================================
+2025-10-23 14:30:41,169 - csv_exporter - INFO - [STATS] Total events: 398
+2025-10-23 14:30:41,169 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:30:41,169 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:30:41,170 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:30:41,170 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (94.7%)
+2025-10-23 14:30:41,170 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (94.7%)
+2025-10-23 14:30:41,171 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (94.7%)
+2025-10-23 14:30:41,171 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:30:41,171 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 262 (65.8%)
+2025-10-23 14:30:41,172 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 81 (20.4%)
+2025-10-23 14:30:41,172 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 40 (10.1%)
+2025-10-23 14:30:41,172 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 12 (3.0%)
+2025-10-23 14:30:41,173 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:30:41,173 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:30:41,173 - csv_exporter - INFO -   USD: 116
+2025-10-23 14:30:41,173 - csv_exporter - INFO -   EUR: 79
+2025-10-23 14:30:41,174 - csv_exporter - INFO -   GBP: 63
+2025-10-23 14:30:41,174 - csv_exporter - INFO -   JPY: 33
+2025-10-23 14:30:41,174 - csv_exporter - INFO -   CAD: 27
+2025-10-23 14:30:41,175 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:30:41,175 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:30:41,176 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:30:41,178 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:30:41,179 - csv_exporter - INFO -   All: 3
+2025-10-23 14:30:41,179 - csv_exporter - INFO - ==================================================
+2025-10-23 14:30:41,185 - csv_exporter - INFO - Exported 398 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:30:41,186 - csv_exporter - INFO - Deduplication complete: 21 new events added, 0 events updated
+2025-10-23 14:30:41,186 - csv_exporter - INFO - Total events in CSV: 398
+2025-10-23 14:30:41,187 - scraper - INFO - Saved 21 events for may8.2025 to CSV
+2025-10-23 14:31:15,316 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-23 14:31:51,266 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-23 14:32:30,956 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-23 14:32:30,956 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may9.2025 after 3 attempts
+2025-10-23 14:33:23,763 - scraper - INFO - Scraped 13 events for may12.2025 using JS data
+2025-10-23 14:33:23,824 - symbol_mapper - INFO - Mapped 13 events with trading pairs
+2025-10-23 14:33:23,832 - csv_exporter - INFO - Loaded 398 existing events from CSV
+2025-10-23 14:33:24,025 - csv_exporter - INFO - ==================================================
+2025-10-23 14:33:24,026 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:33:24,026 - csv_exporter - INFO - ==================================================
+2025-10-23 14:33:24,026 - csv_exporter - INFO - [STATS] Total events: 390
+2025-10-23 14:33:24,027 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:33:24,027 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:33:24,027 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:33:24,027 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (96.7%)
+2025-10-23 14:33:24,027 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (96.7%)
+2025-10-23 14:33:24,028 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (96.7%)
+2025-10-23 14:33:24,028 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:33:24,028 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 262 (67.2%)
+2025-10-23 14:33:24,028 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 73 (18.7%)
+2025-10-23 14:33:24,028 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 41 (10.5%)
+2025-10-23 14:33:24,029 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:33:24,029 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:33:24,030 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:33:24,030 - csv_exporter - INFO -   USD: 114
+2025-10-23 14:33:24,030 - csv_exporter - INFO -   EUR: 77
+2025-10-23 14:33:24,031 - csv_exporter - INFO -   GBP: 60
+2025-10-23 14:33:24,031 - csv_exporter - INFO -   JPY: 34
+2025-10-23 14:33:24,031 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:33:24,031 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:33:24,032 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:33:24,032 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:33:24,032 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:33:24,032 - csv_exporter - INFO -   All: 3
+2025-10-23 14:33:24,033 - csv_exporter - INFO - ==================================================
+2025-10-23 14:33:24,036 - csv_exporter - INFO - Exported 390 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:33:24,036 - csv_exporter - INFO - Deduplication complete: 13 new events added, 0 events updated
+2025-10-23 14:33:24,036 - csv_exporter - INFO - Total events in CSV: 390
+2025-10-23 14:33:24,037 - scraper - INFO - Saved 13 events for may12.2025 to CSV
+2025-10-23 14:34:14,804 - scraper - INFO - Scraped 22 events for may13.2025 using JS data
+2025-10-23 14:34:14,883 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-23 14:34:14,888 - csv_exporter - INFO - Loaded 390 existing events from CSV
+2025-10-23 14:34:15,099 - csv_exporter - INFO - ==================================================
+2025-10-23 14:34:15,099 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:34:15,100 - csv_exporter - INFO - ==================================================
+2025-10-23 14:34:15,100 - csv_exporter - INFO - [STATS] Total events: 399
+2025-10-23 14:34:15,100 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:34:15,100 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:34:15,100 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:34:15,101 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (94.5%)
+2025-10-23 14:34:15,101 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (94.5%)
+2025-10-23 14:34:15,101 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (94.5%)
+2025-10-23 14:34:15,101 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:34:15,101 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 264 (66.2%)
+2025-10-23 14:34:15,102 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 78 (19.5%)
+2025-10-23 14:34:15,102 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 43 (10.8%)
+2025-10-23 14:34:15,102 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:34:15,102 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:34:15,102 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:34:15,102 - csv_exporter - INFO -   USD: 116
+2025-10-23 14:34:15,103 - csv_exporter - INFO -   EUR: 79
+2025-10-23 14:34:15,103 - csv_exporter - INFO -   GBP: 63
+2025-10-23 14:34:15,103 - csv_exporter - INFO -   JPY: 34
+2025-10-23 14:34:15,103 - csv_exporter - INFO -   AUD: 29
+2025-10-23 14:34:15,103 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:34:15,103 - csv_exporter - INFO -   NZD: 19
+2025-10-23 14:34:15,103 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:34:15,104 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:34:15,104 - csv_exporter - INFO -   All: 3
+2025-10-23 14:34:15,104 - csv_exporter - INFO - ==================================================
+2025-10-23 14:34:15,107 - csv_exporter - INFO - Exported 399 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:34:15,107 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-23 14:34:15,107 - csv_exporter - INFO - Total events in CSV: 399
+2025-10-23 14:34:15,108 - scraper - INFO - Saved 22 events for may13.2025 to CSV
+2025-10-23 14:34:38,818 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may14.2025
+2025-10-23 14:35:32,186 - scraper - INFO - Scraped 16 events for may14.2025 using JS data
+2025-10-23 14:35:32,274 - symbol_mapper - INFO - Mapped 16 events with trading pairs
+2025-10-23 14:35:32,283 - csv_exporter - INFO - Loaded 399 existing events from CSV
+2025-10-23 14:35:32,511 - csv_exporter - INFO - ==================================================
+2025-10-23 14:35:32,512 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:35:32,512 - csv_exporter - INFO - ==================================================
+2025-10-23 14:35:32,512 - csv_exporter - INFO - [STATS] Total events: 393
+2025-10-23 14:35:32,512 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:35:32,513 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:35:32,513 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:35:32,513 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (95.9%)
+2025-10-23 14:35:32,513 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (95.9%)
+2025-10-23 14:35:32,514 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (95.9%)
+2025-10-23 14:35:32,514 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:35:32,514 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 264 (67.2%)
+2025-10-23 14:35:32,514 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 74 (18.8%)
+2025-10-23 14:35:32,514 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 41 (10.4%)
+2025-10-23 14:35:32,515 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:35:32,515 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:35:32,515 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:35:32,515 - csv_exporter - INFO -   USD: 113
+2025-10-23 14:35:32,516 - csv_exporter - INFO -   EUR: 79
+2025-10-23 14:35:32,516 - csv_exporter - INFO -   GBP: 58
+2025-10-23 14:35:32,516 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:35:32,516 - csv_exporter - INFO -   AUD: 29
+2025-10-23 14:35:32,516 - csv_exporter - INFO -   CAD: 26
+2025-10-23 14:35:32,517 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:35:32,517 - csv_exporter - INFO -   CNY: 18
+2025-10-23 14:35:32,517 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:35:32,517 - csv_exporter - INFO -   All: 3
+2025-10-23 14:35:32,518 - csv_exporter - INFO - ==================================================
+2025-10-23 14:35:32,522 - csv_exporter - INFO - Exported 393 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:35:32,522 - csv_exporter - INFO - Deduplication complete: 16 new events added, 0 events updated
+2025-10-23 14:35:32,522 - csv_exporter - INFO - Total events in CSV: 393
+2025-10-23 14:35:32,523 - scraper - INFO - Saved 16 events for may14.2025 to CSV
+2025-10-23 14:36:26,536 - scraper - INFO - Scraped 37 events for may15.2025 using JS data
+2025-10-23 14:36:26,863 - symbol_mapper - INFO - Mapped 37 events with trading pairs
+2025-10-23 14:36:26,873 - csv_exporter - INFO - Loaded 393 existing events from CSV
+2025-10-23 14:36:27,226 - csv_exporter - INFO - ==================================================
+2025-10-23 14:36:27,226 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:36:27,227 - csv_exporter - INFO - ==================================================
+2025-10-23 14:36:27,227 - csv_exporter - INFO - [STATS] Total events: 414
+2025-10-23 14:36:27,227 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:36:27,227 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:36:27,228 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:36:27,228 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (91.1%)
+2025-10-23 14:36:27,228 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (91.1%)
+2025-10-23 14:36:27,228 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (91.1%)
+2025-10-23 14:36:27,229 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:36:27,229 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 275 (66.4%)
+2025-10-23 14:36:27,229 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 82 (19.8%)
+2025-10-23 14:36:27,230 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 43 (10.4%)
+2025-10-23 14:36:27,230 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.7%)
+2025-10-23 14:36:27,230 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 14:36:27,231 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:36:27,231 - csv_exporter - INFO -   USD: 123
+2025-10-23 14:36:27,231 - csv_exporter - INFO -   EUR: 81
+2025-10-23 14:36:27,232 - csv_exporter - INFO -   GBP: 65
+2025-10-23 14:36:27,232 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:36:27,232 - csv_exporter - INFO -   AUD: 30
+2025-10-23 14:36:27,233 - csv_exporter - INFO -   CAD: 28
+2025-10-23 14:36:27,233 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:36:27,233 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:36:27,233 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:36:27,233 - csv_exporter - INFO -   All: 3
+2025-10-23 14:36:27,234 - csv_exporter - INFO - ==================================================
+2025-10-23 14:36:27,240 - csv_exporter - INFO - Exported 414 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:36:27,240 - csv_exporter - INFO - Deduplication complete: 37 new events added, 0 events updated
+2025-10-23 14:36:27,240 - csv_exporter - INFO - Total events in CSV: 414
+2025-10-23 14:36:27,241 - scraper - INFO - Saved 37 events for may15.2025 to CSV
+2025-10-23 14:37:19,307 - scraper - INFO - Scraped 16 events for may16.2025 using JS data
+2025-10-23 14:37:19,377 - symbol_mapper - INFO - Mapped 16 events with trading pairs
+2025-10-23 14:37:19,382 - csv_exporter - INFO - Loaded 414 existing events from CSV
+2025-10-23 14:37:19,559 - csv_exporter - INFO - ==================================================
+2025-10-23 14:37:19,559 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:37:19,559 - csv_exporter - INFO - ==================================================
+2025-10-23 14:37:19,559 - csv_exporter - INFO - [STATS] Total events: 393
+2025-10-23 14:37:19,560 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:37:19,560 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:37:19,560 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:37:19,560 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (95.9%)
+2025-10-23 14:37:19,561 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (95.9%)
+2025-10-23 14:37:19,561 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (95.9%)
+2025-10-23 14:37:19,561 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:37:19,561 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 262 (66.7%)
+2025-10-23 14:37:19,561 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 75 (19.1%)
+2025-10-23 14:37:19,562 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 42 (10.7%)
+2025-10-23 14:37:19,562 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:37:19,562 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:37:19,562 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:37:19,562 - csv_exporter - INFO -   USD: 115
+2025-10-23 14:37:19,563 - csv_exporter - INFO -   EUR: 78
+2025-10-23 14:37:19,563 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:37:19,563 - csv_exporter - INFO -   JPY: 34
+2025-10-23 14:37:19,563 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:37:19,563 - csv_exporter - INFO -   CAD: 26
+2025-10-23 14:37:19,564 - csv_exporter - INFO -   NZD: 21
+2025-10-23 14:37:19,564 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:37:19,564 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:37:19,564 - csv_exporter - INFO -   All: 3
+2025-10-23 14:37:19,564 - csv_exporter - INFO - ==================================================
+2025-10-23 14:37:19,569 - csv_exporter - INFO - Exported 393 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:37:19,570 - csv_exporter - INFO - Deduplication complete: 16 new events added, 0 events updated
+2025-10-23 14:37:19,570 - csv_exporter - INFO - Total events in CSV: 393
+2025-10-23 14:37:19,570 - scraper - INFO - Saved 16 events for may16.2025 to CSV
+2025-10-23 14:38:11,700 - scraper - INFO - Scraped 23 events for may19.2025 using JS data
+2025-10-23 14:38:11,774 - symbol_mapper - INFO - Mapped 23 events with trading pairs
+2025-10-23 14:38:11,780 - csv_exporter - INFO - Loaded 393 existing events from CSV
+2025-10-23 14:38:11,966 - csv_exporter - INFO - ==================================================
+2025-10-23 14:38:11,966 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:38:11,966 - csv_exporter - INFO - ==================================================
+2025-10-23 14:38:11,967 - csv_exporter - INFO - [STATS] Total events: 400
+2025-10-23 14:38:11,967 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:38:11,967 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:38:11,967 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:38:11,967 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (94.2%)
+2025-10-23 14:38:11,968 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (94.2%)
+2025-10-23 14:38:11,968 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (94.2%)
+2025-10-23 14:38:11,968 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:38:11,968 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 269 (67.2%)
+2025-10-23 14:38:11,968 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 73 (18.2%)
+2025-10-23 14:38:11,969 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 43 (10.8%)
+2025-10-23 14:38:11,969 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 12 (3.0%)
+2025-10-23 14:38:11,969 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:38:11,969 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:38:11,969 - csv_exporter - INFO -   USD: 116
+2025-10-23 14:38:11,970 - csv_exporter - INFO -   EUR: 79
+2025-10-23 14:38:11,970 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:38:11,970 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:38:11,970 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:38:11,970 - csv_exporter - INFO -   CAD: 26
+2025-10-23 14:38:11,971 - csv_exporter - INFO -   CNY: 22
+2025-10-23 14:38:11,971 - csv_exporter - INFO -   NZD: 22
+2025-10-23 14:38:11,971 - csv_exporter - INFO -   CHF: 13
+2025-10-23 14:38:11,971 - csv_exporter - INFO -   All: 3
+2025-10-23 14:38:11,971 - csv_exporter - INFO - ==================================================
+2025-10-23 14:38:11,974 - csv_exporter - INFO - Exported 400 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:38:11,974 - csv_exporter - INFO - Deduplication complete: 23 new events added, 0 events updated
+2025-10-23 14:38:11,974 - csv_exporter - INFO - Total events in CSV: 400
+2025-10-23 14:38:11,975 - scraper - INFO - Saved 23 events for may19.2025 to CSV
+2025-10-23 14:38:59,980 - scraper - INFO - Scraped 23 events for may20.2025 using JS data
+2025-10-23 14:39:00,098 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 14:39:00,099 - symbol_mapper - INFO - Mapped 23 events with trading pairs
+2025-10-23 14:39:00,106 - csv_exporter - INFO - Loaded 400 existing events from CSV
+2025-10-23 14:39:00,287 - csv_exporter - INFO - ==================================================
+2025-10-23 14:39:00,288 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:39:00,288 - csv_exporter - INFO - ==================================================
+2025-10-23 14:39:00,288 - csv_exporter - INFO - [STATS] Total events: 400
+2025-10-23 14:39:00,288 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:39:00,288 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:39:00,288 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:39:00,289 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (94.2%)
+2025-10-23 14:39:00,289 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (94.2%)
+2025-10-23 14:39:00,289 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (94.2%)
+2025-10-23 14:39:00,290 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:39:00,290 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 262 (65.5%)
+2025-10-23 14:39:00,290 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 79 (19.8%)
+2025-10-23 14:39:00,290 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 45 (11.2%)
+2025-10-23 14:39:00,290 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:39:00,290 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:39:00,290 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:39:00,291 - csv_exporter - INFO -   USD: 115
+2025-10-23 14:39:00,291 - csv_exporter - INFO -   EUR: 79
+2025-10-23 14:39:00,291 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:39:00,291 - csv_exporter - INFO -   JPY: 31
+2025-10-23 14:39:00,291 - csv_exporter - INFO -   AUD: 31
+2025-10-23 14:39:00,291 - csv_exporter - INFO -   CAD: 30
+2025-10-23 14:39:00,292 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:39:00,292 - csv_exporter - INFO -   CNY: 18
+2025-10-23 14:39:00,292 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:39:00,292 - csv_exporter - INFO -   All: 4
+2025-10-23 14:39:00,292 - csv_exporter - INFO - ==================================================
+2025-10-23 14:39:00,295 - csv_exporter - INFO - Exported 400 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:39:00,295 - csv_exporter - INFO - Deduplication complete: 23 new events added, 0 events updated
+2025-10-23 14:39:00,296 - csv_exporter - INFO - Total events in CSV: 400
+2025-10-23 14:39:00,296 - scraper - INFO - Saved 23 events for may20.2025 to CSV
+2025-10-23 14:39:58,949 - scraper - INFO - Scraped 17 events for may21.2025 using JS data
+2025-10-23 14:39:59,017 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 14:39:59,018 - symbol_mapper - INFO - Mapped 17 events with trading pairs
+2025-10-23 14:39:59,023 - csv_exporter - INFO - Loaded 400 existing events from CSV
+2025-10-23 14:39:59,217 - csv_exporter - INFO - ==================================================
+2025-10-23 14:39:59,217 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:39:59,218 - csv_exporter - INFO - ==================================================
+2025-10-23 14:39:59,218 - csv_exporter - INFO - [STATS] Total events: 394
+2025-10-23 14:39:59,218 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:39:59,218 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:39:59,218 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:39:59,219 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (95.7%)
+2025-10-23 14:39:59,219 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (95.7%)
+2025-10-23 14:39:59,219 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (95.7%)
+2025-10-23 14:39:59,219 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:39:59,219 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 265 (67.3%)
+2025-10-23 14:39:59,220 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 74 (18.8%)
+2025-10-23 14:39:59,220 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 41 (10.4%)
+2025-10-23 14:39:59,220 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:39:59,220 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:39:59,220 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:39:59,221 - csv_exporter - INFO -   USD: 114
+2025-10-23 14:39:59,221 - csv_exporter - INFO -   EUR: 78
+2025-10-23 14:39:59,221 - csv_exporter - INFO -   GBP: 60
+2025-10-23 14:39:59,221 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:39:59,222 - csv_exporter - INFO -   AUD: 28
+2025-10-23 14:39:59,222 - csv_exporter - INFO -   CAD: 26
+2025-10-23 14:39:59,222 - csv_exporter - INFO -   NZD: 21
+2025-10-23 14:39:59,222 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:39:59,222 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:39:59,223 - csv_exporter - INFO -   All: 4
+2025-10-23 14:39:59,223 - csv_exporter - INFO - ==================================================
+2025-10-23 14:39:59,227 - csv_exporter - INFO - Exported 394 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:39:59,227 - csv_exporter - INFO - Deduplication complete: 17 new events added, 0 events updated
+2025-10-23 14:39:59,227 - csv_exporter - INFO - Total events in CSV: 394
+2025-10-23 14:39:59,228 - scraper - INFO - Saved 17 events for may21.2025 to CSV
+2025-10-23 14:40:52,291 - scraper - INFO - Scraped 36 events for may22.2025 using JS data
+2025-10-23 14:40:52,432 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-23 14:40:52,432 - symbol_mapper - INFO - Mapped 36 events with trading pairs
+2025-10-23 14:40:52,438 - csv_exporter - INFO - Loaded 394 existing events from CSV
+2025-10-23 14:40:52,639 - csv_exporter - INFO - ==================================================
+2025-10-23 14:40:52,640 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:40:52,640 - csv_exporter - INFO - ==================================================
+2025-10-23 14:40:52,640 - csv_exporter - INFO - [STATS] Total events: 413
+2025-10-23 14:40:52,640 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:40:52,640 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:40:52,641 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:40:52,641 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (91.3%)
+2025-10-23 14:40:52,641 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (91.3%)
+2025-10-23 14:40:52,641 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (91.3%)
+2025-10-23 14:40:52,641 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:40:52,641 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 271 (65.6%)
+2025-10-23 14:40:52,642 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 83 (20.1%)
+2025-10-23 14:40:52,642 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 45 (10.9%)
+2025-10-23 14:40:52,642 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.7%)
+2025-10-23 14:40:52,642 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 14:40:52,643 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:40:52,643 - csv_exporter - INFO -   USD: 115
+2025-10-23 14:40:52,643 - csv_exporter - INFO -   EUR: 87
+2025-10-23 14:40:52,643 - csv_exporter - INFO -   GBP: 64
+2025-10-23 14:40:52,644 - csv_exporter - INFO -   JPY: 33
+2025-10-23 14:40:52,644 - csv_exporter - INFO -   AUD: 30
+2025-10-23 14:40:52,644 - csv_exporter - INFO -   CAD: 29
+2025-10-23 14:40:52,644 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:40:52,644 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:40:52,645 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:40:52,645 - csv_exporter - INFO -   All: 4
+2025-10-23 14:40:52,645 - csv_exporter - INFO - ==================================================
+2025-10-23 14:40:52,648 - csv_exporter - INFO - Exported 413 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:40:52,648 - csv_exporter - INFO - Deduplication complete: 36 new events added, 0 events updated
+2025-10-23 14:40:52,649 - csv_exporter - INFO - Total events in CSV: 413
+2025-10-23 14:40:52,649 - scraper - INFO - Saved 36 events for may22.2025 to CSV
+2025-10-23 14:41:41,671 - scraper - INFO - Scraped 14 events for may23.2025 using JS data
+2025-10-23 14:41:41,730 - symbol_mapper - INFO - Mapped 14 events with trading pairs
+2025-10-23 14:41:41,734 - csv_exporter - INFO - Loaded 413 existing events from CSV
+2025-10-23 14:41:41,925 - csv_exporter - INFO - ==================================================
+2025-10-23 14:41:41,925 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:41:41,926 - csv_exporter - INFO - ==================================================
+2025-10-23 14:41:41,926 - csv_exporter - INFO - [STATS] Total events: 391
+2025-10-23 14:41:41,926 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:41:41,926 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:41:41,926 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:41:41,927 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (96.4%)
+2025-10-23 14:41:41,927 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (96.4%)
+2025-10-23 14:41:41,927 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (96.4%)
+2025-10-23 14:41:41,927 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:41:41,928 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 259 (66.2%)
+2025-10-23 14:41:41,928 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 76 (19.4%)
+2025-10-23 14:41:41,928 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 42 (10.7%)
+2025-10-23 14:41:41,928 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:41:41,929 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:41:41,929 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:41:41,929 - csv_exporter - INFO -   USD: 113
+2025-10-23 14:41:41,929 - csv_exporter - INFO -   EUR: 77
+2025-10-23 14:41:41,929 - csv_exporter - INFO -   GBP: 58
+2025-10-23 14:41:41,930 - csv_exporter - INFO -   JPY: 32
+2025-10-23 14:41:41,930 - csv_exporter - INFO -   CAD: 28
+2025-10-23 14:41:41,930 - csv_exporter - INFO -   AUD: 27
+2025-10-23 14:41:41,930 - csv_exporter - INFO -   NZD: 21
+2025-10-23 14:41:41,930 - csv_exporter - INFO -   CNY: 17
+2025-10-23 14:41:41,931 - csv_exporter - INFO -   CHF: 12
+2025-10-23 14:41:41,931 - csv_exporter - INFO -   All: 3
+2025-10-23 14:41:41,931 - csv_exporter - INFO - ==================================================
+2025-10-23 14:41:41,934 - csv_exporter - INFO - Exported 391 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:41:41,934 - csv_exporter - INFO - Deduplication complete: 14 new events added, 0 events updated
+2025-10-23 14:41:41,934 - csv_exporter - INFO - Total events in CSV: 391
+2025-10-23 14:41:41,934 - scraper - INFO - Saved 14 events for may23.2025 to CSV
+2025-10-23 14:41:44,735 - scraper - INFO - Fallback completed: 374 total events from 2025-04-26 to 2025-05-25
+2025-10-23 14:41:44,736 - scraper - INFO - Scraped 374 events from range 2025-04-26 to 2025-05-25
+2025-10-23 14:41:54,604 - scraper - INFO - Processing range 2/6: 2025-05-26 to 2025-06-24
+2025-10-23 14:41:54,604 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 14:41:54,605 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 14:41:54,605 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 14:41:54,605 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 14:41:59,466 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 14:41:59,967 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 14:42:00,692 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 14:42:00,694 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 14:42:02,064 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 14:42:02,065 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=may26.2025-jun24.2025
+2025-10-23 14:43:00,804 - scraper - INFO - Parsing range page using HTML table extraction
+2025-10-23 14:43:04,460 - scraper - INFO - Scraped 4 events from calendar table for range 2025-05-26 to 2025-06-24
+2025-10-23 14:43:04,460 - scraper - INFO - Completed range scraping: 4 total events from 2025-05-26 to 2025-06-24
+2025-10-23 14:43:04,461 - scraper - INFO - Scraped 4 events from range 2025-05-26 to 2025-06-24
+2025-10-23 14:43:14,451 - scraper - INFO - Processing range 3/6: 2025-06-25 to 2025-07-24
+2025-10-23 14:43:14,452 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 14:43:14,453 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 14:43:14,453 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 14:43:14,454 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 14:43:19,276 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 14:43:19,726 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 14:43:20,176 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 14:43:20,177 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 14:43:21,328 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 14:43:21,329 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=jun25.2025-jul24.2025
+2025-10-23 14:43:48,508 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jun25.2025-jul24.2025
+2025-10-23 14:44:30,910 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jun25.2025-jul24.2025
+2025-10-23 14:45:10,785 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jun25.2025-jul24.2025
+2025-10-23 14:45:10,786 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=jun25.2025-jul24.2025 after 3 attempts
+2025-10-23 14:45:10,786 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=jun25.2025-jul24.2025
+2025-10-23 14:45:10,786 - scraper - INFO - Falling back to daily scraping approach
+2025-10-23 14:45:10,786 - scraper - INFO - Fallback: scraping range 2025-06-25 to 2025-07-24 day by day
+2025-10-23 14:46:00,531 - scraper - INFO - Scraped 10 events for jun25.2025 using JS data
+2025-10-23 14:46:00,590 - symbol_mapper - INFO - Mapped 10 events with trading pairs
+2025-10-23 14:46:00,600 - csv_exporter - INFO - Loaded 391 existing events from CSV
+2025-10-23 14:46:00,846 - csv_exporter - INFO - ==================================================
+2025-10-23 14:46:00,846 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:46:00,847 - csv_exporter - INFO - ==================================================
+2025-10-23 14:46:00,847 - csv_exporter - INFO - [STATS] Total events: 387
+2025-10-23 14:46:00,847 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:46:00,847 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:46:00,848 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:46:00,848 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 377 (97.4%)
+2025-10-23 14:46:00,848 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 377 (97.4%)
+2025-10-23 14:46:00,848 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 377 (97.4%)
+2025-10-23 14:46:00,848 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:46:00,849 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 257 (66.4%)
+2025-10-23 14:46:00,849 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 75 (19.4%)
+2025-10-23 14:46:00,849 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 41 (10.6%)
+2025-10-23 14:46:00,849 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.8%)
+2025-10-23 14:46:00,849 - csv_exporter - INFO -   Low: 3 (0.8%)
+2025-10-23 14:46:00,850 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:46:00,850 - csv_exporter - INFO -   USD: 112
+2025-10-23 14:46:00,850 - csv_exporter - INFO -   EUR: 76
+2025-10-23 14:46:00,850 - csv_exporter - INFO -   GBP: 57
+2025-10-23 14:46:00,850 - csv_exporter - INFO -   JPY: 33
+2025-10-23 14:46:00,851 - csv_exporter - INFO -   AUD: 28
+2025-10-23 14:46:00,851 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:46:00,851 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:46:00,851 - csv_exporter - INFO -   CNY: 16
+2025-10-23 14:46:00,852 - csv_exporter - INFO -   CHF: 14
+2025-10-23 14:46:00,852 - csv_exporter - INFO -   All: 3
+2025-10-23 14:46:00,852 - csv_exporter - INFO - ==================================================
+2025-10-23 14:46:00,855 - csv_exporter - INFO - Exported 387 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:46:00,855 - csv_exporter - INFO - Deduplication complete: 10 new events added, 0 events updated
+2025-10-23 14:46:00,855 - csv_exporter - INFO - Total events in CSV: 387
+2025-10-23 14:46:00,856 - scraper - INFO - Saved 10 events for jun25.2025 to CSV
+2025-10-23 14:46:57,856 - scraper - INFO - Scraped 20 events for jun26.2025 using JS data
+2025-10-23 14:46:57,940 - symbol_mapper - INFO - Mapped 20 events with trading pairs
+2025-10-23 14:46:57,946 - csv_exporter - INFO - Loaded 387 existing events from CSV
+2025-10-23 14:46:58,171 - csv_exporter - INFO - ==================================================
+2025-10-23 14:46:58,171 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 14:46:58,171 - csv_exporter - INFO - ==================================================
+2025-10-23 14:46:58,171 - csv_exporter - INFO - [STATS] Total events: 407
+2025-10-23 14:46:58,172 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 14:46:58,172 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 14:46:58,172 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 14:46:58,172 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 387 (95.1%)
+2025-10-23 14:46:58,172 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 387 (95.1%)
+2025-10-23 14:46:58,172 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 387 (95.1%)
+2025-10-23 14:46:58,173 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 14:46:58,173 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 269 (66.1%)
+2025-10-23 14:46:58,173 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 78 (19.2%)
+2025-10-23 14:46:58,173 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 46 (11.3%)
+2025-10-23 14:46:58,174 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.7%)
+2025-10-23 14:46:58,174 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 14:46:58,174 - csv_exporter - INFO - Top Currencies:
+2025-10-23 14:46:58,174 - csv_exporter - INFO -   USD: 126
+2025-10-23 14:46:58,174 - csv_exporter - INFO -   EUR: 78
+2025-10-23 14:46:58,175 - csv_exporter - INFO -   GBP: 60
+2025-10-23 14:46:58,175 - csv_exporter - INFO -   JPY: 33
+2025-10-23 14:46:58,175 - csv_exporter - INFO -   AUD: 28
+2025-10-23 14:46:58,175 - csv_exporter - INFO -   CAD: 25
+2025-10-23 14:46:58,175 - csv_exporter - INFO -   NZD: 20
+2025-10-23 14:46:58,176 - csv_exporter - INFO -   CNY: 17
+2025-10-23 14:46:58,176 - csv_exporter - INFO -   CHF: 14
+2025-10-23 14:46:58,176 - csv_exporter - INFO -   All: 3
+2025-10-23 14:46:58,176 - csv_exporter - INFO - ==================================================
+2025-10-23 14:46:58,179 - csv_exporter - INFO - Exported 407 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 14:46:58,179 - csv_exporter - INFO - Deduplication complete: 20 new events added, 0 events updated
+2025-10-23 14:46:58,179 - csv_exporter - INFO - Total events in CSV: 407
+2025-10-23 14:46:58,180 - scraper - INFO - Saved 20 events for jun26.2025 to CSV
+2025-10-23 14:47:50,939 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/d2e34a1f7220318db664e6322ed63522
+2025-10-23 14:47:54,995 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000220F9287BB0>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/d2e34a1f7220318db664e6322ed63522
+2025-10-23 14:47:59,060 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000220F9287950>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/d2e34a1f7220318db664e6322ed63522
+2025-10-23 15:25:20,873 - __main__ - INFO - Range mode: using config date range
+2025-10-23 15:25:20,874 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-23 15:25:20,874 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-23 15:25:20,875 - __main__ - INFO - Range mode: scraping events from 2025-04-26 to 2025-10-23
+2025-10-23 15:25:20,875 - __main__ - INFO - Starting range data scraping...
+2025-10-23 15:25:20,875 - scraper - INFO - Starting RANGE-BASED scrape from 2025-04-26 to 2025-10-23
+2025-10-23 15:25:20,875 - scraper - INFO - Total days in range: 180
+2025-10-23 15:25:20,875 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-23 15:25:20,875 - scraper - INFO - Processing 6 date range chunks
+2025-10-23 15:25:20,876 - scraper - INFO - Processing range 1/6: 2025-04-26 to 2025-05-25
+2025-10-23 15:25:20,876 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-23 15:25:20,876 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-23 15:25:20,876 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-23 15:25:20,876 - WDM - INFO - ====== WebDriver manager ======
+2025-10-23 15:25:26,439 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 15:25:27,016 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-23 15:25:27,428 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-23 15:25:27,430 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-23 15:25:28,872 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-23 15:25:28,873 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 15:25:59,736 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 15:26:43,209 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 15:27:23,011 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 15:27:23,011 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025 after 3 attempts
+2025-10-23 15:27:23,011 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=apr26.2025-may25.2025
+2025-10-23 15:27:23,011 - scraper - INFO - Falling back to daily scraping approach
+2025-10-23 15:27:23,011 - scraper - INFO - Fallback: scraping range 2025-04-26 to 2025-05-25 day by day
+2025-10-23 15:27:48,301 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=apr28.2025
+2025-10-23 15:28:47,459 - scraper - INFO - Scraped 3 events for apr28.2025 using JS data
+2025-10-23 15:28:47,510 - symbol_mapper - INFO - Mapped 3 events with trading pairs
+2025-10-23 15:28:47,560 - csv_exporter - INFO - Loaded 407 existing events from CSV
+2025-10-23 15:28:47,954 - csv_exporter - INFO - ==================================================
+2025-10-23 15:28:47,954 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 15:28:47,954 - csv_exporter - INFO - ==================================================
+2025-10-23 15:28:47,954 - csv_exporter - INFO - [STATS] Total events: 410
+2025-10-23 15:28:47,955 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 15:28:47,955 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 15:28:47,955 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 15:28:47,955 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 407 (99.3%)
+2025-10-23 15:28:47,956 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 407 (99.3%)
+2025-10-23 15:28:47,956 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 407 (99.3%)
+2025-10-23 15:28:47,956 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 15:28:47,956 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 271 (66.1%)
+2025-10-23 15:28:47,956 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 79 (19.3%)
+2025-10-23 15:28:47,957 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 46 (11.2%)
+2025-10-23 15:28:47,957 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.7%)
+2025-10-23 15:28:47,957 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 15:28:47,957 - csv_exporter - INFO - Top Currencies:
+2025-10-23 15:28:47,957 - csv_exporter - INFO -   USD: 126
+2025-10-23 15:28:47,957 - csv_exporter - INFO -   EUR: 79
+2025-10-23 15:28:47,958 - csv_exporter - INFO -   GBP: 61
+2025-10-23 15:28:47,958 - csv_exporter - INFO -   JPY: 33
+2025-10-23 15:28:47,958 - csv_exporter - INFO -   AUD: 28
+2025-10-23 15:28:47,958 - csv_exporter - INFO -   CAD: 26
+2025-10-23 15:28:47,959 - csv_exporter - INFO -   NZD: 20
+2025-10-23 15:28:47,959 - csv_exporter - INFO -   CNY: 17
+2025-10-23 15:28:47,959 - csv_exporter - INFO -   CHF: 14
+2025-10-23 15:28:47,959 - csv_exporter - INFO -   All: 3
+2025-10-23 15:28:47,959 - csv_exporter - INFO - ==================================================
+2025-10-23 15:28:47,967 - csv_exporter - INFO - Exported 410 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 15:28:47,967 - csv_exporter - INFO - Deduplication complete: 3 new events added, 0 events updated
+2025-10-23 15:28:47,967 - csv_exporter - INFO - Total events in CSV: 410
+2025-10-23 15:28:47,968 - scraper - INFO - Saved 3 events for apr28.2025 to CSV
+2025-10-23 15:29:45,923 - scraper - INFO - Scraped 18 events for apr29.2025 using JS data
+2025-10-23 15:29:46,015 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-23 15:29:46,021 - csv_exporter - INFO - Loaded 410 existing events from CSV
+2025-10-23 15:29:46,232 - csv_exporter - INFO - ==================================================
+2025-10-23 15:29:46,233 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 15:29:46,233 - csv_exporter - INFO - ==================================================
+2025-10-23 15:29:46,233 - csv_exporter - INFO - [STATS] Total events: 425
+2025-10-23 15:29:46,233 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 15:29:46,234 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 15:29:46,234 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 15:29:46,234 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 407 (95.8%)
+2025-10-23 15:29:46,234 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 407 (95.8%)
+2025-10-23 15:29:46,234 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 407 (95.8%)
+2025-10-23 15:29:46,235 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 15:29:46,235 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 282 (66.4%)
+2025-10-23 15:29:46,235 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 79 (18.6%)
+2025-10-23 15:29:46,235 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 49 (11.5%)
+2025-10-23 15:29:46,236 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 12 (2.8%)
+2025-10-23 15:29:46,236 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 15:29:46,236 - csv_exporter - INFO - Top Currencies:
+2025-10-23 15:29:46,236 - csv_exporter - INFO -   USD: 133
+2025-10-23 15:29:46,236 - csv_exporter - INFO -   EUR: 84
+2025-10-23 15:29:46,236 - csv_exporter - INFO -   GBP: 62
+2025-10-23 15:29:46,237 - csv_exporter - INFO -   JPY: 34
+2025-10-23 15:29:46,237 - csv_exporter - INFO -   AUD: 29
+2025-10-23 15:29:46,237 - csv_exporter - INFO -   CAD: 25
+2025-10-23 15:29:46,237 - csv_exporter - INFO -   NZD: 20
+2025-10-23 15:29:46,238 - csv_exporter - INFO -   CNY: 17
+2025-10-23 15:29:46,238 - csv_exporter - INFO -   CHF: 15
+2025-10-23 15:29:46,238 - csv_exporter - INFO -   All: 3
+2025-10-23 15:29:46,238 - csv_exporter - INFO - ==================================================
+2025-10-23 15:29:46,241 - csv_exporter - INFO - Exported 425 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 15:29:46,242 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-23 15:29:46,242 - csv_exporter - INFO - Total events in CSV: 425
+2025-10-23 15:29:46,242 - scraper - INFO - Saved 18 events for apr29.2025 to CSV
+2025-10-23 15:30:41,442 - scraper - INFO - Scraped 38 events for apr30.2025 using JS data
+2025-10-23 15:30:41,565 - symbol_mapper - INFO - Mapped 38 events with trading pairs
+2025-10-23 15:30:41,573 - csv_exporter - INFO - Loaded 425 existing events from CSV
+2025-10-23 15:30:41,795 - csv_exporter - INFO - ==================================================
+2025-10-23 15:30:41,795 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 15:30:41,795 - csv_exporter - INFO - ==================================================
+2025-10-23 15:30:41,795 - csv_exporter - INFO - [STATS] Total events: 445
+2025-10-23 15:30:41,796 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 15:30:41,796 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 15:30:41,796 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 15:30:41,796 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 407 (91.5%)
+2025-10-23 15:30:41,796 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 407 (91.5%)
+2025-10-23 15:30:41,797 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 407 (91.5%)
+2025-10-23 15:30:41,797 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 15:30:41,797 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 293 (65.8%)
+2025-10-23 15:30:41,797 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 88 (19.8%)
+2025-10-23 15:30:41,798 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 50 (11.2%)
+2025-10-23 15:30:41,798 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.5%)
+2025-10-23 15:30:41,799 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 15:30:41,799 - csv_exporter - INFO - Top Currencies:
+2025-10-23 15:30:41,799 - csv_exporter - INFO -   USD: 137
+2025-10-23 15:30:41,800 - csv_exporter - INFO -   EUR: 89
+2025-10-23 15:30:41,800 - csv_exporter - INFO -   GBP: 61
+2025-10-23 15:30:41,800 - csv_exporter - INFO -   JPY: 36
+2025-10-23 15:30:41,800 - csv_exporter - INFO -   AUD: 32
+2025-10-23 15:30:41,800 - csv_exporter - INFO -   CAD: 27
+2025-10-23 15:30:41,801 - csv_exporter - INFO -   NZD: 21
+2025-10-23 15:30:41,801 - csv_exporter - INFO -   CNY: 20
+2025-10-23 15:30:41,801 - csv_exporter - INFO -   CHF: 16
+2025-10-23 15:30:41,801 - csv_exporter - INFO -   All: 3
+2025-10-23 15:30:41,801 - csv_exporter - INFO - ==================================================
+2025-10-23 15:30:41,806 - csv_exporter - INFO - Exported 445 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 15:30:41,807 - csv_exporter - INFO - Deduplication complete: 38 new events added, 0 events updated
+2025-10-23 15:30:41,807 - csv_exporter - INFO - Total events in CSV: 445
+2025-10-23 15:30:41,807 - scraper - INFO - Saved 38 events for apr30.2025 to CSV
+2025-10-23 15:31:34,050 - scraper - INFO - Scraped 29 events for may1.2025 using JS data
+2025-10-23 15:31:34,139 - symbol_mapper - INFO - Mapped 29 events with trading pairs
+2025-10-23 15:31:34,144 - csv_exporter - INFO - Loaded 445 existing events from CSV
+2025-10-23 15:31:34,330 - csv_exporter - INFO - ==================================================
+2025-10-23 15:31:34,330 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-23 15:31:34,330 - csv_exporter - INFO - ==================================================
+2025-10-23 15:31:34,330 - csv_exporter - INFO - [STATS] Total events: 436
+2025-10-23 15:31:34,330 - csv_exporter - INFO - [CHECK] Missing Event names: 2
+2025-10-23 15:31:34,331 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 2
+2025-10-23 15:31:34,331 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-23 15:31:34,331 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 407 (93.3%)
+2025-10-23 15:31:34,331 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 407 (93.3%)
+2025-10-23 15:31:34,331 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 407 (93.3%)
+2025-10-23 15:31:34,332 - csv_exporter - INFO - Impact Distribution:
+2025-10-23 15:31:34,332 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 285 (65.4%)
+2025-10-23 15:31:34,332 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 84 (19.3%)
+2025-10-23 15:31:34,332 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 48 (11.0%)
+2025-10-23 15:31:34,332 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 16 (3.7%)
+2025-10-23 15:31:34,333 - csv_exporter - INFO -   Low: 3 (0.7%)
+2025-10-23 15:31:34,333 - csv_exporter - INFO - Top Currencies:
+2025-10-23 15:31:34,333 - csv_exporter - INFO -   USD: 135
+2025-10-23 15:31:34,333 - csv_exporter - INFO -   EUR: 81
+2025-10-23 15:31:34,333 - csv_exporter - INFO -   GBP: 64
+2025-10-23 15:31:34,334 - csv_exporter - INFO -   JPY: 39
+2025-10-23 15:31:34,334 - csv_exporter - INFO -   AUD: 31
+2025-10-23 15:31:34,334 - csv_exporter - INFO -   CAD: 26
+2025-10-23 15:31:34,334 - csv_exporter - INFO -   NZD: 20
+2025-10-23 15:31:34,334 - csv_exporter - INFO -   CNY: 18
+2025-10-23 15:31:34,335 - csv_exporter - INFO -   CHF: 16
+2025-10-23 15:31:34,335 - csv_exporter - INFO -   All: 3
+2025-10-23 15:31:34,335 - csv_exporter - INFO - ==================================================
+2025-10-23 15:31:34,339 - csv_exporter - INFO - Exported 436 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-23 15:31:34,339 - csv_exporter - INFO - Deduplication complete: 29 new events added, 0 events updated
+2025-10-23 15:31:34,339 - csv_exporter - INFO - Total events in CSV: 436
+2025-10-23 15:31:34,340 - scraper - INFO - Saved 29 events for may1.2025 to CSV
+2025-10-23 15:31:47,033 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/3f9113d3d76e9a367af55642befacfe2
+2025-10-23 15:31:51,087 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000011DFD671E50>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/3f9113d3d76e9a367af55642befacfe2
+2025-10-23 15:31:55,163 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000011DFD673390>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/3f9113d3d76e9a367af55642befacfe2

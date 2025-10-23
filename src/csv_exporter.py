@@ -228,6 +228,80 @@ class CSVExporter:
             logger.error(f"Failed to create backup: {e}")
             return False
     
+    def append_with_deduplication(self, new_events: List[Dict]) -> bool:
+        """
+        Append new events to CSV with deduplication based on DateTime + Event
+        
+        Args:
+            new_events: List of new event dictionaries to append
+            
+        Returns:
+            True if successful, False otherwise
+        """
+        if not new_events:
+            logger.warning("No new events to append")
+            return False
+        
+        try:
+            # Read existing events if file exists
+            existing_events = []
+            if os.path.exists(self.output_path):
+                try:
+                    existing_df = pd.read_csv(self.output_path)
+                    existing_events = existing_df.to_dict('records')
+                    logger.info(f"Loaded {len(existing_events)} existing events from CSV")
+                except Exception as e:
+                    logger.warning(f"Could not read existing CSV file: {e}")
+                    existing_events = []
+            
+            # Create a dictionary with key = (DateTime, Event) for deduplication
+            events_dict = {}
+            
+            # Add existing events to dictionary
+            for event in existing_events:
+                key = (event.get('DateTime', ''), event.get('Event', ''))
+                if key[0] and key[1]:  # Only add if both DateTime and Event exist
+                    events_dict[key] = event
+            
+            # Add/update with new events
+            updated_count = 0
+            added_count = 0
+            for event in new_events:
+                key = (event.get('DateTime', ''), event.get('Event', ''))
+                if key[0] and key[1]:  # Only process if both DateTime and Event exist
+                    if key in events_dict:
+                        # Update existing event
+                        events_dict[key] = event
+                        updated_count += 1
+                        logger.debug(f"Updated existing event: {key[1]} on {key[0]}")
+                    else:
+                        # Add new event
+                        events_dict[key] = event
+                        added_count += 1
+                        logger.debug(f"Added new event: {key[1]} on {key[0]}")
+            
+            # Convert back to list and sort by DateTime (newest first)
+            all_events = list(events_dict.values())
+            
+            # Sort by DateTime (newest first)
+            try:
+                all_events.sort(key=lambda x: pd.to_datetime(x.get('DateTime', '1900-01-01')), reverse=True)
+            except Exception as e:
+                logger.warning(f"Could not sort events by DateTime: {e}")
+            
+            # Export the deduplicated and sorted events
+            success = self.export_events(all_events, mode='w')  # Use 'w' to overwrite with deduplicated data
+            
+            if success:
+                logger.info(f"Deduplication complete: {added_count} new events added, {updated_count} events updated")
+                logger.info(f"Total events in CSV: {len(all_events)}")
+            
+            return success
+            
+        except Exception as e:
+            logger.error(f"Failed to append events with deduplication: {e}")
+            return False
+
     def get_file_info(self) -> Dict[str, str]:
         """
         Get information about the output file

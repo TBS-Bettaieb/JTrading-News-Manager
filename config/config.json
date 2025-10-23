@@ -1,8 +1,8 @@
 {
   "scraping": {
-    "months_back": 3,
-    "months_forward": 3,
-    "max_range_months": 2,
+    "default_mode": "range",
+    "months_back": 6,
+    "months_forward": 0,
     "base_url": "https://www.forexfactory.com/calendar",
     "timeout": 30,
     "retry_attempts": 3,

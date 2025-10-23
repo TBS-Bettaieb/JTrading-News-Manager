@@ -88,12 +88,14 @@ def load_config(config_path: str = "config/config.json") -> Dict:
         sys.exit(1)
 
 
-def run_pipeline(config: Dict, scrape_only: bool = False) -> bool:
+def run_pipeline(config: Dict, mode: str = 'range', target_date: datetime = None, scrape_only: bool = False) -> bool:
     """
     Run the complete pipeline: scrape -> map -> export
     
     Args:
         config: Configuration dictionary
+        mode: Scraping mode ('daily' or 'range')
+        target_date: Target date for daily mode (required if mode='daily')
         scrape_only: If True, only scrape and return events without exporting
         
     Returns:
@@ -117,42 +119,47 @@ def run_pipeline(config: Dict, scrape_only: bool = False) -> bool:
             retry_attempts=scraping_config.get('retry_attempts', 3),
             csv_exporter=csv_exporter,
             symbol_mapper=symbol_mapper,
-            headless=scraping_config.get('headless', True),  # Default to headless mode
-            max_range_months=scraping_config.get('max_range_months', 2)
+            headless=scraping_config.get('headless', True)  # Default to headless mode
         )
         
-        # Calculate date range using months instead of days
-        months_back = scraping_config.get('months_back', 3)
-        months_forward = scraping_config.get('months_forward', 3)
-        
-        # Convert months to approximate days for calculation (using 30 days per month)
-        days_back = months_back * 30
-        days_forward = months_forward * 30
-        
-        end_date = datetime.now() + timedelta(days=days_forward)
-        start_date = datetime.now() - timedelta(days=days_back)
-        
-        logger.info(f"Scraping events from {start_date.date()} to {end_date.date()}")
-        
-        # Clear existing CSV file at start of scraping session to avoid duplicates
-        if not scrape_only and csv_exporter:
-            # Create empty CSV with headers to start fresh
-            try:
-                logger.info("Initializing CSV file with headers for incremental saving...")
-                # Create empty DataFrame with required columns and save it
-                empty_df = pd.DataFrame(columns=[
-                    'DateTime', 'Event', 'Country', 'Impact', 
-                    'Currency', 'Actual', 'Forecast', 'Previous', 'AffectedPairs'
-                ])
-                empty_df.to_csv(csv_exporter.output_path, index=False)
-                logger.info("CSV file initialized for incremental saving")
-            except Exception as init_error:
-                logger.warning(f"Could not initialize CSV file: {init_error}")
-        
-        # Scrape events (data will be saved to CSV after each page)
-        logger.info("Starting data scraping...")
-        events = scraper.scrape_date_range(start_date, end_date)
-        logger.info(f"Scraped {len(events)} events")
+        if mode == 'daily':
+            # Daily mode: scrape single date
+            if target_date is None:
+                logger.error("Target date is required for daily mode")
+                return False
+            
+            logger.info(f"Daily mode: scraping events for {target_date.date()}")
+            
+            # For daily mode, don't clear CSV - use append mode
+            if not scrape_only and csv_exporter:
+                logger.info("Daily mode: appending to existing CSV file")
+            
+            # Scrape single day
+            events = scraper.scrape_single_day(target_date)
+            logger.info(f"Daily scrape completed: {len(events)} events found")
+            
+        else:
+            # Range mode: scrape date range
+            # Calculate date range using months instead of days
+            months_back = scraping_config.get('months_back', 3)
+            months_forward = scraping_config.get('months_forward', 3)
+            
+            # Convert months to approximate days for calculation (using 30 days per month)
+            days_back = months_back * 30
+            days_forward = months_forward * 30
+            
+            end_date = datetime.now() + timedelta(days=days_forward)
+            start_date = datetime.now() - timedelta(days=days_back)
+            
+            logger.info(f"Range mode: scraping events from {start_date.date()} to {end_date.date()}")
+            
+            # Note: CSV file will be managed by deduplication logic in per-day saving
+            # No need to clear existing data - deduplication will handle it
+            
+            # Scrape events (data will be saved to CSV after each page)
+            logger.info("Starting range data scraping...")
+            events = scraper.scrape_date_range(start_date, end_date)
+            logger.info(f"Range scrape completed: {len(events)} events found")
         
         if not events:
             logger.warning("No events scraped - this may indicate an issue with the scraper or no events in the date range")
@@ -166,26 +173,46 @@ def run_pipeline(config: Dict, scrape_only: bool = False) -> bool:
             logger.info(f"Pipeline completed successfully with {len(mapped_events)} events processed")
             return True
         
-        # Since data is now saved incrementally after each page, 
-        # we just need to verify the final CSV file state
-        logger.info("Data has been saved incrementally during scraping")
-        
-        # Get final file info to confirm everything was saved
-        file_info = csv_exporter.get_file_info()
-        logger.info(f"Final CSV file: {file_info['path']} (size: {file_info['size']})")
-        
-        # Load and verify the final CSV file
-        try:
-            final_events_df = csv_exporter.get_existing_events()
-            if final_events_df is not None:
-                logger.info(f"Pipeline completed successfully. Final CSV contains {len(final_events_df)} events")
-                return True
-            else:
-                logger.warning("Could not verify final CSV file state")
-                return True  # Still consider it successful since incremental saves happened
-        except Exception as verify_error:
-            logger.error(f"Error verifying final CSV file: {verify_error}")
-            return True  # Still consider it successful since incremental saves happened
+        # Save events to CSV (different handling for daily vs range mode)
+        if events and csv_exporter:
+            try:
+                # Map events to trading pairs before saving
+                mapped_events = symbol_mapper.map_events_to_pairs(events)
+                
+                if mode == 'daily':
+                    # Daily mode: append to existing CSV
+                    success = csv_exporter.append_events(mapped_events)
+                    if success:
+                        logger.info(f"Daily mode: appended {len(mapped_events)} events to CSV")
+                    else:
+                        logger.warning("Daily mode: failed to append events to CSV")
+                else:
+                    # Range mode: data should already be saved incrementally, but verify
+                    logger.info("Range mode: data has been saved incrementally during scraping")
+                
+                # Get final file info to confirm everything was saved
+                file_info = csv_exporter.get_file_info()
+                logger.info(f"Final CSV file: {file_info['path']} (size: {file_info['size']})")
+                
+                # Load and verify the final CSV file
+                try:
+                    final_events_df = csv_exporter.get_existing_events()
+                    if final_events_df is not None:
+                        logger.info(f"Pipeline completed successfully. Final CSV contains {len(final_events_df)} events")
+                        return True
+                    else:
+                        logger.warning("Could not verify final CSV file state")
+                        return True  # Still consider it successful since saves happened
+                except Exception as verify_error:
+                    logger.error(f"Error verifying final CSV file: {verify_error}")
+                    return True  # Still consider it successful since saves happened
+                    
+            except Exception as save_error:
+                logger.error(f"Error saving events to CSV: {save_error}")
+                return False
+        else:
+            logger.info("No events to save or no CSV exporter available")
+            return True
             
     except Exception as e:
         logger.error(f"Pipeline failed with error: {e}")
@@ -203,6 +230,10 @@ def main():
                        help='Test mode: scrape only last 7 days')
     parser.add_argument('--no-headless', action='store_true',
                        help='Disable headless mode (show browser window)')
+    parser.add_argument('--mode', choices=['daily', 'range'], 
+                       default=None, help='Scraping mode (overrides config)')
+    parser.add_argument('--date', type=str, 
+                       help='Target date for daily mode (YYYY-MM-DD, default: today)')
     
     args = parser.parse_args()
     
@@ -212,6 +243,24 @@ def main():
     # Setup logging
     setup_logging(config)
     logger = logging.getLogger(__name__)
+    
+    # Determine scraping mode (CLI overrides config)
+    mode = args.mode or config.get('scraping', {}).get('default_mode', 'range')
+    
+    # Parse target date for daily mode
+    target_date = None
+    if mode == 'daily':
+        if args.date:
+            try:
+                target_date = datetime.strptime(args.date, '%Y-%m-%d')
+            except ValueError:
+                logger.error(f"Invalid date format: {args.date}. Use YYYY-MM-DD format.")
+                sys.exit(1)
+        else:
+            target_date = datetime.now()
+        logger.info(f"Daily mode: targeting date {target_date.date()}")
+    else:
+        logger.info(f"Range mode: using config date range")
     
     # Test mode adjustment
     if args.test:
@@ -228,7 +277,7 @@ def main():
     logger.info("Starting Economic News Manager Pipeline")
     
     # Run pipeline
-    success = run_pipeline(config, scrape_only=args.scrape_only)
+    success = run_pipeline(config, mode=mode, target_date=target_date, scrape_only=args.scrape_only)
     
     if success:
         logger.info("Economic News Manager completed successfully")
