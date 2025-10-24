@@ -4826,3 +4826,2145 @@ Stacktrace:
 2025-10-24 12:06:00,779 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
 2025-10-24 12:06:00,779 - csv_exporter - INFO - Total events in CSV: 192
 2025-10-24 12:06:00,780 - scraper - INFO - Saved 22 events for may13.2025 to CSV
+2025-10-24 12:47:51,115 - __main__ - INFO - Range mode: using config date range
+2025-10-24 12:47:51,115 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-24 12:47:51,116 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-24 12:47:51,116 - __main__ - INFO - Range mode: scraping events from 2025-04-27 to 2025-10-24
+2025-10-24 12:47:51,117 - __main__ - INFO - Starting range data scraping...
+2025-10-24 12:47:51,117 - scraper - INFO - Starting RANGE-BASED scrape from 2025-04-27 to 2025-10-24
+2025-10-24 12:47:51,117 - scraper - INFO - Total days in range: 180
+2025-10-24 12:47:51,117 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-24 12:47:51,118 - scraper - INFO - Processing 6 date range chunks
+2025-10-24 12:47:51,118 - scraper - INFO - Processing range 1/6: 2025-04-27 to 2025-05-26
+2025-10-24 12:47:51,118 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-24 12:47:51,119 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-24 12:47:51,119 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-24 12:47:51,119 - WDM - INFO - ====== WebDriver manager ======
+2025-10-24 12:47:53,124 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:47:53,917 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:47:54,475 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-24 12:47:54,476 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-24 12:47:55,977 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-24 12:47:55,978 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:48:00,316 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:48:03,696 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:48:06,328 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:48:06,329 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025 after 3 attempts
+2025-10-24 12:48:06,329 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:48:06,329 - scraper - INFO - Falling back to daily scraping approach
+2025-10-24 12:48:06,329 - scraper - INFO - Fallback: scraping range 2025-04-27 to 2025-05-26 day by day
+2025-10-24 12:48:07,471 - scraper - INFO - Scraped 3 events for apr28.2025 using JS data
+2025-10-24 12:48:07,533 - symbol_mapper - INFO - Mapped 3 events with trading pairs
+2025-10-24 12:48:07,582 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:07,583 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:07,583 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:07,584 - csv_exporter - INFO - [STATS] Total events: 3
+2025-10-24 12:48:07,584 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:07,585 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:07,585 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:07,586 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-24 12:48:07,586 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-24 12:48:07,587 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-24 12:48:07,587 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:07,588 - csv_exporter - INFO -   Low: 2 (66.7%)
+2025-10-24 12:48:07,589 - csv_exporter - INFO -   High: 1 (33.3%)
+2025-10-24 12:48:07,589 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:07,589 - csv_exporter - INFO -   CAD: 1
+2025-10-24 12:48:07,590 - csv_exporter - INFO -   GBP: 1
+2025-10-24 12:48:07,590 - csv_exporter - INFO -   EUR: 1
+2025-10-24 12:48:07,590 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:07,602 - csv_exporter - INFO - Exported 3 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:07,604 - csv_exporter - INFO - Deduplication complete: 3 new events added, 0 events updated
+2025-10-24 12:48:07,605 - csv_exporter - INFO - Total events in CSV: 3
+2025-10-24 12:48:07,606 - scraper - INFO - Saved 3 events for apr28.2025 to CSV
+2025-10-24 12:48:09,169 - scraper - INFO - Scraped 18 events for apr29.2025 using JS data
+2025-10-24 12:48:09,459 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-24 12:48:09,469 - csv_exporter - INFO - Loaded 3 existing events from CSV
+2025-10-24 12:48:09,494 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:09,499 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:09,499 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:09,500 - csv_exporter - INFO - [STATS] Total events: 21
+2025-10-24 12:48:09,500 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:09,500 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:09,503 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:09,515 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 3 (14.3%)
+2025-10-24 12:48:09,516 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 3 (14.3%)
+2025-10-24 12:48:09,516 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 3 (14.3%)
+2025-10-24 12:48:09,517 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:09,517 - csv_exporter - INFO -   Low: 16 (76.2%)
+2025-10-24 12:48:09,517 - csv_exporter - INFO -   Medium: 3 (14.3%)
+2025-10-24 12:48:09,517 - csv_exporter - INFO -   High: 2 (9.5%)
+2025-10-24 12:48:09,518 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:09,518 - csv_exporter - INFO -   USD: 7
+2025-10-24 12:48:09,518 - csv_exporter - INFO -   EUR: 7
+2025-10-24 12:48:09,518 - csv_exporter - INFO -   GBP: 3
+2025-10-24 12:48:09,518 - csv_exporter - INFO -   CHF: 1
+2025-10-24 12:48:09,519 - csv_exporter - INFO -   AUD: 1
+2025-10-24 12:48:09,519 - csv_exporter - INFO -   JPY: 1
+2025-10-24 12:48:09,519 - csv_exporter - INFO -   CAD: 1
+2025-10-24 12:48:09,519 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:09,522 - csv_exporter - INFO - Exported 21 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:09,522 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-24 12:48:09,523 - csv_exporter - INFO - Total events in CSV: 21
+2025-10-24 12:48:09,523 - scraper - INFO - Saved 18 events for apr29.2025 to CSV
+2025-10-24 12:48:12,130 - scraper - INFO - Scraped 38 events for apr30.2025 using JS data
+2025-10-24 12:48:12,730 - symbol_mapper - INFO - Mapped 38 events with trading pairs
+2025-10-24 12:48:12,737 - csv_exporter - INFO - Loaded 21 existing events from CSV
+2025-10-24 12:48:12,795 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:12,798 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:12,800 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:12,807 - csv_exporter - INFO - [STATS] Total events: 59
+2025-10-24 12:48:12,808 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:12,809 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:12,813 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:12,814 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 21 (35.6%)
+2025-10-24 12:48:12,814 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 21 (35.6%)
+2025-10-24 12:48:12,815 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 21 (35.6%)
+2025-10-24 12:48:12,816 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:12,816 - csv_exporter - INFO -   Low: 40 (67.8%)
+2025-10-24 12:48:12,818 - csv_exporter - INFO -   High: 12 (20.3%)
+2025-10-24 12:48:12,819 - csv_exporter - INFO -   Medium: 7 (11.9%)
+2025-10-24 12:48:12,822 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:12,823 - csv_exporter - INFO -   USD: 18
+2025-10-24 12:48:12,823 - csv_exporter - INFO -   EUR: 18
+2025-10-24 12:48:12,823 - csv_exporter - INFO -   AUD: 5
+2025-10-24 12:48:12,823 - csv_exporter - INFO -   JPY: 4
+2025-10-24 12:48:12,824 - csv_exporter - INFO -   GBP: 4
+2025-10-24 12:48:12,824 - csv_exporter - INFO -   CAD: 3
+2025-10-24 12:48:12,824 - csv_exporter - INFO -   CHF: 3
+2025-10-24 12:48:12,825 - csv_exporter - INFO -   CNY: 3
+2025-10-24 12:48:12,826 - csv_exporter - INFO -   NZD: 1
+2025-10-24 12:48:12,826 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:12,833 - csv_exporter - INFO - Exported 59 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:12,834 - csv_exporter - INFO - Deduplication complete: 38 new events added, 0 events updated
+2025-10-24 12:48:12,835 - csv_exporter - INFO - Total events in CSV: 59
+2025-10-24 12:48:12,835 - scraper - INFO - Saved 38 events for apr30.2025 to CSV
+2025-10-24 12:48:14,645 - scraper - INFO - Scraped 29 events for may1.2025 using JS data
+2025-10-24 12:48:14,879 - symbol_mapper - INFO - Mapped 29 events with trading pairs
+2025-10-24 12:48:14,887 - csv_exporter - INFO - Loaded 59 existing events from CSV
+2025-10-24 12:48:14,965 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:14,966 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:14,966 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:14,966 - csv_exporter - INFO - [STATS] Total events: 88
+2025-10-24 12:48:14,967 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:14,967 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:14,967 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:14,968 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 59 (67.0%)
+2025-10-24 12:48:14,968 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 59 (67.0%)
+2025-10-24 12:48:14,969 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 59 (67.0%)
+2025-10-24 12:48:14,969 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:14,969 - csv_exporter - INFO -   Low: 61 (69.3%)
+2025-10-24 12:48:14,970 - csv_exporter - INFO -   High: 18 (20.5%)
+2025-10-24 12:48:14,970 - csv_exporter - INFO -   Medium: 9 (10.2%)
+2025-10-24 12:48:14,971 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:14,972 - csv_exporter - INFO -   USD: 27
+2025-10-24 12:48:14,972 - csv_exporter - INFO -   EUR: 21
+2025-10-24 12:48:14,973 - csv_exporter - INFO -   JPY: 10
+2025-10-24 12:48:14,974 - csv_exporter - INFO -   GBP: 8
+2025-10-24 12:48:14,974 - csv_exporter - INFO -   AUD: 8
+2025-10-24 12:48:14,975 - csv_exporter - INFO -   CHF: 5
+2025-10-24 12:48:14,975 - csv_exporter - INFO -   CAD: 4
+2025-10-24 12:48:14,975 - csv_exporter - INFO -   CNY: 4
+2025-10-24 12:48:14,975 - csv_exporter - INFO -   NZD: 1
+2025-10-24 12:48:14,976 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:14,979 - csv_exporter - INFO - Exported 88 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:14,980 - csv_exporter - INFO - Deduplication complete: 29 new events added, 0 events updated
+2025-10-24 12:48:14,980 - csv_exporter - INFO - Total events in CSV: 88
+2025-10-24 12:48:14,980 - scraper - INFO - Saved 29 events for may1.2025 to CSV
+2025-10-24 12:48:17,117 - scraper - INFO - Scraped 22 events for may2.2025 using JS data
+2025-10-24 12:48:17,397 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-24 12:48:17,406 - csv_exporter - INFO - Loaded 88 existing events from CSV
+2025-10-24 12:48:17,541 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:17,542 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:17,543 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:17,543 - csv_exporter - INFO - [STATS] Total events: 110
+2025-10-24 12:48:17,544 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:17,544 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:17,545 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:17,545 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 88 (80.0%)
+2025-10-24 12:48:17,546 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 88 (80.0%)
+2025-10-24 12:48:17,546 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 88 (80.0%)
+2025-10-24 12:48:17,546 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:17,547 - csv_exporter - INFO -   Low: 77 (70.0%)
+2025-10-24 12:48:17,547 - csv_exporter - INFO -   High: 21 (19.1%)
+2025-10-24 12:48:17,547 - csv_exporter - INFO -   Medium: 12 (10.9%)
+2025-10-24 12:48:17,548 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:17,548 - csv_exporter - INFO -   EUR: 32
+2025-10-24 12:48:17,548 - csv_exporter - INFO -   USD: 31
+2025-10-24 12:48:17,549 - csv_exporter - INFO -   JPY: 12
+2025-10-24 12:48:17,549 - csv_exporter - INFO -   AUD: 10
+2025-10-24 12:48:17,549 - csv_exporter - INFO -   GBP: 8
+2025-10-24 12:48:17,549 - csv_exporter - INFO -   CHF: 6
+2025-10-24 12:48:17,550 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:48:17,550 - csv_exporter - INFO -   CAD: 4
+2025-10-24 12:48:17,550 - csv_exporter - INFO -   NZD: 2
+2025-10-24 12:48:17,551 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:17,554 - csv_exporter - INFO - Exported 110 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:17,554 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-24 12:48:17,555 - csv_exporter - INFO - Total events in CSV: 110
+2025-10-24 12:48:17,555 - scraper - INFO - Saved 22 events for may2.2025 to CSV
+2025-10-24 12:48:18,731 - scraper - INFO - Scraped 8 events for may5.2025 using JS data
+2025-10-24 12:48:18,849 - symbol_mapper - INFO - Mapped 8 events with trading pairs
+2025-10-24 12:48:18,855 - csv_exporter - INFO - Loaded 110 existing events from CSV
+2025-10-24 12:48:18,986 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:18,986 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:18,986 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:18,987 - csv_exporter - INFO - [STATS] Total events: 118
+2025-10-24 12:48:18,987 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:18,987 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:18,987 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:18,988 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 110 (93.2%)
+2025-10-24 12:48:18,988 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 110 (93.2%)
+2025-10-24 12:48:18,989 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 110 (93.2%)
+2025-10-24 12:48:18,989 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:18,989 - csv_exporter - INFO -   Low: 83 (70.3%)
+2025-10-24 12:48:18,990 - csv_exporter - INFO -   High: 23 (19.5%)
+2025-10-24 12:48:18,990 - csv_exporter - INFO -   Medium: 12 (10.2%)
+2025-10-24 12:48:18,990 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:18,990 - csv_exporter - INFO -   USD: 33
+2025-10-24 12:48:18,991 - csv_exporter - INFO -   EUR: 33
+2025-10-24 12:48:18,991 - csv_exporter - INFO -   JPY: 13
+2025-10-24 12:48:18,991 - csv_exporter - INFO -   AUD: 12
+2025-10-24 12:48:18,991 - csv_exporter - INFO -   GBP: 9
+2025-10-24 12:48:18,992 - csv_exporter - INFO -   CHF: 7
+2025-10-24 12:48:18,992 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:48:18,992 - csv_exporter - INFO -   CAD: 4
+2025-10-24 12:48:18,993 - csv_exporter - INFO -   NZD: 2
+2025-10-24 12:48:18,993 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:18,997 - csv_exporter - INFO - Exported 118 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:18,998 - csv_exporter - INFO - Deduplication complete: 8 new events added, 0 events updated
+2025-10-24 12:48:18,998 - csv_exporter - INFO - Total events in CSV: 118
+2025-10-24 12:48:18,999 - scraper - INFO - Saved 8 events for may5.2025 to CSV
+2025-10-24 12:48:20,393 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:48:21,394 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:48:22,660 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:48:22,661 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may6.2025 after 3 attempts
+2025-10-24 12:48:23,892 - scraper - INFO - Scraped 18 events for may7.2025 using JS data
+2025-10-24 12:48:24,223 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-24 12:48:24,239 - csv_exporter - INFO - Loaded 118 existing events from CSV
+2025-10-24 12:48:24,426 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:24,426 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:24,426 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:24,427 - csv_exporter - INFO - [STATS] Total events: 136
+2025-10-24 12:48:24,427 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:24,427 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:24,428 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:24,428 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 118 (86.8%)
+2025-10-24 12:48:24,428 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 118 (86.8%)
+2025-10-24 12:48:24,429 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 118 (86.8%)
+2025-10-24 12:48:24,429 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:24,430 - csv_exporter - INFO -   Low: 94 (69.1%)
+2025-10-24 12:48:24,430 - csv_exporter - INFO -   High: 28 (20.6%)
+2025-10-24 12:48:24,430 - csv_exporter - INFO -   Medium: 14 (10.3%)
+2025-10-24 12:48:24,431 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:24,431 - csv_exporter - INFO -   EUR: 39
+2025-10-24 12:48:24,431 - csv_exporter - INFO -   USD: 38
+2025-10-24 12:48:24,432 - csv_exporter - INFO -   JPY: 13
+2025-10-24 12:48:24,432 - csv_exporter - INFO -   AUD: 12
+2025-10-24 12:48:24,432 - csv_exporter - INFO -   GBP: 10
+2025-10-24 12:48:24,433 - csv_exporter - INFO -   CHF: 9
+2025-10-24 12:48:24,433 - csv_exporter - INFO -   NZD: 6
+2025-10-24 12:48:24,434 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:48:24,435 - csv_exporter - INFO -   CAD: 4
+2025-10-24 12:48:24,435 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:24,452 - csv_exporter - INFO - Exported 136 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:24,452 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-24 12:48:24,453 - csv_exporter - INFO - Total events in CSV: 136
+2025-10-24 12:48:24,454 - scraper - INFO - Saved 18 events for may7.2025 to CSV
+2025-10-24 12:48:26,461 - scraper - INFO - Scraped 21 events for may8.2025 using JS data
+2025-10-24 12:48:26,771 - symbol_mapper - INFO - Mapped 21 events with trading pairs
+2025-10-24 12:48:26,785 - csv_exporter - INFO - Loaded 136 existing events from CSV
+2025-10-24 12:48:27,276 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:27,321 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:27,346 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:27,370 - csv_exporter - INFO - [STATS] Total events: 157
+2025-10-24 12:48:27,414 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:27,461 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:27,470 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:27,502 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 136 (86.6%)
+2025-10-24 12:48:27,529 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 136 (86.6%)
+2025-10-24 12:48:27,531 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 136 (86.6%)
+2025-10-24 12:48:27,553 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:27,570 - csv_exporter - INFO -   Low: 107 (68.2%)
+2025-10-24 12:48:27,602 - csv_exporter - INFO -   High: 36 (22.9%)
+2025-10-24 12:48:27,629 - csv_exporter - INFO -   Medium: 14 (8.9%)
+2025-10-24 12:48:27,647 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:27,653 - csv_exporter - INFO -   USD: 45
+2025-10-24 12:48:27,662 - csv_exporter - INFO -   EUR: 42
+2025-10-24 12:48:27,662 - csv_exporter - INFO -   GBP: 17
+2025-10-24 12:48:27,663 - csv_exporter - INFO -   JPY: 15
+2025-10-24 12:48:27,663 - csv_exporter - INFO -   AUD: 12
+2025-10-24 12:48:27,664 - csv_exporter - INFO -   CHF: 9
+2025-10-24 12:48:27,664 - csv_exporter - INFO -   CAD: 6
+2025-10-24 12:48:27,664 - csv_exporter - INFO -   NZD: 6
+2025-10-24 12:48:27,665 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:48:27,667 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:27,675 - csv_exporter - INFO - Exported 157 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:27,684 - csv_exporter - INFO - Deduplication complete: 21 new events added, 0 events updated
+2025-10-24 12:48:27,686 - csv_exporter - INFO - Total events in CSV: 157
+2025-10-24 12:48:27,687 - scraper - INFO - Saved 21 events for may8.2025 to CSV
+2025-10-24 12:48:29,163 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:48:30,168 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:48:31,118 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:48:31,119 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may9.2025 after 3 attempts
+2025-10-24 12:48:32,135 - scraper - INFO - Scraped 13 events for may12.2025 using JS data
+2025-10-24 12:48:32,312 - symbol_mapper - INFO - Mapped 13 events with trading pairs
+2025-10-24 12:48:32,318 - csv_exporter - INFO - Loaded 157 existing events from CSV
+2025-10-24 12:48:32,488 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:32,488 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:32,489 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:32,489 - csv_exporter - INFO - [STATS] Total events: 170
+2025-10-24 12:48:32,489 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:32,490 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:32,490 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:32,490 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 157 (92.4%)
+2025-10-24 12:48:32,490 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 157 (92.4%)
+2025-10-24 12:48:32,491 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 157 (92.4%)
+2025-10-24 12:48:32,491 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:32,491 - csv_exporter - INFO -   Low: 119 (70.0%)
+2025-10-24 12:48:32,491 - csv_exporter - INFO -   High: 36 (21.2%)
+2025-10-24 12:48:32,492 - csv_exporter - INFO -   Medium: 15 (8.8%)
+2025-10-24 12:48:32,492 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:32,492 - csv_exporter - INFO -   USD: 50
+2025-10-24 12:48:32,492 - csv_exporter - INFO -   EUR: 43
+2025-10-24 12:48:32,492 - csv_exporter - INFO -   GBP: 21
+2025-10-24 12:48:32,493 - csv_exporter - INFO -   JPY: 18
+2025-10-24 12:48:32,493 - csv_exporter - INFO -   AUD: 12
+2025-10-24 12:48:32,493 - csv_exporter - INFO -   CHF: 9
+2025-10-24 12:48:32,493 - csv_exporter - INFO -   CAD: 6
+2025-10-24 12:48:32,494 - csv_exporter - INFO -   NZD: 6
+2025-10-24 12:48:32,494 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:48:32,494 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:32,498 - csv_exporter - INFO - Exported 170 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:32,499 - csv_exporter - INFO - Deduplication complete: 13 new events added, 0 events updated
+2025-10-24 12:48:32,500 - csv_exporter - INFO - Total events in CSV: 170
+2025-10-24 12:48:32,500 - scraper - INFO - Saved 13 events for may12.2025 to CSV
+2025-10-24 12:48:33,704 - scraper - INFO - Scraped 22 events for may13.2025 using JS data
+2025-10-24 12:48:33,959 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-24 12:48:33,968 - csv_exporter - INFO - Loaded 170 existing events from CSV
+2025-10-24 12:48:34,121 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:34,122 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:34,122 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:34,123 - csv_exporter - INFO - [STATS] Total events: 192
+2025-10-24 12:48:34,123 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:34,123 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:34,123 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:34,124 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 170 (88.5%)
+2025-10-24 12:48:34,124 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 170 (88.5%)
+2025-10-24 12:48:34,124 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 170 (88.5%)
+2025-10-24 12:48:34,124 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:34,125 - csv_exporter - INFO -   Low: 133 (69.3%)
+2025-10-24 12:48:34,125 - csv_exporter - INFO -   High: 41 (21.4%)
+2025-10-24 12:48:34,125 - csv_exporter - INFO -   Medium: 18 (9.4%)
+2025-10-24 12:48:34,125 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:34,126 - csv_exporter - INFO -   USD: 57
+2025-10-24 12:48:34,126 - csv_exporter - INFO -   EUR: 46
+2025-10-24 12:48:34,126 - csv_exporter - INFO -   GBP: 28
+2025-10-24 12:48:34,126 - csv_exporter - INFO -   JPY: 21
+2025-10-24 12:48:34,127 - csv_exporter - INFO -   AUD: 14
+2025-10-24 12:48:34,127 - csv_exporter - INFO -   CHF: 9
+2025-10-24 12:48:34,127 - csv_exporter - INFO -   CAD: 6
+2025-10-24 12:48:34,127 - csv_exporter - INFO -   NZD: 6
+2025-10-24 12:48:34,127 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:48:34,128 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:34,130 - csv_exporter - INFO - Exported 192 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:34,130 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-24 12:48:34,131 - csv_exporter - INFO - Total events in CSV: 192
+2025-10-24 12:48:34,131 - scraper - INFO - Saved 22 events for may13.2025 to CSV
+2025-10-24 12:48:35,302 - scraper - INFO - Scraped 16 events for may14.2025 using JS data
+2025-10-24 12:48:35,447 - symbol_mapper - INFO - Mapped 16 events with trading pairs
+2025-10-24 12:48:35,460 - csv_exporter - INFO - Loaded 192 existing events from CSV
+2025-10-24 12:48:35,634 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:35,634 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:35,635 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:35,635 - csv_exporter - INFO - [STATS] Total events: 208
+2025-10-24 12:48:35,635 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:35,635 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:35,636 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:35,636 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 192 (92.3%)
+2025-10-24 12:48:35,636 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 192 (92.3%)
+2025-10-24 12:48:35,636 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 192 (92.3%)
+2025-10-24 12:48:35,636 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:35,637 - csv_exporter - INFO -   Low: 147 (70.7%)
+2025-10-24 12:48:35,637 - csv_exporter - INFO -   High: 42 (20.2%)
+2025-10-24 12:48:35,637 - csv_exporter - INFO -   Medium: 19 (9.1%)
+2025-10-24 12:48:35,637 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:35,637 - csv_exporter - INFO -   USD: 61
+2025-10-24 12:48:35,638 - csv_exporter - INFO -   EUR: 49
+2025-10-24 12:48:35,638 - csv_exporter - INFO -   GBP: 30
+2025-10-24 12:48:35,638 - csv_exporter - INFO -   JPY: 22
+2025-10-24 12:48:35,638 - csv_exporter - INFO -   AUD: 16
+2025-10-24 12:48:35,638 - csv_exporter - INFO -   CHF: 9
+2025-10-24 12:48:35,639 - csv_exporter - INFO -   CAD: 7
+2025-10-24 12:48:35,639 - csv_exporter - INFO -   CNY: 7
+2025-10-24 12:48:35,639 - csv_exporter - INFO -   NZD: 7
+2025-10-24 12:48:35,639 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:35,645 - csv_exporter - INFO - Exported 208 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:35,645 - csv_exporter - INFO - Deduplication complete: 16 new events added, 0 events updated
+2025-10-24 12:48:35,646 - csv_exporter - INFO - Total events in CSV: 208
+2025-10-24 12:48:35,646 - scraper - INFO - Saved 16 events for may14.2025 to CSV
+2025-10-24 12:48:36,820 - scraper - INFO - Scraped 37 events for may15.2025 using JS data
+2025-10-24 12:48:37,116 - symbol_mapper - INFO - Mapped 37 events with trading pairs
+2025-10-24 12:48:37,122 - csv_exporter - INFO - Loaded 208 existing events from CSV
+2025-10-24 12:48:37,278 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:37,278 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:37,278 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:37,279 - csv_exporter - INFO - [STATS] Total events: 245
+2025-10-24 12:48:37,279 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:37,279 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:37,280 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:37,280 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 208 (84.9%)
+2025-10-24 12:48:37,280 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 208 (84.9%)
+2025-10-24 12:48:37,281 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 208 (84.9%)
+2025-10-24 12:48:37,281 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:37,281 - csv_exporter - INFO -   Low: 172 (70.2%)
+2025-10-24 12:48:37,282 - csv_exporter - INFO -   High: 51 (20.8%)
+2025-10-24 12:48:37,282 - csv_exporter - INFO -   Medium: 22 (9.0%)
+2025-10-24 12:48:37,282 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:37,282 - csv_exporter - INFO -   USD: 75
+2025-10-24 12:48:37,283 - csv_exporter - INFO -   EUR: 54
+2025-10-24 12:48:37,283 - csv_exporter - INFO -   GBP: 39
+2025-10-24 12:48:37,283 - csv_exporter - INFO -   JPY: 23
+2025-10-24 12:48:37,283 - csv_exporter - INFO -   AUD: 19
+2025-10-24 12:48:37,283 - csv_exporter - INFO -   CHF: 10
+2025-10-24 12:48:37,284 - csv_exporter - INFO -   CAD: 10
+2025-10-24 12:48:37,284 - csv_exporter - INFO -   NZD: 8
+2025-10-24 12:48:37,284 - csv_exporter - INFO -   CNY: 7
+2025-10-24 12:48:37,284 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:37,287 - csv_exporter - INFO - Exported 245 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:37,287 - csv_exporter - INFO - Deduplication complete: 37 new events added, 0 events updated
+2025-10-24 12:48:37,287 - csv_exporter - INFO - Total events in CSV: 245
+2025-10-24 12:48:37,288 - scraper - INFO - Saved 37 events for may15.2025 to CSV
+2025-10-24 12:48:38,489 - scraper - INFO - Scraped 16 events for may16.2025 using JS data
+2025-10-24 12:48:38,637 - symbol_mapper - INFO - Mapped 16 events with trading pairs
+2025-10-24 12:48:38,647 - csv_exporter - INFO - Loaded 245 existing events from CSV
+2025-10-24 12:48:38,871 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:38,871 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:38,872 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:38,872 - csv_exporter - INFO - [STATS] Total events: 261
+2025-10-24 12:48:38,872 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:38,873 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:38,873 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:38,873 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 245 (93.9%)
+2025-10-24 12:48:38,874 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 245 (93.9%)
+2025-10-24 12:48:38,874 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 245 (93.9%)
+2025-10-24 12:48:38,874 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:38,874 - csv_exporter - INFO -   Low: 184 (70.5%)
+2025-10-24 12:48:38,875 - csv_exporter - INFO -   High: 53 (20.3%)
+2025-10-24 12:48:38,875 - csv_exporter - INFO -   Medium: 24 (9.2%)
+2025-10-24 12:48:38,875 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:38,876 - csv_exporter - INFO -   USD: 81
+2025-10-24 12:48:38,876 - csv_exporter - INFO -   EUR: 56
+2025-10-24 12:48:38,876 - csv_exporter - INFO -   GBP: 40
+2025-10-24 12:48:38,876 - csv_exporter - INFO -   JPY: 26
+2025-10-24 12:48:38,877 - csv_exporter - INFO -   AUD: 19
+2025-10-24 12:48:38,877 - csv_exporter - INFO -   CHF: 11
+2025-10-24 12:48:38,877 - csv_exporter - INFO -   CAD: 11
+2025-10-24 12:48:38,878 - csv_exporter - INFO -   NZD: 10
+2025-10-24 12:48:38,878 - csv_exporter - INFO -   CNY: 7
+2025-10-24 12:48:38,878 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:38,886 - csv_exporter - INFO - Exported 261 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:38,886 - csv_exporter - INFO - Deduplication complete: 16 new events added, 0 events updated
+2025-10-24 12:48:38,887 - csv_exporter - INFO - Total events in CSV: 261
+2025-10-24 12:48:38,888 - scraper - INFO - Saved 16 events for may16.2025 to CSV
+2025-10-24 12:48:40,148 - scraper - INFO - Scraped 23 events for may19.2025 using JS data
+2025-10-24 12:48:40,334 - symbol_mapper - INFO - Mapped 23 events with trading pairs
+2025-10-24 12:48:40,341 - csv_exporter - INFO - Loaded 261 existing events from CSV
+2025-10-24 12:48:40,556 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:40,556 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:40,557 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:40,557 - csv_exporter - INFO - [STATS] Total events: 284
+2025-10-24 12:48:40,557 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:40,557 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:40,558 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:40,558 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 261 (91.9%)
+2025-10-24 12:48:40,558 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 261 (91.9%)
+2025-10-24 12:48:40,558 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 261 (91.9%)
+2025-10-24 12:48:40,559 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:40,559 - csv_exporter - INFO -   Low: 204 (71.8%)
+2025-10-24 12:48:40,559 - csv_exporter - INFO -   High: 53 (18.7%)
+2025-10-24 12:48:40,559 - csv_exporter - INFO -   Medium: 27 (9.5%)
+2025-10-24 12:48:40,559 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:40,560 - csv_exporter - INFO -   USD: 88
+2025-10-24 12:48:40,560 - csv_exporter - INFO -   EUR: 59
+2025-10-24 12:48:40,560 - csv_exporter - INFO -   GBP: 41
+2025-10-24 12:48:40,560 - csv_exporter - INFO -   JPY: 27
+2025-10-24 12:48:40,561 - csv_exporter - INFO -   AUD: 19
+2025-10-24 12:48:40,561 - csv_exporter - INFO -   CNY: 13
+2025-10-24 12:48:40,562 - csv_exporter - INFO -   NZD: 13
+2025-10-24 12:48:40,562 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:48:40,563 - csv_exporter - INFO -   CAD: 12
+2025-10-24 12:48:40,563 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:40,566 - csv_exporter - INFO - Exported 284 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:40,566 - csv_exporter - INFO - Deduplication complete: 23 new events added, 0 events updated
+2025-10-24 12:48:40,567 - csv_exporter - INFO - Total events in CSV: 284
+2025-10-24 12:48:40,567 - scraper - INFO - Saved 23 events for may19.2025 to CSV
+2025-10-24 12:48:42,013 - scraper - INFO - Scraped 23 events for may20.2025 using JS data
+2025-10-24 12:48:42,216 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-24 12:48:42,216 - symbol_mapper - INFO - Mapped 23 events with trading pairs
+2025-10-24 12:48:42,224 - csv_exporter - INFO - Loaded 284 existing events from CSV
+2025-10-24 12:48:42,454 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:42,454 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:42,454 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:42,455 - csv_exporter - INFO - [STATS] Total events: 307
+2025-10-24 12:48:42,455 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:42,455 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:42,455 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:42,456 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 284 (92.5%)
+2025-10-24 12:48:42,456 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 284 (92.5%)
+2025-10-24 12:48:42,456 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 284 (92.5%)
+2025-10-24 12:48:42,457 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:42,457 - csv_exporter - INFO -   Low: 216 (70.4%)
+2025-10-24 12:48:42,457 - csv_exporter - INFO -   High: 59 (19.2%)
+2025-10-24 12:48:42,457 - csv_exporter - INFO -   Medium: 32 (10.4%)
+2025-10-24 12:48:42,457 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:42,458 - csv_exporter - INFO -   USD: 94
+2025-10-24 12:48:42,458 - csv_exporter - INFO -   EUR: 62
+2025-10-24 12:48:42,458 - csv_exporter - INFO -   GBP: 42
+2025-10-24 12:48:42,458 - csv_exporter - INFO -   JPY: 27
+2025-10-24 12:48:42,459 - csv_exporter - INFO -   AUD: 23
+2025-10-24 12:48:42,459 - csv_exporter - INFO -   CAD: 17
+2025-10-24 12:48:42,459 - csv_exporter - INFO -   CNY: 15
+2025-10-24 12:48:42,459 - csv_exporter - INFO -   NZD: 14
+2025-10-24 12:48:42,459 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:48:42,459 - csv_exporter - INFO -   All: 1
+2025-10-24 12:48:42,460 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:42,465 - csv_exporter - INFO - Exported 307 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:42,465 - csv_exporter - INFO - Deduplication complete: 23 new events added, 0 events updated
+2025-10-24 12:48:42,466 - csv_exporter - INFO - Total events in CSV: 307
+2025-10-24 12:48:42,466 - scraper - INFO - Saved 23 events for may20.2025 to CSV
+2025-10-24 12:48:43,545 - scraper - INFO - Scraped 17 events for may21.2025 using JS data
+2025-10-24 12:48:43,665 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-24 12:48:43,665 - symbol_mapper - INFO - Mapped 17 events with trading pairs
+2025-10-24 12:48:43,675 - csv_exporter - INFO - Loaded 307 existing events from CSV
+2025-10-24 12:48:43,911 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:43,912 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:43,912 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:43,912 - csv_exporter - INFO - [STATS] Total events: 324
+2025-10-24 12:48:43,912 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:43,913 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:43,913 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:43,913 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 307 (94.8%)
+2025-10-24 12:48:43,914 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 307 (94.8%)
+2025-10-24 12:48:43,914 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 307 (94.8%)
+2025-10-24 12:48:43,914 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:43,914 - csv_exporter - INFO -   Low: 231 (71.3%)
+2025-10-24 12:48:43,915 - csv_exporter - INFO -   High: 60 (18.5%)
+2025-10-24 12:48:43,915 - csv_exporter - INFO -   Medium: 33 (10.2%)
+2025-10-24 12:48:43,915 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:43,915 - csv_exporter - INFO -   USD: 99
+2025-10-24 12:48:43,916 - csv_exporter - INFO -   EUR: 64
+2025-10-24 12:48:43,916 - csv_exporter - INFO -   GBP: 46
+2025-10-24 12:48:43,916 - csv_exporter - INFO -   JPY: 28
+2025-10-24 12:48:43,916 - csv_exporter - INFO -   AUD: 24
+2025-10-24 12:48:43,916 - csv_exporter - INFO -   CAD: 18
+2025-10-24 12:48:43,917 - csv_exporter - INFO -   NZD: 16
+2025-10-24 12:48:43,917 - csv_exporter - INFO -   CNY: 15
+2025-10-24 12:48:43,917 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:48:43,917 - csv_exporter - INFO -   All: 2
+2025-10-24 12:48:43,918 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:43,926 - csv_exporter - INFO - Exported 324 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:43,928 - csv_exporter - INFO - Deduplication complete: 17 new events added, 0 events updated
+2025-10-24 12:48:43,929 - csv_exporter - INFO - Total events in CSV: 324
+2025-10-24 12:48:43,930 - scraper - INFO - Saved 17 events for may21.2025 to CSV
+2025-10-24 12:48:45,167 - scraper - INFO - Scraped 36 events for may22.2025 using JS data
+2025-10-24 12:48:45,343 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-24 12:48:45,344 - symbol_mapper - INFO - Mapped 36 events with trading pairs
+2025-10-24 12:48:45,349 - csv_exporter - INFO - Loaded 324 existing events from CSV
+2025-10-24 12:48:45,541 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:45,541 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:45,541 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:45,542 - csv_exporter - INFO - [STATS] Total events: 360
+2025-10-24 12:48:45,542 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:45,542 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:45,542 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:45,543 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 324 (90.0%)
+2025-10-24 12:48:45,543 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 324 (90.0%)
+2025-10-24 12:48:45,543 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 324 (90.0%)
+2025-10-24 12:48:45,543 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:45,543 - csv_exporter - INFO -   Low: 252 (70.0%)
+2025-10-24 12:48:45,544 - csv_exporter - INFO -   High: 70 (19.4%)
+2025-10-24 12:48:45,544 - csv_exporter - INFO -   Medium: 38 (10.6%)
+2025-10-24 12:48:45,544 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:45,544 - csv_exporter - INFO -   USD: 105
+2025-10-24 12:48:45,545 - csv_exporter - INFO -   EUR: 75
+2025-10-24 12:48:45,545 - csv_exporter - INFO -   GBP: 54
+2025-10-24 12:48:45,545 - csv_exporter - INFO -   JPY: 30
+2025-10-24 12:48:45,545 - csv_exporter - INFO -   AUD: 27
+2025-10-24 12:48:45,545 - csv_exporter - INFO -   CAD: 22
+2025-10-24 12:48:45,545 - csv_exporter - INFO -   NZD: 17
+2025-10-24 12:48:45,546 - csv_exporter - INFO -   CNY: 15
+2025-10-24 12:48:45,546 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:48:45,546 - csv_exporter - INFO -   All: 3
+2025-10-24 12:48:45,546 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:45,550 - csv_exporter - INFO - Exported 360 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:45,551 - csv_exporter - INFO - Deduplication complete: 36 new events added, 0 events updated
+2025-10-24 12:48:45,551 - csv_exporter - INFO - Total events in CSV: 360
+2025-10-24 12:48:45,552 - scraper - INFO - Saved 36 events for may22.2025 to CSV
+2025-10-24 12:48:46,756 - scraper - INFO - Scraped 14 events for may23.2025 using JS data
+2025-10-24 12:48:46,873 - symbol_mapper - INFO - Mapped 14 events with trading pairs
+2025-10-24 12:48:46,891 - csv_exporter - INFO - Loaded 360 existing events from CSV
+2025-10-24 12:48:47,162 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:47,163 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:47,164 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:47,164 - csv_exporter - INFO - [STATS] Total events: 374
+2025-10-24 12:48:47,164 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:47,164 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:47,165 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:47,165 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 360 (96.3%)
+2025-10-24 12:48:47,165 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 360 (96.3%)
+2025-10-24 12:48:47,165 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 360 (96.3%)
+2025-10-24 12:48:47,165 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:47,166 - csv_exporter - INFO -   Low: 261 (69.8%)
+2025-10-24 12:48:47,166 - csv_exporter - INFO -   High: 73 (19.5%)
+2025-10-24 12:48:47,166 - csv_exporter - INFO -   Medium: 40 (10.7%)
+2025-10-24 12:48:47,166 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:47,167 - csv_exporter - INFO -   USD: 109
+2025-10-24 12:48:47,167 - csv_exporter - INFO -   EUR: 76
+2025-10-24 12:48:47,167 - csv_exporter - INFO -   GBP: 56
+2025-10-24 12:48:47,167 - csv_exporter - INFO -   JPY: 31
+2025-10-24 12:48:47,167 - csv_exporter - INFO -   AUD: 27
+2025-10-24 12:48:47,168 - csv_exporter - INFO -   CAD: 25
+2025-10-24 12:48:47,168 - csv_exporter - INFO -   NZD: 19
+2025-10-24 12:48:47,168 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:48:47,168 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:48:47,169 - csv_exporter - INFO -   All: 3
+2025-10-24 12:48:47,169 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:47,172 - csv_exporter - INFO - Exported 374 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:47,172 - csv_exporter - INFO - Deduplication complete: 14 new events added, 0 events updated
+2025-10-24 12:48:47,172 - csv_exporter - INFO - Total events in CSV: 374
+2025-10-24 12:48:47,173 - scraper - INFO - Saved 14 events for may23.2025 to CSV
+2025-10-24 12:48:48,277 - scraper - INFO - Scraped 4 events for may26.2025 using JS data
+2025-10-24 12:48:48,357 - symbol_mapper - INFO - Mapped 4 events with trading pairs
+2025-10-24 12:48:48,368 - csv_exporter - INFO - Loaded 374 existing events from CSV
+2025-10-24 12:48:48,664 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:48,665 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:48:48,665 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:48,665 - csv_exporter - INFO - [STATS] Total events: 378
+2025-10-24 12:48:48,665 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:48:48,665 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:48:48,666 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:48:48,666 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 374 (98.9%)
+2025-10-24 12:48:48,666 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 374 (98.9%)
+2025-10-24 12:48:48,666 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 374 (98.9%)
+2025-10-24 12:48:48,667 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:48:48,667 - csv_exporter - INFO -   Low: 264 (69.8%)
+2025-10-24 12:48:48,667 - csv_exporter - INFO -   High: 73 (19.3%)
+2025-10-24 12:48:48,667 - csv_exporter - INFO -   Medium: 41 (10.8%)
+2025-10-24 12:48:48,667 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:48:48,668 - csv_exporter - INFO -   USD: 110
+2025-10-24 12:48:48,668 - csv_exporter - INFO -   EUR: 78
+2025-10-24 12:48:48,668 - csv_exporter - INFO -   GBP: 57
+2025-10-24 12:48:48,668 - csv_exporter - INFO -   JPY: 31
+2025-10-24 12:48:48,668 - csv_exporter - INFO -   AUD: 27
+2025-10-24 12:48:48,669 - csv_exporter - INFO -   CAD: 25
+2025-10-24 12:48:48,669 - csv_exporter - INFO -   NZD: 19
+2025-10-24 12:48:48,669 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:48:48,669 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:48:48,669 - csv_exporter - INFO -   All: 3
+2025-10-24 12:48:48,669 - csv_exporter - INFO - ==================================================
+2025-10-24 12:48:48,672 - csv_exporter - INFO - Exported 378 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:48:48,673 - csv_exporter - INFO - Deduplication complete: 4 new events added, 0 events updated
+2025-10-24 12:48:48,673 - csv_exporter - INFO - Total events in CSV: 378
+2025-10-24 12:48:48,674 - scraper - INFO - Saved 4 events for may26.2025 to CSV
+2025-10-24 12:48:48,674 - scraper - INFO - Fallback completed: 378 total events from 2025-04-27 to 2025-05-26
+2025-10-24 12:48:48,674 - scraper - INFO - Scraped 378 events from range 2025-04-27 to 2025-05-26
+2025-10-24 12:48:50,967 - scraper - INFO - Processing range 2/6: 2025-05-27 to 2025-06-25
+2025-10-24 12:48:50,969 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-24 12:48:50,971 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-24 12:48:50,971 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-24 12:48:50,971 - WDM - INFO - ====== WebDriver manager ======
+2025-10-24 12:48:53,660 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:48:54,254 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:48:55,067 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-24 12:48:55,068 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-24 12:48:56,632 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-24 12:48:56,633 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:49:01,450 - scraper - INFO - Parsing range page using HTML table extraction
+2025-10-24 12:49:02,005 - scraper - INFO - Scraped 17 events from calendar table for range 2025-05-27 to 2025-06-25
+2025-10-24 12:49:02,006 - scraper - INFO - Completed range scraping: 17 total events from 2025-05-27 to 2025-06-25
+2025-10-24 12:49:02,006 - scraper - INFO - Scraped 17 events from range 2025-05-27 to 2025-06-25
+2025-10-24 12:49:04,256 - scraper - INFO - Processing range 3/6: 2025-06-26 to 2025-07-25
+2025-10-24 12:49:04,256 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-24 12:49:04,257 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-24 12:49:04,257 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-24 12:49:04,258 - WDM - INFO - ====== WebDriver manager ======
+2025-10-24 12:49:06,628 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:49:07,250 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:49:07,748 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-24 12:49:07,750 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-24 12:49:09,308 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-24 12:49:09,308 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=jun26.2025-jul25.2025
+2025-10-24 12:49:13,568 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jun26.2025-jul25.2025
+2025-10-24 12:49:17,099 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jun26.2025-jul25.2025
+2025-10-24 12:49:20,119 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=jun26.2025-jul25.2025
+2025-10-24 12:49:20,119 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=jun26.2025-jul25.2025 after 3 attempts
+2025-10-24 12:49:20,120 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=jun26.2025-jul25.2025
+2025-10-24 12:49:20,120 - scraper - INFO - Falling back to daily scraping approach
+2025-10-24 12:49:20,120 - scraper - INFO - Fallback: scraping range 2025-06-26 to 2025-07-25 day by day
+2025-10-24 12:49:22,070 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jun26.2025
+2025-10-24 12:49:23,883 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jun26.2025
+2025-10-24 12:49:25,439 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jun26.2025
+2025-10-24 12:49:25,439 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jun26.2025 after 3 attempts
+2025-10-24 12:49:26,888 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jun27.2025
+2025-10-24 12:49:28,334 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jun27.2025
+2025-10-24 12:49:29,526 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jun27.2025
+2025-10-24 12:49:29,528 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jun27.2025 after 3 attempts
+2025-10-24 12:49:31,014 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jun30.2025
+2025-10-24 12:49:32,937 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jun30.2025
+2025-10-24 12:49:34,729 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jun30.2025
+2025-10-24 12:49:34,730 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jun30.2025 after 3 attempts
+2025-10-24 12:49:36,211 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul1.2025
+2025-10-24 12:49:37,679 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul1.2025
+2025-10-24 12:49:38,971 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul1.2025
+2025-10-24 12:49:38,972 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul1.2025 after 3 attempts
+2025-10-24 12:49:39,960 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul2.2025
+2025-10-24 12:49:41,084 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul2.2025
+2025-10-24 12:49:42,630 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul2.2025
+2025-10-24 12:49:42,631 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul2.2025 after 3 attempts
+2025-10-24 12:49:44,063 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul3.2025
+2025-10-24 12:49:45,432 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul3.2025
+2025-10-24 12:49:46,794 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul3.2025
+2025-10-24 12:49:46,794 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul3.2025 after 3 attempts
+2025-10-24 12:49:48,115 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul4.2025
+2025-10-24 12:49:49,242 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul4.2025
+2025-10-24 12:49:50,515 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul4.2025
+2025-10-24 12:49:50,516 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul4.2025 after 3 attempts
+2025-10-24 12:49:51,790 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul7.2025
+2025-10-24 12:49:52,981 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul7.2025
+2025-10-24 12:49:54,097 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul7.2025
+2025-10-24 12:49:54,098 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul7.2025 after 3 attempts
+2025-10-24 12:49:55,172 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul8.2025
+2025-10-24 12:49:56,636 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul8.2025
+2025-10-24 12:49:57,751 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul8.2025
+2025-10-24 12:49:57,751 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul8.2025 after 3 attempts
+2025-10-24 12:49:59,130 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul9.2025
+2025-10-24 12:50:00,602 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul9.2025
+2025-10-24 12:50:01,990 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul9.2025
+2025-10-24 12:50:01,991 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul9.2025 after 3 attempts
+2025-10-24 12:50:03,172 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul10.2025
+2025-10-24 12:50:04,534 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul10.2025
+2025-10-24 12:50:06,280 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul10.2025
+2025-10-24 12:50:06,281 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul10.2025 after 3 attempts
+2025-10-24 12:50:07,519 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul11.2025
+2025-10-24 12:50:09,455 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul11.2025
+2025-10-24 12:50:10,988 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul11.2025
+2025-10-24 12:50:10,989 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul11.2025 after 3 attempts
+2025-10-24 12:50:12,297 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul14.2025
+2025-10-24 12:50:13,631 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul14.2025
+2025-10-24 12:50:14,959 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul14.2025
+2025-10-24 12:50:14,959 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul14.2025 after 3 attempts
+2025-10-24 12:50:16,442 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul15.2025
+2025-10-24 12:50:17,668 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul15.2025
+2025-10-24 12:50:18,592 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=jul15.2025
+2025-10-24 12:50:18,593 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=jul15.2025 after 3 attempts
+2025-10-24 12:50:22,775 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015CC8851E00>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/bab0a2feb397029d28918f599cf72ffa
+2025-10-24 12:50:26,838 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015CC8851CD0>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/bab0a2feb397029d28918f599cf72ffa
+2025-10-24 12:50:30,901 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015CCA3DA690>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/bab0a2feb397029d28918f599cf72ffa
+2025-10-24 12:56:52,837 - __main__ - INFO - Range mode: using config date range
+2025-10-24 12:56:52,838 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-24 12:56:52,838 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-24 12:56:52,839 - __main__ - INFO - Range mode: scraping events from 2025-04-27 to 2025-10-24
+2025-10-24 12:56:52,839 - __main__ - INFO - Starting range data scraping...
+2025-10-24 12:56:52,839 - scraper - INFO - Starting RANGE-BASED scrape from 2025-04-27 to 2025-10-24
+2025-10-24 12:56:52,839 - scraper - INFO - Total days in range: 180
+2025-10-24 12:56:52,840 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-24 12:56:52,840 - scraper - INFO - Processing 6 date range chunks
+2025-10-24 12:56:52,840 - scraper - INFO - Processing range 1/6: 2025-04-27 to 2025-05-26
+2025-10-24 12:56:52,840 - scraper - INFO - [RANGE] Starting range scraping: 2025-04-27 to 2025-05-26
+2025-10-24 12:56:52,841 - scraper - INFO - [RANGE] Driver not initialized for range 2025-04-27 to 2025-05-26, setting up fresh driver
+2025-10-24 12:56:52,841 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-24 12:56:52,841 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-24 12:56:52,841 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-24 12:56:52,842 - WDM - INFO - ====== WebDriver manager ======
+2025-10-24 12:56:55,201 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:56:55,679 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:56:56,078 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-24 12:56:56,079 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-24 12:56:58,255 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-24 12:56:58,255 - scraper - INFO - [RANGE] Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:56:58,255 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:56:58,256 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:56:58,256 - scraper - INFO - [NAV] Initial navigation delay: 6.1s
+2025-10-24 12:56:58,261 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025')...
+2025-10-24 12:56:59,943 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:00,691 - scraper - INFO - [NAV] Initial page load wait: 14.4s
+2025-10-24 12:57:00,831 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:00,832 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:00,832 - scraper - INFO - [NAV] Page source length: 761353 characters
+2025-10-24 12:57:01,002 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:01,008 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:01,013 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:01,013 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:01,013 - scraper - INFO - [NAV] Waiting 19.3 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:01,019 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025')...
+2025-10-24 12:57:02,568 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:02,929 - scraper - INFO - [NAV] Initial page load wait: 9.2s
+2025-10-24 12:57:03,095 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:03,096 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:03,097 - scraper - INFO - [NAV] Page source length: 760294 characters
+2025-10-24 12:57:03,434 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:03,440 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:03,449 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:03,450 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:03,450 - scraper - INFO - [NAV] Waiting 15.3 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:03,456 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025')...
+2025-10-24 12:57:04,626 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:04,953 - scraper - INFO - [NAV] Initial page load wait: 8.5s
+2025-10-24 12:57:05,030 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:05,031 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:05,031 - scraper - INFO - [NAV] Page source length: 760294 characters
+2025-10-24 12:57:05,186 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:05,191 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:05,195 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:05,195 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025 after 3 attempts
+2025-10-24 12:57:05,195 - scraper - ERROR - [RANGE] Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:57:05,195 - scraper - INFO - [RANGE] Falling back to daily scraping approach
+2025-10-24 12:57:05,196 - scraper - INFO - Fallback: scraping range 2025-04-27 to 2025-05-26 day by day
+2025-10-24 12:57:05,196 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=apr28.2025
+2025-10-24 12:57:05,196 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=apr28.2025
+2025-10-24 12:57:05,196 - scraper - INFO - [NAV] Initial navigation delay: 7.5s
+2025-10-24 12:57:05,201 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=apr28.2025')...
+2025-10-24 12:57:05,616 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:06,020 - scraper - INFO - [NAV] Initial page load wait: 12.3s
+2025-10-24 12:57:06,037 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=apr28.2025
+2025-10-24 12:57:06,037 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:06,037 - scraper - INFO - [NAV] Page source length: 70803 characters
+2025-10-24 12:57:06,063 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:06,086 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:06,091 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=apr28.2025
+2025-10-24 12:57:06,110 - scraper - INFO - Scraped 3 events for apr28.2025 using JS data
+2025-10-24 12:57:06,161 - symbol_mapper - INFO - Mapped 3 events with trading pairs
+2025-10-24 12:57:06,217 - csv_exporter - INFO - Loaded 378 existing events from CSV
+2025-10-24 12:57:06,422 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:06,423 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:06,423 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:06,423 - csv_exporter - INFO - [STATS] Total events: 381
+2025-10-24 12:57:06,423 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:06,423 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:06,424 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:06,424 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (99.2%)
+2025-10-24 12:57:06,424 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (99.2%)
+2025-10-24 12:57:06,424 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (99.2%)
+2025-10-24 12:57:06,424 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:06,425 - csv_exporter - INFO -   Low: 266 (69.8%)
+2025-10-24 12:57:06,425 - csv_exporter - INFO -   High: 74 (19.4%)
+2025-10-24 12:57:06,425 - csv_exporter - INFO -   Medium: 41 (10.8%)
+2025-10-24 12:57:06,425 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:06,425 - csv_exporter - INFO -   USD: 110
+2025-10-24 12:57:06,426 - csv_exporter - INFO -   EUR: 79
+2025-10-24 12:57:06,426 - csv_exporter - INFO -   GBP: 58
+2025-10-24 12:57:06,426 - csv_exporter - INFO -   JPY: 31
+2025-10-24 12:57:06,426 - csv_exporter - INFO -   AUD: 27
+2025-10-24 12:57:06,426 - csv_exporter - INFO -   CAD: 26
+2025-10-24 12:57:06,427 - csv_exporter - INFO -   NZD: 19
+2025-10-24 12:57:06,427 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:06,427 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:57:06,427 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:06,427 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:06,442 - csv_exporter - INFO - Exported 381 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:06,442 - csv_exporter - INFO - Deduplication complete: 3 new events added, 0 events updated
+2025-10-24 12:57:06,442 - csv_exporter - INFO - Total events in CSV: 381
+2025-10-24 12:57:06,443 - scraper - INFO - Saved 3 events for apr28.2025 to CSV
+2025-10-24 12:57:06,443 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=apr29.2025
+2025-10-24 12:57:06,443 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=apr29.2025
+2025-10-24 12:57:06,443 - scraper - INFO - [NAV] Initial navigation delay: 4.5s
+2025-10-24 12:57:06,449 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=apr29.2025')...
+2025-10-24 12:57:07,128 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:07,462 - scraper - INFO - [NAV] Initial page load wait: 8.4s
+2025-10-24 12:57:07,509 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=apr29.2025
+2025-10-24 12:57:07,510 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:07,510 - scraper - INFO - [NAV] Page source length: 113137 characters
+2025-10-24 12:57:07,602 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:07,646 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:07,658 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=apr29.2025
+2025-10-24 12:57:07,697 - scraper - INFO - Scraped 18 events for apr29.2025 using JS data
+2025-10-24 12:57:07,809 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-24 12:57:07,816 - csv_exporter - INFO - Loaded 381 existing events from CSV
+2025-10-24 12:57:08,084 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:08,084 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:08,084 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:08,084 - csv_exporter - INFO - [STATS] Total events: 396
+2025-10-24 12:57:08,085 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:08,085 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:08,085 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:08,085 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (95.5%)
+2025-10-24 12:57:08,086 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (95.5%)
+2025-10-24 12:57:08,086 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (95.5%)
+2025-10-24 12:57:08,086 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:08,086 - csv_exporter - INFO -   Low: 278 (70.2%)
+2025-10-24 12:57:08,087 - csv_exporter - INFO -   High: 74 (18.7%)
+2025-10-24 12:57:08,087 - csv_exporter - INFO -   Medium: 44 (11.1%)
+2025-10-24 12:57:08,087 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:08,087 - csv_exporter - INFO -   USD: 117
+2025-10-24 12:57:08,087 - csv_exporter - INFO -   EUR: 84
+2025-10-24 12:57:08,088 - csv_exporter - INFO -   GBP: 59
+2025-10-24 12:57:08,088 - csv_exporter - INFO -   JPY: 32
+2025-10-24 12:57:08,088 - csv_exporter - INFO -   AUD: 28
+2025-10-24 12:57:08,088 - csv_exporter - INFO -   CAD: 25
+2025-10-24 12:57:08,088 - csv_exporter - INFO -   NZD: 19
+2025-10-24 12:57:08,089 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:08,089 - csv_exporter - INFO -   CHF: 13
+2025-10-24 12:57:08,089 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:08,089 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:08,093 - csv_exporter - INFO - Exported 396 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:08,093 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-24 12:57:08,094 - csv_exporter - INFO - Total events in CSV: 396
+2025-10-24 12:57:08,094 - scraper - INFO - Saved 18 events for apr29.2025 to CSV
+2025-10-24 12:57:08,094 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=apr30.2025
+2025-10-24 12:57:08,095 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=apr30.2025
+2025-10-24 12:57:08,095 - scraper - INFO - [NAV] Initial navigation delay: 4.6s
+2025-10-24 12:57:08,101 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=apr30.2025')...
+2025-10-24 12:57:08,969 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:09,303 - scraper - INFO - [NAV] Initial page load wait: 11.5s
+2025-10-24 12:57:09,358 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=apr30.2025
+2025-10-24 12:57:09,358 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:09,358 - scraper - INFO - [NAV] Page source length: 170203 characters
+2025-10-24 12:57:09,407 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:09,436 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:09,443 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=apr30.2025
+2025-10-24 12:57:09,465 - scraper - INFO - Scraped 38 events for apr30.2025 using JS data
+2025-10-24 12:57:09,609 - symbol_mapper - INFO - Mapped 38 events with trading pairs
+2025-10-24 12:57:09,614 - csv_exporter - INFO - Loaded 396 existing events from CSV
+2025-10-24 12:57:09,803 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:09,803 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:09,804 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:09,804 - csv_exporter - INFO - [STATS] Total events: 416
+2025-10-24 12:57:09,804 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:09,804 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:09,804 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:09,805 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (90.9%)
+2025-10-24 12:57:09,805 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (90.9%)
+2025-10-24 12:57:09,805 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (90.9%)
+2025-10-24 12:57:09,805 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:09,806 - csv_exporter - INFO -   Low: 288 (69.2%)
+2025-10-24 12:57:09,806 - csv_exporter - INFO -   High: 83 (20.0%)
+2025-10-24 12:57:09,806 - csv_exporter - INFO -   Medium: 45 (10.8%)
+2025-10-24 12:57:09,806 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:09,806 - csv_exporter - INFO -   USD: 121
+2025-10-24 12:57:09,807 - csv_exporter - INFO -   EUR: 89
+2025-10-24 12:57:09,807 - csv_exporter - INFO -   GBP: 58
+2025-10-24 12:57:09,807 - csv_exporter - INFO -   JPY: 34
+2025-10-24 12:57:09,807 - csv_exporter - INFO -   AUD: 31
+2025-10-24 12:57:09,807 - csv_exporter - INFO -   CAD: 27
+2025-10-24 12:57:09,808 - csv_exporter - INFO -   NZD: 20
+2025-10-24 12:57:09,808 - csv_exporter - INFO -   CNY: 19
+2025-10-24 12:57:09,808 - csv_exporter - INFO -   CHF: 14
+2025-10-24 12:57:09,808 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:09,808 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:09,811 - csv_exporter - INFO - Exported 416 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:09,811 - csv_exporter - INFO - Deduplication complete: 38 new events added, 0 events updated
+2025-10-24 12:57:09,811 - csv_exporter - INFO - Total events in CSV: 416
+2025-10-24 12:57:09,812 - scraper - INFO - Saved 38 events for apr30.2025 to CSV
+2025-10-24 12:57:09,812 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may1.2025
+2025-10-24 12:57:09,812 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may1.2025
+2025-10-24 12:57:09,812 - scraper - INFO - [NAV] Initial navigation delay: 7.9s
+2025-10-24 12:57:09,817 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may1.2025')...
+2025-10-24 12:57:10,628 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:11,084 - scraper - INFO - [NAV] Initial page load wait: 13.2s
+2025-10-24 12:57:11,106 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may1.2025
+2025-10-24 12:57:11,106 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:11,106 - scraper - INFO - [NAV] Page source length: 142074 characters
+2025-10-24 12:57:11,144 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:11,170 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:11,174 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may1.2025
+2025-10-24 12:57:11,195 - scraper - INFO - Scraped 29 events for may1.2025 using JS data
+2025-10-24 12:57:11,324 - symbol_mapper - INFO - Mapped 29 events with trading pairs
+2025-10-24 12:57:11,333 - csv_exporter - INFO - Loaded 416 existing events from CSV
+2025-10-24 12:57:11,583 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:11,584 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:11,584 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:11,584 - csv_exporter - INFO - [STATS] Total events: 407
+2025-10-24 12:57:11,585 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:11,585 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:11,585 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:11,585 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (92.9%)
+2025-10-24 12:57:11,586 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (92.9%)
+2025-10-24 12:57:11,586 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (92.9%)
+2025-10-24 12:57:11,586 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:11,586 - csv_exporter - INFO -   Low: 285 (70.0%)
+2025-10-24 12:57:11,587 - csv_exporter - INFO -   High: 79 (19.4%)
+2025-10-24 12:57:11,587 - csv_exporter - INFO -   Medium: 43 (10.6%)
+2025-10-24 12:57:11,587 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:11,587 - csv_exporter - INFO -   USD: 119
+2025-10-24 12:57:11,588 - csv_exporter - INFO -   EUR: 81
+2025-10-24 12:57:11,588 - csv_exporter - INFO -   GBP: 61
+2025-10-24 12:57:11,588 - csv_exporter - INFO -   JPY: 37
+2025-10-24 12:57:11,588 - csv_exporter - INFO -   AUD: 30
+2025-10-24 12:57:11,589 - csv_exporter - INFO -   CAD: 26
+2025-10-24 12:57:11,589 - csv_exporter - INFO -   NZD: 19
+2025-10-24 12:57:11,589 - csv_exporter - INFO -   CNY: 17
+2025-10-24 12:57:11,589 - csv_exporter - INFO -   CHF: 14
+2025-10-24 12:57:11,590 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:11,590 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:11,595 - csv_exporter - INFO - Exported 407 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:11,596 - csv_exporter - INFO - Deduplication complete: 29 new events added, 0 events updated
+2025-10-24 12:57:11,597 - csv_exporter - INFO - Total events in CSV: 407
+2025-10-24 12:57:11,598 - scraper - INFO - Saved 29 events for may1.2025 to CSV
+2025-10-24 12:57:11,599 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may2.2025
+2025-10-24 12:57:11,599 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may2.2025
+2025-10-24 12:57:11,599 - scraper - INFO - [NAV] Initial navigation delay: 5.8s
+2025-10-24 12:57:11,606 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may2.2025')...
+2025-10-24 12:57:12,537 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:12,675 - scraper - INFO - [NAV] Initial page load wait: 9.2s
+2025-10-24 12:57:12,719 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may2.2025
+2025-10-24 12:57:12,719 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:12,720 - scraper - INFO - [NAV] Page source length: 123673 characters
+2025-10-24 12:57:12,785 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:12,826 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:12,833 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may2.2025
+2025-10-24 12:57:12,863 - scraper - INFO - Scraped 22 events for may2.2025 using JS data
+2025-10-24 12:57:12,985 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-24 12:57:12,991 - csv_exporter - INFO - Loaded 407 existing events from CSV
+2025-10-24 12:57:13,245 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:13,246 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:13,246 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:13,247 - csv_exporter - INFO - [STATS] Total events: 400
+2025-10-24 12:57:13,247 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:13,247 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:13,248 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:13,248 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (94.5%)
+2025-10-24 12:57:13,248 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (94.5%)
+2025-10-24 12:57:13,248 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (94.5%)
+2025-10-24 12:57:13,249 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:13,249 - csv_exporter - INFO -   Low: 280 (70.0%)
+2025-10-24 12:57:13,249 - csv_exporter - INFO -   High: 76 (19.0%)
+2025-10-24 12:57:13,249 - csv_exporter - INFO -   Medium: 44 (11.0%)
+2025-10-24 12:57:13,250 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:13,250 - csv_exporter - INFO -   USD: 114
+2025-10-24 12:57:13,250 - csv_exporter - INFO -   EUR: 89
+2025-10-24 12:57:13,250 - csv_exporter - INFO -   GBP: 57
+2025-10-24 12:57:13,251 - csv_exporter - INFO -   JPY: 33
+2025-10-24 12:57:13,251 - csv_exporter - INFO -   AUD: 29
+2025-10-24 12:57:13,251 - csv_exporter - INFO -   CAD: 25
+2025-10-24 12:57:13,251 - csv_exporter - INFO -   NZD: 20
+2025-10-24 12:57:13,252 - csv_exporter - INFO -   CNY: 17
+2025-10-24 12:57:13,252 - csv_exporter - INFO -   CHF: 13
+2025-10-24 12:57:13,253 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:13,253 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:13,259 - csv_exporter - INFO - Exported 400 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:13,260 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-24 12:57:13,260 - csv_exporter - INFO - Total events in CSV: 400
+2025-10-24 12:57:13,261 - scraper - INFO - Saved 22 events for may2.2025 to CSV
+2025-10-24 12:57:13,262 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may5.2025
+2025-10-24 12:57:13,262 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may5.2025
+2025-10-24 12:57:13,262 - scraper - INFO - [NAV] Initial navigation delay: 5.3s
+2025-10-24 12:57:13,271 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may5.2025')...
+2025-10-24 12:57:14,398 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:14,544 - scraper - INFO - [NAV] Initial page load wait: 14.1s
+2025-10-24 12:57:14,583 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may5.2025
+2025-10-24 12:57:14,583 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:14,584 - scraper - INFO - [NAV] Page source length: 84093 characters
+2025-10-24 12:57:14,688 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:14,733 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:14,746 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may5.2025
+2025-10-24 12:57:14,790 - scraper - INFO - Scraped 8 events for may5.2025 using JS data
+2025-10-24 12:57:14,901 - symbol_mapper - INFO - Mapped 8 events with trading pairs
+2025-10-24 12:57:14,909 - csv_exporter - INFO - Loaded 400 existing events from CSV
+2025-10-24 12:57:15,258 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:15,258 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:15,258 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:15,259 - csv_exporter - INFO - [STATS] Total events: 386
+2025-10-24 12:57:15,259 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:15,259 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:15,259 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:15,260 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (97.9%)
+2025-10-24 12:57:15,260 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (97.9%)
+2025-10-24 12:57:15,260 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (97.9%)
+2025-10-24 12:57:15,260 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:15,261 - csv_exporter - INFO -   Low: 270 (69.9%)
+2025-10-24 12:57:15,261 - csv_exporter - INFO -   High: 75 (19.4%)
+2025-10-24 12:57:15,261 - csv_exporter - INFO -   Medium: 41 (10.6%)
+2025-10-24 12:57:15,261 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:15,262 - csv_exporter - INFO -   USD: 112
+2025-10-24 12:57:15,262 - csv_exporter - INFO -   EUR: 79
+2025-10-24 12:57:15,262 - csv_exporter - INFO -   GBP: 58
+2025-10-24 12:57:15,262 - csv_exporter - INFO -   JPY: 32
+2025-10-24 12:57:15,262 - csv_exporter - INFO -   AUD: 29
+2025-10-24 12:57:15,262 - csv_exporter - INFO -   CAD: 25
+2025-10-24 12:57:15,263 - csv_exporter - INFO -   NZD: 19
+2025-10-24 12:57:15,263 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:15,263 - csv_exporter - INFO -   CHF: 13
+2025-10-24 12:57:15,263 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:15,263 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:15,266 - csv_exporter - INFO - Exported 386 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:15,267 - csv_exporter - INFO - Deduplication complete: 8 new events added, 0 events updated
+2025-10-24 12:57:15,267 - csv_exporter - INFO - Total events in CSV: 386
+2025-10-24 12:57:15,267 - scraper - INFO - Saved 8 events for may5.2025 to CSV
+2025-10-24 12:57:15,268 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:15,268 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:15,268 - scraper - INFO - [NAV] Initial navigation delay: 5.0s
+2025-10-24 12:57:15,274 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may6.2025')...
+2025-10-24 12:57:15,904 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:16,277 - scraper - INFO - [NAV] Initial page load wait: 12.9s
+2025-10-24 12:57:16,303 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:16,303 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:16,303 - scraper - INFO - [NAV] Page source length: 128773 characters
+2025-10-24 12:57:16,376 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:16,385 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:16,393 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:16,393 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:16,393 - scraper - INFO - [NAV] Waiting 14.6 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:16,400 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may6.2025')...
+2025-10-24 12:57:17,015 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:17,200 - scraper - INFO - [NAV] Initial page load wait: 13.5s
+2025-10-24 12:57:17,244 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:17,245 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:17,245 - scraper - INFO - [NAV] Page source length: 128859 characters
+2025-10-24 12:57:17,315 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:17,325 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:17,335 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:17,336 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:17,337 - scraper - INFO - [NAV] Waiting 11.8 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:17,346 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may6.2025')...
+2025-10-24 12:57:17,971 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:18,072 - scraper - INFO - [NAV] Initial page load wait: 10.9s
+2025-10-24 12:57:18,098 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:18,098 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:18,098 - scraper - INFO - [NAV] Page source length: 128773 characters
+2025-10-24 12:57:18,160 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:18,177 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:18,186 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:57:18,186 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=may6.2025 after 3 attempts
+2025-10-24 12:57:18,186 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may7.2025
+2025-10-24 12:57:18,187 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may7.2025
+2025-10-24 12:57:18,187 - scraper - INFO - [NAV] Initial navigation delay: 7.6s
+2025-10-24 12:57:18,194 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may7.2025')...
+2025-10-24 12:57:18,773 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:18,937 - scraper - INFO - [NAV] Initial page load wait: 8.2s
+2025-10-24 12:57:18,979 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may7.2025
+2025-10-24 12:57:18,980 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:18,980 - scraper - INFO - [NAV] Page source length: 113013 characters
+2025-10-24 12:57:19,054 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:19,100 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:19,112 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may7.2025
+2025-10-24 12:57:19,152 - scraper - INFO - Scraped 18 events for may7.2025 using JS data
+2025-10-24 12:57:19,294 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-24 12:57:19,301 - csv_exporter - INFO - Loaded 386 existing events from CSV
+2025-10-24 12:57:19,564 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:19,564 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:19,565 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:19,565 - csv_exporter - INFO - [STATS] Total events: 396
+2025-10-24 12:57:19,565 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:19,565 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:19,565 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:19,566 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (95.5%)
+2025-10-24 12:57:19,566 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (95.5%)
+2025-10-24 12:57:19,566 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (95.5%)
+2025-10-24 12:57:19,566 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:19,567 - csv_exporter - INFO -   Low: 275 (69.4%)
+2025-10-24 12:57:19,567 - csv_exporter - INFO -   High: 78 (19.7%)
+2025-10-24 12:57:19,567 - csv_exporter - INFO -   Medium: 43 (10.9%)
+2025-10-24 12:57:19,567 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:19,567 - csv_exporter - INFO -   USD: 115
+2025-10-24 12:57:19,568 - csv_exporter - INFO -   EUR: 84
+2025-10-24 12:57:19,568 - csv_exporter - INFO -   GBP: 58
+2025-10-24 12:57:19,568 - csv_exporter - INFO -   JPY: 31
+2025-10-24 12:57:19,568 - csv_exporter - INFO -   AUD: 27
+2025-10-24 12:57:19,568 - csv_exporter - INFO -   CAD: 25
+2025-10-24 12:57:19,568 - csv_exporter - INFO -   NZD: 23
+2025-10-24 12:57:19,569 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:19,569 - csv_exporter - INFO -   CHF: 14
+2025-10-24 12:57:19,569 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:19,569 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:19,572 - csv_exporter - INFO - Exported 396 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:19,573 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-24 12:57:19,573 - csv_exporter - INFO - Total events in CSV: 396
+2025-10-24 12:57:19,573 - scraper - INFO - Saved 18 events for may7.2025 to CSV
+2025-10-24 12:57:19,573 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may8.2025
+2025-10-24 12:57:19,574 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may8.2025
+2025-10-24 12:57:19,574 - scraper - INFO - [NAV] Initial navigation delay: 7.8s
+2025-10-24 12:57:19,579 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may8.2025')...
+2025-10-24 12:57:20,318 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:20,406 - scraper - INFO - [NAV] Initial page load wait: 14.3s
+2025-10-24 12:57:20,430 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may8.2025
+2025-10-24 12:57:20,430 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:20,430 - scraper - INFO - [NAV] Page source length: 120805 characters
+2025-10-24 12:57:20,478 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:20,510 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:20,516 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may8.2025
+2025-10-24 12:57:20,539 - scraper - INFO - Scraped 21 events for may8.2025 using JS data
+2025-10-24 12:57:20,634 - symbol_mapper - INFO - Mapped 21 events with trading pairs
+2025-10-24 12:57:20,641 - csv_exporter - INFO - Loaded 396 existing events from CSV
+2025-10-24 12:57:20,843 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:20,843 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:20,843 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:20,844 - csv_exporter - INFO - [STATS] Total events: 399
+2025-10-24 12:57:20,844 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:20,844 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:20,844 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:20,845 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (94.7%)
+2025-10-24 12:57:20,845 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (94.7%)
+2025-10-24 12:57:20,845 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (94.7%)
+2025-10-24 12:57:20,845 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:20,845 - csv_exporter - INFO -   Low: 277 (69.4%)
+2025-10-24 12:57:20,846 - csv_exporter - INFO -   High: 81 (20.3%)
+2025-10-24 12:57:20,846 - csv_exporter - INFO -   Medium: 41 (10.3%)
+2025-10-24 12:57:20,846 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:20,846 - csv_exporter - INFO -   USD: 117
+2025-10-24 12:57:20,846 - csv_exporter - INFO -   EUR: 81
+2025-10-24 12:57:20,846 - csv_exporter - INFO -   GBP: 64
+2025-10-24 12:57:20,846 - csv_exporter - INFO -   JPY: 33
+2025-10-24 12:57:20,847 - csv_exporter - INFO -   CAD: 27
+2025-10-24 12:57:20,847 - csv_exporter - INFO -   AUD: 27
+2025-10-24 12:57:20,847 - csv_exporter - INFO -   NZD: 19
+2025-10-24 12:57:20,847 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:20,847 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:57:20,847 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:20,848 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:20,850 - csv_exporter - INFO - Exported 399 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:20,851 - csv_exporter - INFO - Deduplication complete: 21 new events added, 0 events updated
+2025-10-24 12:57:20,851 - csv_exporter - INFO - Total events in CSV: 399
+2025-10-24 12:57:20,851 - scraper - INFO - Saved 21 events for may8.2025 to CSV
+2025-10-24 12:57:20,851 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:20,852 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:20,852 - scraper - INFO - [NAV] Initial navigation delay: 4.7s
+2025-10-24 12:57:20,857 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may9.2025')...
+2025-10-24 12:57:21,628 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:21,701 - scraper - INFO - [NAV] Initial page load wait: 14.7s
+2025-10-24 12:57:21,738 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:21,738 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:21,738 - scraper - INFO - [NAV] Page source length: 112633 characters
+2025-10-24 12:57:21,796 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:21,808 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:21,815 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:21,816 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:21,816 - scraper - INFO - [NAV] Waiting 12.8 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:21,827 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may9.2025')...
+2025-10-24 12:57:22,426 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:22,512 - scraper - INFO - [NAV] Initial page load wait: 13.5s
+2025-10-24 12:57:22,537 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:22,537 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:22,537 - scraper - INFO - [NAV] Page source length: 112633 characters
+2025-10-24 12:57:22,583 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:22,590 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:22,597 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:22,597 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:22,598 - scraper - INFO - [NAV] Waiting 18.0 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:22,606 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may9.2025')...
+2025-10-24 12:57:23,289 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:23,431 - scraper - INFO - [NAV] Initial page load wait: 9.2s
+2025-10-24 12:57:23,486 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:23,488 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:23,488 - scraper - INFO - [NAV] Page source length: 112633 characters
+2025-10-24 12:57:23,576 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:23,587 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:23,594 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:57:23,595 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=may9.2025 after 3 attempts
+2025-10-24 12:57:23,595 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may12.2025
+2025-10-24 12:57:23,596 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may12.2025
+2025-10-24 12:57:23,596 - scraper - INFO - [NAV] Initial navigation delay: 4.2s
+2025-10-24 12:57:23,605 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may12.2025')...
+2025-10-24 12:57:24,274 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:24,360 - scraper - INFO - [NAV] Initial page load wait: 10.2s
+2025-10-24 12:57:24,385 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may12.2025
+2025-10-24 12:57:24,385 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:24,386 - scraper - INFO - [NAV] Page source length: 98441 characters
+2025-10-24 12:57:24,428 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:24,471 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:24,483 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may12.2025
+2025-10-24 12:57:24,514 - scraper - INFO - Scraped 13 events for may12.2025 using JS data
+2025-10-24 12:57:24,615 - symbol_mapper - INFO - Mapped 13 events with trading pairs
+2025-10-24 12:57:24,624 - csv_exporter - INFO - Loaded 399 existing events from CSV
+2025-10-24 12:57:24,869 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:24,869 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:24,870 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:24,870 - csv_exporter - INFO - [STATS] Total events: 391
+2025-10-24 12:57:24,870 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:24,870 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:24,871 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:24,871 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (96.7%)
+2025-10-24 12:57:24,871 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (96.7%)
+2025-10-24 12:57:24,871 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (96.7%)
+2025-10-24 12:57:24,872 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:24,872 - csv_exporter - INFO -   Low: 276 (70.6%)
+2025-10-24 12:57:24,872 - csv_exporter - INFO -   High: 73 (18.7%)
+2025-10-24 12:57:24,872 - csv_exporter - INFO -   Medium: 42 (10.7%)
+2025-10-24 12:57:24,873 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:24,873 - csv_exporter - INFO -   USD: 115
+2025-10-24 12:57:24,873 - csv_exporter - INFO -   EUR: 79
+2025-10-24 12:57:24,873 - csv_exporter - INFO -   GBP: 61
+2025-10-24 12:57:24,873 - csv_exporter - INFO -   JPY: 34
+2025-10-24 12:57:24,874 - csv_exporter - INFO -   AUD: 27
+2025-10-24 12:57:24,874 - csv_exporter - INFO -   CAD: 25
+2025-10-24 12:57:24,874 - csv_exporter - INFO -   NZD: 19
+2025-10-24 12:57:24,874 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:24,875 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:57:24,875 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:24,875 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:24,878 - csv_exporter - INFO - Exported 391 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:24,879 - csv_exporter - INFO - Deduplication complete: 13 new events added, 0 events updated
+2025-10-24 12:57:24,879 - csv_exporter - INFO - Total events in CSV: 391
+2025-10-24 12:57:24,879 - scraper - INFO - Saved 13 events for may12.2025 to CSV
+2025-10-24 12:57:24,879 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may13.2025
+2025-10-24 12:57:24,879 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may13.2025
+2025-10-24 12:57:24,879 - scraper - INFO - [NAV] Initial navigation delay: 6.0s
+2025-10-24 12:57:24,885 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may13.2025')...
+2025-10-24 12:57:25,547 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:25,653 - scraper - INFO - [NAV] Initial page load wait: 12.4s
+2025-10-24 12:57:25,695 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may13.2025
+2025-10-24 12:57:25,696 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:25,696 - scraper - INFO - [NAV] Page source length: 123668 characters
+2025-10-24 12:57:25,772 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:25,815 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:25,823 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may13.2025
+2025-10-24 12:57:25,852 - scraper - INFO - Scraped 22 events for may13.2025 using JS data
+2025-10-24 12:57:25,977 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-24 12:57:25,985 - csv_exporter - INFO - Loaded 391 existing events from CSV
+2025-10-24 12:57:26,215 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:26,215 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:26,215 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:26,215 - csv_exporter - INFO - [STATS] Total events: 400
+2025-10-24 12:57:26,216 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:26,216 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:26,216 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:26,216 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (94.5%)
+2025-10-24 12:57:26,217 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (94.5%)
+2025-10-24 12:57:26,217 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (94.5%)
+2025-10-24 12:57:26,217 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:26,217 - csv_exporter - INFO -   Low: 278 (69.5%)
+2025-10-24 12:57:26,217 - csv_exporter - INFO -   High: 78 (19.5%)
+2025-10-24 12:57:26,218 - csv_exporter - INFO -   Medium: 44 (11.0%)
+2025-10-24 12:57:26,218 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:26,218 - csv_exporter - INFO -   USD: 117
+2025-10-24 12:57:26,218 - csv_exporter - INFO -   EUR: 81
+2025-10-24 12:57:26,218 - csv_exporter - INFO -   GBP: 64
+2025-10-24 12:57:26,218 - csv_exporter - INFO -   JPY: 34
+2025-10-24 12:57:26,219 - csv_exporter - INFO -   AUD: 29
+2025-10-24 12:57:26,219 - csv_exporter - INFO -   CAD: 25
+2025-10-24 12:57:26,219 - csv_exporter - INFO -   NZD: 19
+2025-10-24 12:57:26,219 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:26,219 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:57:26,220 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:26,220 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:26,223 - csv_exporter - INFO - Exported 400 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:26,223 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-24 12:57:26,224 - csv_exporter - INFO - Total events in CSV: 400
+2025-10-24 12:57:26,224 - scraper - INFO - Saved 22 events for may13.2025 to CSV
+2025-10-24 12:57:26,224 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may14.2025
+2025-10-24 12:57:26,224 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may14.2025
+2025-10-24 12:57:26,224 - scraper - INFO - [NAV] Initial navigation delay: 4.2s
+2025-10-24 12:57:26,229 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may14.2025')...
+2025-10-24 12:57:26,828 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:26,890 - scraper - INFO - [NAV] Initial page load wait: 13.8s
+2025-10-24 12:57:27,081 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may14.2025
+2025-10-24 12:57:27,081 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:27,082 - scraper - INFO - [NAV] Page source length: 107083 characters
+2025-10-24 12:57:27,146 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:27,184 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:27,190 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may14.2025
+2025-10-24 12:57:27,215 - scraper - INFO - Scraped 16 events for may14.2025 using JS data
+2025-10-24 12:57:27,300 - symbol_mapper - INFO - Mapped 16 events with trading pairs
+2025-10-24 12:57:27,307 - csv_exporter - INFO - Loaded 400 existing events from CSV
+2025-10-24 12:57:27,513 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:27,513 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:27,513 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:27,513 - csv_exporter - INFO - [STATS] Total events: 394
+2025-10-24 12:57:27,514 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:27,514 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:27,514 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:27,514 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (95.9%)
+2025-10-24 12:57:27,515 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (95.9%)
+2025-10-24 12:57:27,515 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (95.9%)
+2025-10-24 12:57:27,515 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:27,515 - csv_exporter - INFO -   Low: 278 (70.6%)
+2025-10-24 12:57:27,515 - csv_exporter - INFO -   High: 74 (18.8%)
+2025-10-24 12:57:27,516 - csv_exporter - INFO -   Medium: 42 (10.7%)
+2025-10-24 12:57:27,516 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:27,516 - csv_exporter - INFO -   USD: 114
+2025-10-24 12:57:27,516 - csv_exporter - INFO -   EUR: 81
+2025-10-24 12:57:27,516 - csv_exporter - INFO -   GBP: 59
+2025-10-24 12:57:27,517 - csv_exporter - INFO -   JPY: 32
+2025-10-24 12:57:27,517 - csv_exporter - INFO -   AUD: 29
+2025-10-24 12:57:27,517 - csv_exporter - INFO -   CAD: 26
+2025-10-24 12:57:27,517 - csv_exporter - INFO -   NZD: 20
+2025-10-24 12:57:27,517 - csv_exporter - INFO -   CNY: 18
+2025-10-24 12:57:27,517 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:57:27,517 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:27,518 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:27,520 - csv_exporter - INFO - Exported 394 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:27,520 - csv_exporter - INFO - Deduplication complete: 16 new events added, 0 events updated
+2025-10-24 12:57:27,521 - csv_exporter - INFO - Total events in CSV: 394
+2025-10-24 12:57:27,521 - scraper - INFO - Saved 16 events for may14.2025 to CSV
+2025-10-24 12:57:27,521 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may15.2025
+2025-10-24 12:57:27,522 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may15.2025
+2025-10-24 12:57:27,522 - scraper - INFO - [NAV] Initial navigation delay: 3.3s
+2025-10-24 12:57:27,527 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may15.2025')...
+2025-10-24 12:57:28,185 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:28,284 - scraper - INFO - [NAV] Initial page load wait: 13.5s
+2025-10-24 12:57:28,314 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may15.2025
+2025-10-24 12:57:28,314 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:28,314 - scraper - INFO - [NAV] Page source length: 167220 characters
+2025-10-24 12:57:28,378 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:28,423 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:28,428 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may15.2025
+2025-10-24 12:57:28,456 - scraper - INFO - Scraped 37 events for may15.2025 using JS data
+2025-10-24 12:57:28,654 - symbol_mapper - INFO - Mapped 37 events with trading pairs
+2025-10-24 12:57:28,659 - csv_exporter - INFO - Loaded 394 existing events from CSV
+2025-10-24 12:57:28,853 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:28,853 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:28,853 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:28,854 - csv_exporter - INFO - [STATS] Total events: 415
+2025-10-24 12:57:28,854 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:28,854 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:28,854 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:28,854 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (91.1%)
+2025-10-24 12:57:28,855 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (91.1%)
+2025-10-24 12:57:28,855 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (91.1%)
+2025-10-24 12:57:28,855 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:28,855 - csv_exporter - INFO -   Low: 289 (69.6%)
+2025-10-24 12:57:28,855 - csv_exporter - INFO -   High: 82 (19.8%)
+2025-10-24 12:57:28,856 - csv_exporter - INFO -   Medium: 44 (10.6%)
+2025-10-24 12:57:28,856 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:28,856 - csv_exporter - INFO -   USD: 124
+2025-10-24 12:57:28,856 - csv_exporter - INFO -   EUR: 83
+2025-10-24 12:57:28,856 - csv_exporter - INFO -   GBP: 66
+2025-10-24 12:57:28,856 - csv_exporter - INFO -   JPY: 32
+2025-10-24 12:57:28,857 - csv_exporter - INFO -   AUD: 30
+2025-10-24 12:57:28,857 - csv_exporter - INFO -   CAD: 28
+2025-10-24 12:57:28,857 - csv_exporter - INFO -   NZD: 20
+2025-10-24 12:57:28,857 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:28,857 - csv_exporter - INFO -   CHF: 13
+2025-10-24 12:57:28,857 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:28,858 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:28,860 - csv_exporter - INFO - Exported 415 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:28,860 - csv_exporter - INFO - Deduplication complete: 37 new events added, 0 events updated
+2025-10-24 12:57:28,860 - csv_exporter - INFO - Total events in CSV: 415
+2025-10-24 12:57:28,861 - scraper - INFO - Saved 37 events for may15.2025 to CSV
+2025-10-24 12:57:28,861 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:28,861 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:28,861 - scraper - INFO - [NAV] Initial navigation delay: 7.3s
+2025-10-24 12:57:28,866 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may16.2025')...
+2025-10-24 12:57:29,432 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:29,511 - scraper - INFO - [NAV] Initial page load wait: 10.6s
+2025-10-24 12:57:29,539 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:29,540 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:29,540 - scraper - INFO - [NAV] Page source length: 108745 characters
+2025-10-24 12:57:29,592 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:29,601 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:29,608 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:29,609 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:29,609 - scraper - INFO - [NAV] Waiting 18.5 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:29,619 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may16.2025')...
+2025-10-24 12:57:30,194 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:30,271 - scraper - INFO - [NAV] Initial page load wait: 10.8s
+2025-10-24 12:57:30,295 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:30,296 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:30,296 - scraper - INFO - [NAV] Page source length: 108659 characters
+2025-10-24 12:57:30,379 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:30,404 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:30,410 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:30,411 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:30,411 - scraper - INFO - [NAV] Waiting 17.1 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:30,421 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may16.2025')...
+2025-10-24 12:57:31,386 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:31,468 - scraper - INFO - [NAV] Initial page load wait: 13.3s
+2025-10-24 12:57:31,495 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:31,495 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:31,495 - scraper - INFO - [NAV] Page source length: 108659 characters
+2025-10-24 12:57:31,544 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:31,550 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:31,555 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may16.2025
+2025-10-24 12:57:31,555 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=may16.2025 after 3 attempts
+2025-10-24 12:57:31,556 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may19.2025
+2025-10-24 12:57:31,556 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may19.2025
+2025-10-24 12:57:31,556 - scraper - INFO - [NAV] Initial navigation delay: 4.8s
+2025-10-24 12:57:31,563 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may19.2025')...
+2025-10-24 12:57:32,155 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:32,239 - scraper - INFO - [NAV] Initial page load wait: 14.9s
+2025-10-24 12:57:32,265 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may19.2025
+2025-10-24 12:57:32,265 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:32,266 - scraper - INFO - [NAV] Page source length: 126080 characters
+2025-10-24 12:57:32,329 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:32,373 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:32,379 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may19.2025
+2025-10-24 12:57:32,405 - scraper - INFO - Scraped 23 events for may19.2025 using JS data
+2025-10-24 12:57:32,506 - symbol_mapper - INFO - Mapped 23 events with trading pairs
+2025-10-24 12:57:32,512 - csv_exporter - INFO - Loaded 415 existing events from CSV
+2025-10-24 12:57:32,710 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:32,711 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:32,711 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:32,711 - csv_exporter - INFO - [STATS] Total events: 401
+2025-10-24 12:57:32,711 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:32,712 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:32,712 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:32,712 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (94.3%)
+2025-10-24 12:57:32,712 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (94.3%)
+2025-10-24 12:57:32,712 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (94.3%)
+2025-10-24 12:57:32,713 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:32,713 - csv_exporter - INFO -   Low: 284 (70.8%)
+2025-10-24 12:57:32,713 - csv_exporter - INFO -   High: 73 (18.2%)
+2025-10-24 12:57:32,713 - csv_exporter - INFO -   Medium: 44 (11.0%)
+2025-10-24 12:57:32,714 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:32,714 - csv_exporter - INFO -   USD: 117
+2025-10-24 12:57:32,714 - csv_exporter - INFO -   EUR: 81
+2025-10-24 12:57:32,714 - csv_exporter - INFO -   GBP: 58
+2025-10-24 12:57:32,714 - csv_exporter - INFO -   JPY: 32
+2025-10-24 12:57:32,715 - csv_exporter - INFO -   AUD: 27
+2025-10-24 12:57:32,715 - csv_exporter - INFO -   CAD: 26
+2025-10-24 12:57:32,715 - csv_exporter - INFO -   CNY: 22
+2025-10-24 12:57:32,715 - csv_exporter - INFO -   NZD: 22
+2025-10-24 12:57:32,715 - csv_exporter - INFO -   CHF: 13
+2025-10-24 12:57:32,716 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:32,716 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:32,718 - csv_exporter - INFO - Exported 401 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:32,719 - csv_exporter - INFO - Deduplication complete: 23 new events added, 0 events updated
+2025-10-24 12:57:32,719 - csv_exporter - INFO - Total events in CSV: 401
+2025-10-24 12:57:32,719 - scraper - INFO - Saved 23 events for may19.2025 to CSV
+2025-10-24 12:57:32,720 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may20.2025
+2025-10-24 12:57:32,720 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may20.2025
+2025-10-24 12:57:32,720 - scraper - INFO - [NAV] Initial navigation delay: 5.0s
+2025-10-24 12:57:32,726 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may20.2025')...
+2025-10-24 12:57:33,300 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:33,386 - scraper - INFO - [NAV] Initial page load wait: 13.6s
+2025-10-24 12:57:33,410 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may20.2025
+2025-10-24 12:57:33,410 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:33,410 - scraper - INFO - [NAV] Page source length: 125360 characters
+2025-10-24 12:57:33,466 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:33,512 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:33,520 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may20.2025
+2025-10-24 12:57:33,544 - scraper - INFO - Scraped 23 events for may20.2025 using JS data
+2025-10-24 12:57:33,648 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-24 12:57:33,648 - symbol_mapper - INFO - Mapped 23 events with trading pairs
+2025-10-24 12:57:33,654 - csv_exporter - INFO - Loaded 401 existing events from CSV
+2025-10-24 12:57:33,843 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:33,844 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:33,844 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:33,844 - csv_exporter - INFO - [STATS] Total events: 401
+2025-10-24 12:57:33,845 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:33,845 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:33,845 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:33,845 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (94.3%)
+2025-10-24 12:57:33,845 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (94.3%)
+2025-10-24 12:57:33,846 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (94.3%)
+2025-10-24 12:57:33,846 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:33,846 - csv_exporter - INFO -   Low: 276 (68.8%)
+2025-10-24 12:57:33,846 - csv_exporter - INFO -   High: 79 (19.7%)
+2025-10-24 12:57:33,846 - csv_exporter - INFO -   Medium: 46 (11.5%)
+2025-10-24 12:57:33,847 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:33,847 - csv_exporter - INFO -   USD: 116
+2025-10-24 12:57:33,847 - csv_exporter - INFO -   EUR: 81
+2025-10-24 12:57:33,847 - csv_exporter - INFO -   GBP: 58
+2025-10-24 12:57:33,847 - csv_exporter - INFO -   JPY: 31
+2025-10-24 12:57:33,847 - csv_exporter - INFO -   AUD: 31
+2025-10-24 12:57:33,848 - csv_exporter - INFO -   CAD: 30
+2025-10-24 12:57:33,848 - csv_exporter - INFO -   NZD: 20
+2025-10-24 12:57:33,848 - csv_exporter - INFO -   CNY: 18
+2025-10-24 12:57:33,848 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:57:33,848 - csv_exporter - INFO -   All: 4
+2025-10-24 12:57:33,848 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:33,851 - csv_exporter - INFO - Exported 401 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:33,851 - csv_exporter - INFO - Deduplication complete: 23 new events added, 0 events updated
+2025-10-24 12:57:33,851 - csv_exporter - INFO - Total events in CSV: 401
+2025-10-24 12:57:33,852 - scraper - INFO - Saved 23 events for may20.2025 to CSV
+2025-10-24 12:57:33,852 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may21.2025
+2025-10-24 12:57:33,853 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may21.2025
+2025-10-24 12:57:33,853 - scraper - INFO - [NAV] Initial navigation delay: 5.8s
+2025-10-24 12:57:33,858 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may21.2025')...
+2025-10-24 12:57:34,509 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:34,597 - scraper - INFO - [NAV] Initial page load wait: 10.0s
+2025-10-24 12:57:34,618 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may21.2025
+2025-10-24 12:57:34,619 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:34,619 - scraper - INFO - [NAV] Page source length: 109280 characters
+2025-10-24 12:57:34,676 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:34,716 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:34,722 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may21.2025
+2025-10-24 12:57:34,747 - scraper - INFO - Scraped 17 events for may21.2025 using JS data
+2025-10-24 12:57:34,827 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-24 12:57:34,828 - symbol_mapper - INFO - Mapped 17 events with trading pairs
+2025-10-24 12:57:34,833 - csv_exporter - INFO - Loaded 401 existing events from CSV
+2025-10-24 12:57:35,094 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:35,094 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:35,094 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:35,095 - csv_exporter - INFO - [STATS] Total events: 395
+2025-10-24 12:57:35,095 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:35,095 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:35,095 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:35,096 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (95.7%)
+2025-10-24 12:57:35,096 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (95.7%)
+2025-10-24 12:57:35,096 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (95.7%)
+2025-10-24 12:57:35,096 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:35,097 - csv_exporter - INFO -   Low: 279 (70.6%)
+2025-10-24 12:57:35,097 - csv_exporter - INFO -   High: 74 (18.7%)
+2025-10-24 12:57:35,097 - csv_exporter - INFO -   Medium: 42 (10.6%)
+2025-10-24 12:57:35,097 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:35,098 - csv_exporter - INFO -   USD: 115
+2025-10-24 12:57:35,098 - csv_exporter - INFO -   EUR: 80
+2025-10-24 12:57:35,098 - csv_exporter - INFO -   GBP: 61
+2025-10-24 12:57:35,098 - csv_exporter - INFO -   JPY: 32
+2025-10-24 12:57:35,099 - csv_exporter - INFO -   AUD: 28
+2025-10-24 12:57:35,099 - csv_exporter - INFO -   CAD: 26
+2025-10-24 12:57:35,099 - csv_exporter - INFO -   NZD: 21
+2025-10-24 12:57:35,099 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:35,100 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:57:35,100 - csv_exporter - INFO -   All: 4
+2025-10-24 12:57:35,100 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:35,103 - csv_exporter - INFO - Exported 395 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:35,103 - csv_exporter - INFO - Deduplication complete: 17 new events added, 0 events updated
+2025-10-24 12:57:35,104 - csv_exporter - INFO - Total events in CSV: 395
+2025-10-24 12:57:35,104 - scraper - INFO - Saved 17 events for may21.2025 to CSV
+2025-10-24 12:57:35,105 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may22.2025
+2025-10-24 12:57:35,105 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may22.2025
+2025-10-24 12:57:35,105 - scraper - INFO - [NAV] Initial navigation delay: 6.8s
+2025-10-24 12:57:35,110 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may22.2025')...
+2025-10-24 12:57:35,910 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:35,992 - scraper - INFO - [NAV] Initial page load wait: 14.2s
+2025-10-24 12:57:36,023 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may22.2025
+2025-10-24 12:57:36,024 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:36,024 - scraper - INFO - [NAV] Page source length: 162619 characters
+2025-10-24 12:57:36,086 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:36,133 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:36,142 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may22.2025
+2025-10-24 12:57:36,175 - scraper - INFO - Scraped 36 events for may22.2025 using JS data
+2025-10-24 12:57:36,311 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-24 12:57:36,311 - symbol_mapper - INFO - Mapped 36 events with trading pairs
+2025-10-24 12:57:36,317 - csv_exporter - INFO - Loaded 395 existing events from CSV
+2025-10-24 12:57:36,511 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:36,511 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:36,512 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:36,512 - csv_exporter - INFO - [STATS] Total events: 414
+2025-10-24 12:57:36,512 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:36,512 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:36,512 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:36,513 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (91.3%)
+2025-10-24 12:57:36,513 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (91.3%)
+2025-10-24 12:57:36,513 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (91.3%)
+2025-10-24 12:57:36,513 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:36,514 - csv_exporter - INFO -   Low: 285 (68.8%)
+2025-10-24 12:57:36,514 - csv_exporter - INFO -   High: 83 (20.0%)
+2025-10-24 12:57:36,514 - csv_exporter - INFO -   Medium: 46 (11.1%)
+2025-10-24 12:57:36,514 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:36,514 - csv_exporter - INFO -   USD: 116
+2025-10-24 12:57:36,514 - csv_exporter - INFO -   EUR: 89
+2025-10-24 12:57:36,515 - csv_exporter - INFO -   GBP: 65
+2025-10-24 12:57:36,515 - csv_exporter - INFO -   JPY: 33
+2025-10-24 12:57:36,515 - csv_exporter - INFO -   AUD: 30
+2025-10-24 12:57:36,515 - csv_exporter - INFO -   CAD: 29
+2025-10-24 12:57:36,515 - csv_exporter - INFO -   NZD: 20
+2025-10-24 12:57:36,515 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:36,516 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:57:36,516 - csv_exporter - INFO -   All: 4
+2025-10-24 12:57:36,516 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:36,519 - csv_exporter - INFO - Exported 414 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:36,519 - csv_exporter - INFO - Deduplication complete: 36 new events added, 0 events updated
+2025-10-24 12:57:36,519 - csv_exporter - INFO - Total events in CSV: 414
+2025-10-24 12:57:36,520 - scraper - INFO - Saved 36 events for may22.2025 to CSV
+2025-10-24 12:57:36,520 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may23.2025
+2025-10-24 12:57:36,520 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may23.2025
+2025-10-24 12:57:36,520 - scraper - INFO - [NAV] Initial navigation delay: 6.3s
+2025-10-24 12:57:36,525 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may23.2025')...
+2025-10-24 12:57:37,254 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:37,299 - scraper - INFO - [NAV] Initial page load wait: 9.0s
+2025-10-24 12:57:37,448 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may23.2025
+2025-10-24 12:57:37,448 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:37,448 - scraper - INFO - [NAV] Page source length: 102161 characters
+2025-10-24 12:57:37,511 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:37,569 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:37,584 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may23.2025
+2025-10-24 12:57:37,638 - scraper - INFO - Scraped 14 events for may23.2025 using JS data
+2025-10-24 12:57:37,779 - symbol_mapper - INFO - Mapped 14 events with trading pairs
+2025-10-24 12:57:37,789 - csv_exporter - INFO - Loaded 414 existing events from CSV
+2025-10-24 12:57:38,019 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:38,020 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:38,020 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:38,020 - csv_exporter - INFO - [STATS] Total events: 392
+2025-10-24 12:57:38,021 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:38,021 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:38,021 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:38,021 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (96.4%)
+2025-10-24 12:57:38,022 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (96.4%)
+2025-10-24 12:57:38,022 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (96.4%)
+2025-10-24 12:57:38,022 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:38,022 - csv_exporter - INFO -   Low: 273 (69.6%)
+2025-10-24 12:57:38,023 - csv_exporter - INFO -   High: 76 (19.4%)
+2025-10-24 12:57:38,023 - csv_exporter - INFO -   Medium: 43 (11.0%)
+2025-10-24 12:57:38,023 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:38,023 - csv_exporter - INFO -   USD: 114
+2025-10-24 12:57:38,023 - csv_exporter - INFO -   EUR: 79
+2025-10-24 12:57:38,023 - csv_exporter - INFO -   GBP: 59
+2025-10-24 12:57:38,024 - csv_exporter - INFO -   JPY: 32
+2025-10-24 12:57:38,024 - csv_exporter - INFO -   CAD: 28
+2025-10-24 12:57:38,024 - csv_exporter - INFO -   AUD: 27
+2025-10-24 12:57:38,024 - csv_exporter - INFO -   NZD: 21
+2025-10-24 12:57:38,024 - csv_exporter - INFO -   CNY: 17
+2025-10-24 12:57:38,024 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:57:38,025 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:38,025 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:38,028 - csv_exporter - INFO - Exported 392 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:38,028 - csv_exporter - INFO - Deduplication complete: 14 new events added, 0 events updated
+2025-10-24 12:57:38,029 - csv_exporter - INFO - Total events in CSV: 392
+2025-10-24 12:57:38,029 - scraper - INFO - Saved 14 events for may23.2025 to CSV
+2025-10-24 12:57:38,029 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may26.2025
+2025-10-24 12:57:38,029 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may26.2025
+2025-10-24 12:57:38,030 - scraper - INFO - [NAV] Initial navigation delay: 6.1s
+2025-10-24 12:57:38,035 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may26.2025')...
+2025-10-24 12:57:38,641 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:38,655 - scraper - INFO - [NAV] Initial page load wait: 8.8s
+2025-10-24 12:57:38,675 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may26.2025
+2025-10-24 12:57:38,676 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:38,676 - scraper - INFO - [NAV] Page source length: 72913 characters
+2025-10-24 12:57:38,800 - scraper - INFO - [NAV] Waiting additional 20s and checking again for verification page...
+2025-10-24 12:57:38,829 - scraper - INFO - [NAV] Successfully loaded page: 'Calendar | Forex Factory'
+2025-10-24 12:57:38,834 - scraper - INFO - [NAV] Final URL: https://www.forexfactory.com/calendar?day=may26.2025
+2025-10-24 12:57:38,853 - scraper - INFO - Scraped 4 events for may26.2025 using JS data
+2025-10-24 12:57:38,909 - symbol_mapper - INFO - Mapped 4 events with trading pairs
+2025-10-24 12:57:38,917 - csv_exporter - INFO - Loaded 392 existing events from CSV
+2025-10-24 12:57:39,142 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:39,142 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:57:39,142 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:39,143 - csv_exporter - INFO - [STATS] Total events: 382
+2025-10-24 12:57:39,143 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:57:39,143 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:57:39,143 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:57:39,144 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 378 (99.0%)
+2025-10-24 12:57:39,144 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 378 (99.0%)
+2025-10-24 12:57:39,144 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 378 (99.0%)
+2025-10-24 12:57:39,145 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:57:39,145 - csv_exporter - INFO -   Low: 267 (69.9%)
+2025-10-24 12:57:39,145 - csv_exporter - INFO -   High: 73 (19.1%)
+2025-10-24 12:57:39,145 - csv_exporter - INFO -   Medium: 42 (11.0%)
+2025-10-24 12:57:39,145 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:57:39,146 - csv_exporter - INFO -   USD: 111
+2025-10-24 12:57:39,146 - csv_exporter - INFO -   EUR: 80
+2025-10-24 12:57:39,146 - csv_exporter - INFO -   GBP: 58
+2025-10-24 12:57:39,146 - csv_exporter - INFO -   JPY: 31
+2025-10-24 12:57:39,146 - csv_exporter - INFO -   AUD: 27
+2025-10-24 12:57:39,146 - csv_exporter - INFO -   CAD: 25
+2025-10-24 12:57:39,147 - csv_exporter - INFO -   NZD: 19
+2025-10-24 12:57:39,147 - csv_exporter - INFO -   CNY: 16
+2025-10-24 12:57:39,147 - csv_exporter - INFO -   CHF: 12
+2025-10-24 12:57:39,147 - csv_exporter - INFO -   All: 3
+2025-10-24 12:57:39,147 - csv_exporter - INFO - ==================================================
+2025-10-24 12:57:39,150 - csv_exporter - INFO - Exported 382 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:57:39,151 - csv_exporter - INFO - Deduplication complete: 4 new events added, 0 events updated
+2025-10-24 12:57:39,151 - csv_exporter - INFO - Total events in CSV: 382
+2025-10-24 12:57:39,151 - scraper - INFO - Saved 4 events for may26.2025 to CSV
+2025-10-24 12:57:39,151 - scraper - INFO - Fallback completed: 362 total events from 2025-04-27 to 2025-05-26
+2025-10-24 12:57:39,152 - scraper - INFO - Scraped 362 events from range 2025-04-27 to 2025-05-26
+2025-10-24 12:57:41,397 - scraper - INFO - Processing range 2/6: 2025-05-27 to 2025-06-25
+2025-10-24 12:57:41,397 - scraper - INFO - [RANGE] Starting range scraping: 2025-05-27 to 2025-06-25
+2025-10-24 12:57:41,397 - scraper - INFO - [RANGE] Driver not initialized for range 2025-05-27 to 2025-06-25, setting up fresh driver
+2025-10-24 12:57:41,397 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-24 12:57:41,398 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-24 12:57:41,398 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-24 12:57:41,398 - WDM - INFO - ====== WebDriver manager ======
+2025-10-24 12:57:42,519 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:57:42,845 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:57:43,161 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-24 12:57:43,162 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-24 12:57:44,423 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-24 12:57:44,423 - scraper - INFO - [RANGE] Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:44,423 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:44,423 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:44,423 - scraper - INFO - [NAV] Initial navigation delay: 3.4s
+2025-10-24 12:57:44,428 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025')...
+2025-10-24 12:57:46,770 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:47,459 - scraper - INFO - [NAV] Initial page load wait: 15.0s
+2025-10-24 12:57:47,548 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:47,548 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:47,549 - scraper - INFO - [NAV] Page source length: 749535 characters
+2025-10-24 12:57:47,706 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:47,712 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:47,717 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:47,717 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:47,717 - scraper - INFO - [NAV] Waiting 13.1 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:47,721 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025')...
+2025-10-24 12:57:49,020 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:49,463 - scraper - INFO - [NAV] Initial page load wait: 8.4s
+2025-10-24 12:57:49,523 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:49,523 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:49,523 - scraper - INFO - [NAV] Page source length: 775700 characters
+2025-10-24 12:57:49,683 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:49,689 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:49,693 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:49,693 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:49,693 - scraper - INFO - [NAV] Waiting 15.5 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:49,697 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025')...
+2025-10-24 12:57:50,760 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:51,084 - scraper - INFO - [NAV] Initial page load wait: 8.9s
+2025-10-24 12:57:51,515 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:51,516 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:51,516 - scraper - INFO - [NAV] Page source length: 775614 characters
+2025-10-24 12:57:51,908 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:51,913 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:51,919 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:51,919 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025 after 3 attempts
+2025-10-24 12:57:51,921 - scraper - ERROR - [RANGE] Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=may27.2025-jun25.2025
+2025-10-24 12:57:51,921 - scraper - INFO - [RANGE] Falling back to daily scraping approach
+2025-10-24 12:57:51,921 - scraper - INFO - Fallback: scraping range 2025-05-27 to 2025-06-25 day by day
+2025-10-24 12:57:51,922 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:51,922 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:51,922 - scraper - INFO - [NAV] Initial navigation delay: 7.5s
+2025-10-24 12:57:51,928 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may27.2025')...
+2025-10-24 12:57:52,567 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:52,863 - scraper - INFO - [NAV] Initial page load wait: 12.9s
+2025-10-24 12:57:52,881 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:52,882 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:52,882 - scraper - INFO - [NAV] Page source length: 110684 characters
+2025-10-24 12:57:52,911 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:52,915 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:52,920 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:52,920 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:52,920 - scraper - INFO - [NAV] Waiting 15.1 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:52,924 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may27.2025')...
+2025-10-24 12:57:53,475 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:53,778 - scraper - INFO - [NAV] Initial page load wait: 13.8s
+2025-10-24 12:57:53,796 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:53,796 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:53,796 - scraper - INFO - [NAV] Page source length: 110684 characters
+2025-10-24 12:57:53,828 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:53,832 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:53,838 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:53,838 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:53,838 - scraper - INFO - [NAV] Waiting 19.9 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:53,844 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may27.2025')...
+2025-10-24 12:57:54,428 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:54,728 - scraper - INFO - [NAV] Initial page load wait: 8.7s
+2025-10-24 12:57:54,755 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:54,755 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:54,756 - scraper - INFO - [NAV] Page source length: 110684 characters
+2025-10-24 12:57:54,802 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:54,809 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:54,814 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may27.2025
+2025-10-24 12:57:54,815 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=may27.2025 after 3 attempts
+2025-10-24 12:57:54,815 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:54,815 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:54,815 - scraper - INFO - [NAV] Initial navigation delay: 6.8s
+2025-10-24 12:57:54,835 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may28.2025')...
+2025-10-24 12:57:55,589 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:55,925 - scraper - INFO - [NAV] Initial page load wait: 10.5s
+2025-10-24 12:57:55,949 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:55,949 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:55,950 - scraper - INFO - [NAV] Page source length: 123452 characters
+2025-10-24 12:57:56,009 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:56,017 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:56,024 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:56,024 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:56,024 - scraper - INFO - [NAV] Waiting 10.5 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:56,028 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may28.2025')...
+2025-10-24 12:57:56,826 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:56,877 - scraper - INFO - [NAV] Initial page load wait: 14.3s
+2025-10-24 12:57:56,934 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:56,935 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:56,935 - scraper - INFO - [NAV] Page source length: 123453 characters
+2025-10-24 12:57:56,995 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:57,002 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:57,009 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:57,010 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:57,010 - scraper - INFO - [NAV] Waiting 11.2 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:57,019 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may28.2025')...
+2025-10-24 12:57:57,751 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:58,059 - scraper - INFO - [NAV] Initial page load wait: 11.3s
+2025-10-24 12:57:58,082 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:58,082 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:58,082 - scraper - INFO - [NAV] Page source length: 123453 characters
+2025-10-24 12:57:58,130 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:58,137 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:58,148 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may28.2025
+2025-10-24 12:57:58,148 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=may28.2025 after 3 attempts
+2025-10-24 12:57:58,148 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:57:58,149 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:57:58,149 - scraper - INFO - [NAV] Initial navigation delay: 6.8s
+2025-10-24 12:57:58,155 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may29.2025')...
+2025-10-24 12:57:58,809 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:58,843 - scraper - INFO - [NAV] Initial page load wait: 9.0s
+2025-10-24 12:57:58,869 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:57:58,870 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:58,870 - scraper - INFO - [NAV] Page source length: 117382 characters
+2025-10-24 12:57:58,933 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:57:58,944 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:58,952 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:57:58,953 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:57:58,953 - scraper - INFO - [NAV] Waiting 13.8 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:58,963 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may29.2025')...
+2025-10-24 12:57:59,571 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:57:59,617 - scraper - INFO - [NAV] Initial page load wait: 12.5s
+2025-10-24 12:57:59,651 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:57:59,651 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:59,651 - scraper - INFO - [NAV] Page source length: 117381 characters
+2025-10-24 12:57:59,708 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:57:59,714 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:57:59,725 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:57:59,725 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:57:59,726 - scraper - INFO - [NAV] Waiting 12.7 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:57:59,733 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may29.2025')...
+2025-10-24 12:58:00,349 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:00,449 - scraper - INFO - [NAV] Initial page load wait: 10.3s
+2025-10-24 12:58:00,472 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:58:00,473 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:00,473 - scraper - INFO - [NAV] Page source length: 117468 characters
+2025-10-24 12:58:00,529 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:58:00,536 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:00,544 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may29.2025
+2025-10-24 12:58:00,544 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=may29.2025 after 3 attempts
+2025-10-24 12:58:00,545 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:00,545 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:00,546 - scraper - INFO - [NAV] Initial navigation delay: 7.1s
+2025-10-24 12:58:00,553 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may30.2025')...
+2025-10-24 12:58:01,215 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:01,315 - scraper - INFO - [NAV] Initial page load wait: 9.9s
+2025-10-24 12:58:01,344 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:01,344 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:01,344 - scraper - INFO - [NAV] Page source length: 139133 characters
+2025-10-24 12:58:01,405 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:01,413 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:01,425 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:01,426 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:01,426 - scraper - INFO - [NAV] Waiting 17.2 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:01,433 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may30.2025')...
+2025-10-24 12:58:02,099 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:02,223 - scraper - INFO - [NAV] Initial page load wait: 11.7s
+2025-10-24 12:58:02,258 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:02,258 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:02,259 - scraper - INFO - [NAV] Page source length: 139219 characters
+2025-10-24 12:58:02,348 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:02,360 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:02,372 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:02,372 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:02,373 - scraper - INFO - [NAV] Waiting 19.9 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:02,379 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=may30.2025')...
+2025-10-24 12:58:03,140 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:03,267 - scraper - INFO - [NAV] Initial page load wait: 8.5s
+2025-10-24 12:58:03,304 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:03,304 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:03,305 - scraper - INFO - [NAV] Page source length: 139133 characters
+2025-10-24 12:58:03,373 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:03,389 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:03,397 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=may30.2025
+2025-10-24 12:58:03,398 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=may30.2025 after 3 attempts
+2025-10-24 12:58:03,399 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:03,399 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:03,399 - scraper - INFO - [NAV] Initial navigation delay: 7.6s
+2025-10-24 12:58:03,410 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun2.2025')...
+2025-10-24 12:58:04,205 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:04,459 - scraper - INFO - [NAV] Initial page load wait: 9.5s
+2025-10-24 12:58:04,548 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:04,548 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:04,549 - scraper - INFO - [NAV] Page source length: 148040 characters
+2025-10-24 12:58:04,623 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:04,629 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:04,636 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:04,637 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:04,637 - scraper - INFO - [NAV] Waiting 17.2 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:04,647 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun2.2025')...
+2025-10-24 12:58:05,259 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:05,273 - scraper - INFO - [NAV] Initial page load wait: 9.0s
+2025-10-24 12:58:05,299 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:05,299 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:05,299 - scraper - INFO - [NAV] Page source length: 147908 characters
+2025-10-24 12:58:05,354 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:05,430 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:05,436 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:05,436 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:05,436 - scraper - INFO - [NAV] Waiting 11.6 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:05,443 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun2.2025')...
+2025-10-24 12:58:06,129 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:06,242 - scraper - INFO - [NAV] Initial page load wait: 9.0s
+2025-10-24 12:58:06,272 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:06,272 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:06,272 - scraper - INFO - [NAV] Page source length: 148039 characters
+2025-10-24 12:58:06,342 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:06,350 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:06,358 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun2.2025
+2025-10-24 12:58:06,359 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=jun2.2025 after 3 attempts
+2025-10-24 12:58:06,359 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:06,359 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:06,360 - scraper - INFO - [NAV] Initial navigation delay: 6.7s
+2025-10-24 12:58:06,366 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun3.2025')...
+2025-10-24 12:58:07,021 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:07,107 - scraper - INFO - [NAV] Initial page load wait: 14.5s
+2025-10-24 12:58:07,135 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:07,135 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:07,135 - scraper - INFO - [NAV] Page source length: 138501 characters
+2025-10-24 12:58:07,195 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:07,215 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:07,227 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:07,227 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:07,228 - scraper - INFO - [NAV] Waiting 17.4 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:07,237 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun3.2025')...
+2025-10-24 12:58:07,898 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:07,990 - scraper - INFO - [NAV] Initial page load wait: 10.0s
+2025-10-24 12:58:08,028 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:08,029 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:08,029 - scraper - INFO - [NAV] Page source length: 138415 characters
+2025-10-24 12:58:08,088 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:08,099 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:08,109 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:08,109 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:08,110 - scraper - INFO - [NAV] Waiting 19.7 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:08,119 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun3.2025')...
+2025-10-24 12:58:08,830 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:08,941 - scraper - INFO - [NAV] Initial page load wait: 14.3s
+2025-10-24 12:58:08,981 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:08,982 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:08,982 - scraper - INFO - [NAV] Page source length: 138415 characters
+2025-10-24 12:58:09,053 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:09,071 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:09,084 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun3.2025
+2025-10-24 12:58:09,084 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=jun3.2025 after 3 attempts
+2025-10-24 12:58:09,084 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:09,085 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:09,085 - scraper - INFO - [NAV] Initial navigation delay: 3.7s
+2025-10-24 12:58:09,091 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun4.2025')...
+2025-10-24 12:58:09,715 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:09,812 - scraper - INFO - [NAV] Initial page load wait: 14.7s
+2025-10-24 12:58:09,833 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:09,834 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:09,834 - scraper - INFO - [NAV] Page source length: 111861 characters
+2025-10-24 12:58:09,880 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:09,890 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:09,896 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:09,897 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:09,898 - scraper - INFO - [NAV] Waiting 19.6 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:09,903 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun4.2025')...
+2025-10-24 12:58:10,527 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:10,624 - scraper - INFO - [NAV] Initial page load wait: 8.1s
+2025-10-24 12:58:10,648 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:10,648 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:10,649 - scraper - INFO - [NAV] Page source length: 111861 characters
+2025-10-24 12:58:10,695 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:10,703 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:10,708 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:10,708 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:10,708 - scraper - INFO - [NAV] Waiting 18.6 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:10,720 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun4.2025')...
+2025-10-24 12:58:11,389 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:11,475 - scraper - INFO - [NAV] Initial page load wait: 10.5s
+2025-10-24 12:58:11,499 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:11,500 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:11,500 - scraper - INFO - [NAV] Page source length: 111861 characters
+2025-10-24 12:58:11,554 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:11,562 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:11,572 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun4.2025
+2025-10-24 12:58:11,572 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=jun4.2025 after 3 attempts
+2025-10-24 12:58:11,572 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:11,573 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:11,573 - scraper - INFO - [NAV] Initial navigation delay: 4.4s
+2025-10-24 12:58:11,585 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun5.2025')...
+2025-10-24 12:58:12,269 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:12,439 - scraper - INFO - [NAV] Initial page load wait: 8.4s
+2025-10-24 12:58:12,465 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:12,466 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:12,466 - scraper - INFO - [NAV] Page source length: 146502 characters
+2025-10-24 12:58:12,522 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:12,529 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:12,538 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:12,538 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:12,539 - scraper - INFO - [NAV] Waiting 11.0 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:12,550 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun5.2025')...
+2025-10-24 12:58:13,217 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:13,359 - scraper - INFO - [NAV] Initial page load wait: 10.0s
+2025-10-24 12:58:13,417 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:13,417 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:13,418 - scraper - INFO - [NAV] Page source length: 146502 characters
+2025-10-24 12:58:13,526 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:13,534 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:13,543 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:13,544 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:13,544 - scraper - INFO - [NAV] Waiting 11.7 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:13,551 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun5.2025')...
+2025-10-24 12:58:14,574 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:14,707 - scraper - INFO - [NAV] Initial page load wait: 11.4s
+2025-10-24 12:58:14,745 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:14,745 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:14,746 - scraper - INFO - [NAV] Page source length: 146502 characters
+2025-10-24 12:58:14,815 - scraper - ERROR - [NAV] Got 404 error page for https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:14,830 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:14,839 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun5.2025
+2025-10-24 12:58:14,840 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=jun5.2025 after 3 attempts
+2025-10-24 12:58:14,840 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:14,841 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:14,841 - scraper - INFO - [NAV] Initial navigation delay: 3.4s
+2025-10-24 12:58:14,851 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun6.2025')...
+2025-10-24 12:58:15,504 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:15,629 - scraper - INFO - [NAV] Initial page load wait: 9.7s
+2025-10-24 12:58:15,674 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:15,674 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:15,675 - scraper - INFO - [NAV] Page source length: 116555 characters
+2025-10-24 12:58:15,736 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:15,742 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:15,749 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:15,749 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:15,749 - scraper - INFO - [NAV] Waiting 11.2 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:15,756 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun6.2025')...
+2025-10-24 12:58:16,469 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:16,575 - scraper - INFO - [NAV] Initial page load wait: 11.5s
+2025-10-24 12:58:16,607 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:16,607 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:16,607 - scraper - INFO - [NAV] Page source length: 116555 characters
+2025-10-24 12:58:16,699 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:16,727 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:16,740 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:16,741 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:16,742 - scraper - INFO - [NAV] Waiting 19.8 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:16,754 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun6.2025')...
+2025-10-24 12:58:17,506 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:17,593 - scraper - INFO - [NAV] Initial page load wait: 12.4s
+2025-10-24 12:58:17,620 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:17,620 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:17,621 - scraper - INFO - [NAV] Page source length: 116555 characters
+2025-10-24 12:58:17,682 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:17,688 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:17,695 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun6.2025
+2025-10-24 12:58:17,695 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=jun6.2025 after 3 attempts
+2025-10-24 12:58:17,695 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:17,696 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:17,696 - scraper - INFO - [NAV] Initial navigation delay: 3.8s
+2025-10-24 12:58:17,706 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun9.2025')...
+2025-10-24 12:58:18,379 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:18,455 - scraper - INFO - [NAV] Initial page load wait: 9.6s
+2025-10-24 12:58:18,482 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:18,482 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:18,482 - scraper - INFO - [NAV] Page source length: 100742 characters
+2025-10-24 12:58:18,526 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:18,531 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:18,538 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:18,539 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:18,539 - scraper - INFO - [NAV] Waiting 19.1 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:18,545 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun9.2025')...
+2025-10-24 12:58:19,363 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:19,470 - scraper - INFO - [NAV] Initial page load wait: 13.0s
+2025-10-24 12:58:19,497 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:19,497 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:19,497 - scraper - INFO - [NAV] Page source length: 100742 characters
+2025-10-24 12:58:19,549 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:19,557 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:19,574 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:19,574 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:19,574 - scraper - INFO - [NAV] Waiting 12.1 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:19,594 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun9.2025')...
+2025-10-24 12:58:20,258 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:20,373 - scraper - INFO - [NAV] Initial page load wait: 14.0s
+2025-10-24 12:58:20,401 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:20,402 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:20,402 - scraper - INFO - [NAV] Page source length: 100741 characters
+2025-10-24 12:58:20,449 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:20,459 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:20,467 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun9.2025
+2025-10-24 12:58:20,467 - scraper - ERROR - [NAV] Failed to load https://www.forexfactory.com/calendar?day=jun9.2025 after 3 attempts
+2025-10-24 12:58:20,467 - scraper - INFO - [NAV] Starting navigation to: https://www.forexfactory.com/calendar?day=jun10.2025
+2025-10-24 12:58:20,468 - scraper - INFO - [NAV] Navigation attempt 1/3 to: https://www.forexfactory.com/calendar?day=jun10.2025
+2025-10-24 12:58:20,468 - scraper - INFO - [NAV] Initial navigation delay: 5.9s
+2025-10-24 12:58:20,474 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun10.2025')...
+2025-10-24 12:58:21,557 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:21,721 - scraper - INFO - [NAV] Initial page load wait: 11.5s
+2025-10-24 12:58:21,759 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun10.2025
+2025-10-24 12:58:21,761 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:21,761 - scraper - INFO - [NAV] Page source length: 102690 characters
+2025-10-24 12:58:21,825 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun10.2025
+2025-10-24 12:58:21,832 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:21,840 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun10.2025
+2025-10-24 12:58:21,840 - scraper - INFO - [NAV] Navigation attempt 2/3 to: https://www.forexfactory.com/calendar?day=jun10.2025
+2025-10-24 12:58:21,841 - scraper - INFO - [NAV] Waiting 16.4 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:21,851 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun10.2025')...
+2025-10-24 12:58:22,730 - scraper - INFO - [NAV] Page navigation completed
+2025-10-24 12:58:22,888 - scraper - INFO - [NAV] Initial page load wait: 12.6s
+2025-10-24 12:58:22,959 - scraper - INFO - [NAV] Page loaded - URL: https://www.forexfactory.com/calendar?day=jun10.2025
+2025-10-24 12:58:22,964 - scraper - INFO - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:22,965 - scraper - INFO - [NAV] Page source length: 102690 characters
+2025-10-24 12:58:23,071 - scraper - ERROR - [NAV] Got 403 forbidden page for https://www.forexfactory.com/calendar?day=jun10.2025
+2025-10-24 12:58:23,082 - scraper - ERROR - [NAV] Page title: 'Calendar | Forex Factory'
+2025-10-24 12:58:23,092 - scraper - ERROR - [NAV] Current URL: https://www.forexfactory.com/calendar?day=jun10.2025
+2025-10-24 12:58:23,093 - scraper - INFO - [NAV] Navigation attempt 3/3 to: https://www.forexfactory.com/calendar?day=jun10.2025
+2025-10-24 12:58:23,093 - scraper - INFO - [NAV] Waiting 19.7 seconds before retry (longer delay to avoid verification)...
+2025-10-24 12:58:23,105 - scraper - INFO - [NAV] Executing driver.get('https://www.forexfactory.com/calendar?day=jun10.2025')...

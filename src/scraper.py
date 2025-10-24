@@ -180,154 +180,199 @@ class ForexFactoryScraper:
     
     def _navigate_to_page(self, url: str) -> bool:
         """Navigate to a page with retry logic and error handling"""
+        logger.info(f"[NAV] Starting navigation to: {url}")
+        
         for attempt in range(self.retry_attempts):
             try:
-                logger.debug(f"Navigating to: {url} (attempt {attempt + 1})")
+                logger.info(f"[NAV] Navigation attempt {attempt + 1}/{self.retry_attempts} to: {url}")
                 
                 # Add significant delay before navigation to avoid triggering verification
                 if attempt > 0:
                     delay = random.uniform(10.0, 20.0)  # Much longer delay between retries
-                    logger.debug(f"Waiting {delay:.1f} seconds before retry (longer delay to avoid verification)...")
+                    logger.info(f"[NAV] Waiting {delay:.1f} seconds before retry (longer delay to avoid verification)...")
                     # time.sleep(delay) - REMOVED
                 else:
                     # Even on first attempt, add a small delay
                     initial_delay = random.uniform(3.0, 8.0)
-                    logger.debug(f"Initial navigation delay: {initial_delay:.1f}s")
+                    logger.info(f"[NAV] Initial navigation delay: {initial_delay:.1f}s")
                     # time.sleep(initial_delay) - REMOVED
                 
+                # Check driver status before navigation
+                if not self._is_driver_responsive():
+                    logger.error(f"[NAV] Driver not responsive before navigation attempt {attempt + 1}")
+                    if not self._handle_invalid_session():
+                        logger.error("[NAV] Failed to reinitialize driver. Skipping navigation.")
+                        return False
+                
                 # Navigate to the page
+                logger.info(f"[NAV] Executing driver.get('{url}')...")
                 self.driver.get(url)
+                logger.info(f"[NAV] Page navigation completed")
                 
                 # Simulate human-like behavior after navigation
                 self._simulate_human_behavior()
                 
                 # Wait significantly longer for page to load, especially for verification pages
                 initial_wait = random.uniform(8.0, 15.0)
-                logger.debug(f"Initial page load wait: {initial_wait:.1f}s")
+                logger.info(f"[NAV] Initial page load wait: {initial_wait:.1f}s")
                 # time.sleep(initial_wait) - REMOVED
+                
+                # Get page info for debugging
+                try:
+                    current_url = self.driver.current_url
+                    page_title = self.driver.title
+                    page_source_length = len(self.driver.page_source)
+                    logger.info(f"[NAV] Page loaded - URL: {current_url}")
+                    logger.info(f"[NAV] Page title: '{page_title}'")
+                    logger.info(f"[NAV] Page source length: {page_source_length} characters")
+                except Exception as page_info_error:
+                    logger.warning(f"[NAV] Could not get page info: {page_info_error}")
                 
                 # Check for human verification page and error pages
                 if self._is_human_verification_page():
-                    logger.warning(f"Hit human verification page for {url}. Waiting for automatic resolution...")
+                    logger.warning(f"[NAV] Hit human verification page for {url}. Waiting for automatic resolution...")
                     
                     # Wait SIGNIFICANTLY longer for verification to complete automatically
                     max_verification_wait = 180  # Wait up to 3 minutes (180 seconds)
                     verification_check_interval = 10  # Check every 10 seconds instead of 5
                     
-                    logger.info(f"Starting verification wait: up to {max_verification_wait}s with {verification_check_interval}s intervals...")
+                    logger.info(f"[NAV] Starting verification wait: up to {max_verification_wait}s with {verification_check_interval}s intervals...")
                     
                     for verification_attempt in range(max_verification_wait // verification_check_interval):
-                        logger.debug(f"Verification wait attempt {verification_attempt + 1}: waiting {verification_check_interval}s...")
+                        logger.info(f"[NAV] Verification wait attempt {verification_attempt + 1}: waiting {verification_check_interval}s...")
                         # time.sleep(verification_check_interval) - REMOVED
                         
                         # Check if verification has completed and session is still valid
                         if not self._is_human_verification_page():
                             total_wait_time = verification_attempt * verification_check_interval
-                            logger.info(f"Human verification completed automatically after {total_wait_time}s")
+                            logger.info(f"[NAV] Human verification completed automatically after {total_wait_time}s")
                             
                             # Add extra wait after verification completes to ensure page is fully loaded
-                            logger.debug("Adding extra 15s wait after verification completion...")
+                            logger.info("[NAV] Adding extra 15s wait after verification completion...")
                             # time.sleep(15) - REMOVED
                             
                             # Check if driver session is still valid after verification
                             if not self._is_driver_responsive():
-                                logger.warning("Driver session became invalid after verification. Need to reinitialize.")
+                                logger.warning("[NAV] Driver session became invalid after verification. Need to reinitialize.")
                                 if self._handle_invalid_session():
-                                    logger.info("Driver reinitialized. Continuing with navigation retry.")
+                                    logger.info("[NAV] Driver reinitialized. Continuing with navigation retry.")
                                     # Break out of verification loop and let the navigation retry
                                     break
                                 else:
-                                    logger.error("Failed to reinitialize driver. Giving up on this URL.")
+                                    logger.error("[NAV] Failed to reinitialize driver. Giving up on this URL.")
                                     return False
                             break
                     else:
-                        logger.warning(f"Verification page did not resolve after {max_verification_wait}s. Trying refresh and extended wait...")
+                        logger.warning(f"[NAV] Verification page did not resolve after {max_verification_wait}s. Trying refresh and extended wait...")
                         # Try to refresh and wait much longer
                         try:
+                            logger.info("[NAV] Refreshing page...")
                             self.driver.refresh()
-                            logger.info("Page refreshed. Waiting additional 60s...")
+                            logger.info("[NAV] Page refreshed. Waiting additional 60s...")
                             # time.sleep(60)  # Wait a full minute after refresh - REMOVED
                             
                             # Check again if verification completed
                             if not self._is_human_verification_page():
-                                logger.info("Verification completed after refresh and extended wait")
+                                logger.info("[NAV] Verification completed after refresh and extended wait")
                             else:
-                                logger.warning("Verification still present after refresh and extended wait")
+                                logger.warning("[NAV] Verification still present after refresh and extended wait")
                         except Exception as refresh_error:
-                            logger.error(f"Error during refresh: {refresh_error}")
+                            logger.error(f"[NAV] Error during refresh: {refresh_error}")
                     
                     # Check if driver session is still valid after handling verification
                     if not self._is_driver_responsive():
-                        logger.warning("Driver session lost after verification handling. Reinitializing...")
+                        logger.warning("[NAV] Driver session lost after verification handling. Reinitializing...")
                         if not self._handle_invalid_session():
-                            logger.error("Failed to reinitialize driver after verification. Skipping this URL.")
+                            logger.error("[NAV] Failed to reinitialize driver after verification. Skipping this URL.")
                             return False
                     
                     continue
                 
-                if "404" in self.driver.title or "403" in self.driver.page_source:
-                    logger.warning(f"Got error page for {url}")
+                # Check for error pages with more detailed logging
+                page_title = self.driver.title.lower()
+                page_source = self.driver.page_source.lower()
+                
+                if "404" in page_title or "404" in page_source:
+                    logger.error(f"[NAV] Got 404 error page for {url}")
+                    logger.error(f"[NAV] Page title: '{self.driver.title}'")
+                    logger.error(f"[NAV] Current URL: {self.driver.current_url}")
                     continue
+                elif "403" in page_title or "403" in page_source:
+                    logger.error(f"[NAV] Got 403 forbidden page for {url}")
+                    logger.error(f"[NAV] Page title: '{self.driver.title}'")
+                    logger.error(f"[NAV] Current URL: {self.driver.current_url}")
+                    continue
+                elif "error" in page_title or "error" in page_source:
+                    logger.warning(f"[NAV] Detected error indicators in page for {url}")
+                    logger.warning(f"[NAV] Page title: '{self.driver.title}'")
+                    logger.warning(f"[NAV] Current URL: {self.driver.current_url}")
+                    # Don't continue, just log and proceed
                 
                 # Add an additional wait and check for verification page that might appear later
-                logger.debug("Waiting additional 20s and checking again for verification page...")
+                logger.info("[NAV] Waiting additional 20s and checking again for verification page...")
                 # time.sleep(20) - REMOVED
                 
                 # Double-check for verification page that might have appeared
                 if self._is_human_verification_page():
-                    logger.warning(f"Detected verification page on delayed check for {url}. Handling...")
+                    logger.warning(f"[NAV] Detected verification page on delayed check for {url}. Handling...")
                     # Use the same verification handling logic as above
                     max_verification_wait = 120  # Shorter wait for delayed detection
                     verification_check_interval = 10
                     
                     for verification_attempt in range(max_verification_wait // verification_check_interval):
-                        logger.debug(f"Delayed verification check {verification_attempt + 1}: waiting {verification_check_interval}s...")
+                        logger.info(f"[NAV] Delayed verification check {verification_attempt + 1}: waiting {verification_check_interval}s...")
                         # time.sleep(verification_check_interval) - REMOVED
                         
                         if not self._is_human_verification_page():
-                            logger.info(f"Delayed verification completed after {verification_attempt * verification_check_interval + 20}s")
+                            logger.info(f"[NAV] Delayed verification completed after {verification_attempt * verification_check_interval + 20}s")
                             break
                     else:
-                        logger.warning("Delayed verification did not complete. Continuing with page...")
+                        logger.warning("[NAV] Delayed verification did not complete. Continuing with page...")
                 
-                logger.debug(f"Successfully loaded page: {self.driver.title}")
+                logger.info(f"[NAV] Successfully loaded page: '{self.driver.title}'")
+                logger.info(f"[NAV] Final URL: {self.driver.current_url}")
                 return True
                 
-            except TimeoutException:
-                logger.warning(f"Timeout loading {url} on attempt {attempt + 1}")
+            except TimeoutException as e:
+                logger.error(f"[NAV] Timeout loading {url} on attempt {attempt + 1}: {e}")
             except WebDriverException as e:
                 error_msg = str(e).lower()
-                logger.warning(f"WebDriver error loading {url}: {e}")
+                logger.error(f"[NAV] WebDriver error loading {url} on attempt {attempt + 1}: {e}")
                 
                 # Check if this is an invalid session error
                 if "invalid session id" in error_msg or "session deleted" in error_msg:
-                    logger.warning("Detected invalid session during navigation. Attempting to reinitialize driver...")
+                    logger.warning("[NAV] Detected invalid session during navigation. Attempting to reinitialize driver...")
                     if self._handle_invalid_session():
+                        logger.info("[NAV] Driver reinitialized. Continuing with same attempt...")
                         # Continue with the same attempt since we have a new driver
                         continue
                     else:
-                        logger.error("Failed to reinitialize driver. Skipping this URL.")
+                        logger.error("[NAV] Failed to reinitialize driver. Skipping this URL.")
                         return False
             except Exception as e:
-                logger.warning(f"Unexpected error loading {url}: {e}")
+                logger.error(f"[NAV] Unexpected error loading {url} on attempt {attempt + 1}: {e}")
+                logger.error(f"[NAV] Error type: {type(e).__name__}")
                 
             if attempt < self.retry_attempts - 1:
                 # Significantly longer delay between retries to avoid triggering more verification
                 delay = random.uniform(15.0, 30.0)
-                logger.debug(f"Waiting {delay:.1f} seconds before retry to avoid triggering verification...")
+                logger.info(f"[NAV] Waiting {delay:.1f} seconds before retry to avoid triggering verification...")
                 # time.sleep(delay) - REMOVED
         
-        logger.error(f"Failed to load {url} after {self.retry_attempts} attempts")
+        logger.error(f"[NAV] Failed to load {url} after {self.retry_attempts} attempts")
         return False
     
     def _is_human_verification_page(self) -> bool:
         """Check if the current page is a human verification page"""
         try:
             if not self.driver:
+                logger.debug("[VERIFY] No driver available for verification check")
                 return False
             
             page_source = self.driver.page_source.lower()
             page_title = self.driver.title.lower()
+            
+            logger.debug(f"[VERIFY] Checking for verification page - Title: '{self.driver.title[:100]}...'")
             
             # Check for common human verification indicators
             verification_indicators = [
@@ -346,18 +391,23 @@ class ForexFactoryScraper:
             
             for indicator in verification_indicators:
                 if indicator in page_source or indicator in page_title:
-                    logger.debug(f"Found verification indicator: '{indicator}'")
+                    logger.warning(f"[VERIFY] Found verification indicator: '{indicator}'")
+                    logger.warning(f"[VERIFY] Page title: '{self.driver.title}'")
+                    logger.warning(f"[VERIFY] Current URL: {self.driver.current_url}")
                     return True
             
             # Check for specific ForexFactory verification text (French)
             if "www.forexfactory.com doit vérifier" in page_source:
-                logger.debug("Found ForexFactory verification page")
+                logger.warning("[VERIFY] Found ForexFactory verification page")
+                logger.warning(f"[VERIFY] Page title: '{self.driver.title}'")
+                logger.warning(f"[VERIFY] Current URL: {self.driver.current_url}")
                 return True
             
+            logger.debug("[VERIFY] No verification page detected")
             return False
             
         except Exception as e:
-            logger.debug(f"Error checking for verification page: {e}")
+            logger.error(f"[VERIFY] Error checking for verification page: {e}")
             return False
     
     def _is_weekend(self, date: datetime) -> bool:
@@ -806,9 +856,11 @@ class ForexFactoryScraper:
     def _scrape_range_by_days(self, range_start: datetime, range_end: datetime) -> List[Dict]:
         """Scrape a date range using ForexFactory range URL format"""
         try:
+            logger.info(f"[RANGE] Starting range scraping: {range_start.date()} to {range_end.date()}")
+            
             # Initialize driver if not present
             if not self.driver:
-                logger.debug(f"Driver not initialized for range {range_start.date()} to {range_end.date()}, setting up fresh driver")
+                logger.info(f"[RANGE] Driver not initialized for range {range_start.date()} to {range_end.date()}, setting up fresh driver")
                 self._setup_driver()
             
             # Format dates for ForexFactory range URL format: mar22.2025-apr10.2025
@@ -816,13 +868,13 @@ class ForexFactoryScraper:
             end_formatted = self._format_date_for_url(range_end)
             range_url = f"{self.base_url}?range={start_formatted}-{end_formatted}"
             
-            logger.info(f"Using ForexFactory range URL: {range_url}")
+            logger.info(f"[RANGE] Using ForexFactory range URL: {range_url}")
             
             # Navigate to the range URL
             if not self._navigate_to_page(range_url):
-                logger.error(f"Failed to navigate to range URL: {range_url}")
+                logger.error(f"[RANGE] Failed to navigate to range URL: {range_url}")
                 # Fallback to daily scraping if range URL fails
-                logger.info("Falling back to daily scraping approach")
+                logger.info("[RANGE] Falling back to daily scraping approach")
                 return self._scrape_range_by_daily_fallback(range_start, range_end)
             
             # Wait for page to load
@@ -830,20 +882,21 @@ class ForexFactoryScraper:
             
             # Check if driver is still responsive
             if not self._is_driver_responsive():
-                logger.error(f"WebDriver not responsive for range {range_start.date()} to {range_end.date()}")
+                logger.error(f"[RANGE] WebDriver not responsive for range {range_start.date()} to {range_end.date()}")
                 return []
             
             # For range URLs, use HTML parsing directly since the page contains multiple days
-            logger.info("Parsing range page using HTML table extraction")
+            logger.info("[RANGE] Parsing range page using HTML table extraction")
             events = self._scrape_calendar_table_for_range(range_start, range_end)
             
-            logger.info(f"Completed range scraping: {len(events)} total events from {range_start.date()} to {range_end.date()}")
+            logger.info(f"[RANGE] Completed range scraping: {len(events)} total events from {range_start.date()} to {range_end.date()}")
             return events
             
         except Exception as e:
-            logger.error(f"Error in _scrape_range_by_days: {e}")
+            logger.error(f"[RANGE] Error in _scrape_range_by_days: {e}")
+            logger.error(f"[RANGE] Error type: {type(e).__name__}")
             # Fallback to daily scraping if range approach fails
-            logger.info("Falling back to daily scraping approach due to error")
+            logger.info("[RANGE] Falling back to daily scraping approach due to error")
             return self._scrape_range_by_daily_fallback(range_start, range_end)
     
     def _scrape_range_by_daily_fallback(self, range_start: datetime, range_end: datetime) -> List[Dict]:
@@ -1496,43 +1549,56 @@ class ForexFactoryScraper:
         """Check if the WebDriver is still responsive and session is valid"""
         try:
             if not self.driver:
+                logger.debug("[DRIVER] No driver instance available")
                 return False
+            
             # Try a simple command to check if driver is responsive
             # This will throw an exception if session is invalid
             current_url = self.driver.current_url
+            logger.debug(f"[DRIVER] Driver responsive - Current URL: {current_url}")
             return True
         except Exception as e:
             error_msg = str(e).lower()
             if "invalid session id" in error_msg or "session deleted" in error_msg:
-                logger.warning(f"WebDriver session became invalid: {e}")
+                logger.warning(f"[DRIVER] WebDriver session became invalid: {e}")
+                logger.warning(f"[DRIVER] Error type: {type(e).__name__}")
                 self._driver_session_lost = True
                 return False
             else:
-                logger.debug(f"Driver not responsive: {e}")
+                logger.debug(f"[DRIVER] Driver not responsive: {e}")
+                logger.debug(f"[DRIVER] Error type: {type(e).__name__}")
                 return False
     
     def _handle_invalid_session(self) -> bool:
         """Handle invalid WebDriver session by reinitializing the driver"""
         try:
-            logger.warning("Detected invalid WebDriver session. Attempting to reinitialize...")
+            logger.warning("[DRIVER] Detected invalid WebDriver session. Attempting to reinitialize...")
             
             # Close the invalid driver first
+            logger.info("[DRIVER] Closing invalid driver...")
             self._close_driver()
             
             # Wait a moment before reinitializing
             # time.sleep(random.uniform(2.0, 5.0)) - REMOVED
             
             # Reinitialize the driver
+            logger.info("[DRIVER] Reinitializing driver...")
             self._setup_driver()
             
             # Reset the session lost flag
             self._driver_session_lost = False
             
-            logger.info("WebDriver successfully reinitialized after invalid session")
-            return True
+            # Verify the new driver is working
+            if self._is_driver_responsive():
+                logger.info("[DRIVER] WebDriver successfully reinitialized after invalid session")
+                return True
+            else:
+                logger.error("[DRIVER] New driver is not responsive after reinitialization")
+                return False
             
         except Exception as e:
-            logger.error(f"Failed to reinitialize WebDriver after invalid session: {e}")
+            logger.error(f"[DRIVER] Failed to reinitialize WebDriver after invalid session: {e}")
+            logger.error(f"[DRIVER] Error type: {type(e).__name__}")
             return False
     
     def _parse_event_row(self, row, target_date: datetime) -> Optional[Dict]:
