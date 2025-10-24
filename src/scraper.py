@@ -1228,17 +1228,25 @@ class ForexFactoryScraper:
         try:
             # Check if there are any direct impact indicators in the event data
             if 'impact' in event_data:
-                impact_value = str(event_data['impact']).title()
-                logger.debug(f"Found direct impact in JS data: {impact_value}")
-                return impact_value
+                impact_value = str(event_data['impact'])
+                # Handle CSS class names that might be stored directly
+                if 'Icon--Ff-Impact' in impact_value:
+                    return self._convert_css_impact_to_readable(impact_value)
+                else:
+                    logger.debug(f"Found direct impact in JS data: {impact_value}")
+                    return impact_value.title()
             
             # Check for other possible impact field names
             impact_fields = ['impactLevel', 'impact_level', 'importance', 'priority', 'significance', 'impactClass', 'impact_class']
             for field in impact_fields:
                 if field in event_data:
-                    impact_value = str(event_data[field]).title()
-                    logger.debug(f"Found impact in field '{field}': {impact_value}")
-                    return impact_value
+                    impact_value = str(event_data[field])
+                    # Handle CSS class names that might be stored directly
+                    if 'Icon--Ff-Impact' in impact_value:
+                        return self._convert_css_impact_to_readable(impact_value)
+                    else:
+                        logger.debug(f"Found impact in field '{field}': {impact_value}")
+                        return impact_value.title()
             
             # Check for ForexFactory-specific impact indicators in class names or CSS
             css_fields = ['className', 'class_name', 'cssClass', 'css_class', 'iconClass', 'icon_class']
@@ -1290,6 +1298,26 @@ class ForexFactoryScraper:
             logger.debug(f"Error extracting impact from JS data: {e}")
             
         return 'Low'  # Default impact level
+    
+    def _convert_css_impact_to_readable(self, css_impact: str) -> str:
+        """Convert CSS impact class to readable impact level"""
+        css_impact_lower = css_impact.lower()
+        
+        # Check if it's already a readable value
+        if css_impact_lower in ['high', 'medium', 'low']:
+            return css_impact.title()
+        
+        # Convert CSS classes to readable values
+        if 'icon--ff-impact-red' in css_impact_lower or 'ff-impact-red' in css_impact_lower:
+            return 'High'
+        elif 'icon--ff-impact-ora' in css_impact_lower or 'ff-impact-ora' in css_impact_lower:
+            return 'Medium'
+        elif 'icon--ff-impact-yel' in css_impact_lower or 'ff-impact-yel' in css_impact_lower:
+            return 'Low'
+        elif 'icon--ff-impact-gra' in css_impact_lower or 'ff-impact-gra' in css_impact_lower:
+            return 'Low'
+        else:
+            return 'Low'  # Default fallback
     
     def _get_country_name_from_code(self, country_code: str) -> str:
         """Convert country code to full country name"""
@@ -1369,8 +1397,8 @@ class ForexFactoryScraper:
                                 impact_cell = cells[2] if len(cells) > 2 else None
                                 if impact_cell:
                                     html_impact = self._parse_impact_level(impact_cell)
-                                    if html_impact != 'Low':  # Only update if we found a non-default impact
-                                        js_event['Impact'] = html_impact
+                                    # Always update impact from HTML as it's more reliable
+                                    js_event['Impact'] = html_impact
                                 
                                 logger.debug(f"Enhanced JS event '{js_event_name}' with HTML data")
                                 break
