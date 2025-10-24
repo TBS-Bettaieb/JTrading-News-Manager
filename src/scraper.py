@@ -1024,6 +1024,9 @@ class ForexFactoryScraper:
             logger.info("Falling back to HTML parsing...")
             events = self._scrape_day_fallback_html(target_date, date_str)
         
+        # CONVERSION AUTOMATIQUE DES IMPACTS - Convertir les classes CSS en valeurs lisibles
+        events = self._convert_impact_in_events(events)
+        
         # Save events immediately after scraping each day
         if events and self.csv_exporter:
             try:
@@ -1038,6 +1041,17 @@ class ForexFactoryScraper:
             except Exception as save_error:
                 logger.error(f"Error saving events for {date_str}: {save_error}")
         
+        return events
+    
+    def _convert_impact_in_events(self, events: List[Dict]) -> List[Dict]:
+        """Convertir automatiquement les classes CSS d'impact en valeurs lisibles"""
+        for event in events:
+            if 'Impact' in event:
+                impact = event['Impact']
+                # Convertir si c'est une classe CSS
+                if 'Icon--Ff-Impact' in str(impact):
+                    event['Impact'] = self._convert_css_impact_to_readable(impact)
+                    logger.debug(f"Converted impact {impact} -> {event['Impact']}")
         return events
     
     def _extract_calendar_data_from_js(self, target_date: datetime) -> Optional[Dict]:

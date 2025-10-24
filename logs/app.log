@@ -3811,3 +3811,1018 @@ Stacktrace:
 2025-10-23 15:31:47,033 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None)': /session/3f9113d3d76e9a367af55642befacfe2
 2025-10-23 15:31:51,087 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000011DFD671E50>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/3f9113d3d76e9a367af55642befacfe2
 2025-10-23 15:31:55,163 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000011DFD673390>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /session/3f9113d3d76e9a367af55642befacfe2
+2025-10-24 11:47:08,276 - __main__ - INFO - Range mode: using config date range
+2025-10-24 11:47:08,276 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-24 11:47:08,277 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-24 11:47:08,277 - __main__ - INFO - Range mode: scraping events from 2025-04-27 to 2025-10-24
+2025-10-24 11:47:08,277 - __main__ - INFO - Starting range data scraping...
+2025-10-24 11:47:08,277 - scraper - INFO - Starting RANGE-BASED scrape from 2025-04-27 to 2025-10-24
+2025-10-24 11:47:08,278 - scraper - INFO - Total days in range: 180
+2025-10-24 11:47:08,278 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-24 11:47:08,278 - scraper - INFO - Processing 6 date range chunks
+2025-10-24 11:47:08,278 - scraper - INFO - Processing range 1/6: 2025-04-27 to 2025-05-26
+2025-10-24 11:47:08,278 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-24 11:47:08,278 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-24 11:47:08,279 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-24 11:47:08,279 - WDM - INFO - ====== WebDriver manager ======
+2025-10-24 11:47:10,172 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 11:47:10,819 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 11:47:11,383 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-24 11:47:11,386 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-24 11:47:13,115 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-24 11:47:13,116 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 11:47:18,044 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 11:47:20,651 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 11:47:23,064 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 11:47:23,065 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025 after 3 attempts
+2025-10-24 11:47:23,066 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 11:47:23,066 - scraper - INFO - Falling back to daily scraping approach
+2025-10-24 11:47:23,066 - scraper - INFO - Fallback: scraping range 2025-04-27 to 2025-05-26 day by day
+2025-10-24 11:47:24,044 - scraper - INFO - Scraped 3 events for apr28.2025 using JS data
+2025-10-24 11:47:24,172 - symbol_mapper - INFO - Mapped 3 events with trading pairs
+2025-10-24 11:47:24,207 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:24,210 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:24,210 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:24,211 - csv_exporter - INFO - [STATS] Total events: 3
+2025-10-24 11:47:24,211 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:24,211 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:24,211 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:24,212 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-24 11:47:24,212 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-24 11:47:24,212 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-24 11:47:24,213 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:24,213 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 2 (66.7%)
+2025-10-24 11:47:24,213 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 1 (33.3%)
+2025-10-24 11:47:24,214 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:24,214 - csv_exporter - INFO -   CAD: 1
+2025-10-24 11:47:24,214 - csv_exporter - INFO -   GBP: 1
+2025-10-24 11:47:24,215 - csv_exporter - INFO -   EUR: 1
+2025-10-24 11:47:24,215 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:24,221 - csv_exporter - INFO - Exported 3 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:24,221 - csv_exporter - INFO - Deduplication complete: 3 new events added, 0 events updated
+2025-10-24 11:47:24,222 - csv_exporter - INFO - Total events in CSV: 3
+2025-10-24 11:47:24,222 - scraper - INFO - Saved 3 events for apr28.2025 to CSV
+2025-10-24 11:47:25,634 - scraper - INFO - Scraped 18 events for apr29.2025 using JS data
+2025-10-24 11:47:25,775 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-24 11:47:25,786 - csv_exporter - INFO - Loaded 3 existing events from CSV
+2025-10-24 11:47:25,807 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:25,807 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:25,808 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:25,808 - csv_exporter - INFO - [STATS] Total events: 21
+2025-10-24 11:47:25,808 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:25,809 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:25,809 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:25,810 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 3 (14.3%)
+2025-10-24 11:47:25,810 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 3 (14.3%)
+2025-10-24 11:47:25,810 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 3 (14.3%)
+2025-10-24 11:47:25,811 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:25,811 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 15 (71.4%)
+2025-10-24 11:47:25,812 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 3 (14.3%)
+2025-10-24 11:47:25,812 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 2 (9.5%)
+2025-10-24 11:47:25,812 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 1 (4.8%)
+2025-10-24 11:47:25,813 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:25,813 - csv_exporter - INFO -   USD: 7
+2025-10-24 11:47:25,814 - csv_exporter - INFO -   EUR: 7
+2025-10-24 11:47:25,814 - csv_exporter - INFO -   GBP: 3
+2025-10-24 11:47:25,814 - csv_exporter - INFO -   CHF: 1
+2025-10-24 11:47:25,815 - csv_exporter - INFO -   AUD: 1
+2025-10-24 11:47:25,816 - csv_exporter - INFO -   JPY: 1
+2025-10-24 11:47:25,817 - csv_exporter - INFO -   CAD: 1
+2025-10-24 11:47:25,817 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:25,820 - csv_exporter - INFO - Exported 21 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:25,821 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-24 11:47:25,821 - csv_exporter - INFO - Total events in CSV: 21
+2025-10-24 11:47:25,821 - scraper - INFO - Saved 18 events for apr29.2025 to CSV
+2025-10-24 11:47:27,568 - scraper - INFO - Scraped 38 events for apr30.2025 using JS data
+2025-10-24 11:47:27,734 - symbol_mapper - INFO - Mapped 38 events with trading pairs
+2025-10-24 11:47:27,739 - csv_exporter - INFO - Loaded 21 existing events from CSV
+2025-10-24 11:47:27,765 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:27,765 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:27,766 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:27,766 - csv_exporter - INFO - [STATS] Total events: 59
+2025-10-24 11:47:27,766 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:27,766 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:27,766 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:27,767 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 21 (35.6%)
+2025-10-24 11:47:27,767 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 21 (35.6%)
+2025-10-24 11:47:27,767 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 21 (35.6%)
+2025-10-24 11:47:27,768 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:27,768 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 39 (66.1%)
+2025-10-24 11:47:27,768 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 12 (20.3%)
+2025-10-24 11:47:27,768 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 7 (11.9%)
+2025-10-24 11:47:27,769 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 1 (1.7%)
+2025-10-24 11:47:27,769 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:27,769 - csv_exporter - INFO -   USD: 18
+2025-10-24 11:47:27,769 - csv_exporter - INFO -   EUR: 18
+2025-10-24 11:47:27,770 - csv_exporter - INFO -   AUD: 5
+2025-10-24 11:47:27,770 - csv_exporter - INFO -   JPY: 4
+2025-10-24 11:47:27,770 - csv_exporter - INFO -   GBP: 4
+2025-10-24 11:47:27,770 - csv_exporter - INFO -   CAD: 3
+2025-10-24 11:47:27,770 - csv_exporter - INFO -   CHF: 3
+2025-10-24 11:47:27,771 - csv_exporter - INFO -   CNY: 3
+2025-10-24 11:47:27,771 - csv_exporter - INFO -   NZD: 1
+2025-10-24 11:47:27,771 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:27,776 - csv_exporter - INFO - Exported 59 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:27,777 - csv_exporter - INFO - Deduplication complete: 38 new events added, 0 events updated
+2025-10-24 11:47:27,777 - csv_exporter - INFO - Total events in CSV: 59
+2025-10-24 11:47:27,777 - scraper - INFO - Saved 38 events for apr30.2025 to CSV
+2025-10-24 11:47:28,834 - scraper - INFO - Scraped 29 events for may1.2025 using JS data
+2025-10-24 11:47:29,180 - symbol_mapper - INFO - Mapped 29 events with trading pairs
+2025-10-24 11:47:29,194 - csv_exporter - INFO - Loaded 59 existing events from CSV
+2025-10-24 11:47:29,307 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:29,308 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:29,309 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:29,309 - csv_exporter - INFO - [STATS] Total events: 88
+2025-10-24 11:47:29,309 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:29,310 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:29,310 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:29,311 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 59 (67.0%)
+2025-10-24 11:47:29,311 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 59 (67.0%)
+2025-10-24 11:47:29,311 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 59 (67.0%)
+2025-10-24 11:47:29,312 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:29,312 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 55 (62.5%)
+2025-10-24 11:47:29,312 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 18 (20.5%)
+2025-10-24 11:47:29,313 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 9 (10.2%)
+2025-10-24 11:47:29,313 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 6 (6.8%)
+2025-10-24 11:47:29,313 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:29,313 - csv_exporter - INFO -   USD: 27
+2025-10-24 11:47:29,314 - csv_exporter - INFO -   EUR: 21
+2025-10-24 11:47:29,314 - csv_exporter - INFO -   JPY: 10
+2025-10-24 11:47:29,314 - csv_exporter - INFO -   GBP: 8
+2025-10-24 11:47:29,315 - csv_exporter - INFO -   AUD: 8
+2025-10-24 11:47:29,315 - csv_exporter - INFO -   CHF: 5
+2025-10-24 11:47:29,315 - csv_exporter - INFO -   CAD: 4
+2025-10-24 11:47:29,316 - csv_exporter - INFO -   CNY: 4
+2025-10-24 11:47:29,316 - csv_exporter - INFO -   NZD: 1
+2025-10-24 11:47:29,316 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:29,321 - csv_exporter - INFO - Exported 88 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:29,321 - csv_exporter - INFO - Deduplication complete: 29 new events added, 0 events updated
+2025-10-24 11:47:29,321 - csv_exporter - INFO - Total events in CSV: 88
+2025-10-24 11:47:29,321 - scraper - INFO - Saved 29 events for may1.2025 to CSV
+2025-10-24 11:47:30,405 - scraper - INFO - Scraped 22 events for may2.2025 using JS data
+2025-10-24 11:47:30,548 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-24 11:47:30,554 - csv_exporter - INFO - Loaded 88 existing events from CSV
+2025-10-24 11:47:30,641 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:30,642 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:30,642 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:30,642 - csv_exporter - INFO - [STATS] Total events: 110
+2025-10-24 11:47:30,642 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:30,643 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:30,643 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:30,643 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 88 (80.0%)
+2025-10-24 11:47:30,643 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 88 (80.0%)
+2025-10-24 11:47:30,644 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 88 (80.0%)
+2025-10-24 11:47:30,644 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:30,644 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 70 (63.6%)
+2025-10-24 11:47:30,644 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 21 (19.1%)
+2025-10-24 11:47:30,644 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 12 (10.9%)
+2025-10-24 11:47:30,644 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 7 (6.4%)
+2025-10-24 11:47:30,645 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:30,645 - csv_exporter - INFO -   EUR: 32
+2025-10-24 11:47:30,645 - csv_exporter - INFO -   USD: 31
+2025-10-24 11:47:30,645 - csv_exporter - INFO -   JPY: 12
+2025-10-24 11:47:30,645 - csv_exporter - INFO -   AUD: 10
+2025-10-24 11:47:30,645 - csv_exporter - INFO -   GBP: 8
+2025-10-24 11:47:30,646 - csv_exporter - INFO -   CHF: 6
+2025-10-24 11:47:30,646 - csv_exporter - INFO -   CNY: 5
+2025-10-24 11:47:30,646 - csv_exporter - INFO -   CAD: 4
+2025-10-24 11:47:30,646 - csv_exporter - INFO -   NZD: 2
+2025-10-24 11:47:30,647 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:30,653 - csv_exporter - INFO - Exported 110 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:30,655 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-24 11:47:30,655 - csv_exporter - INFO - Total events in CSV: 110
+2025-10-24 11:47:30,661 - scraper - INFO - Saved 22 events for may2.2025 to CSV
+2025-10-24 11:47:31,734 - scraper - INFO - Scraped 8 events for may5.2025 using JS data
+2025-10-24 11:47:31,869 - symbol_mapper - INFO - Mapped 8 events with trading pairs
+2025-10-24 11:47:31,878 - csv_exporter - INFO - Loaded 110 existing events from CSV
+2025-10-24 11:47:32,000 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:32,000 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:32,000 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:32,001 - csv_exporter - INFO - [STATS] Total events: 118
+2025-10-24 11:47:32,001 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:32,001 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:32,002 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:32,002 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 110 (93.2%)
+2025-10-24 11:47:32,002 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 110 (93.2%)
+2025-10-24 11:47:32,003 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 110 (93.2%)
+2025-10-24 11:47:32,003 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:32,003 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 74 (62.7%)
+2025-10-24 11:47:32,003 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 23 (19.5%)
+2025-10-24 11:47:32,004 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 12 (10.2%)
+2025-10-24 11:47:32,004 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 9 (7.6%)
+2025-10-24 11:47:32,004 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:32,005 - csv_exporter - INFO -   USD: 33
+2025-10-24 11:47:32,005 - csv_exporter - INFO -   EUR: 33
+2025-10-24 11:47:32,005 - csv_exporter - INFO -   JPY: 13
+2025-10-24 11:47:32,005 - csv_exporter - INFO -   AUD: 12
+2025-10-24 11:47:32,006 - csv_exporter - INFO -   GBP: 9
+2025-10-24 11:47:32,006 - csv_exporter - INFO -   CHF: 7
+2025-10-24 11:47:32,007 - csv_exporter - INFO -   CNY: 5
+2025-10-24 11:47:32,008 - csv_exporter - INFO -   CAD: 4
+2025-10-24 11:47:32,008 - csv_exporter - INFO -   NZD: 2
+2025-10-24 11:47:32,008 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:32,012 - csv_exporter - INFO - Exported 118 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:32,012 - csv_exporter - INFO - Deduplication complete: 8 new events added, 0 events updated
+2025-10-24 11:47:32,013 - csv_exporter - INFO - Total events in CSV: 118
+2025-10-24 11:47:32,013 - scraper - INFO - Saved 8 events for may5.2025 to CSV
+2025-10-24 11:47:33,324 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 11:47:34,259 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 11:47:35,102 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 11:47:35,103 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may6.2025 after 3 attempts
+2025-10-24 11:47:36,464 - scraper - INFO - Scraped 18 events for may7.2025 using JS data
+2025-10-24 11:47:36,624 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-24 11:47:36,630 - csv_exporter - INFO - Loaded 118 existing events from CSV
+2025-10-24 11:47:36,731 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:36,732 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:36,732 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:36,732 - csv_exporter - INFO - [STATS] Total events: 136
+2025-10-24 11:47:36,732 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:36,733 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:36,733 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:36,733 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 118 (86.8%)
+2025-10-24 11:47:36,733 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 118 (86.8%)
+2025-10-24 11:47:36,734 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 118 (86.8%)
+2025-10-24 11:47:36,734 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:36,734 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 85 (62.5%)
+2025-10-24 11:47:36,734 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 28 (20.6%)
+2025-10-24 11:47:36,734 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 14 (10.3%)
+2025-10-24 11:47:36,735 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 9 (6.6%)
+2025-10-24 11:47:36,735 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:36,735 - csv_exporter - INFO -   EUR: 39
+2025-10-24 11:47:36,735 - csv_exporter - INFO -   USD: 38
+2025-10-24 11:47:36,735 - csv_exporter - INFO -   JPY: 13
+2025-10-24 11:47:36,735 - csv_exporter - INFO -   AUD: 12
+2025-10-24 11:47:36,736 - csv_exporter - INFO -   GBP: 10
+2025-10-24 11:47:36,736 - csv_exporter - INFO -   CHF: 9
+2025-10-24 11:47:36,736 - csv_exporter - INFO -   NZD: 6
+2025-10-24 11:47:36,736 - csv_exporter - INFO -   CNY: 5
+2025-10-24 11:47:36,736 - csv_exporter - INFO -   CAD: 4
+2025-10-24 11:47:36,736 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:36,744 - csv_exporter - INFO - Exported 136 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:36,745 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-24 11:47:36,745 - csv_exporter - INFO - Total events in CSV: 136
+2025-10-24 11:47:36,745 - scraper - INFO - Saved 18 events for may7.2025 to CSV
+2025-10-24 11:47:37,797 - scraper - INFO - Scraped 21 events for may8.2025 using JS data
+2025-10-24 11:47:37,972 - symbol_mapper - INFO - Mapped 21 events with trading pairs
+2025-10-24 11:47:37,985 - csv_exporter - INFO - Loaded 136 existing events from CSV
+2025-10-24 11:47:38,111 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:38,112 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:38,112 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:38,112 - csv_exporter - INFO - [STATS] Total events: 157
+2025-10-24 11:47:38,113 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:38,113 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:38,114 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:38,114 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 136 (86.6%)
+2025-10-24 11:47:38,115 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 136 (86.6%)
+2025-10-24 11:47:38,115 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 136 (86.6%)
+2025-10-24 11:47:38,116 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:38,116 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 97 (61.8%)
+2025-10-24 11:47:38,117 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 36 (22.9%)
+2025-10-24 11:47:38,117 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 14 (8.9%)
+2025-10-24 11:47:38,117 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 10 (6.4%)
+2025-10-24 11:47:38,118 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:38,118 - csv_exporter - INFO -   USD: 45
+2025-10-24 11:47:38,118 - csv_exporter - INFO -   EUR: 42
+2025-10-24 11:47:38,118 - csv_exporter - INFO -   GBP: 17
+2025-10-24 11:47:38,119 - csv_exporter - INFO -   JPY: 15
+2025-10-24 11:47:38,119 - csv_exporter - INFO -   AUD: 12
+2025-10-24 11:47:38,119 - csv_exporter - INFO -   CHF: 9
+2025-10-24 11:47:38,120 - csv_exporter - INFO -   CAD: 6
+2025-10-24 11:47:38,120 - csv_exporter - INFO -   NZD: 6
+2025-10-24 11:47:38,120 - csv_exporter - INFO -   CNY: 5
+2025-10-24 11:47:38,120 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:38,124 - csv_exporter - INFO - Exported 157 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:38,124 - csv_exporter - INFO - Deduplication complete: 21 new events added, 0 events updated
+2025-10-24 11:47:38,124 - csv_exporter - INFO - Total events in CSV: 157
+2025-10-24 11:47:38,125 - scraper - INFO - Saved 21 events for may8.2025 to CSV
+2025-10-24 11:47:39,811 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 11:47:40,646 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 11:47:41,689 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 11:47:41,690 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may9.2025 after 3 attempts
+2025-10-24 11:47:42,753 - scraper - INFO - Scraped 13 events for may12.2025 using JS data
+2025-10-24 11:47:42,860 - symbol_mapper - INFO - Mapped 13 events with trading pairs
+2025-10-24 11:47:42,868 - csv_exporter - INFO - Loaded 157 existing events from CSV
+2025-10-24 11:47:43,000 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:43,001 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:43,001 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:43,001 - csv_exporter - INFO - [STATS] Total events: 170
+2025-10-24 11:47:43,002 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:43,002 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:43,002 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:43,002 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 157 (92.4%)
+2025-10-24 11:47:43,003 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 157 (92.4%)
+2025-10-24 11:47:43,003 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 157 (92.4%)
+2025-10-24 11:47:43,003 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:43,003 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 109 (64.1%)
+2025-10-24 11:47:43,004 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 36 (21.2%)
+2025-10-24 11:47:43,004 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 15 (8.8%)
+2025-10-24 11:47:43,004 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 10 (5.9%)
+2025-10-24 11:47:43,005 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:43,005 - csv_exporter - INFO -   USD: 50
+2025-10-24 11:47:43,005 - csv_exporter - INFO -   EUR: 43
+2025-10-24 11:47:43,005 - csv_exporter - INFO -   GBP: 21
+2025-10-24 11:47:43,006 - csv_exporter - INFO -   JPY: 18
+2025-10-24 11:47:43,006 - csv_exporter - INFO -   AUD: 12
+2025-10-24 11:47:43,006 - csv_exporter - INFO -   CHF: 9
+2025-10-24 11:47:43,006 - csv_exporter - INFO -   CAD: 6
+2025-10-24 11:47:43,006 - csv_exporter - INFO -   NZD: 6
+2025-10-24 11:47:43,007 - csv_exporter - INFO -   CNY: 5
+2025-10-24 11:47:43,007 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:43,010 - csv_exporter - INFO - Exported 170 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:43,011 - csv_exporter - INFO - Deduplication complete: 13 new events added, 0 events updated
+2025-10-24 11:47:43,011 - csv_exporter - INFO - Total events in CSV: 170
+2025-10-24 11:47:43,011 - scraper - INFO - Saved 13 events for may12.2025 to CSV
+2025-10-24 11:47:44,188 - scraper - INFO - Scraped 22 events for may13.2025 using JS data
+2025-10-24 11:47:44,293 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-24 11:47:44,301 - csv_exporter - INFO - Loaded 170 existing events from CSV
+2025-10-24 11:47:44,422 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:44,422 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:44,422 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:44,422 - csv_exporter - INFO - [STATS] Total events: 192
+2025-10-24 11:47:44,423 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:44,423 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:44,423 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:44,424 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 170 (88.5%)
+2025-10-24 11:47:44,424 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 170 (88.5%)
+2025-10-24 11:47:44,424 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 170 (88.5%)
+2025-10-24 11:47:44,424 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:44,424 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 123 (64.1%)
+2025-10-24 11:47:44,425 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 41 (21.4%)
+2025-10-24 11:47:44,425 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 18 (9.4%)
+2025-10-24 11:47:44,425 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 10 (5.2%)
+2025-10-24 11:47:44,425 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:44,426 - csv_exporter - INFO -   USD: 57
+2025-10-24 11:47:44,426 - csv_exporter - INFO -   EUR: 46
+2025-10-24 11:47:44,426 - csv_exporter - INFO -   GBP: 28
+2025-10-24 11:47:44,426 - csv_exporter - INFO -   JPY: 21
+2025-10-24 11:47:44,426 - csv_exporter - INFO -   AUD: 14
+2025-10-24 11:47:44,427 - csv_exporter - INFO -   CHF: 9
+2025-10-24 11:47:44,427 - csv_exporter - INFO -   CAD: 6
+2025-10-24 11:47:44,427 - csv_exporter - INFO -   NZD: 6
+2025-10-24 11:47:44,427 - csv_exporter - INFO -   CNY: 5
+2025-10-24 11:47:44,427 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:44,430 - csv_exporter - INFO - Exported 192 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:44,430 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-24 11:47:44,430 - csv_exporter - INFO - Total events in CSV: 192
+2025-10-24 11:47:44,431 - scraper - INFO - Saved 22 events for may13.2025 to CSV
+2025-10-24 11:47:45,428 - scraper - INFO - Scraped 16 events for may14.2025 using JS data
+2025-10-24 11:47:45,548 - symbol_mapper - INFO - Mapped 16 events with trading pairs
+2025-10-24 11:47:45,557 - csv_exporter - INFO - Loaded 192 existing events from CSV
+2025-10-24 11:47:45,722 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:45,722 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:45,722 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:45,722 - csv_exporter - INFO - [STATS] Total events: 208
+2025-10-24 11:47:45,723 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:45,723 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:45,723 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:45,723 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 192 (92.3%)
+2025-10-24 11:47:45,723 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 192 (92.3%)
+2025-10-24 11:47:45,724 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 192 (92.3%)
+2025-10-24 11:47:45,724 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:45,724 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 137 (65.9%)
+2025-10-24 11:47:45,724 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 42 (20.2%)
+2025-10-24 11:47:45,724 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 19 (9.1%)
+2025-10-24 11:47:45,725 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 10 (4.8%)
+2025-10-24 11:47:45,725 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:45,725 - csv_exporter - INFO -   USD: 61
+2025-10-24 11:47:45,725 - csv_exporter - INFO -   EUR: 49
+2025-10-24 11:47:45,725 - csv_exporter - INFO -   GBP: 30
+2025-10-24 11:47:45,726 - csv_exporter - INFO -   JPY: 22
+2025-10-24 11:47:45,726 - csv_exporter - INFO -   AUD: 16
+2025-10-24 11:47:45,726 - csv_exporter - INFO -   CHF: 9
+2025-10-24 11:47:45,726 - csv_exporter - INFO -   CAD: 7
+2025-10-24 11:47:45,727 - csv_exporter - INFO -   CNY: 7
+2025-10-24 11:47:45,727 - csv_exporter - INFO -   NZD: 7
+2025-10-24 11:47:45,727 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:45,732 - csv_exporter - INFO - Exported 208 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:45,732 - csv_exporter - INFO - Deduplication complete: 16 new events added, 0 events updated
+2025-10-24 11:47:45,732 - csv_exporter - INFO - Total events in CSV: 208
+2025-10-24 11:47:45,733 - scraper - INFO - Saved 16 events for may14.2025 to CSV
+2025-10-24 11:47:47,645 - scraper - INFO - Scraped 37 events for may15.2025 using JS data
+2025-10-24 11:47:47,930 - symbol_mapper - INFO - Mapped 37 events with trading pairs
+2025-10-24 11:47:47,936 - csv_exporter - INFO - Loaded 208 existing events from CSV
+2025-10-24 11:47:48,082 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:48,082 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:48,082 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:48,082 - csv_exporter - INFO - [STATS] Total events: 245
+2025-10-24 11:47:48,083 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:48,083 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:48,083 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:48,083 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 208 (84.9%)
+2025-10-24 11:47:48,084 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 208 (84.9%)
+2025-10-24 11:47:48,084 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 208 (84.9%)
+2025-10-24 11:47:48,084 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:48,084 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 162 (66.1%)
+2025-10-24 11:47:48,085 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 51 (20.8%)
+2025-10-24 11:47:48,085 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 22 (9.0%)
+2025-10-24 11:47:48,085 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 10 (4.1%)
+2025-10-24 11:47:48,085 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:48,086 - csv_exporter - INFO -   USD: 75
+2025-10-24 11:47:48,086 - csv_exporter - INFO -   EUR: 54
+2025-10-24 11:47:48,086 - csv_exporter - INFO -   GBP: 39
+2025-10-24 11:47:48,086 - csv_exporter - INFO -   JPY: 23
+2025-10-24 11:47:48,086 - csv_exporter - INFO -   AUD: 19
+2025-10-24 11:47:48,087 - csv_exporter - INFO -   CHF: 10
+2025-10-24 11:47:48,087 - csv_exporter - INFO -   CAD: 10
+2025-10-24 11:47:48,087 - csv_exporter - INFO -   NZD: 8
+2025-10-24 11:47:48,087 - csv_exporter - INFO -   CNY: 7
+2025-10-24 11:47:48,088 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:48,092 - csv_exporter - INFO - Exported 245 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:48,093 - csv_exporter - INFO - Deduplication complete: 37 new events added, 0 events updated
+2025-10-24 11:47:48,094 - csv_exporter - INFO - Total events in CSV: 245
+2025-10-24 11:47:48,095 - scraper - INFO - Saved 37 events for may15.2025 to CSV
+2025-10-24 11:47:48,960 - scraper - INFO - Scraped 16 events for may16.2025 using JS data
+2025-10-24 11:47:49,066 - symbol_mapper - INFO - Mapped 16 events with trading pairs
+2025-10-24 11:47:49,073 - csv_exporter - INFO - Loaded 245 existing events from CSV
+2025-10-24 11:47:49,256 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:49,256 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:49,257 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:49,257 - csv_exporter - INFO - [STATS] Total events: 261
+2025-10-24 11:47:49,258 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:49,259 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:49,259 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:49,260 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 245 (93.9%)
+2025-10-24 11:47:49,260 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 245 (93.9%)
+2025-10-24 11:47:49,260 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 245 (93.9%)
+2025-10-24 11:47:49,261 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:49,261 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 174 (66.7%)
+2025-10-24 11:47:49,261 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 53 (20.3%)
+2025-10-24 11:47:49,262 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 24 (9.2%)
+2025-10-24 11:47:49,262 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 10 (3.8%)
+2025-10-24 11:47:49,262 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:49,263 - csv_exporter - INFO -   USD: 81
+2025-10-24 11:47:49,263 - csv_exporter - INFO -   EUR: 56
+2025-10-24 11:47:49,263 - csv_exporter - INFO -   GBP: 40
+2025-10-24 11:47:49,263 - csv_exporter - INFO -   JPY: 26
+2025-10-24 11:47:49,264 - csv_exporter - INFO -   AUD: 19
+2025-10-24 11:47:49,264 - csv_exporter - INFO -   CHF: 11
+2025-10-24 11:47:49,264 - csv_exporter - INFO -   CAD: 11
+2025-10-24 11:47:49,265 - csv_exporter - INFO -   NZD: 10
+2025-10-24 11:47:49,265 - csv_exporter - INFO -   CNY: 7
+2025-10-24 11:47:49,265 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:49,272 - csv_exporter - INFO - Exported 261 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:49,272 - csv_exporter - INFO - Deduplication complete: 16 new events added, 0 events updated
+2025-10-24 11:47:49,272 - csv_exporter - INFO - Total events in CSV: 261
+2025-10-24 11:47:49,273 - scraper - INFO - Saved 16 events for may16.2025 to CSV
+2025-10-24 11:47:50,619 - scraper - INFO - Scraped 23 events for may19.2025 using JS data
+2025-10-24 11:47:50,804 - symbol_mapper - INFO - Mapped 23 events with trading pairs
+2025-10-24 11:47:50,813 - csv_exporter - INFO - Loaded 261 existing events from CSV
+2025-10-24 11:47:51,053 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:51,054 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:51,054 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:51,054 - csv_exporter - INFO - [STATS] Total events: 284
+2025-10-24 11:47:51,054 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:51,054 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:51,055 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:51,055 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 261 (91.9%)
+2025-10-24 11:47:51,055 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 261 (91.9%)
+2025-10-24 11:47:51,055 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 261 (91.9%)
+2025-10-24 11:47:51,056 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:51,056 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 193 (68.0%)
+2025-10-24 11:47:51,056 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 53 (18.7%)
+2025-10-24 11:47:51,056 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 27 (9.5%)
+2025-10-24 11:47:51,057 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (3.9%)
+2025-10-24 11:47:51,057 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:51,057 - csv_exporter - INFO -   USD: 88
+2025-10-24 11:47:51,058 - csv_exporter - INFO -   EUR: 59
+2025-10-24 11:47:51,058 - csv_exporter - INFO -   GBP: 41
+2025-10-24 11:47:51,058 - csv_exporter - INFO -   JPY: 27
+2025-10-24 11:47:51,059 - csv_exporter - INFO -   AUD: 19
+2025-10-24 11:47:51,059 - csv_exporter - INFO -   CNY: 13
+2025-10-24 11:47:51,059 - csv_exporter - INFO -   NZD: 13
+2025-10-24 11:47:51,059 - csv_exporter - INFO -   CHF: 12
+2025-10-24 11:47:51,060 - csv_exporter - INFO -   CAD: 12
+2025-10-24 11:47:51,060 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:51,065 - csv_exporter - INFO - Exported 284 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:51,065 - csv_exporter - INFO - Deduplication complete: 23 new events added, 0 events updated
+2025-10-24 11:47:51,065 - csv_exporter - INFO - Total events in CSV: 284
+2025-10-24 11:47:51,066 - scraper - INFO - Saved 23 events for may19.2025 to CSV
+2025-10-24 11:47:52,352 - scraper - INFO - Scraped 23 events for may20.2025 using JS data
+2025-10-24 11:47:52,609 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-24 11:47:52,610 - symbol_mapper - INFO - Mapped 23 events with trading pairs
+2025-10-24 11:47:52,624 - csv_exporter - INFO - Loaded 284 existing events from CSV
+2025-10-24 11:47:52,938 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:52,938 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:52,939 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:52,941 - csv_exporter - INFO - [STATS] Total events: 307
+2025-10-24 11:47:52,942 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:52,943 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:52,943 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:52,944 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 284 (92.5%)
+2025-10-24 11:47:52,944 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 284 (92.5%)
+2025-10-24 11:47:52,945 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 284 (92.5%)
+2025-10-24 11:47:52,945 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:52,945 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 205 (66.8%)
+2025-10-24 11:47:52,946 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 59 (19.2%)
+2025-10-24 11:47:52,946 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 32 (10.4%)
+2025-10-24 11:47:52,947 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (3.6%)
+2025-10-24 11:47:52,947 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:52,947 - csv_exporter - INFO -   USD: 94
+2025-10-24 11:47:52,948 - csv_exporter - INFO -   EUR: 62
+2025-10-24 11:47:52,948 - csv_exporter - INFO -   GBP: 42
+2025-10-24 11:47:52,949 - csv_exporter - INFO -   JPY: 27
+2025-10-24 11:47:52,949 - csv_exporter - INFO -   AUD: 23
+2025-10-24 11:47:52,950 - csv_exporter - INFO -   CAD: 17
+2025-10-24 11:47:52,951 - csv_exporter - INFO -   CNY: 15
+2025-10-24 11:47:52,951 - csv_exporter - INFO -   NZD: 14
+2025-10-24 11:47:52,952 - csv_exporter - INFO -   CHF: 12
+2025-10-24 11:47:52,952 - csv_exporter - INFO -   All: 1
+2025-10-24 11:47:52,953 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:52,963 - csv_exporter - INFO - Exported 307 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:52,964 - csv_exporter - INFO - Deduplication complete: 23 new events added, 0 events updated
+2025-10-24 11:47:52,964 - csv_exporter - INFO - Total events in CSV: 307
+2025-10-24 11:47:52,965 - scraper - INFO - Saved 23 events for may20.2025 to CSV
+2025-10-24 11:47:54,074 - scraper - INFO - Scraped 17 events for may21.2025 using JS data
+2025-10-24 11:47:54,198 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-24 11:47:54,199 - symbol_mapper - INFO - Mapped 17 events with trading pairs
+2025-10-24 11:47:54,205 - csv_exporter - INFO - Loaded 307 existing events from CSV
+2025-10-24 11:47:54,400 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:54,401 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:54,401 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:54,401 - csv_exporter - INFO - [STATS] Total events: 324
+2025-10-24 11:47:54,401 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:54,402 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:54,402 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:54,402 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 307 (94.8%)
+2025-10-24 11:47:54,403 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 307 (94.8%)
+2025-10-24 11:47:54,403 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 307 (94.8%)
+2025-10-24 11:47:54,403 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:54,403 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 220 (67.9%)
+2025-10-24 11:47:54,403 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 60 (18.5%)
+2025-10-24 11:47:54,404 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 33 (10.2%)
+2025-10-24 11:47:54,404 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (3.4%)
+2025-10-24 11:47:54,404 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:54,404 - csv_exporter - INFO -   USD: 99
+2025-10-24 11:47:54,404 - csv_exporter - INFO -   EUR: 64
+2025-10-24 11:47:54,404 - csv_exporter - INFO -   GBP: 46
+2025-10-24 11:47:54,405 - csv_exporter - INFO -   JPY: 28
+2025-10-24 11:47:54,405 - csv_exporter - INFO -   AUD: 24
+2025-10-24 11:47:54,405 - csv_exporter - INFO -   CAD: 18
+2025-10-24 11:47:54,405 - csv_exporter - INFO -   NZD: 16
+2025-10-24 11:47:54,405 - csv_exporter - INFO -   CNY: 15
+2025-10-24 11:47:54,406 - csv_exporter - INFO -   CHF: 12
+2025-10-24 11:47:54,406 - csv_exporter - INFO -   All: 2
+2025-10-24 11:47:54,406 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:54,411 - csv_exporter - INFO - Exported 324 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:54,412 - csv_exporter - INFO - Deduplication complete: 17 new events added, 0 events updated
+2025-10-24 11:47:54,412 - csv_exporter - INFO - Total events in CSV: 324
+2025-10-24 11:47:54,412 - scraper - INFO - Saved 17 events for may21.2025 to CSV
+2025-10-24 11:47:55,414 - scraper - INFO - Scraped 36 events for may22.2025 using JS data
+2025-10-24 11:47:55,621 - symbol_mapper - WARNING - No mapping found for currency: All
+2025-10-24 11:47:55,621 - symbol_mapper - INFO - Mapped 36 events with trading pairs
+2025-10-24 11:47:55,628 - csv_exporter - INFO - Loaded 324 existing events from CSV
+2025-10-24 11:47:55,829 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:55,830 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:55,830 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:55,830 - csv_exporter - INFO - [STATS] Total events: 360
+2025-10-24 11:47:55,830 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:55,831 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:55,831 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:55,831 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 324 (90.0%)
+2025-10-24 11:47:55,832 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 324 (90.0%)
+2025-10-24 11:47:55,832 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 324 (90.0%)
+2025-10-24 11:47:55,832 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:55,833 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 241 (66.9%)
+2025-10-24 11:47:55,833 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 70 (19.4%)
+2025-10-24 11:47:55,833 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 38 (10.6%)
+2025-10-24 11:47:55,834 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (3.1%)
+2025-10-24 11:47:55,834 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:55,834 - csv_exporter - INFO -   USD: 105
+2025-10-24 11:47:55,835 - csv_exporter - INFO -   EUR: 75
+2025-10-24 11:47:55,835 - csv_exporter - INFO -   GBP: 54
+2025-10-24 11:47:55,835 - csv_exporter - INFO -   JPY: 30
+2025-10-24 11:47:55,836 - csv_exporter - INFO -   AUD: 27
+2025-10-24 11:47:55,836 - csv_exporter - INFO -   CAD: 22
+2025-10-24 11:47:55,836 - csv_exporter - INFO -   NZD: 17
+2025-10-24 11:47:55,836 - csv_exporter - INFO -   CNY: 15
+2025-10-24 11:47:55,837 - csv_exporter - INFO -   CHF: 12
+2025-10-24 11:47:55,837 - csv_exporter - INFO -   All: 3
+2025-10-24 11:47:55,837 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:55,841 - csv_exporter - INFO - Exported 360 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:55,842 - csv_exporter - INFO - Deduplication complete: 36 new events added, 0 events updated
+2025-10-24 11:47:55,842 - csv_exporter - INFO - Total events in CSV: 360
+2025-10-24 11:47:55,842 - scraper - INFO - Saved 36 events for may22.2025 to CSV
+2025-10-24 11:47:57,133 - scraper - INFO - Scraped 14 events for may23.2025 using JS data
+2025-10-24 11:47:57,260 - symbol_mapper - INFO - Mapped 14 events with trading pairs
+2025-10-24 11:47:57,269 - csv_exporter - INFO - Loaded 360 existing events from CSV
+2025-10-24 11:47:57,583 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:57,583 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:57,583 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:57,583 - csv_exporter - INFO - [STATS] Total events: 374
+2025-10-24 11:47:57,584 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:57,584 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:57,584 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:57,584 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 360 (96.3%)
+2025-10-24 11:47:57,584 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 360 (96.3%)
+2025-10-24 11:47:57,585 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 360 (96.3%)
+2025-10-24 11:47:57,585 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:57,585 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 250 (66.8%)
+2025-10-24 11:47:57,585 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 73 (19.5%)
+2025-10-24 11:47:57,585 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 40 (10.7%)
+2025-10-24 11:47:57,586 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 11 (2.9%)
+2025-10-24 11:47:57,586 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:57,586 - csv_exporter - INFO -   USD: 109
+2025-10-24 11:47:57,587 - csv_exporter - INFO -   EUR: 76
+2025-10-24 11:47:57,587 - csv_exporter - INFO -   GBP: 56
+2025-10-24 11:47:57,587 - csv_exporter - INFO -   JPY: 31
+2025-10-24 11:47:57,587 - csv_exporter - INFO -   AUD: 27
+2025-10-24 11:47:57,587 - csv_exporter - INFO -   CAD: 25
+2025-10-24 11:47:57,588 - csv_exporter - INFO -   NZD: 19
+2025-10-24 11:47:57,588 - csv_exporter - INFO -   CNY: 16
+2025-10-24 11:47:57,588 - csv_exporter - INFO -   CHF: 12
+2025-10-24 11:47:57,589 - csv_exporter - INFO -   All: 3
+2025-10-24 11:47:57,589 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:57,592 - csv_exporter - INFO - Exported 374 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:57,593 - csv_exporter - INFO - Deduplication complete: 14 new events added, 0 events updated
+2025-10-24 11:47:57,593 - csv_exporter - INFO - Total events in CSV: 374
+2025-10-24 11:47:57,593 - scraper - INFO - Saved 14 events for may23.2025 to CSV
+2025-10-24 11:47:58,598 - scraper - INFO - Scraped 4 events for may26.2025 using JS data
+2025-10-24 11:47:58,682 - symbol_mapper - INFO - Mapped 4 events with trading pairs
+2025-10-24 11:47:58,703 - csv_exporter - INFO - Loaded 374 existing events from CSV
+2025-10-24 11:47:59,314 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:59,315 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 11:47:59,315 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:59,315 - csv_exporter - INFO - [STATS] Total events: 378
+2025-10-24 11:47:59,316 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 11:47:59,316 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 11:47:59,316 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 11:47:59,317 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 374 (98.9%)
+2025-10-24 11:47:59,317 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 374 (98.9%)
+2025-10-24 11:47:59,318 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 374 (98.9%)
+2025-10-24 11:47:59,319 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 11:47:59,319 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 251 (66.4%)
+2025-10-24 11:47:59,320 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 73 (19.3%)
+2025-10-24 11:47:59,320 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 41 (10.8%)
+2025-10-24 11:47:59,321 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 13 (3.4%)
+2025-10-24 11:47:59,321 - csv_exporter - INFO - Top Currencies:
+2025-10-24 11:47:59,321 - csv_exporter - INFO -   USD: 110
+2025-10-24 11:47:59,322 - csv_exporter - INFO -   EUR: 78
+2025-10-24 11:47:59,323 - csv_exporter - INFO -   GBP: 57
+2025-10-24 11:47:59,323 - csv_exporter - INFO -   JPY: 31
+2025-10-24 11:47:59,323 - csv_exporter - INFO -   AUD: 27
+2025-10-24 11:47:59,323 - csv_exporter - INFO -   CAD: 25
+2025-10-24 11:47:59,324 - csv_exporter - INFO -   NZD: 19
+2025-10-24 11:47:59,324 - csv_exporter - INFO -   CNY: 16
+2025-10-24 11:47:59,324 - csv_exporter - INFO -   CHF: 12
+2025-10-24 11:47:59,325 - csv_exporter - INFO -   All: 3
+2025-10-24 11:47:59,325 - csv_exporter - INFO - ==================================================
+2025-10-24 11:47:59,331 - csv_exporter - INFO - Exported 378 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 11:47:59,332 - csv_exporter - INFO - Deduplication complete: 4 new events added, 0 events updated
+2025-10-24 11:47:59,332 - csv_exporter - INFO - Total events in CSV: 378
+2025-10-24 11:47:59,333 - scraper - INFO - Saved 4 events for may26.2025 to CSV
+2025-10-24 11:47:59,334 - scraper - INFO - Fallback completed: 378 total events from 2025-04-27 to 2025-05-26
+2025-10-24 11:47:59,334 - scraper - INFO - Scraped 378 events from range 2025-04-27 to 2025-05-26
+2025-10-24 12:05:27,162 - __main__ - INFO - Range mode: using config date range
+2025-10-24 12:05:27,163 - __main__ - INFO - Starting Economic News Manager Pipeline
+2025-10-24 12:05:27,163 - symbol_mapper - INFO - Loaded 8 auto mappings and 1 custom overrides
+2025-10-24 12:05:27,164 - __main__ - INFO - Range mode: scraping events from 2025-04-27 to 2025-10-24
+2025-10-24 12:05:27,164 - __main__ - INFO - Starting range data scraping...
+2025-10-24 12:05:27,164 - scraper - INFO - Starting RANGE-BASED scrape from 2025-04-27 to 2025-10-24
+2025-10-24 12:05:27,165 - scraper - INFO - Total days in range: 180
+2025-10-24 12:05:27,165 - scraper - INFO - Split date range into 6 chunks of max 1 months each
+2025-10-24 12:05:27,165 - scraper - INFO - Processing 6 date range chunks
+2025-10-24 12:05:27,166 - scraper - INFO - Processing range 1/6: 2025-04-27 to 2025-05-26
+2025-10-24 12:05:27,166 - scraper - INFO - Setting up Chrome WebDriver...
+2025-10-24 12:05:27,166 - scraper - INFO - Chrome WebDriver configured with headless mode: True
+2025-10-24 12:05:27,166 - scraper - INFO - Downloading/updating ChromeDriver...
+2025-10-24 12:05:27,167 - WDM - INFO - ====== WebDriver manager ======
+2025-10-24 12:05:28,810 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:05:29,207 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-10-24 12:05:29,871 - WDM - INFO - Driver [C:\Users\taieb\.wdm\drivers\chromedriver\win64\141.0.7390.122\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-24 12:05:29,872 - scraper - INFO - Starting Chrome WebDriver...
+2025-10-24 12:05:31,133 - scraper - INFO - Chrome WebDriver initialized successfully
+2025-10-24 12:05:31,134 - scraper - INFO - Using ForexFactory range URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:05:34,428 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:05:36,634 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:05:38,947 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:05:38,948 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025 after 3 attempts
+2025-10-24 12:05:38,948 - scraper - ERROR - Failed to navigate to range URL: https://www.forexfactory.com/calendar?range=apr27.2025-may26.2025
+2025-10-24 12:05:38,948 - scraper - INFO - Falling back to daily scraping approach
+2025-10-24 12:05:38,949 - scraper - INFO - Fallback: scraping range 2025-04-27 to 2025-05-26 day by day
+2025-10-24 12:05:40,136 - scraper - INFO - Scraped 3 events for apr28.2025 using JS data
+2025-10-24 12:05:40,195 - symbol_mapper - INFO - Mapped 3 events with trading pairs
+2025-10-24 12:05:40,207 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:40,207 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:05:40,208 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:40,208 - csv_exporter - INFO - [STATS] Total events: 3
+2025-10-24 12:05:40,208 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:05:40,209 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:05:40,209 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:05:40,210 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 0 (0.0%)
+2025-10-24 12:05:40,210 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 0 (0.0%)
+2025-10-24 12:05:40,211 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 0 (0.0%)
+2025-10-24 12:05:40,211 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:05:40,212 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 2 (66.7%)
+2025-10-24 12:05:40,212 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 1 (33.3%)
+2025-10-24 12:05:40,212 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:05:40,213 - csv_exporter - INFO -   CAD: 1
+2025-10-24 12:05:40,213 - csv_exporter - INFO -   GBP: 1
+2025-10-24 12:05:40,213 - csv_exporter - INFO -   EUR: 1
+2025-10-24 12:05:40,213 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:40,222 - csv_exporter - INFO - Exported 3 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:05:40,222 - csv_exporter - INFO - Deduplication complete: 3 new events added, 0 events updated
+2025-10-24 12:05:40,223 - csv_exporter - INFO - Total events in CSV: 3
+2025-10-24 12:05:40,223 - scraper - INFO - Saved 3 events for apr28.2025 to CSV
+2025-10-24 12:05:41,604 - scraper - INFO - Scraped 18 events for apr29.2025 using JS data
+2025-10-24 12:05:41,724 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-24 12:05:41,739 - csv_exporter - INFO - Loaded 3 existing events from CSV
+2025-10-24 12:05:41,772 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:41,773 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:05:41,774 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:41,775 - csv_exporter - INFO - [STATS] Total events: 21
+2025-10-24 12:05:41,775 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:05:41,776 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:05:41,776 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:05:41,777 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 3 (14.3%)
+2025-10-24 12:05:41,778 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 3 (14.3%)
+2025-10-24 12:05:41,778 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 3 (14.3%)
+2025-10-24 12:05:41,779 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:05:41,781 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 15 (71.4%)
+2025-10-24 12:05:41,782 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 3 (14.3%)
+2025-10-24 12:05:41,785 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 2 (9.5%)
+2025-10-24 12:05:41,785 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 1 (4.8%)
+2025-10-24 12:05:41,786 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:05:41,786 - csv_exporter - INFO -   USD: 7
+2025-10-24 12:05:41,786 - csv_exporter - INFO -   EUR: 7
+2025-10-24 12:05:41,787 - csv_exporter - INFO -   GBP: 3
+2025-10-24 12:05:41,787 - csv_exporter - INFO -   CHF: 1
+2025-10-24 12:05:41,787 - csv_exporter - INFO -   AUD: 1
+2025-10-24 12:05:41,788 - csv_exporter - INFO -   JPY: 1
+2025-10-24 12:05:41,788 - csv_exporter - INFO -   CAD: 1
+2025-10-24 12:05:41,788 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:41,792 - csv_exporter - INFO - Exported 21 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:05:41,793 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-24 12:05:41,793 - csv_exporter - INFO - Total events in CSV: 21
+2025-10-24 12:05:41,794 - scraper - INFO - Saved 18 events for apr29.2025 to CSV
+2025-10-24 12:05:43,557 - scraper - INFO - Scraped 38 events for apr30.2025 using JS data
+2025-10-24 12:05:43,835 - symbol_mapper - INFO - Mapped 38 events with trading pairs
+2025-10-24 12:05:43,839 - csv_exporter - INFO - Loaded 21 existing events from CSV
+2025-10-24 12:05:43,863 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:43,864 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:05:43,864 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:43,864 - csv_exporter - INFO - [STATS] Total events: 59
+2025-10-24 12:05:43,864 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:05:43,865 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:05:43,865 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:05:43,866 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 21 (35.6%)
+2025-10-24 12:05:43,866 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 21 (35.6%)
+2025-10-24 12:05:43,866 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 21 (35.6%)
+2025-10-24 12:05:43,866 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:05:43,867 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 39 (66.1%)
+2025-10-24 12:05:43,867 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 12 (20.3%)
+2025-10-24 12:05:43,867 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 7 (11.9%)
+2025-10-24 12:05:43,868 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 1 (1.7%)
+2025-10-24 12:05:43,868 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:05:43,868 - csv_exporter - INFO -   USD: 18
+2025-10-24 12:05:43,868 - csv_exporter - INFO -   EUR: 18
+2025-10-24 12:05:43,868 - csv_exporter - INFO -   AUD: 5
+2025-10-24 12:05:43,869 - csv_exporter - INFO -   JPY: 4
+2025-10-24 12:05:43,869 - csv_exporter - INFO -   GBP: 4
+2025-10-24 12:05:43,869 - csv_exporter - INFO -   CAD: 3
+2025-10-24 12:05:43,869 - csv_exporter - INFO -   CHF: 3
+2025-10-24 12:05:43,869 - csv_exporter - INFO -   CNY: 3
+2025-10-24 12:05:43,870 - csv_exporter - INFO -   NZD: 1
+2025-10-24 12:05:43,870 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:43,872 - csv_exporter - INFO - Exported 59 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:05:43,872 - csv_exporter - INFO - Deduplication complete: 38 new events added, 0 events updated
+2025-10-24 12:05:43,873 - csv_exporter - INFO - Total events in CSV: 59
+2025-10-24 12:05:43,873 - scraper - INFO - Saved 38 events for apr30.2025 to CSV
+2025-10-24 12:05:44,886 - scraper - INFO - Scraped 29 events for may1.2025 using JS data
+2025-10-24 12:05:45,085 - symbol_mapper - INFO - Mapped 29 events with trading pairs
+2025-10-24 12:05:45,090 - csv_exporter - INFO - Loaded 59 existing events from CSV
+2025-10-24 12:05:45,166 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:45,167 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:05:45,168 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:45,168 - csv_exporter - INFO - [STATS] Total events: 88
+2025-10-24 12:05:45,168 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:05:45,168 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:05:45,169 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:05:45,169 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 59 (67.0%)
+2025-10-24 12:05:45,169 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 59 (67.0%)
+2025-10-24 12:05:45,170 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 59 (67.0%)
+2025-10-24 12:05:45,170 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:05:45,170 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 55 (62.5%)
+2025-10-24 12:05:45,170 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 18 (20.5%)
+2025-10-24 12:05:45,171 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 9 (10.2%)
+2025-10-24 12:05:45,171 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 6 (6.8%)
+2025-10-24 12:05:45,171 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:05:45,172 - csv_exporter - INFO -   USD: 27
+2025-10-24 12:05:45,172 - csv_exporter - INFO -   EUR: 21
+2025-10-24 12:05:45,172 - csv_exporter - INFO -   JPY: 10
+2025-10-24 12:05:45,172 - csv_exporter - INFO -   GBP: 8
+2025-10-24 12:05:45,173 - csv_exporter - INFO -   AUD: 8
+2025-10-24 12:05:45,173 - csv_exporter - INFO -   CHF: 5
+2025-10-24 12:05:45,174 - csv_exporter - INFO -   CAD: 4
+2025-10-24 12:05:45,175 - csv_exporter - INFO -   CNY: 4
+2025-10-24 12:05:45,175 - csv_exporter - INFO -   NZD: 1
+2025-10-24 12:05:45,175 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:45,177 - csv_exporter - INFO - Exported 88 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:05:45,177 - csv_exporter - INFO - Deduplication complete: 29 new events added, 0 events updated
+2025-10-24 12:05:45,178 - csv_exporter - INFO - Total events in CSV: 88
+2025-10-24 12:05:45,178 - scraper - INFO - Saved 29 events for may1.2025 to CSV
+2025-10-24 12:05:46,610 - scraper - INFO - Scraped 22 events for may2.2025 using JS data
+2025-10-24 12:05:46,780 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-24 12:05:46,791 - csv_exporter - INFO - Loaded 88 existing events from CSV
+2025-10-24 12:05:46,896 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:46,897 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:05:46,897 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:46,897 - csv_exporter - INFO - [STATS] Total events: 110
+2025-10-24 12:05:46,897 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:05:46,898 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:05:46,898 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:05:46,898 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 88 (80.0%)
+2025-10-24 12:05:46,898 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 88 (80.0%)
+2025-10-24 12:05:46,898 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 88 (80.0%)
+2025-10-24 12:05:46,899 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:05:46,899 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 70 (63.6%)
+2025-10-24 12:05:46,899 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 21 (19.1%)
+2025-10-24 12:05:46,899 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 12 (10.9%)
+2025-10-24 12:05:46,899 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 7 (6.4%)
+2025-10-24 12:05:46,900 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:05:46,900 - csv_exporter - INFO -   EUR: 32
+2025-10-24 12:05:46,900 - csv_exporter - INFO -   USD: 31
+2025-10-24 12:05:46,900 - csv_exporter - INFO -   JPY: 12
+2025-10-24 12:05:46,901 - csv_exporter - INFO -   AUD: 10
+2025-10-24 12:05:46,901 - csv_exporter - INFO -   GBP: 8
+2025-10-24 12:05:46,901 - csv_exporter - INFO -   CHF: 6
+2025-10-24 12:05:46,901 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:05:46,901 - csv_exporter - INFO -   CAD: 4
+2025-10-24 12:05:46,902 - csv_exporter - INFO -   NZD: 2
+2025-10-24 12:05:46,902 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:46,905 - csv_exporter - INFO - Exported 110 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:05:46,905 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-24 12:05:46,905 - csv_exporter - INFO - Total events in CSV: 110
+2025-10-24 12:05:46,906 - scraper - INFO - Saved 22 events for may2.2025 to CSV
+2025-10-24 12:05:48,019 - scraper - INFO - Scraped 8 events for may5.2025 using JS data
+2025-10-24 12:05:48,114 - symbol_mapper - INFO - Mapped 8 events with trading pairs
+2025-10-24 12:05:48,122 - csv_exporter - INFO - Loaded 110 existing events from CSV
+2025-10-24 12:05:48,250 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:48,251 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:05:48,251 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:48,252 - csv_exporter - INFO - [STATS] Total events: 118
+2025-10-24 12:05:48,252 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:05:48,252 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:05:48,252 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:05:48,252 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 110 (93.2%)
+2025-10-24 12:05:48,253 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 110 (93.2%)
+2025-10-24 12:05:48,253 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 110 (93.2%)
+2025-10-24 12:05:48,253 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:05:48,254 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 74 (62.7%)
+2025-10-24 12:05:48,254 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 23 (19.5%)
+2025-10-24 12:05:48,254 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 12 (10.2%)
+2025-10-24 12:05:48,254 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 9 (7.6%)
+2025-10-24 12:05:48,254 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:05:48,255 - csv_exporter - INFO -   USD: 33
+2025-10-24 12:05:48,255 - csv_exporter - INFO -   EUR: 33
+2025-10-24 12:05:48,255 - csv_exporter - INFO -   JPY: 13
+2025-10-24 12:05:48,255 - csv_exporter - INFO -   AUD: 12
+2025-10-24 12:05:48,256 - csv_exporter - INFO -   GBP: 9
+2025-10-24 12:05:48,256 - csv_exporter - INFO -   CHF: 7
+2025-10-24 12:05:48,256 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:05:48,256 - csv_exporter - INFO -   CAD: 4
+2025-10-24 12:05:48,257 - csv_exporter - INFO -   NZD: 2
+2025-10-24 12:05:48,257 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:48,259 - csv_exporter - INFO - Exported 118 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:05:48,259 - csv_exporter - INFO - Deduplication complete: 8 new events added, 0 events updated
+2025-10-24 12:05:48,259 - csv_exporter - INFO - Total events in CSV: 118
+2025-10-24 12:05:48,260 - scraper - INFO - Saved 8 events for may5.2025 to CSV
+2025-10-24 12:05:49,350 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:05:50,339 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:05:51,228 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may6.2025
+2025-10-24 12:05:51,228 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may6.2025 after 3 attempts
+2025-10-24 12:05:52,602 - scraper - INFO - Scraped 18 events for may7.2025 using JS data
+2025-10-24 12:05:52,832 - symbol_mapper - INFO - Mapped 18 events with trading pairs
+2025-10-24 12:05:52,839 - csv_exporter - INFO - Loaded 118 existing events from CSV
+2025-10-24 12:05:52,984 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:52,985 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:05:52,985 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:52,985 - csv_exporter - INFO - [STATS] Total events: 136
+2025-10-24 12:05:52,986 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:05:52,986 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:05:52,986 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:05:52,986 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 118 (86.8%)
+2025-10-24 12:05:52,987 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 118 (86.8%)
+2025-10-24 12:05:52,987 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 118 (86.8%)
+2025-10-24 12:05:52,987 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:05:52,987 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 85 (62.5%)
+2025-10-24 12:05:52,988 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 28 (20.6%)
+2025-10-24 12:05:52,988 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 14 (10.3%)
+2025-10-24 12:05:52,989 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 9 (6.6%)
+2025-10-24 12:05:52,989 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:05:52,990 - csv_exporter - INFO -   EUR: 39
+2025-10-24 12:05:52,990 - csv_exporter - INFO -   USD: 38
+2025-10-24 12:05:52,991 - csv_exporter - INFO -   JPY: 13
+2025-10-24 12:05:52,992 - csv_exporter - INFO -   AUD: 12
+2025-10-24 12:05:52,992 - csv_exporter - INFO -   GBP: 10
+2025-10-24 12:05:52,993 - csv_exporter - INFO -   CHF: 9
+2025-10-24 12:05:52,993 - csv_exporter - INFO -   NZD: 6
+2025-10-24 12:05:52,993 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:05:52,994 - csv_exporter - INFO -   CAD: 4
+2025-10-24 12:05:52,994 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:53,018 - csv_exporter - INFO - Exported 136 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:05:53,018 - csv_exporter - INFO - Deduplication complete: 18 new events added, 0 events updated
+2025-10-24 12:05:53,019 - csv_exporter - INFO - Total events in CSV: 136
+2025-10-24 12:05:53,019 - scraper - INFO - Saved 18 events for may7.2025 to CSV
+2025-10-24 12:05:54,254 - scraper - INFO - Scraped 21 events for may8.2025 using JS data
+2025-10-24 12:05:54,628 - symbol_mapper - INFO - Mapped 21 events with trading pairs
+2025-10-24 12:05:54,640 - csv_exporter - INFO - Loaded 136 existing events from CSV
+2025-10-24 12:05:54,865 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:54,866 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:05:54,866 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:54,866 - csv_exporter - INFO - [STATS] Total events: 157
+2025-10-24 12:05:54,867 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:05:54,867 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:05:54,867 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:05:54,867 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 136 (86.6%)
+2025-10-24 12:05:54,868 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 136 (86.6%)
+2025-10-24 12:05:54,868 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 136 (86.6%)
+2025-10-24 12:05:54,868 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:05:54,869 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 97 (61.8%)
+2025-10-24 12:05:54,869 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 36 (22.9%)
+2025-10-24 12:05:54,869 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 14 (8.9%)
+2025-10-24 12:05:54,870 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 10 (6.4%)
+2025-10-24 12:05:54,870 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:05:54,870 - csv_exporter - INFO -   USD: 45
+2025-10-24 12:05:54,871 - csv_exporter - INFO -   EUR: 42
+2025-10-24 12:05:54,871 - csv_exporter - INFO -   GBP: 17
+2025-10-24 12:05:54,872 - csv_exporter - INFO -   JPY: 15
+2025-10-24 12:05:54,872 - csv_exporter - INFO -   AUD: 12
+2025-10-24 12:05:54,872 - csv_exporter - INFO -   CHF: 9
+2025-10-24 12:05:54,873 - csv_exporter - INFO -   CAD: 6
+2025-10-24 12:05:54,873 - csv_exporter - INFO -   NZD: 6
+2025-10-24 12:05:54,873 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:05:54,873 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:54,876 - csv_exporter - INFO - Exported 157 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:05:54,877 - csv_exporter - INFO - Deduplication complete: 21 new events added, 0 events updated
+2025-10-24 12:05:54,877 - csv_exporter - INFO - Total events in CSV: 157
+2025-10-24 12:05:54,878 - scraper - INFO - Saved 21 events for may8.2025 to CSV
+2025-10-24 12:05:55,948 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:05:56,825 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:05:57,721 - scraper - WARNING - Got error page for https://www.forexfactory.com/calendar?day=may9.2025
+2025-10-24 12:05:57,721 - scraper - ERROR - Failed to load https://www.forexfactory.com/calendar?day=may9.2025 after 3 attempts
+2025-10-24 12:05:58,740 - scraper - INFO - Scraped 13 events for may12.2025 using JS data
+2025-10-24 12:05:58,844 - symbol_mapper - INFO - Mapped 13 events with trading pairs
+2025-10-24 12:05:58,860 - csv_exporter - INFO - Loaded 157 existing events from CSV
+2025-10-24 12:05:59,016 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:59,016 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:05:59,017 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:59,017 - csv_exporter - INFO - [STATS] Total events: 170
+2025-10-24 12:05:59,017 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:05:59,017 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:05:59,018 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:05:59,018 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 157 (92.4%)
+2025-10-24 12:05:59,018 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 157 (92.4%)
+2025-10-24 12:05:59,018 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 157 (92.4%)
+2025-10-24 12:05:59,019 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:05:59,019 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 109 (64.1%)
+2025-10-24 12:05:59,019 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 36 (21.2%)
+2025-10-24 12:05:59,019 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 15 (8.8%)
+2025-10-24 12:05:59,020 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 10 (5.9%)
+2025-10-24 12:05:59,020 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:05:59,020 - csv_exporter - INFO -   USD: 50
+2025-10-24 12:05:59,020 - csv_exporter - INFO -   EUR: 43
+2025-10-24 12:05:59,020 - csv_exporter - INFO -   GBP: 21
+2025-10-24 12:05:59,021 - csv_exporter - INFO -   JPY: 18
+2025-10-24 12:05:59,021 - csv_exporter - INFO -   AUD: 12
+2025-10-24 12:05:59,021 - csv_exporter - INFO -   CHF: 9
+2025-10-24 12:05:59,021 - csv_exporter - INFO -   CAD: 6
+2025-10-24 12:05:59,022 - csv_exporter - INFO -   NZD: 6
+2025-10-24 12:05:59,022 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:05:59,022 - csv_exporter - INFO - ==================================================
+2025-10-24 12:05:59,025 - csv_exporter - INFO - Exported 170 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:05:59,026 - csv_exporter - INFO - Deduplication complete: 13 new events added, 0 events updated
+2025-10-24 12:05:59,026 - csv_exporter - INFO - Total events in CSV: 170
+2025-10-24 12:05:59,026 - scraper - INFO - Saved 13 events for may12.2025 to CSV
+2025-10-24 12:06:00,312 - scraper - INFO - Scraped 22 events for may13.2025 using JS data
+2025-10-24 12:06:00,526 - symbol_mapper - INFO - Mapped 22 events with trading pairs
+2025-10-24 12:06:00,533 - csv_exporter - INFO - Loaded 170 existing events from CSV
+2025-10-24 12:06:00,767 - csv_exporter - INFO - ==================================================
+2025-10-24 12:06:00,767 - csv_exporter - INFO - DATA QUALITY VALIDATION REPORT
+2025-10-24 12:06:00,767 - csv_exporter - INFO - ==================================================
+2025-10-24 12:06:00,767 - csv_exporter - INFO - [STATS] Total events: 192
+2025-10-24 12:06:00,768 - csv_exporter - INFO - [CHECK] Missing Event names: 0
+2025-10-24 12:06:00,768 - csv_exporter - INFO - [CURRENCY] Missing Currencies: 0
+2025-10-24 12:06:00,769 - csv_exporter - INFO - [DATE] Missing Dates: 0
+2025-10-24 12:06:00,770 - csv_exporter - INFO - [ACTUAL] Events with Actual values: 170 (88.5%)
+2025-10-24 12:06:00,770 - csv_exporter - INFO - [FORECAST] Events with Forecast values: 170 (88.5%)
+2025-10-24 12:06:00,770 - csv_exporter - INFO - [PREVIOUS] Events with Previous values: 170 (88.5%)
+2025-10-24 12:06:00,771 - csv_exporter - INFO - Impact Distribution:
+2025-10-24 12:06:00,771 - csv_exporter - INFO -   Icon--Ff-Impact-Yel: 123 (64.1%)
+2025-10-24 12:06:00,772 - csv_exporter - INFO -   Icon--Ff-Impact-Red: 41 (21.4%)
+2025-10-24 12:06:00,772 - csv_exporter - INFO -   Icon--Ff-Impact-Ora: 18 (9.4%)
+2025-10-24 12:06:00,772 - csv_exporter - INFO -   Icon--Ff-Impact-Gra: 10 (5.2%)
+2025-10-24 12:06:00,772 - csv_exporter - INFO - Top Currencies:
+2025-10-24 12:06:00,773 - csv_exporter - INFO -   USD: 57
+2025-10-24 12:06:00,773 - csv_exporter - INFO -   EUR: 46
+2025-10-24 12:06:00,773 - csv_exporter - INFO -   GBP: 28
+2025-10-24 12:06:00,774 - csv_exporter - INFO -   JPY: 21
+2025-10-24 12:06:00,774 - csv_exporter - INFO -   AUD: 14
+2025-10-24 12:06:00,774 - csv_exporter - INFO -   CHF: 9
+2025-10-24 12:06:00,774 - csv_exporter - INFO -   CAD: 6
+2025-10-24 12:06:00,775 - csv_exporter - INFO -   NZD: 6
+2025-10-24 12:06:00,775 - csv_exporter - INFO -   CNY: 5
+2025-10-24 12:06:00,775 - csv_exporter - INFO - ==================================================
+2025-10-24 12:06:00,779 - csv_exporter - INFO - Exported 192 events to D:\WORK\JTrading\JTrading-News-Manager\output/economic_events.csv
+2025-10-24 12:06:00,779 - csv_exporter - INFO - Deduplication complete: 22 new events added, 0 events updated
+2025-10-24 12:06:00,779 - csv_exporter - INFO - Total events in CSV: 192
+2025-10-24 12:06:00,780 - scraper - INFO - Saved 22 events for may13.2025 to CSV
