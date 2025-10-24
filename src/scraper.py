@@ -292,21 +292,58 @@ class ForexFactoryScraper:
                 page_title = self.driver.title.lower()
                 page_source = self.driver.page_source.lower()
                 
-                if "404" in page_title or "404" in page_source:
-                    logger.error(f"[NAV] Got 404 error page for {url}")
+                # More sophisticated error detection - check title first, then content
+                is_actual_404 = ("404" in page_title and ("not found" in page_title or "error" in page_title))
+                is_actual_403 = ("403" in page_title and ("forbidden" in page_title or "access denied" in page_title))
+                
+                if is_actual_404:
+                    logger.error(f"[NAV] Got actual 404 error page for {url}")
                     logger.error(f"[NAV] Page title: '{self.driver.title}'")
                     logger.error(f"[NAV] Current URL: {self.driver.current_url}")
                     continue
-                elif "403" in page_title or "403" in page_source:
-                    logger.error(f"[NAV] Got 403 forbidden page for {url}")
+                elif is_actual_403:
+                    logger.error(f"[NAV] Got actual 403 forbidden page for {url}")
                     logger.error(f"[NAV] Page title: '{self.driver.title}'")
                     logger.error(f"[NAV] Current URL: {self.driver.current_url}")
+                    logger.warning(f"[NAV] 403 error may indicate bot detection or IP blocking")
                     continue
-                elif "error" in page_title or "error" in page_source:
-                    logger.warning(f"[NAV] Detected error indicators in page for {url}")
+                elif "404" in page_source or "403" in page_source:
+                    # Check if this is a valid page with some missing resources (not a real error page)
+                    if "calendar" in page_title or "forex" in page_title:
+                        logger.info(f"[NAV] Page loaded successfully despite some 404/403 resources in content")
+                        logger.info(f"[NAV] Page title: '{self.driver.title}' - appears to be valid calendar page")
+                        # Don't continue, this is a valid page
+                    else:
+                        logger.warning(f"[NAV] Detected 404/403 in page content but unclear if it's a real error")
+                        logger.warning(f"[NAV] Page title: '{self.driver.title}'")
+                        logger.warning(f"[NAV] Current URL: {self.driver.current_url}")
+                        # Don't continue, just log and proceed
+                elif "error" in page_title:
+                    logger.warning(f"[NAV] Detected error in page title for {url}")
                     logger.warning(f"[NAV] Page title: '{self.driver.title}'")
                     logger.warning(f"[NAV] Current URL: {self.driver.current_url}")
                     # Don't continue, just log and proceed
+                
+                # Check for bot detection indicators
+                bot_indicators = [
+                    "access denied",
+                    "blocked",
+                    "suspicious activity",
+                    "too many requests",
+                    "rate limit",
+                    "captcha",
+                    "security check",
+                    "bot detection",
+                    "automated requests"
+                ]
+                
+                for indicator in bot_indicators:
+                    if indicator in page_source or indicator in page_title:
+                        logger.warning(f"[NAV] BOT DETECTION WARNING: Found '{indicator}' in page content")
+                        logger.warning(f"[NAV] This may indicate the scraper has been detected as a bot")
+                        logger.warning(f"[NAV] Page title: '{self.driver.title}'")
+                        logger.warning(f"[NAV] Current URL: {self.driver.current_url}")
+                        break
                 
                 # Add an additional wait and check for verification page that might appear later
                 logger.info("[NAV] Waiting additional 20s and checking again for verification page...")
@@ -342,6 +379,7 @@ class ForexFactoryScraper:
                 # Check if this is an invalid session error
                 if "invalid session id" in error_msg or "session deleted" in error_msg:
                     logger.warning("[NAV] Detected invalid session during navigation. Attempting to reinitialize driver...")
+                    logger.warning("[NAV] Invalid session may indicate bot detection or server-side session termination")
                     if self._handle_invalid_session():
                         logger.info("[NAV] Driver reinitialized. Continuing with same attempt...")
                         # Continue with the same attempt since we have a new driver
@@ -873,6 +911,11 @@ class ForexFactoryScraper:
             # Navigate to the range URL
             if not self._navigate_to_page(range_url):
                 logger.error(f"[RANGE] Failed to navigate to range URL: {range_url}")
+                logger.warning(f"[RANGE] Range URL navigation failed - this may indicate:")
+                logger.warning(f"[RANGE] - Bot detection by ForexFactory")
+                logger.warning(f"[RANGE] - Server restrictions on range queries")
+                logger.warning(f"[RANGE] - Network connectivity issues")
+                logger.warning(f"[RANGE] - Invalid date range format")
                 # Fallback to daily scraping if range URL fails
                 logger.info("[RANGE] Falling back to daily scraping approach")
                 return self._scrape_range_by_daily_fallback(range_start, range_end)
@@ -904,44 +947,58 @@ class ForexFactoryScraper:
         events = []
         current_date = range_start
         
-        logger.info(f"Fallback: scraping range {range_start.date()} to {range_end.date()} day by day")
+        logger.warning(f"[FALLBACK] Range scraping failed - falling back to day-by-day approach")
+        logger.warning(f"[FALLBACK] This may indicate bot detection or server restrictions")
+        logger.info(f"[FALLBACK] Scraping range {range_start.date()} to {range_end.date()} day by day")
         
-        while current_date <= range_end:
-            try:
-                # Skip weekends for efficiency (optional)
-                if self._should_skip_date(current_date):
-                    logger.debug(f"Skipping weekend date: {current_date.date()}")
-                    current_date += timedelta(days=1)
-                    continue
+        # Initialize driver once for the entire fallback range
+        if not self.driver:
+            logger.info(f"[FALLBACK] Driver not initialized for fallback range, setting up fresh driver")
+            self._setup_driver()
+        
+        try:
+            while current_date <= range_end:
+                try:
+                    # Skip weekends for efficiency (optional)
+                    if self._should_skip_date(current_date):
+                        logger.debug(f"[FALLBACK] Skipping weekend date: {current_date.date()}")
+                        current_date += timedelta(days=1)
+                        continue
+                    
+                    logger.debug(f"[FALLBACK] Scraping day: {current_date.date()}")
+                    
+                    # Check if driver is still responsive before scraping
+                    if not self._is_driver_responsive():
+                        logger.warning(f"[FALLBACK] Driver not responsive for {current_date.date()}, reinitializing...")
+                        self._close_driver()
+                        self._setup_driver()
+                    
+                    # Scrape the day using the existing daily method
+                    day_events = self._scrape_day(current_date, first_request=(current_date == range_start))
+                    
+                    if day_events is not None:
+                        events.extend(day_events)
+                        logger.debug(f"[FALLBACK] Found {len(day_events)} events for {current_date.date()}")
+                    else:
+                        logger.debug(f"[FALLBACK] No events found for {current_date.date()}")
+                    
+                    # Add delay between days to avoid being too aggressive
+                    # time.sleep(random.uniform(1.0, 3.0)) - REMOVED
+                    
+                except Exception as e:
+                    logger.error(f"[FALLBACK] Error scraping day {current_date.date()}: {e}")
+                    # Continue with next day even if one fails
                 
-                logger.debug(f"Scraping day: {current_date.date()}")
-                
-                # Initialize driver if not present
-                if not self.driver:
-                    logger.debug(f"Driver not initialized for {current_date.date()}, setting up fresh driver")
-                    self._setup_driver()
-                
-                # Scrape the day using the existing daily method
-                day_events = self._scrape_day(current_date, first_request=(current_date == range_start))
-                
-                if day_events is not None:
-                    events.extend(day_events)
-                    logger.debug(f"Found {len(day_events)} events for {current_date.date()}")
-                else:
-                    logger.debug(f"No events found for {current_date.date()}")
-                
-                # Add delay between days to avoid being too aggressive
-                # time.sleep(random.uniform(1.0, 3.0)) - REMOVED
-                
-            except Exception as e:
-                logger.error(f"Error scraping day {current_date.date()}: {e}")
-                # Continue with next day even if one fails
+                # Move to next day
+                current_date += timedelta(days=1)
             
-            # Move to next day
-            current_date += timedelta(days=1)
-        
-        logger.info(f"Fallback completed: {len(events)} total events from {range_start.date()} to {range_end.date()}")
-        return events
+            logger.info(f"[FALLBACK] Completed: {len(events)} total events from {range_start.date()} to {range_end.date()}")
+            return events
+            
+        finally:
+            # Close driver after fallback range is complete (same as normal range scraping)
+            logger.info("[FALLBACK] Closing driver after fallback range scrape to maintain consistency")
+            self._close_driver()
     
     def _format_date_for_url(self, date: datetime) -> str:
         """Format date for ForexFactory URL format: mar22.2025"""
